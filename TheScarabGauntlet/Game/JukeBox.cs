@@ -36,6 +36,7 @@ namespace PlatformerStarter
         public void PlayMusic(string song)
         {
             //soundBank.PlayCue(song);
+            // Random Comment to test git
         }
     }
 }
