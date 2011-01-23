@@ -1,0 +1,2362 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GarageGames.TorqueX.PlatFramework</name>
+    </assembly>
+    <members>
+        <member name="T:GarageGames.Torque.PlatformerFramework.DirectionalTriggerComponent">
+            <summary>
+            This is a directional trigger that was created to avoid the performance issues that are inherent in 
+            a game that needs a bajillion triggers everywhere. If normal T2DTriggerComponent triggers are 'active'
+            triggers, think of this as a 'passive' trigger. Note that for these to work on moving objects, the 
+            object that is checking for triggers must have ProcessCollisionsAtRest set to true. Typically you'll
+            want to use this with only a T2DCollisionComponent and set its object type to something that your
+            scene objects will hit.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.DirectionalTriggerComponent._onEnter(GarageGames.Torque.T2D.T2DSceneObject,GarageGames.Torque.T2D.T2DSceneObject,GarageGames.Torque.T2D.T2DCollisionInfo)">
+            <summary>
+            The _onEnter callback that's called whenever an obejct collides with this trigger.
+            </summary>
+            <param name="ourObject">The owner of this trigger component.</param>
+            <param name="theirObject">The object that collided with this trigger.</param>
+            <param name="info">The collision info generated for the collision.</param>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.DirectionalTriggerComponent.SceneObject">
+            <summary>
+            The T2DSceneObject owner of this component.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.Inventory">
+            <summary>
+            A basic inventory class that allows the dynamic creation and assignment of an unlimited number of different types of items.
+            Also has basic weight/item capacity functionality. This system works on the concept of an inventory as a container with slots.
+            A slot has to be created for each type of item and the individual slots keep track of what they're holding. You can optionally
+            have an inventory auto-manage its item slots, in which case when you add an item to the inventory a slot will be created for
+            that item automatically.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Inventory.RegisterItemSlot(GarageGames.Torque.PlatformerFramework.InventoryItemSlot,System.String)">
+            <summary>
+            Registers a new item slot with the inventory.
+            </summary>
+            <param name="newItemSlot">The item slot to add to this inventory.</param>
+            <param name="name">The name of the item to associate with the specified slot.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Inventory.HasItemSlot(System.String)">
+            <summary>
+            Returns whether or not there is an item slot associated with the specified name.
+            </summary>
+            <param name="name">The name for which to check for an item slot.</param>
+            <returns>True if an item slot exists associated with the specified name.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Inventory.ContainsItem(System.String)">
+            <summary>
+            Returns whether or not the item slot for the specified name is non-empty.
+            </summary>
+            <param name="name">The name of the item slot to check.</param>
+            <returns>True if the specified item slot is not empty.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Inventory.AddItem(System.String)">
+            <summary>
+            Add one item of the specified type.
+            </summary>
+            <param name="itemName">The name of the item to add.</param>
+            <returns>True if the item was successfully added.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Inventory.AddItem(System.String,System.Int32)">
+            <summary>
+            Add the specified amount of the specified item type.
+            </summary>
+            <param name="itemName">The name of the item to add.</param>
+            <param name="amount">The amount of the specified item to add.</param>
+            <returns>True if the items were successfully added.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Inventory.CanCarryMore(System.String,System.Int32)">
+            <summary>
+            Returns whether or not the specified amount of the specified item would take the inventory over its weight limit if added.
+            </summary>
+            <param name="itemName">The name of the item to check.</param>
+            <param name="amount">The amount of the item to check.</param>
+            <returns>True if there is room in the inventory for the specified amount of the specified item.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Inventory.CanCarryMore(GarageGames.Torque.PlatformerFramework.InventoryItemSlot,System.Int32)">
+            <summary>
+            Returns whether or not the specified amount of the specified item would take the inventory over its weight limit if added.
+            </summary>
+            <param name="itemSlot">The item slot to check.</param>
+            <param name="amount">The amount of the item to check.</param>
+            <returns>True if there is room in the inventory for the specified amount of the specified item.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Inventory.Item(System.String)">
+            <summary>
+            Returns the item slot associated with the specified item name.
+            </summary>
+            <param name="name">The name of the item for which to retrieve an item slot.</param>
+            <returns>The item slot associated with the specified name.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Inventory._onWeightCapacityReached(GarageGames.Torque.PlatformerFramework.InventoryItemSlot,System.Int32)">
+            <summary>
+            Callback called when the collection of an item would take the inventory over its weight limit.
+            </summary>
+            <param name="itemSlot">The item whos collectoin would brought the container over its weight capacity.</param>
+            <param name="amount">The amount of the item in question.</param>
+            <returns>True if collecting the specified amount of the specified item should be allowed.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Inventory._manageSlotFor(System.String,System.Int32)">
+            <summary>
+            Callback called if AutoManageSlots is true, allowing the inventory to do specific tasks depending on the item type.
+            Override this if you wish to elaborate on the AutoManageSlots functionality.
+            </summary>
+            <param name="itemName">The name of the item slot to be managed.</param>
+            <param name="amount">The amount of the specified type of item to be added.</param>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.Inventory.Owner">
+            <summary>
+            The owner of this inventory.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.Inventory.ItemSlotList">
+            <summary>
+            Generated list of all item slots in this inventory.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.Inventory.ContainedItemList">
+            <summary>
+            Generated list of all non-empty item slots in this inventory.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.Inventory.TotalWeight">
+            <summary>
+            The total weight of all objects contained in this inventory as specified by the contained item slots.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.Inventory.WeightCapacity">
+            <summary>
+            The total weight capacity of this inventory container.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.Inventory.AutoManageSlots">
+            <summary>
+            Specifies whether or not this inventory should automatically manage its slots. By default that entails creating new basic item 
+            slots when an item is added without a slot, and enforcing an infinite max count on all item slots.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.InventoryItemSlot">
+            <summary>
+            A basic inventory slot for use with the Inventory class. 
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.InventoryItemSlot.Use">
+            <summary>
+            Virtual function to allow derived classes to have Use methods that can be called via an Inventory.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.InventoryItemSlot.Equip">
+            <summary>
+            Virtual function to allow derived classes to have Equip methods that can be called via an Inventory.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.InventoryItemSlot.Unequip">
+            <summary>
+            Virtual function to allow derived classes to have Unequip methods that can be called via an Inventory.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.InventoryItemSlot.Drop(System.Int32)">
+            <summary>
+            Reduces the Count by the specified amount.
+            </summary>
+            <param name="amount">The number of items to drop.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.InventoryItemSlot.DropAll">
+            <summary>
+            Forces the slot to drop all items.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.InventoryItemSlot.OnMaxCountReached(System.Int32)">
+            <summary>
+            Callback called when the Inventory wants to add an amount of items that would put this slot over its MaxCount.
+            Default is to always deny the items.
+            </summary>
+            <param name="amount">The amount of items that the Inventory wants to put in this slot to put it over MaxCount.</param>
+            <returns>True if the Inventory should be allowed to add the amount to the slot.</returns>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.InventoryItemSlot.Container">
+            <summary>
+            The Inventory that this slot belongs to.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.InventoryItemSlot.Count">
+            <summary>
+            The current number of this item contained in the slot.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.InventoryItemSlot.MaxCount">
+            <summary>
+            The total amount this slot is able to hold.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.InventoryItemSlot.NotEmpty">
+            <summary>
+            True if the Count of this slot is greater than zero.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.InventoryItemSlot.Weight">
+            <summary>
+            The weight of this slot. If WeighByCount is true, then this will be scaled by Count.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.InventoryItemSlot.WeighByCount">
+            <summary>
+            Specifies whether or not the weight of this slot will be based on the current Count.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorComponent">
+            <summary>
+            The core class of the PlatformerFramework. An Actor is anything that wants to at some point interact with a platform.
+            Normally, an ActorComponent is just added to an animated sprite. In the case that the Actor should rotate, you will need
+            to implement an ActorPuppetComponent. To do that, the ActorComponent should be added to a blank scene object and set up 
+            exactly the same and the ActorPuppetComponent should go on an animated sprite that is mounted to the ActorComponent. 
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.MoveComponent">
+            <summary>
+            A base component for moving objects. Contains functionality to handshake with a MoveController. 
+            Also establishes pre- and post- physics update callbacks. See ActorComponent for an example of
+            intended use.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveComponent.Possess(GarageGames.Torque.PlatformerFramework.MoveController)">
+            <summary>
+            Attempt to possess this MoveComponent with a MoveController.
+            </summary>
+            <param name="controller">The MoveController requesting possession of this MoveComponent.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveComponent.Unpossess">
+            <summary>
+            Unpossess this MoveComponent.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveComponent.RevertPossession">
+            <summary>
+            Revert possesion of this MoveComponent to it's previous MoveController. Presumably useful for 
+            swapping vehicle control or temporarily possessing movers for cutscenes and whatnot.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveComponent.PreUpdateForces(GarageGames.Torque.Sim.Move,System.Single)">
+            <summary>
+            IT2DForceGenerator interface method. Called by the Physics component before the current move is processed.
+            </summary>
+            <param name="move">Move is generally ignored by MoveComponents because their control is intended to come from 
+            a MoveController, rather than user input.</param>
+            <param name="elapsed">Elapsed time since last PreUpdateForces call.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveComponent.PostUpdateForces(GarageGames.Torque.Sim.Move,System.Single)">
+            <summary>
+            IT2DForceGenerator interface method. Called by the Physics component after the current move is processed.
+            </summary>
+            <param name="move">Move is generally ignored by MoveComponents because their control is intended to come from 
+            a MoveController, rather than user input.</param>
+            <param name="elapsed">Elapsed time since last PostUpdateForces call.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveComponent._possessed(GarageGames.Torque.PlatformerFramework.MoveController)">
+            <summary>
+            Callback when this MoveComponent is possessed by a MoveController. Override this to check for appropriate controllers. 
+            Use unpossess in the case of an undesired controller.
+            </summary>
+            <param name="controller">The MoveController that just possessed this MoveComponent.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveComponent._unpossessed(GarageGames.Torque.PlatformerFramework.MoveController)">
+            <summary>
+            Callback when this MoveComponent is unpossessed by a MoveController.
+            </summary>
+            <param name="controller">The MoveController that just unpossessed this MoveComponent.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveComponent._preUpdate(System.Single)">
+            <summary>
+            Callback for derived classes to perform physics updates before each move is processed.
+            </summary>
+            <param name="elapsed">Elapsed time in seconds since last _preUpdate callback.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveComponent._postUpdate(System.Single)">
+            <summary>
+            Callback for derived classes to perform physics updates after each move is processed.
+            </summary>
+            <param name="elapsed">Elapsed time in seconds since last _postUpdate callback. This will often be less
+            than a standard tick when collisions occurred during the move.</param>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.MoveComponent.SceneObject">
+            <summary>
+            The scene object that owns this MoveComponent.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.MoveComponent.Controller">
+            <summary>
+            The MoveController that is currently possessing this MoveComponent.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.MoveComponent.IsPossessed">
+            <summary>
+            Returns true if this MoveComponent is currently possessed by a MoveController
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.IFSMObject">
+            <summary>
+            Public interface that defines required properties for a Finite State Machine.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.IFSMObject.CurrentState">
+            <summary>
+            The current state of this IFSMObject.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.IFSMObject.PreviousState">
+            <summary>
+            The last valid state that this IFSMObject was in.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.#ctor">
+            <summary>
+            Constructor. Calls several methods that set up various different things for the ActorComponent. Namely, initializes the ground
+            query data, creates a T2DPolyImage for the ground check to use, and calls the methods that register physics states and create
+            the animation manager for this ActorComponent.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.MoveLeft">
+            <summary>
+            Tells the Actor to move left. Generally used for ground and air movement.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.MoveRight">
+            <summary>
+            Tells the Actor to move right. Generally used for ground and air movement.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.HorizontalStop">
+            <summary>
+            Tells the Actor to move neither left nor right. Generally used for ground and air movement.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.MoveUp">
+            <summary>
+            Tells the Actor to move up. Generally used for moving up and down ladders, but potentially also for 
+            swimming, flying etc.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.MoveDown">
+            <summary>
+            Tells the Actor to move down. Generally used for moving up and down ladders, but potentially also for 
+            swimming, flying etc.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.VerticalStop">
+            <summary>
+            Tells the Actor to move neither up nor down. Generally used for moving up and down ladders, but potentially also for 
+            swimming, flying etc.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.Jump">
+            <summary>
+            Tells the Actor to attempt to jump. The Actor's physics state will ultimately decide what to do with this request.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.JumpDown">
+            <summary>
+            Tells the Actor to jump down. This generally applies to when an Actor is standing on a one-way platform.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.Kill(GarageGames.Torque.T2D.T2DSceneObject)">
+            <summary>
+            This kills the Actor outright by removing all it's remaining health.
+            </summary>
+            <param name="sourceObject">The scene object associated with the source of damage.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.TakeDamage(System.Single,GarageGames.Torque.T2D.T2DSceneObject)">
+            <summary>
+            Deals the specified amount of damage to an Actor. This method assumes that the Actor's Armor and the damage timeout 
+            will be taken into account.
+            </summary>
+            <param name="damage">The amount of damage to be dealt.</param>
+            <param name="sourceObject">The scene object associated with the source of damage.</param>
+            <returns>True if some amount of damage was dealt to the Actor.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.TakeDamage(System.Single,GarageGames.Torque.T2D.T2DSceneObject,System.Boolean)">
+            <summary>
+            Deals the specified amount of damage to an Actor. This method assums that the Actor's damage timeout will be taken into
+            account.
+            </summary>
+            <param name="damage">The amount of damage to be dealt.</param>
+            <param name="sourceObject">The scene object associated with the source of damage.</param>
+            <param name="ignoreArmor">If set to true, the Actor will not mitigate damage due to Armor.</param>
+            <returns>True if some amount of damage was dealt to the Actor.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.TakeDamage(System.Single,GarageGames.Torque.T2D.T2DSceneObject,System.Boolean,System.Boolean)">
+            <summary>
+            Deals the specified amount of damage to an Actor.
+            </summary>
+            <param name="damage">The amount of damage to be dealt.</param>
+            <param name="sourceObject">The scene object associated with the source of damage.</param>
+            <param name="ignoreArmor">If set to true, the Actor will not mitigate damage due to Armor.</param>
+            <param name="ignoreDamageTimeout">If set to true, the Actor will process the damage regardless of whether or not the
+            time specified by its damage timeout property has passed.</param>
+            <returns>True if some amount of damage was dealt to the Actor.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.HealDamage(System.Single,GarageGames.Torque.T2D.T2DSceneObject)">
+            <summary>
+            Recovers the specified amount of damage.
+            </summary>
+            <param name="damage">The amount of health to recover.</param>
+            <param name="sourceObject">The scene object associated with the healing action.</param>
+            <returns>True if the healing was successful.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.WarpToCurrentPlatform">
+            <summary>
+            Explicitly sets the position of the actor to the offset that it thinks it is from the platform that it thinks it's on.
+            Use this when directly setting the Position of a platform if you want the actor to stay on it. Taking direct control of
+            a platform can otherwise cause the actor to fall off. This had to be added to allow for PlatformMoveComponents to snap 
+            to their path nodes, but it could also be used to basically warp platforms around with actors still riding them.
+            This *must* be called before the actor has a chance to process physics or it may fall - i.e. this should be called 
+            right after you set the position of the platform. The preferred method is to call PlatformWarped on the Platform itself, 
+            which will call WarpToCurrentPlatform on all supported Actors, but either way will work.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._tookDamage(System.Single,GarageGames.Torque.T2D.T2DSceneObject)">
+            <summary>
+            Called when damage is applied to this Actor. Use this callback to respond to damage.
+            </summary>
+            <param name="damage">The amount of damage that was dealt to this Actor.</param>
+            <param name="sourceObject">The scene object associated with the source of the damage. Normally the owner of a component that 
+            called for the damage.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._die(System.Single,GarageGames.Torque.T2D.T2DSceneObject)">
+            <summary>
+            Called when the Actor dies.
+            </summary>
+            <param name="damage">The amount of damage that was dealt to this Actor that caused its death. Note that this can potentially be
+            relatively huge if the Kill method was used to destroy the Actor.</param>
+            <param name="sourceObject">The scene object associated with the source of the damage. Normally the owner of a component that 
+            called for the damage.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._respawn">
+            <summary>
+            Respawns this Actor at its RespawnPosition.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._possessed(GarageGames.Torque.PlatformerFramework.MoveController)">
+            <summary>
+            Called when this Actor is possessed by a MoveController. This is used to make sure that only an ActorController can possess 
+            an ActorComponent.
+            </summary>
+            <param name="controller">The MoveController that possessed this Actor.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._resetActor">
+            <summary>
+            This method is called if PooledWithComponents is enabled on the owner object to give you a chance to reinitialize the Actor.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._processXMLDataLists">
+            <summary>
+            This is called by _OnRegister and is used to process the animation transition data that was assigned during deserializaion 
+            and insert it onto our animation manager's transitions list.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._registerPhysicsStates">
+            <summary>
+            This is used to register various physics states for this Actor. Override this method to insert or replace a physics state.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._createAnimationManager">
+            <summary>
+            This is used to create an instance of our animation manager class. Override this to use a derived animation manager
+            with specific animation states that you specify.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._initAnimationManager">
+            <summary>
+            This is used to assign transitions and sound events, if neccesary. Override this to apply various transitions or 
+            sound events to this Actor's animation manager.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._preUpdate(System.Single)">
+            <summary>
+            This is the standard MoveComponent _preUpdate callback. This is where _updatePhysics and _updateAnimation are called.
+            </summary>
+            <param name="elapsed">Elapsed time since last _preUpdate.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._postUpdate(System.Single)">
+            <summary>
+            This is the standard MoveComponent _postUpdate callback. This is where _updateOnGround is called.
+            </summary>
+            <param name="elapsed">Elapsed time since last _postUpdate.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._updatePhysics(System.Single)">
+            <summary>
+            This is the core physics update method. All state-specific physics are called from here.
+            </summary>
+            <param name="elapsed">Elapsed time passed from _preUpdate.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._updateAnimation(System.Single)">
+            <summary>
+            This is the core animation update method. The animation manager gets executed here.
+            </summary>
+            <param name="elapsed">Elapsed time passed from _preUpdate.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._updateClimbing">
+            <summary>
+            Perform required checks to decide whether or not this Actor should start or stop climbing.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._updateOnGround(System.Single)">
+            <summary>
+            Update whether or not the Actor is on some sort of "ground" (specifically, any type of platform).
+            </summary>
+            <param name="elapsed">Elapsed time passed from _postUpdate.</param>
+            <returns>True if the Actor is standing on a ground surface. This value can also be accessed via the public OnGround property.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._initGroundQueryData">
+            <summary>
+            Initializes the container query data used to evaluate whether the Actor is on the ground or not. Called by the constructor.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._pickGround(System.Single)">
+            <summary>
+            Performs the container query used to gather a list of objects beneath the Actor for the purposes of ground checking.
+            Called by _updateOnGround.
+            </summary>
+            <param name="elapsed">Elapsed time passed from _updateOnGround.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent._testGroundPolyMove(GarageGames.Torque.T2D.T2DSceneObject)">
+            <summary>
+            Performs a specialized collision check against the specified object using our ground check collision polyon.
+            </summary>
+            <param name="obj">The object to check collision against.</param>
+            <returns>A list of collisions that occured with the object.</returns>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.Actor">
+            <summary>
+            The scene object that this ActorComponent is on.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.AnimatedSprite">
+            <summary>
+            The animated sprite that this ActorComponent is controlling.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.MaxVelocity">
+            <summary>
+            The maximum velocity that this Actor will be allowed to travel at any time.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.InputVector">
+            <summary>
+            A vector that represents the current movement input that this Actor's movement will be based on. Both X and Y values
+            range from 0 to 1, but this is not a normalized vector.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.Gravity">
+            <summary>
+            The rate at which this Actor accelerates due to gravity.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.MaxMoveSpeed">
+            <summary>
+            The maximum speed this Actor can run across a surface.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.GroundAccel">
+            <summary>
+            The rate at which this Actor accelerates across a surface with normal friction.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.GroundDecel">
+            <summary>
+            The rate at which this Actor slows to a stop on a surface with normal friction.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.AirAccel">
+            <summary>
+            The rate at which this Actor accelerates while in the air.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.AirDecel">
+            <summary>
+            The rate at which this Actor slows to a stop while in the air.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.JumpForce">
+            <summary>
+            The magnitude of the force applied to this Actor when it jumps.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.JumpTimeThreshold">
+            <summary>
+            The total time a jump event will be valid after the Jump is called.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.AllowJumpDown">
+            <summary>
+            Specifies whether or not an Actor will be allowed to jump down through one-way platforms.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.JumpDownTimeout">
+            <summary>
+            This specifies the time to wait after jumping down to begin allowing the Actor to land on one-way patforms.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ClimbUpSpeed">
+            <summary>
+            The constant speed at which this Actor climbs up a ladder.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ClimbDownSpeed">
+            <summary>
+            The constant speed at which this Actor climbs down a ladder.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ClimbTimeout">
+            <summary>
+            The time to wait after releasing from a ladder before allowing the Actor to start climbing again.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ClimbJumpCoefficient">
+            <summary>
+            The coefficient to multiply jump force and max move speed by when jumping 
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.GroundCheckYThreshold">
+            <summary>
+            The base height of the ground check. The actual area of the groun check is based largely on velocity, but if this value is too small
+            the ground may never actually register any ground objects.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.GroundYBuffer">
+            <summary>
+            The distance that the Actor will keep the lowest point of its collision polygon off the ground.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.LadderAttachXThreshold">
+            <summary>
+            The width by which to check for ladders. The ladder check is not swept, so if this value is too small it will be possible to pass
+            through ladders entirely and never grab them.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.CanActivatePlatforms">
+            <summary>
+            This read-only property specifies whether or not an Actor should currently be able to land on one-way platforms (based on JumpDownTimeout).
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.MaxGroundNormalY">
+            <summary>
+            The maximum value of the Y component of the surface normal of a platform to allow the ActorComponent to consider it as a ground surface.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.SoundBank">
+            <summary>
+            The path to the sound bank used by sound events on the animation manager.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.UseAnimationManagerSoundEvents">
+            <summary>
+            Specifies whether or not this Actor should allow its animation manager to play sound cues when specific animations are played.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.UseAnimationStepSoundList">
+            <summary>
+            Specifies whether or not this Actor should allow its animation manager to play sound cues for specific frames of specific animations.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.InLadder">
+            <summary>
+            Specifies whether or not this Actor is within the boundaries of a ladder's trigger. This is set by the LadderComponent.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.LadderObject">
+            <summary>
+            Specifies the scene object associated with the ladder that this Actor is currently interacting with. This is set by the LadderComponent.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.OnGround">
+            <summary>
+            Specifies whether or not this Actor is on a platform.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.CurrentState">
+            <summary>
+            The current physics state of this Actor as set by the FSM class.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.PreviousState">
+            <summary>
+            The previous physics state of this Actor as set by the FSM class.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.Health">
+            <summary>
+            This specifies the current health of the Actor.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.MaxHealth">
+            <summary>
+            This specifies the maximum amount of health this Actor can have.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.Armor">
+            <summary>
+            This specifies the amount of armor this Actor has. This is literally the percent of damage taken that will be applied to the Actor.
+            If 50 the Actor will take half-damage, if 75 the Actor will take 1/4 damage, etc.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.Alive">
+            <summary>
+            Specifies whether or not the Actor is alive.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.Lives">
+            <summary>
+            Specifies the total number of lives this Actor has.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.DamageTimeout">
+            <summary>
+            Specifies the amount of time to wait after taking damage before the Actor should allow further damage to be dealt.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.AllowRespawn">
+            <summary>
+            Specifies whether or not the Actor should be allowed to respawn if it has lives left.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.RespawnPosition">
+            <summary>
+            Specifies the position at which to respawn.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.AnimationManager">
+            <summary>
+            The animation manager that is manipulating animations for this Actor.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.IdleAnim">
+            <summary>
+            The animation to be played by the animation manager when this Actor is in an idle state.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.JumpAnim">
+            <summary>
+            The animation to be played by the animation manager when this Actor is jumping from an idle state.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.FallAnim">
+            <summary>
+            The animation to be played by the animation manager when this Actor is falling from a normal jump.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.RunAnim">
+            <summary>
+            The animation to be played by the animation manager when this Actor is running.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ScaleRunAnimBySpeed">
+            <summary>
+            Specifies whether or not to scale the speed of the run animation based on acceleration and deceleration across the ground.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.MinRunAnimSpeed">
+            <summary>
+            The minimum speed the run animation will be played represented as a value from 0 to 1 to be multiplied to the base duration of the animation.
+            For example, if MinRunAnimSpeed is set to 0.25, the slowest the animation will play if ScaleRunAnimBySpeed is set to true will be 1/4 the speed 
+            of normal. 
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.RunJumpAnim">
+            <summary>
+            The animation to be played by the animation manager when this Actor jumps when running.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.RunFallAnim">
+            <summary>
+            The animation to be played by the animation manager when this Actor is falling from a running jump.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.SlideAnim">
+            <summary>
+            The animation to be played by the animation manager when this Actor is sliding to quickly change directions.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ClimbIdleAnim">
+            <summary>
+            The animation to be played by the animation manager when this Actor is idle on a ladder.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ClimbUpAnim">
+            <summary>
+            The animation to be played by the animation manager when this Actor is climbing up a ladder.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ClimbDownAnim">
+            <summary>
+            The animation to be played by the animation manager when this Actor is climbing down a ladder.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ClimbJumpAnim">
+            <summary>
+            The animation to be played by the animation manager when this Actor is jumping from a ladder.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ActionAnim">
+            <summary>
+            The animation to be played by the animation manager when the "action" state is entered.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.DamageAnim">
+            <summary>
+            The animation to be played by the animation manager when this Actor takes damage.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.DieAnim">
+            <summary>
+            The animation to be played by the animation manager when this Actor dies.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.AnimationTransitions">
+            <summary>
+            A list of XMLTransitionData objects that specify which animation states should have transitional animations.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent._GroundPolyImage">
+            <summary>
+            The collision image used for ground checking.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent._ActorMaxY">
+            <summary>
+            The lowest point on the actor's collision poly.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent._ActorMaxX">
+            <summary>
+            The rightmost point on the actor's collision poly.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent._ActorMinX">
+            <summary>
+            The leftmost point on the actor's collision poly.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent._Climbing">
+            <summary>
+            True if the Actor is currently climbing.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent._GroundObject">
+            <summary>
+            The scene object of the platform this Actor is currently standing on.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent._Jumping">
+            <summary>
+            True if the Actor should jump, if possible.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent._JumpingDown">
+            <summary>
+            True if the Actor should jump down, if possible.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorComponent.XMLTransitionData">
+            <summary>
+            A helper class to facilitate the extraction of animation transition data from the level file.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.XMLTransitionData.FromState">
+            <summary>
+            The name of the animation state the Actor is transitioning from.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.XMLTransitionData.ToState">
+            <summary>
+            The name of the animation state the Actor is transitioning to.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.XMLTransitionData.Animation">
+            <summary>
+            The animation the Actor should play when transitioning between FromState and ToState.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager">
+            <summary>
+            State-based animation manager for Actors. Allows the user to specify any number of animations and transition between them
+            based on the state of the Actor. Allows the user to specify transitional animations to play between any two animation states.
+            Also allows the user to specify a sound cue to play at the beginning of any animation using sound events. Users may also specify
+            sound cues for specific frames of an animation using step sounds (named for their most likely use: footstep sounds).
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.#ctor(GarageGames.Torque.PlatformerFramework.ActorComponent)">
+            <summary>
+            Constructor. Stores the ActorComponent that this animation manager is associated with and calls _registerAnimStates.
+            </summary>
+            <param name="actorComponent">The ActorComponent associated with this animation manager.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.SetTransition(System.String,System.String,System.String)">
+            <summary>
+            Add a transitional animation to be played between the two specified animation states.
+            </summary>
+            <param name="from">The name of the state to be transitioning from.</param>
+            <param name="to">The name of the state to be transitioning to.</param>
+            <param name="objectDBName">The name of the animation to be played when transitioning from FromState to ToState.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.SetTransition(System.String,System.String,GarageGames.Torque.T2D.T2DAnimationData)">
+            <summary>
+            Add a transitional animation to be played between the two specified animation states.
+            </summary>
+            <param name="from">The name of the state to be transitioning from.</param>
+            <param name="to">The name of the state to be transitioning to.</param>
+            <param name="animationData">The animation to be played when transitioning from FromState to ToState.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.ClearTransition(System.String,System.String)">
+            <summary>
+            Remove an existing transition between the two specified animation states.
+            </summary>
+            <param name="from">The name of the state to be transitioning from.</param>
+            <param name="to">The name of the state to be trensitioning to.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.GetTransition(System.String,System.String)">
+            <summary>
+            Get the transitional animation to be played between the two specified states.
+            </summary>
+            <param name="from">The name of the state transitioning from.</param>
+            <param name="to">The name of the state transitioning to.</param>
+            <returns>The animation to be played between the two given animation states.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.SetSoundEvent(GarageGames.Torque.T2D.T2DAnimationData,System.String)">
+            <summary>
+            Set a sound cue to be played immediately when the specified animation is played.
+            </summary>
+            <param name="animation">The animation to attach the sound cue to.</param>
+            <param name="soundCueIndex">The name of the sound cue.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.ClearSoundEvent(GarageGames.Torque.T2D.T2DAnimationData)">
+            <summary>
+            Remove a sound event from the specified animation.
+            </summary>
+            <param name="animation">The animation to clear the sound event from.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.GetSoundEvent(GarageGames.Torque.T2D.T2DAnimationData)">
+            <summary>
+            Get the sound cue to be played when the specified animation is played.
+            </summary>
+            <param name="animation">The animation to check for.</param>
+            <returns>The sound cue associated with the specified animation.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.AddStepSoundFrame(GarageGames.Torque.T2D.T2DAnimationData,System.Int32,System.String)">
+            <summary>
+            Adds a sound event to the specified frame of the specified animation.
+            </summary>
+            <param name="animation">The animation to add the step sound to.</param>
+            <param name="frameIndex">The 0-based frame number of the specified animation on which to play the specified sound cue.</param>
+            <param name="soundCueIndex">The sound cue to play on the specified frame of the specified animation.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.ClearStepSoundFrame(GarageGames.Torque.T2D.T2DAnimationData,System.Int32)">
+            <summary>
+            Remove any sound event from the specified frame of the specified animation.
+            </summary>
+            <param name="animation">The animation to remove the sound event from.</param>
+            <param name="frame">The frame to remove the sound event from.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.ClearAnimationStepSounds(GarageGames.Torque.T2D.T2DAnimationData)">
+            <summary>
+            Removes all step sounds from the specified animation.
+            </summary>
+            <param name="animation">The animation to clear step sounds from.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.GetStepSoundTable(GarageGames.Torque.T2D.T2DAnimationData)">
+            <summary>
+            Get the step sound table associated with the specified animation.
+            </summary>
+            <param name="animation">The animation for which to retrieve the step sound table.</param>
+            <returns>The step sound table associated with the specified animation.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager._registerAnimStates">
+            <summary>
+            This is used to register various animation states for this animation manager. Override this method to insert or replace a physics state.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager._playAnimation(GarageGames.Torque.T2D.T2DAnimationData)">
+            <summary>
+            Plays the specified animation on the Actor starting at frame 0. Also responsible for playing sound events.
+            </summary>
+            <param name="animation">The animation to be played.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager._playAnimation(GarageGames.Torque.T2D.T2DAnimationData,System.UInt32)">
+            <summary>
+            Plays the specified animation on the Actor starting at the specified frame. Also responsible for playing sound events.
+            </summary>
+            <param name="animation">The animation to be played.</param>
+            <param name="frameIndex">The frame at which to start the animation.</param>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.CurrentState">
+            <summary>
+            The current animation state.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.PreviousState">
+            <summary>
+            The previous animation state.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.Transitions">
+            <summary>
+            The hash table of animation transitions used by this animation manager. Use the SetTransition method to add transitions.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.SoundEvents">
+            <summary>
+            The hash table of animation sound events used by this animation manager. Use the SetSoundEvent method to add sound events.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.StepSoundAnimations">
+            <summary>
+            The hash table of step sounds used by this animation manager. Use the AddStepSoundFrame method to add step sounds.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.StandToFallThreshold">
+            <summary>
+            The ammount of time (seconds) this animation manager will wait after the Actor falls off a platform before FallingFromGround will evaluate true.
+            This is used to buffer the transition time from standing animations (run, idle, etc.) to falling animations (fall, runFall, etc.) to avoid
+            noticeable jitter when passing over negligible changes in platform surfaces.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.FallingFromGround">
+            <summary>
+            True if the time since the Actor's last positive ground check is greater than StandToFallThreshold.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.StepSoundTable">
+            <summary>
+            A container class to keep track of step sound cues and frame indeces on a particular animation.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.StepSoundTable.#ctor(GarageGames.Torque.T2D.T2DAnimationData)">
+            <summary>
+            Constructor. Records the animation this tabls is associated with.
+            </summary>
+            <param name="animation"></param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.StepSoundTable.AddStepFrame(System.Int32,System.String)">
+            <summary>
+            Associates the specified sound cue to the specified frame.
+            </summary>
+            <param name="frame"></param>
+            <param name="sound"></param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.StepSoundTable.RemoveStepFrame(System.Int32)">
+            <summary>
+            Removes the sound cue from the specified frame.
+            </summary>
+            <param name="frame"></param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.StepSoundTable.ClearTable">
+            <summary>
+            Removes all sound cues from the table.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.StepSoundTable.Animation">
+            <summary>
+            The animation associated with this table.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.StepSoundTable.Enabled">
+            <summary>
+            Specifies whether or not this table is enabled. If false, the animation manager will not play sounds from this table.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.StepSoundTable.StepSounds">
+            <summary>
+            The hash table of sound cues indexed by frame number.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.StepSoundTable.HasFrames">
+            <summary>
+            Specifies whether or not this table contains frames.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorAnimationManager.AnimationState">
+            <summary>
+            Base animation state used by ActorAnimationManager. Handles core animation transition functionality.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.FSMState">
+            <summary>
+            Abstract class that defines the basic State structure for Finite State Machines.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.FSMState.Enter(GarageGames.Torque.PlatformerFramework.IFSMObject)">
+            <summary>
+            Optional Enter method that will be called by the Finite State Machine manager when entering this state.
+            </summary>
+            <param name="obj">The IFSMObject on which this state is being transitioned to.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.FSMState.Exit(GarageGames.Torque.PlatformerFramework.IFSMObject)">
+            <summary>
+            Optional Exit method that will be called by the Finite State Machine manager when leaving this state.
+            </summary>
+            <param name="obj">The IFSMObject on which this state is being transitioned from.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.FSMState.Execute(GarageGames.Torque.PlatformerFramework.IFSMObject)">
+            <summary>
+            Required Execute method that defines the rules by which this state will automatically choose another state
+            to switch to. This method should be overridden and defined to return the name of the state to switch to based
+            on some criteria.
+            </summary>
+            <param name="obj">The IFSMObject on which this state is currently being executed.</param>
+            <returns>A string containing the state that the specified IFSMObject should switch to.</returns>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.FSMState.StateName">
+            <summary>
+            The name of this state.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorComponent.ActorState">
+            <summary>
+            The base class for all actor physics states. Establishes the UpdatePhysics method for specific states to override.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorComponent.OnGroundState">
+            <summary>
+            A basic OnGroundState Actor physics state. Controls how an Actor's physics are modified while standing on a platform.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorComponent.InAirState">
+            <summary>
+            A basic InAirState Actor physics state. Controls how an Actor's physics are modified while in the air.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorComponent.OnLadderState">
+            <summary>
+            A basic OnLadderState Actor physics state. Controls how an Actor's physics are modified while on a ladder.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorComponent.DeadState">
+            <summary>
+            A basic DeadState Actor physics state. Controls how an Actor's physics are modified while dead.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorAIController">
+            <summary>
+            The base AI controller for Actors. Inherits from ActorController. Establishes the protected _update method which 
+            calls on the individual AI states' public Update method. This class should be used as a parent class for specific 
+            AI controllers. 
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorController">
+            <summary>
+            Base MoveController class for all Actors. Contains control and notification functionality. All Actors possessed by this controller
+            should be controlled by calling the ActorController's move functions (such as _moveLeft and _moveRight). You can also choose to override
+            the notification callbacks (such as ActorCollectedItem or ActorDamaged) if you wish to have the ActorController respond in some way to any 
+            of the feedback from its possessed Actors.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.MoveController">
+            <summary>
+            An object responsible for controlling any number of MoveComponents. There is only basic functionality for performing
+            handshakes with MoveComponents on this object. See ActorController and derived classes for intended use.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveController.PossessMover(GarageGames.Torque.T2D.T2DSceneObject)">
+            <summary>
+            Attempt to find and possess a MoveComponent on the specified scene object.
+            </summary>
+            <param name="mover">The scene object on which to search for and possess a MoveComponent.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveController.PossessMover(GarageGames.Torque.PlatformerFramework.MoveComponent)">
+            <summary>
+            Attempt to possess a MoveComponent.
+            </summary>
+            <param name="mover">The MoveComponent to possess.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveController.UnpossessMover(GarageGames.Torque.T2D.T2DSceneObject)">
+            <summary>
+            Unpossess the MoveComponent on the specified scene object. Removes the MoveComponent from our list of controlled movers.
+            </summary>
+            <param name="mover">The scene object on which to search for and unpossess a MoveComponent currently possessed by this MoveController.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveController.UnpossessMover(GarageGames.Torque.PlatformerFramework.MoveComponent)">
+            <summary>
+            Unpossess the specified MoveComponent. Removes the specified MoveComponent from our list of controlled movers.
+            </summary>
+            <param name="mover">The MoveComponent to be unpossessed by this MoveController.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveController.IsPossessing(GarageGames.Torque.PlatformerFramework.MoveComponent)">
+            <summary>
+            Check if this MoveController is currently possessing the specified MoveComponent.
+            </summary>
+            <param name="mover">The MoveComponent to check for.</param>
+            <returns>True if the specified MoveComponent is in our list of controlled movers.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveController._possessedMover(GarageGames.Torque.PlatformerFramework.MoveComponent)">
+            <summary>
+            Callback after the successful possession of a MoveComponent. Override this callback to verify proper MoveComponent types, if desired.
+            Use UnpossessMover in the case of an undesired MoveComponent.
+            </summary>
+            <param name="mover">The MoveComponent that has just been possessed.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.MoveController._unpossessedMover(GarageGames.Torque.PlatformerFramework.MoveComponent)">
+            <summary>
+            Callback after a MoveComponent is successfully unpossessed by this MoveController.
+            </summary>
+            <param name="mover">The MoveComponent that was just unposessed.</param>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.MoveController.Movers">
+            <summary>
+            List of currently possessed movers.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController.ActorSpawned(GarageGames.Torque.PlatformerFramework.ActorComponent)">
+            <summary>
+            Called from an actor possessed by this controller each time it spawns.
+            </summary>
+            <param name="actor">The possessed ActorComponent that spawned.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController.ActorCollectedItem(GarageGames.Torque.PlatformerFramework.ActorComponent,GarageGames.Torque.PlatformerFramework.CollectibleComponent)">
+            <summary>
+            Called from an actor possessed by this controller each time it picks up a collectible. Note that
+            in many cases the collectible can be deleted before this code is reached, though by default the 
+            collectible is only made invisible by this point, and then deleted after this code has had a
+            chance to run.
+            </summary>
+            <param name="actor">The possessed ActorComponent that got a collectible.</param>
+            <param name="collectible">The CollectibleComponent for the item that was picked up.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController.ActorLanded(GarageGames.Torque.PlatformerFramework.ActorComponent,GarageGames.Torque.T2D.T2DSceneObject)">
+            <summary>
+            Called from an actor possessed by this controller each time it lands on a valid platform.
+            A valid platform is a scene object with either a PlatformComponent or a SolidPlatformComponent.
+            </summary>
+            <param name="actor">The possessed ActorComponent that landed on a platform.</param>
+            <param name="platform">The scene object that the Actor landed on.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController.ActorHitWall(GarageGames.Torque.PlatformerFramework.ActorComponent,GarageGames.Torque.T2D.T2DCollisionInfo,System.Single)">
+            <summary>
+            Called from an actor possessed by this controller each time it collides with a wall or ceiling.
+            (as defined on a per-actor basis by the ActorComponent's _maxSurfaceNormalY field).
+            </summary>
+            <param name="actor">The possessed ActorComponent that hit a wall.</param>
+            <param name="info">The collision info for the collision that lead to this callback.</param>
+            <param name="dot">Dot product of the velocity and the normal.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController.ActorDamaged(GarageGames.Torque.PlatformerFramework.ActorComponent,System.Single,GarageGames.Torque.T2D.T2DSceneObject)">
+            <summary>
+            Called from an actor possessed by this controller each time it receives damage.
+            </summary>
+            <param name="actor">The possessed ActorComponent that took damage.</param>
+            <param name="damage">The amount of damage that was taken by the actor.</param>
+            <param name="sourceObject">The scene object related to the damage transaction. In most cases, the owner 
+            of the component that dealt the damage).</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController.ActorDied(GarageGames.Torque.PlatformerFramework.ActorComponent,System.Single,GarageGames.Torque.T2D.T2DSceneObject)">
+            <summary>
+            Called from an actor possessed by this controller each time it dies.
+            </summary>
+            <param name="actor">The possessed ActorComponent that died.</param>
+            <param name="damage">The amount of damage that was taken the instant of death. This should always be reliable
+            because the default Kill method on the ActorComponent deals damage via the same methods as anything else.</param>
+            <param name="sourceObject">The scene object related to the damage transaction. In most cases, the owner 
+            of the component that dealt the damage).</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController._moveLeft">
+            <summary>
+            Calls MoveLeft method on all ActorComponents possessed by this controller.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController._moveRight">
+            <summary>
+            Calls MoveRight method on all ActorComponents possessed by this controller
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController._horizontalStop">
+            <summary>
+            Calls HorizontalStop method on all ActorComponents possessed by this controller.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController._moveUp">
+            <summary>
+            Calls MoveUp method on all ActorComponents possessed by this controller.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController._moveDown">
+            <summary>
+            Calls MoveDown method on all ActorComponents possessed by this controller.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController._verticalStop">
+            <summary>
+            Calls VerticalStop method on all ActorComponents possessed by this controller.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController._jump">
+            <summary>
+            Calls Jump method on all ActorComponents possessed by this controller.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorController._jumpDown">
+            <summary>
+            Calls JumpDown method on all ActorComponents possessed by this controller.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorAIController.#ctor">
+            <summary>
+            Constructor. Adds a tick callback for this ActorAIController and calls _registerAIStates.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorAIController._registerAIStates">
+            <summary>
+            Registers the AI states that this ActorAIController will used to manipulate possessed Actors.
+            Override this method to add desired states to the actor.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorAIController._update">
+            <summary>
+            Updates the current AIState and calls the Update method on that state.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorAIController.CurrentState">
+            <summary>
+            The current AI state of this ActorAIController
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorAIController.PreviousState">
+            <summary>
+            The previous AI state of this ActorAIController
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorAIController.AIState">
+            <summary>
+            The base AI state class. Derive all AI states from this class and put any AI code into the Update method of your states.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorAIController.AIState.Update(GarageGames.Torque.PlatformerFramework.ActorAIController)">
+            <summary>
+            Use the Update method to run state-specific AI code. This is called once for each ProcessTick that this 
+            AIState is the ActorAIController's CurrentState.
+            </summary>
+            <param name="AI">The ActorAIController object on which this is the current state.</param>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.CheckpointManager">
+            <summary>
+            The core of the checkpoint system. This should be accessed via the Instance property, as it is meant to be a singleton. All 
+            CheckpointSystemSpawnPointComponents register themselves with the CheckpointManager when they initialize. The basic concept
+            behind the default use of this system is that when a checkpoint is reached, all the CheckpointManager's spawn points that 
+            have been marked as "used" are removed from the CheckpointManager's list. At any point after that, resetting all spawnpoints
+            left in the list will essentially roll the world back to the state it was in when that checkpoint was reached (at least the
+            peices of the world that were spawned by checkpoint system spawn points). This works mostly because of how spawn points reset.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.CheckpointManager.RegisterSpawnPoint(GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent)">
+            <summary>
+            Adds the specified CheckpointSystemSpawnPointComponent to the CheckpointManager's list of spawn points.
+            </summary>
+            <param name="spawnPoint">The spawn point component to be registered.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.CheckpointManager.CheckpointReached">
+            <summary>
+            If ResetRemovedObjects is set to false, this will remove all spawn points which have spawned objects flagged to
+            not recover.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.CheckpointManager.LoadCheckPoint">
+            <summary>
+            Reses all spawn points that are currently in the list of spawn points. This will cause all objects that were spawned by those
+            objects to be deleted and all those spawn points to ready themselves to begin spawning again.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.CheckpointManager.Instance">
+            <summary>
+            The static singleton instance of CheckpointManager.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.CheckpointManager.ResetRemovedObjects">
+            <summary>
+            Specifies whether or not to reset CheckpointSystemSpawnPoints regardless of whether their spawned objects' 
+            Recover property has been set to false. Default is false. If set to true, all checkpoint system
+            spawn points will reset when a check point is loaded, rather than just the spawn points whos objects 
+            haven't been marked with Recover = false.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.CheckpointComponent">
+            <summary>
+            A component to be added to a scene object. When the player enters the boundaries of the scene object, this component will
+            call CheckpointReached on the CheckpointManager if all specified conditions are met.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.CheckpointComponent._confirmCheckpoint(GarageGames.Torque.PlatformerFramework.ActorComponent)">
+            <summary>
+            Confirms whether or not an Actor should be allowed to use this checkpoint at the moment.
+            </summary>
+            <param name="actor">The Actor that's currently trying to use the checkpoint.</param>
+            <returns>True if the Actor should be allowed to use the checkpoint at the moment.</returns>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.CheckpointComponent.Enabled">
+            <summary>
+            Specifies whether or not the checkpoint is enabled.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.CheckpointComponent.RespawnPositionObject">
+            <summary>
+            The object that the respawn position of the Actor that enters this object will be modified based on.
+            If none is specified, the scene object that owns this component will be used.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.CheckpointComponent.RespawnOffset">
+            <summary>
+            The offset in world coordinates from the center of the RespawnPositionObject that the Actor should respawn.
+            Default is (0, 0).
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.CheckpointComponent.AllowRecheck">
+            <summary>
+            Specifies whether or not an Actor will be allowed to use this checkpoint more than once. Default is false.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.CheckpointComponent.RecheckTimeout">
+            <summary>
+            Specifies the time in milliseconds that the checkpoint will wait before allowing a recheck. This assumes AllowRecheck
+            has been set to true.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnedObjectComponent">
+            <summary>
+            A specific type of SpawnedObjectComponent that can interface with a CheckpointSystemSpawnPointComponent.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.SpawnedObjectComponent">
+            <summary>
+            A component automatically added to every spawned object to allow spawned objects to
+            interface with their spawn point of origin.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.SpawnedObjectComponent.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.SpawnedObjectComponent.#ctor(GarageGames.Torque.PlatformerFramework.SpawnPointComponent)">
+            <summary>
+            Constructor. Requires a spawn point to be specified.
+            </summary>
+            <param name="spawnPoint">The SpawnPointComponent that spawned this object.</param>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.SpawnedObjectComponent.SpawnPoint">
+            <summary>
+            The SpawnPointComponent that spawned this object.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnedObjectComponent.Recover">
+            <summary>
+            Specifies whether or not this object wants to spawn again if the spawn point is reset.
+            The spawn point can choose whether or not to obey this property. This will also increment
+            or decrement the Consumed property of the spawn point that spawned this object, assuming
+            it's a CheckpointSystemSpawnPointComponent.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
+            <summary>
+            Essentially a ProximitySpawnPointComponent that registers itself with the CheckpointManager once it's initialized.
+            The CheckpointManager keeps a list of all CheckpointSystemSpawnPointComponents and handles resetting them when neccesary.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ProximitySpawnPointComponent">
+            <summary>
+            A spawn point that will automatically spawn it's object(s) when two scene objects are within a certain range.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.SpawnPointComponent">
+            <summary>
+            Base spawn point component. Use this for the most basic spawning of objects on command.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.SpawnPointComponent.Spawn">
+            <summary>
+            Attempt to spawn an instance of SpawnObject.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.SpawnPointComponent.Despawn(GarageGames.Torque.T2D.T2DSceneObject)">
+            <summary>
+            Despawn the specified object. Removes it from the world and decrements the spawned object counter.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.SpawnPointComponent.ResetSpawnPoint">
+            <summary>
+            Roll SpawnCount back to zero and delete all remaining spawned objects.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.SpawnPointComponent._getSpawnedComponent">
+            <summary>
+            This exists to allow you to create new spawned object components derived from the base and return those instead.
+            If PoolWithComponents is enabled on the SpawnObject, this will not be called. In that case you must put the desired
+            type of SpawnedObjectComponent onto the SpawnObject itself.
+            </summary>
+            <returns>A new SpawnedObjectComponent to be attached to the new spawned object.</returns>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.SpawnPointComponent.SceneObject">
+            <summary>
+            The scene object that owns this SpawnPointComponent.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.SpawnPointComponent.SpawnObject">
+            <summary>
+            The object to be spawned at this spawn point.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.SpawnPointComponent.SpawnCount">
+            <summary>
+            The number of objects that have been spawned from this spawn point since the last reset.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.SpawnPointComponent.SpawnLimit">
+            <summary>
+            The maximum SpawnCount for this spawn point.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.SpawnPointComponent.SpawnTimeout">
+            <summary>
+            The minimum time to wait when spawning multiple objects.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.SpawnPointComponent.SpawnedObjects">
+            <summary>
+            A list of all objects spawned from this spawn point since the last reset.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ProximitySpawnPointComponent.Target">
+            <summary>
+            The scene object to check the distance of. If no ProximityBasisObject is specified, 
+            the distance checked will be from the Target to the scene object that owns this component.
+            In most cases, the Target will be the scene camera and the ProximityBasisObject will be null.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ProximitySpawnPointComponent.ProximityBasisObject">
+            <summary>
+            An optional scene object from which to check the distance of Target. If no ProximityBasisObject
+            is specified, the distance will checked will be from the Target to the scene object that owns this
+            component. In most cases, you would not want to specify a ProximityBasisObject. One case where it
+            would prove useful would be a series of moving platforms that are precisely timed and need to sync up.
+            You would set the ProximityBasisObject of the spawn points for all the moving platforms to a scene
+            object near the first platform the player will encounter so they are all created at the same time.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ProximitySpawnPointComponent.MinSpawnDistance">
+            <summary>
+            The minimum distance from the Target to attempt to spawn our SpawnObject. Use this to prevent spawn points
+            from spawning objects while in view of the camera.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ProximitySpawnPointComponent.MaxSpawnDistance">
+            <summary>
+            The maximum distance from the Target to attempt to spawn our SpawnObject. Use this to limit the range in 
+            which objects are spawned.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ProximitySpawnPointComponent.AutoDespawnObjects">
+            <summary>
+            Specifies whether or not this spawn point will automatically despawn objects after they are outside their spawn limits.
+            This will only occur if the target is not between the spawn point and the spawned object.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent._getSpawnedComponent">
+            <summary>
+            Overriden _getSpawnPointCoponent passes back a CheckPointSystemSpawnedObjectComponent
+            </summary>
+            <returns>A brand new CheckpointSystemSpawnedObjectComponent!</returns>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent.Consumed">
+            <summary>
+            Specifies the number of objects spawned from this spawn point that have been consumed and no longer wish to respawn.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.SolidPlatformComponent">
+            <summary>
+            Base platform functionality. Actor will always collide with this type of platform, regardless of the angle of collision.
+            For one-way platforms use PlatformComponent.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.SolidPlatformComponent.ActorLanded(GarageGames.Torque.PlatformerFramework.ActorComponent)">
+            <summary>
+            This is called whenever an Actor begins using this platform as its GroundObject.
+            </summary>
+            <param name="actor">The Actor that landed on this platform.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.SolidPlatformComponent.ActorLeft(GarageGames.Torque.PlatformerFramework.ActorComponent)">
+            <summary>
+            This is called when an Actor stops using this platform as its GroundObject.
+            </summary>
+            <param name="actor">The actor that left this platform.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.SolidPlatformComponent.PlatformWarped">
+            <summary>
+            Call this if you wish to notify each Actor this platform is supporting that the it has changed position. This should be
+            used only when directly setting the position of this platform.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.SolidPlatformComponent.SceneObject">
+            <summary>
+            The scene object owner of this platform component.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.SolidPlatformComponent.PlatformInUse">
+            <summary>
+            Specifies whether or not the platform is currently the GroundObject for an Actor.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.SolidPlatformComponent.PlatformEnabled">
+            <summary>
+            Specifies whether or not the platform will currently allow Actors to land on it.
+            If used on solid platforms, the top surface of the platform will not be considered ground and the Actor will fall across it.
+            Can cause problems if the top surface is flat!
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.SolidPlatformComponent.SurfaceForce">
+            <summary>
+            The lateral force across the surface of the platform that an Actor should be pushed when standing on this platform.
+            This is used for conveyor effects.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.SolidPlatformComponent.PlatformFriction">
+            <summary>
+            Specifies the friction on the platform. This is pulled directly off the physics material on the owner scene object if
+            the platform is using either the NormalSurfacePhysMat or the SlipperySurfacePhysMat. Otherwise, this property will return
+            1, which is "normal" friction according to Actor physics.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.SolidPlatformComponent.ActorsCarrying">
+            <summary>
+            A list of all actors currently using this platform as their ground object;
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent">
+            <summary>
+            The standard one-way platform. This is derived from SolidPlatformComponent and should be used when a one-way platform is needed.
+            If a solid object is needed, use SolidPlatformComponent. To tweak the highest slope an Actor can stand on, adjust MaxGroundNormalY
+            on ActorComponent.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent.TestEarlyOut(GarageGames.Torque.T2D.T2DSceneObject,GarageGames.Torque.T2D.T2DSceneObject)">
+            <summary>
+            Collision system calls this to optionally early-out of collisions with an object based on the EarlyOutObjectType on the 
+            T2DCollisionComponent, which we set to ActorObjectType in _OnRegister. By default, platforms do not collide with anything
+            actively, they are only collided against, so unless that is changed this code will only be called on if CollidesWith is 
+            modified externally after this component is initialized.
+            </summary>
+            <param name="ourObject">The scene object that owns this component.</param>
+            <param name="theirObject">The scene object that owns the ActorComponent.</param>
+            <returns>True if a collision should occur. False otherwise.</returns>
+        </member>
+        <member name="F:GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent._active">
+            <summary>
+            Specifies whether or not the platform is currently active and allowing collisions.
+            </summary>
+        </member>
+        <member name="F:GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent._canClimbThrough">
+            <summary>
+            Specifies whether or not an Actor will be able to climb down through this platform. Actors can always climb up through
+            platforms of this type.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent.PlatformActive">
+            <summary>
+            Specifies whether or not the platform is currently active and allowing collisions. This is normally set automatically
+            as actors pass over platforms.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent.CanClimbThrough">
+            <summary>
+            Specifies whether or not an Actor will be able to climb down through this platform. Actors can always climb up through
+            platforms of this type.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.PlatformBehavior">
+            <summary>
+            Base PlatformBehavior class. Derive from this class to add contained functionality to a platform. See the FallingPlatformBehavior 
+            in the PlatformerDemo for an example of how to use this.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.PlatformBehavior.ActorLanded(GarageGames.Torque.PlatformerFramework.ActorComponent)">
+            <summary>
+            This is called whenever an Actor begins using this platform as its GroundObject.
+            </summary>
+            <param name="actor">The Actor that landed on this platform.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.PlatformBehavior.ActorLeft(GarageGames.Torque.PlatformerFramework.ActorComponent)">
+            <summary>
+            This is called whenever an Actor stops using this platform as its GroundObject.
+            </summary>
+            <param name="actor">The Actor that left on this platform.</param>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformBehavior.RootComponent">
+            <summary>
+            The platform component on the owner scene object that this behavior will interface with.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.PlatformMoveComponent">
+            <summary>
+            A basic move component for moving platforms. Allows you to specify a path for the platform to travel.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.PlatformMoveComponent.Start">
+            <summary>
+            Start the platform moving from its start position to the first node on its path.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.PlatformMoveComponent._travelToCurrentNode">
+            <summary>
+            Sets the velocity of the platform towards the current target node on the path.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.PlatformMoveComponent._currentNodePosition">
+            <summary>
+            Returns the current target node position.
+            </summary>
+            <returns>The current target node position in world coordinates.</returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.PlatformMoveComponent._reachedNode">
+            <summary>
+            Swaps out current and previous nodes and loops the path, if specified.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformMoveComponent.Path">
+            <summary>
+            The path along which this platform will travel.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformMoveComponent.RunOnInit">
+            <summary>
+            Specifies whether or not this platform should start when it is registered. If set to false, Start must be called
+            at some point to make the platform move.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformMoveComponent.Loop">
+            <summary>
+            Specifies whether the platform should repeat along the path when it reaches the end.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformMoveComponent.IsRunning">
+            <summary>
+            Specifies whether or not this platform is currently running, or whatever.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.PlatformMoveComponent.PlatformPathNode">
+            <summary>
+            A single node on a path used by a PlatformMoveComponent.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformMoveComponent.PlatformPathNode.Position">
+            <summary>
+            The position of this node.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformMoveComponent.PlatformPathNode.RelativeToPrevious">
+            <summary>
+            Specifies whether or not the position of this node should be interpreted as relative to the previous node, 
+            or absolute in world coordinates.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformMoveComponent.PlatformPathNode.TimeToDestination">
+            <summary>
+            Specifies the time in secods it takes this platform to get from its previous path node to this one.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.StopwatchTimer">
+            <summary>
+             Stopwatch timer with "TimeUntilStart" + "TimeToExpire" to allow timed start delay as well as timer duration
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.StopwatchTimer.#ctor(System.String)">
+            <summary>
+             Constructor
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.StopwatchTimer.#ctor">
+            <summary>
+             Constructor
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.StopwatchTimer.Reset">
+            <summary>
+             Resets stopwatch timer.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.StopwatchTimer.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+             Update method, checks state of stopwatch and removes from manager if it has expired.
+            </summary>
+            <param name="time"></param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.StopwatchTimer.FloatSmoothStep(System.Single,System.Single)">
+            <summary>
+             Returns an interpolated floating point value
+            </summary>
+            <param name="start">Value when timer starts.</param>
+            <param name="end">Value when timer ends.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.StopwatchTimer.Vector2SmoothStep(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+             Returns an interpolated Vector2 value
+            </summary>
+            <param name="start">Value when timer starts.</param>
+            <param name="end">Value when timer ends.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.StopwatchTimer.Vector3SmoothStep(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+             Returns an interpolated Vector3 value
+            </summary>
+            <param name="start">Value when timer starts.</param>
+            <param name="end">Value when timer ends.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.StopwatchTimer.Vector2Lerp(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+             Returns an interpolated Vector2 value
+            </summary>
+            <param name="start">Value when timer starts.</param>
+            <param name="end">Value when timer ends.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.StopwatchTimer.Vector3Lerp(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+             Returns an interpolated Vector3 value
+            </summary>
+            <param name="start">Value when timer starts.</param>
+            <param name="end">Value when timer ends.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.StopwatchTimer.Vector4Lerp(Microsoft.Xna.Framework.Vector4,Microsoft.Xna.Framework.Vector4)">
+            <summary>
+             Returns an interpolated Vector4 value
+            </summary>
+            <param name="start">Value when timer starts.</param>
+            <param name="end">Value when timer ends.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.StopwatchTimer.Start">
+            <summary>
+             Starts the timer and adds it to the timer manager.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.StopwatchTimer.Name">
+            <summary>
+             Name of timer.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.StopwatchTimer.Expired">
+            <summary>
+             Has timer expired?
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.StopwatchTimer.Started">
+            <summary>
+             Has timer started yet?
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.StopwatchTimer.Delta">
+            <summary>
+             Delta between 0 - 1 signifying how far through timer we've gone.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.StopwatchTimer.SecondsUntilExpire">
+            <summary>
+             Amount of time before timer expires
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.StopwatchTimer.SecondsUntilStart">
+            <summary>
+              Set amount of time before timer starts
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.StopwatchTimer.MillisecondsUntilExpire">
+            <summary>
+             Amount of time before timer expires
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.StopwatchTimer.MillisecondsUntilStart">
+            <summary>
+              Set amount of time before timer starts
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.Timer">
+            <summary>
+             Timer class, for simple timing in seconds / milliseconds
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Timer.#ctor(System.String)">
+            <summary>
+             Constructor
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Timer.#ctor">
+            <summary>
+             Constructor
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Timer.Finalize">
+            <summary>
+             Destructor. Removes timer from <see cref="T:GarageGames.Torque.PlatformerFramework.TimerManager"/>
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Timer.Reset">
+            <summary>
+             Resets the timer.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Timer.FloatSmoothStep(System.Single,System.Single)">
+            <summary>
+             Returns an interpolated float value.
+            </summary>
+            <param name="start">Value when timer starts.</param>
+            <param name="end">Value when timer ends.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Timer.Vector2SmoothStep(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+             Returns an interpolated Vector2 value.
+            </summary>
+            <param name="start">Value when timer starts.</param>
+            <param name="end">Value when timer ends.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Timer.Vector2Lerp(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+             Returns an interpolated Vector2 value.
+            </summary>
+            <param name="start">Value when timer starts.</param>
+            <param name="end">Value when timer ends.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Timer.Vector3Lerp(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+             Returns an interpolated Vector3 value.
+            </summary>
+            <param name="start">Value when timer starts.</param>
+            <param name="end">Value when timer ends.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Timer.Vector4Lerp(Microsoft.Xna.Framework.Vector4,Microsoft.Xna.Framework.Vector4)">
+            <summary>
+             Returns an interpolated Vector4 value.
+            </summary>
+            <param name="start">Value when timer starts.</param>
+            <param name="end">Value when timer ends.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Timer.Start">
+            <summary>
+             Starts the timer.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Timer.Stop">
+            <summary>
+             Stops the timer.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.Timer.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+             Updates the timer, expires it if time has run out.
+            </summary>
+            <param name="time"></param>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.Timer.Name">
+            <summary>
+             Name of timer.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.Timer.Running">
+            <summary>
+             Is timer running?
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.Timer.Expired">
+            <summary>
+             Has the timer expired?
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.Timer.Delta">
+            <summary>
+             Returns delta between 0 and 1 signifying how far through time we are.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.Timer.SecondsUntilExpire">
+            <summary>
+             Seconds until timer expires.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.Timer.MillisecondsUntilExpire">
+            <summary>
+             Milliseconds until timer expires.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.TimerManager">
+            <summary>
+             Main TimerManager singleton class. Call Instance.Update from main update.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.TimerManager.Remove(GarageGames.Torque.PlatformerFramework.StopwatchTimer)">
+            <summary>
+             Remove a stopwatch timer.
+            </summary>
+            <param name="timer"></param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.TimerManager.Add(GarageGames.Torque.PlatformerFramework.StopwatchTimer)">
+            <summary>
+             add a stopwatch timer.
+            </summary>
+            <param name="timer"></param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.TimerManager.Remove(GarageGames.Torque.PlatformerFramework.Timer)">
+            <summary>
+             Remove a timer.
+            </summary>
+            <param name="timer"></param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.TimerManager.Add(GarageGames.Torque.PlatformerFramework.Timer)">
+            <summary>
+             Add a timer.
+            </summary>
+            <param name="timer"></param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.TimerManager.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+             Main update method.
+            </summary>
+            <param name="time"></param>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.TimerManager.StopwatchTimerList">
+            <summary>
+             List of Stopwatch Timers currently running.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.TimerManager.TimerList">
+            <summary>
+             List of standard timers currently running.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.TimerManager.Instance">
+            <summary>
+             Singleton access property.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ActorPuppetComponent">
+            <summary>
+            The sole purpose of this component is to get rotated Actors to work. The idea is that instead using an ActorComponent on an animated sprite,
+            as you normally would, you can attach the ActorComponent to a blank scene object, and then mount an animated sprite to that scene object. That
+            way you can rotate the animated sprite without mussing up the collision image or physics of the actor. The ActorPuppetComponent exists to allow
+            the ActorComponent on the scene object to manipulate the animations to be played on the animated sprite thats mounted to the scene object. So
+            to sum up: an ActorPuppetComponent should only ever be used on a T2DAnimatedSprite that's mounted to a T2DSceneObject that has an ActorComponent 
+            (or some component derived from ActorComponent), and only when you wish to rotate your actors.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ActorPuppetComponent.RefreshSpritePosition">
+            <summary>
+            This warps the animated sprite into position to avoid any noticeable interpolation. It is currently used only when the scene object changes
+            directions because when it flips the mount offset can potentially change quite a bit in a single frame and the position of the animated
+            sprite should be updated instantly.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorPuppetComponent.RotateToGroundSurface">
+            <summary>
+            Specifies whether or not the sprite should appear to rotate to the ground surface the actor is standing on..
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorPuppetComponent.RateOfRotation">
+            <summary>
+            The rate at which the sprite should rotate the animated sprite to the angle of the ground surface it's standing on. If zero, 
+            rotation will be instantaneous. If no rotation is desired, set RotateToGroundSurface to zero.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorPuppetComponent.PuppetRotation">
+            <summary>
+            Use this to control the rotation of the puppet.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorPuppetComponent.ActorPivotOffset">
+            <summary>
+            An optional additional offset around which to rotate the animated sprite. This offset is in local coordinates of the scene object that the
+            animated sprite is mounted to.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ActorPuppetComponent.Master">
+            <summary>
+            The ActorComponent that is controlling this ActorPuppetComponent.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.PlatformerData">
+            <summary>
+            Contains object types and physics materials used by the platformer framework.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.ActorObjectType">
+            <summary>
+            The object type to be used for all Actors.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.ActorPuppetObjectType">
+            <summary>
+            The object type to be used for all Actor's "puppets" (ActorPuppetComponent).
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.PlayerObjectType">
+            <summary>
+            The object type to be used for players.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.EnemyObjectType">
+            <summary>
+            The object type to be used for enemies.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.PlatformObjectType">
+            <summary>
+            The object type to be used for all platforms (solid and one-way).
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.OneWayPlatformObjectType">
+            <summary>
+            The object type to be used for all one-way platforms.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.LadderObjectType">
+            <summary>
+            The object type to be used for all one-way platforms.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.CollectibleObjectType">
+            <summary>
+            The object type to be used for collectibles.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.DamageTriggerObjecType">
+            <summary>
+            The object type to be used for Hazards and Kill Triggers.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.ActorTriggerObjectType">
+            <summary>
+            The object type to be used for generic triggers that all actors will register with.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.PlayerTriggerObjectType">
+            <summary>
+            The object type to be used for triggers that Players will register with.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.EnemyTriggerObjectType">
+            <summary>
+            The object type to be used for triggers that enemies will register with.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.PlatformTriggerObjectType">
+            <summary>
+            The object type to be used for triggers that platforms will register with.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.SpawnedObjectType">
+            <summary>
+            The object type to be used for all spawned objects.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.NormalSurfacePhysMat">
+            <summary>
+            The physics material to be used for all platforms that have normal friction.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.PlatformerData.SlipperySurfacePhysMat">
+            <summary>
+            The physics material to be used for all platforms that are slippery.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.ParallaxXScrollerComponent">
+            <summary>
+            A helper component to be placed on scrollers in a level. ParallaxXScrollerComponents register themselves with the ParallaxManager
+            during _OnRegister. See the summary of the ParallaxFactorX property for details on setup. There must be a target set on the ParallaxManager
+            for this to have any effect at all.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ParallaxXScrollerComponent.ParallaxFactorX">
+            <summary>
+            This is the magnitude of the parallax effect. 0 means no movement; 1 means same movement as camera (not reccomended); less than 0 means opposite 
+            direction from camera. Example: near-background: 0.7, far-background: 0.3, sky: 0.02. You can also add a foreground plane at around -0.3 or so to
+            give the impression of objects close to the camera moving quickly. Play around with the numbers, it's not an exact effect in most games.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ParallaxXScrollerComponent.Scroller">
+            <summary>
+            An interface for the ParallaxManager to directly assign the scroll speed of the scroller object that owns this component.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ParallaxXScrollerComponent.StartOffset">
+            <summary>
+            The initial X scroll offset of this scroller as it appears in the level.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ParallaxXScrollerComponent._PreTickOffset">
+            <summary>
+            The offset of this scroller at the begining of the current tick. Used by the parallax manager to interpolate offset of this scroller.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ParallaxXScrollerComponent._PostTickOffset">
+            <summary>
+            The offset of this scroller at the end of the current tick. Used by the parallax manager to interpolate offset of this scroller.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ParallaxManager.RegisterParallaxScroller(GarageGames.Torque.PlatformerFramework.ParallaxXScrollerComponent)">
+            <summary>
+            Adds the ParallaxXScrollerComponent to the list of active parallax scrollers.
+            </summary>
+            <param name="scroller">The ParallaxXScrollerComponent to be added.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.ParallaxManager.UnregisterParallaxScroller(GarageGames.Torque.PlatformerFramework.ParallaxXScrollerComponent)">
+            <summary>
+            Removes a ParallaxXScrollerComponent from the list of active parallax scrollers.
+            </summary>
+            <param name="scroller">The ParallaxXScrollerComponent to be added.</param>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ParallaxManager.Instance">
+            <summary>
+            Static singleton instance of the ParallaxManager.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ParallaxManager.ParallaxTarget">
+            <summary>
+            The scene object that the parallax effect will be based on. In most cases, ParallaxTarget will be the scene camera.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.ParallaxManager.ParallaxSpeedScale">
+            <summary>
+            A scalar to be applied to all parallax scroll speeds.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.HazardComponent">
+            <summary>
+            A component to be added to a scene object. The trigger will deal a specific amount of damage to any Actors that 
+            enter the scene object's boundaries. For instantly killing Actors, use a KillTriggerComponent, rathr than a
+            HazardComponent.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.HazardComponent._confirmDamage(GarageGames.Torque.T2D.T2DSceneObject,GarageGames.Torque.T2D.T2DSceneObject,GarageGames.Torque.PlatformerFramework.ActorComponent)">
+            <summary>
+            _confirmDamage callback. Optionally override this in a child class to only deal damage to specific actors. Returns true by default
+            (i.e. deals damage to any Actor).
+            </summary>
+            <param name="ourObject">The scene object this HazardComponent is on.</param>
+            <param name="theirObject">The scene object the ActorComponent is on.</param>
+            <param name="actor">The ActorComponent on the scene object that entered the trigger.</param>
+            <returns>True if the HazardComponent should deal damage to the Actor.</returns>
+        </member>
+        <member name="F:GarageGames.Torque.PlatformerFramework.HazardComponent._damage">
+            <summary>
+            The amount of damage to attempt to deal to Actors that enter the trigger.
+            </summary>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.HazardComponent.Damage">
+            <summary>
+            The amount of damage to attempt to deal to Actors that enter the trigger.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.FSM">
+            <summary>
+            The main singleton Finite State Machine manager class. The purpose of this class is to create and manage all 
+            FSMState states for all IFSMObject Finite State Machines. Individual states are instantiated and hashed on a
+            per-FSM basis. The FSM class will also handle transitions and call all the neccesary transition callbacks on
+            based on the specifications of individual states.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.FSM.Execute(GarageGames.Torque.PlatformerFramework.IFSMObject)">
+            <summary>
+            Executes the specified Finite State Machine. Specifically, this executes the CurrentState of the specified IFSMObject
+            and performs any neccesary transitions via the SetState method.
+            </summary>
+            <param name="obj">The IFSMObject to be executed.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.FSM.SetState(GarageGames.Torque.PlatformerFramework.IFSMObject,System.String)">
+            <summary>
+            Attempt to set the CurrentState of the specified IFSMObject to the state specified and call any appropriate state transitions.
+            State is specified by name. This is the preferred method.
+            </summary>
+            <param name="obj">The IFSMObject to set the state of.</param>
+            <param name="stateName">The name of the desired state to transition to.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.FSM.SetState(GarageGames.Torque.PlatformerFramework.IFSMObject,GarageGames.Torque.PlatformerFramework.FSMState)">
+            <summary>
+            Attempt to set the CurrentState of the specified IFSMObject to the state specified and call any appropriate state transitions.
+            The actual instance of the desired state is passed. This should normally only be used internally by the FSM class. The preferred
+            method is SetState(IFSMObject obj, string stateName), but this will remain public for convinience.
+            </summary>
+            <param name="obj">The IFSMObject to set the state of.</param>
+            <param name="state">The actual instance of the desired state to transition to.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.FSM.RegisterState``1(GarageGames.Torque.PlatformerFramework.IFSMObject,System.String)">
+            <summary>
+            Register a state to be accessible to the specified Finite State Machine. This method will create an instance of the FSMState and hash it
+            under the specified name in a table created specifically for the specified IFSMObject's class type. The state can later be retrieved by 
+            name using GetState.
+            </summary>
+            <typeparam name="T">The specific type of FSMState to register with this IFSMObject.</typeparam>
+            <param name="obj">The IFSMObject to register the state for.</param>
+            <param name="stateName">The name by wich to index the state in the state hash.</param>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.FSM.GetState(GarageGames.Torque.PlatformerFramework.IFSMObject,System.String)">
+            <summary>
+            Get the instance of the specified state that's registered for the specified IFSMObject.
+            </summary>
+            <param name="obj">The IFSMObject for which to check for a registered state.</param>
+            <param name="stateName">The name of the state to check for.</param>
+            <returns>The instanc of the FSMState registered under the specified name for the specified IFSMObject.</returns>
+        </member>
+        <member name="P:GarageGames.Torque.PlatformerFramework.FSM.Instance">
+            <summary>
+            The static FSM singleton object. Use FSM.Instance to access all FSM functionality.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.LadderComponent">
+            <summary>
+            A component to be added to a scene object to give it ladder functionality. A ladder is anything an actor can climb up or down.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.LadderComponent.#ctor">
+            <summary>
+            Constructor. This sets up a T2DTriggerComponent for this component to use.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.KillTriggerComponent">
+            <summary>
+            A component to be added to a scene object. The trigger will instantly kill Actors that enter the scene object's boundaries.
+            For dealing damage in increments (such as with 'spikes' or similar objects), use a HazardComponent rather than a KillTriggerComponent.
+            </summary>
+        </member>
+        <member name="T:GarageGames.Torque.PlatformerFramework.CollectibleComponent">
+            <summary>
+            A component to be added to a scene object. When an Actor passes over the scene object, the CollectibleComponent is
+            notified and given the option to confirm the pickup. Derived Collectibles should be used for any type of pickup.
+            </summary>
+        </member>
+        <member name="M:GarageGames.Torque.PlatformerFramework.CollectibleComponent._confirmPickup(GarageGames.Torque.T2D.T2DSceneObject,GarageGames.Torque.T2D.T2DSceneObject,GarageGames.Torque.PlatformerFramework.ActorComponent)">
+            <summary>
+            Decides whether or not the Actor should be allowed to pick this collectible up. Override this
+            in derived classes. Default always returns true.
+            </summary>
+            <param name="ourObject">The scene object this CollectibleComponent is on.</param>
+            <param name="theirObject">The scene object the ActorComponent is on.</param>
+            <param name="actor">The ActorComponent that's trying to pick up this collectible.</param>
+            <returns>True if the Actor should be allowed to pick up the collectible.</returns>
+        </member>
+    </members>
+</doc>

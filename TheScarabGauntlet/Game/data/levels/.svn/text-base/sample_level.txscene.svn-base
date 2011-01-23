@@ -1,0 +1,2203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!--Torque X Builder - http://www.garagegames.com-->
+<!--Type: Scene-->
+<!--Target: TorqueX-->
+<!--Version: 2-->
+<!--Creator: Torque X Builder-->
+<TorqueSceneData>
+    <Version>1.0</Version>
+    <SceneData>
+        <ObjectTypeDeclaration>
+            <LockTypes>true</LockTypes>
+            <ObjectTypes>
+                <string>t2dScrollerType</string>
+                <string>t2dSpriteType</string>
+                <string>t2dAnimatedSpriteType</string>
+                <string>t2dParticleEffectType</string>
+                <string>t2dTileLayerType</string>
+                <string>TileType</string>
+            </ObjectTypes>
+        </ObjectTypeDeclaration>
+        <T2DSceneGraph name="DefaultSceneGraph">
+            <T2DSceneContainer>
+                <BinSize>20</BinSize>
+                <BinCount>256</BinCount>
+            </T2DSceneContainer>
+        </T2DSceneGraph>
+        <Camera2D name="Camera">
+            <CenterPosition>
+                <X>-30.000000</X>
+                <Y>0.678733</Y>
+            </CenterPosition>
+            <Extent>
+                <X>73.604836</X>
+                <Y>55.203625</Y>
+            </Extent>
+            <UseCameraWorldLimits>false</UseCameraWorldLimits>
+        </Camera2D>
+    </SceneData>
+    <Materials>
+        <SimpleMaterial name="idlesheetFSfinaMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/idlesheetFSfina.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>4</CellCountX>
+                <CellCountY>4</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="runsheetfinalFfixMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/runsheetfinalFfix.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>9</CellCountX>
+                <CellCountY>1</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="jumpsheet1Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/jumpsheet1.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>4</CellCountX>
+                <CellCountY>1</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="slidesheetMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/slidesheet.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>2</CellCountX>
+                <CellCountY>1</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="vinesMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/vines.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="undergrowthLowMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/undergrowthLow.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="UndergrowthHighMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/UndergrowthHigh.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="undergrowth2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/undergrowth2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="undergrowthMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/undergrowth.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="treesfrontMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/treesfront.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="treesbackMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/treesback.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="treealone1Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/treealone1.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="shadowleavesMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/shadowleaves.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="particle_effect_snowMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/particle_effect_snow.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="particle_effect_candleMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/particle_effect_candle.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="mountiain1Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/mountiain1.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="mountain2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/mountain2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="mountain1ScrollerMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/mountain1Scroller.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="moss2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/moss2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="mossMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/moss.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1grounddropedgeright2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1grounddropedgeright2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1grounddropedgeleft2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1grounddropedgeleft2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1groundcornerright2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1groundcornerright2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1groundcornerleft2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1groundcornerleft2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1ground2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1ground2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1earth2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1earth2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1dropedgeright2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1dropedgeright2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1dropedgeleft2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1dropedgeleft2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1diagtopright2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1diagtopright2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1diagtopleft2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1diagtopleft2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1diagright2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1diagright2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1diagmiddleright2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1diagmiddleright2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1diagmiddleleft2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1diagmiddleleft2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1diagleft2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1diagleft2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1clifffacewrootright2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1clifffacewrootright2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1clifffacewrootleft2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1clifffacewrootleft2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1clifffacenorootright2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1clifffacenorootright2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1clifffacenorootleft2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1clifffacenorootleft2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1clifffacebottomrightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1clifffacebottomright.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1clifffacebottomleftMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1clifffacebottomleft.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1bottomgroundright2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1bottomgroundright2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Lv1bottomgroundleft2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Lv1bottomgroundleft2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="lightbreaksMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/lightbreaks.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="leaves3Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/leaves3.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="leaves2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/leaves2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="leavesMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/leaves.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Leaf1Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Leaf1.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="hillvillageMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/hillvillage.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="fungispurpleLight2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/fungispurpleLight2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="fungispurpleLightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/fungispurpleLight.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="fungispinkLight2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/fungispinkLight2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="fungisbluepatchLightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/fungisbluepatchLight.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="fungisblueLightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/fungisblueLight.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="frontGrowthLightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/frontGrowthLight.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="frontGrowthDarkMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/frontGrowthDark.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="ForestBGMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/ForestBG.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="floatingplatformMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/floatingplatform.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="cloud5Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/cloud5.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="cloud4Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/cloud4.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="cloud3Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/cloud3.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="cloud1Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/cloud1.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="cloud2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/cloud2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="canopy3LightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/canopy3Light.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="canopycurved1Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/canopycurved1.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="canopy3darkMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/canopy3dark.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="canopy3Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/canopy3.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="canopy2LightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/canopy2Light.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="canopy2DarkMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/canopy2Dark.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="canopy2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/canopy2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="bigtreemoss2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/bigtreemoss2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="bigtree1Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/bigtree1.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="GGLogoMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/GGLogo.png</TextureFilename>
+            <IsTranslucent>true</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="canopy1lightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/canopy1light.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="frontGrowthMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/frontGrowth.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="mountain1Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/mountiain1.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="canopy1Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/canopy1.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="attack1Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/attack1.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>4</CellCountX>
+                <CellCountY>1</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="jumpattack1Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/jumpattack1.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>4</CellCountX>
+                <CellCountY>1</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="SpitterAttackLeftMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/SpitterAttackLeft.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>9</CellCountX>
+                <CellCountY>3</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="SpitterAttackRightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/SpitterAttackRight.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>9</CellCountX>
+                <CellCountY>3</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="SpitterDeathLeftMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/SpitterDeathLeft.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>7</CellCountX>
+                <CellCountY>3</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="SpitterDeathRightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/SpitterDeathRight.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>7</CellCountX>
+                <CellCountY>3</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="SpitterHideSwitchLeftMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/SpitterHideSwitchLeft.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>7</CellCountX>
+                <CellCountY>2</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="SpitterHideSwitchRightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/SpitterHideSwitchRight.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>7</CellCountX>
+                <CellCountY>2</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="SpitterpopupleftMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Spitterpopupleft.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>7</CellCountX>
+                <CellCountY>2</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="SpitterpopuprightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Spitterpopupright.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>7</CellCountX>
+                <CellCountY>2</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="bomberhopMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/bomberhop.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>5</CellCountX>
+                <CellCountY>3</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="bomberidleMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/bomberidle.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>5</CellCountX>
+                <CellCountY>2</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="bombersplodeMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/bombersplode.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>6</CellCountX>
+                <CellCountY>2</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="GruntWalkMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/GruntWalk.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>6</CellCountX>
+                <CellCountY>2</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="Grunt_AttackMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Grunt_Attack.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>5</CellCountX>
+                <CellCountY>3</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="Grunt_DeathMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Grunt_Death.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>6</CellCountX>
+                <CellCountY>3</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="bgtreesfrontgreenMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/bgtreesfrontgreen.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="bgtreesmiddlegreenMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/bgtreesmiddlegreen.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="bgtreesbackgreenMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/bgtreesbackgreen.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="HulkBlockSpriteBuildMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/HulkBlockSpriteBuild.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>5</CellCountX>
+                <CellCountY>5</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="HulkDeathSpriteBuildMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/HulkDeathSpriteBuild.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>8</CellCountX>
+                <CellCountY>8</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="HulkIdleSpriteBuildMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/HulkIdleSpriteBuild.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>6</CellCountX>
+                <CellCountY>4</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="HulkMeleeSpriteBuildMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/HulkMeleeSpriteBuild.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>6</CellCountX>
+                <CellCountY>5</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="HulkRangedSpriteBuildMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/HulkRangedSpriteBuild.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>8</CellCountX>
+                <CellCountY>4</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="HulkWalkSpriteBuildMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/HulkWalkSpriteBuild.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>7</CellCountX>
+                <CellCountY>8</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="skyMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/sky.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="tigertrapMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/tigertrap.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="bgtreesmiddleMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/bgtreesmiddle.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="bgtreesfrontMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/bgtreesfront.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="bgtreesbackMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/bgtreesback.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="forestbackdropMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/forestbackdrop.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="HulkBlockSpriteBuildMedMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/HulkBlockSpriteBuildMed.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>5</CellCountX>
+                <CellCountY>5</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="fungisPinkLightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/fungisPinkLight.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="fungisPinkMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/fungisPink.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="buildexample2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/buildexample2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="Grunt_AttackRevMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Grunt_AttackRev.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>5</CellCountX>
+                <CellCountY>3</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="GruntWalkRevMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/GruntWalkRev.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>6</CellCountX>
+                <CellCountY>2</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="Grunt_DeathRevMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Grunt_DeathRev.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>6</CellCountX>
+                <CellCountY>3</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+    </Materials>
+    <Objects>
+        <T2DCollisionMaterial name="DefaultPhysicsMaterial">
+            <Restitution>1</Restitution>
+            <Friction>0.3</Friction>
+            <Priority>0</Priority>
+        </T2DCollisionMaterial>
+        <T2DCollisionMaterial name="DefaultCollisionMaterial">
+            <Restitution>1</Restitution>
+            <Friction>0.3</Friction>
+            <Priority>0</Priority>
+        </T2DCollisionMaterial>
+        <AnimationData name="idlesheetFSfinaAnimation">
+            <Material nameRef="idlesheetFSfinaMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15</AnimationFrames>
+            <AnimationDuration>2</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="runsheetfinalFfixAnimation">
+            <Material nameRef="runsheetfinalFfixMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8</AnimationFrames>
+            <AnimationDuration>0.9</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="jumpsheet1Animation">
+            <Material nameRef="jumpsheet1Material" />
+            <AnimationFrames>0 1</AnimationFrames>
+            <AnimationDuration>2</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="fallAnimation1">
+            <Material nameRef="jumpsheet1Material" />
+            <AnimationFrames>1</AnimationFrames>
+            <AnimationDuration>0.0333333</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="slidesheetAnimation">
+            <Material nameRef="slidesheetMaterial" />
+            <AnimationFrames>0 1</AnimationFrames>
+            <AnimationDuration>2</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="attack1Animation">
+            <Material nameRef="attack1Material" />
+            <AnimationFrames>0 1 2 3</AnimationFrames>
+            <AnimationDuration>0.4</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="jumpattack1Animation">
+            <Material nameRef="jumpattack1Material" />
+            <AnimationFrames>0 1 2 3</AnimationFrames>
+            <AnimationDuration>0.4</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="SpitterAttackLeftAnimation">
+            <Material nameRef="SpitterAttackLeftMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26</AnimationFrames>
+            <AnimationDuration>0.9</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="SpitterAttackRightAnimation">
+            <Material nameRef="SpitterAttackRightMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26</AnimationFrames>
+            <AnimationDuration>0.9</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="SpitterDeathLeftAnimation">
+            <Material nameRef="SpitterDeathLeftMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20</AnimationFrames>
+            <AnimationDuration>0.7</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="SpitterDeathRightAnimation">
+            <Material nameRef="SpitterDeathRightMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20</AnimationFrames>
+            <AnimationDuration>0.7</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="SpitterHideSwitchLeftAnimation">
+            <Material nameRef="SpitterHideSwitchLeftMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13</AnimationFrames>
+            <AnimationDuration>0.466667</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="SpitterHideSwitchRightAnimation">
+            <Material nameRef="SpitterHideSwitchRightMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13</AnimationFrames>
+            <AnimationDuration>0.466667</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="SpitterpopupleftAnimation">
+            <Material nameRef="SpitterpopupleftMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13</AnimationFrames>
+            <AnimationDuration>0.466667</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="SpitterpopuprightAnimation">
+            <Material nameRef="SpitterpopuprightMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13</AnimationFrames>
+            <AnimationDuration>0.466667</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="SpitterLeftIdleAnimation">
+            <Material nameRef="SpitterHideSwitchLeftMaterial" />
+            <AnimationFrames>13</AnimationFrames>
+            <AnimationDuration>0.0333333</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="SpitterRightIdleAnimation">
+            <Material nameRef="SpitterHideSwitchRightMaterial" />
+            <AnimationFrames>13</AnimationFrames>
+            <AnimationDuration>0.0333333</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="bomberhopAnimation">
+            <Material nameRef="bomberhopMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14</AnimationFrames>
+            <AnimationDuration>0.75</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="bomberidleAnimation">
+            <Material nameRef="bomberidleMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9</AnimationFrames>
+            <AnimationDuration>0.5</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="bombersplodeAnimation">
+            <Material nameRef="bombersplodeMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11</AnimationFrames>
+            <AnimationDuration>0.6</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="Grunt_WalkAnimation">
+            <Material nameRef="GruntWalkMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11</AnimationFrames>
+            <AnimationDuration>0.6</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="Grunt_AttackAnimation">
+            <Material nameRef="Grunt_AttackMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14</AnimationFrames>
+            <AnimationDuration>0.5</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="Grunt_DeathAnimation">
+            <Material nameRef="Grunt_DeathMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17</AnimationFrames>
+            <AnimationDuration>0.9</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="Grunt_IdleAnimation">
+            <Material nameRef="Grunt_AttackMaterial" />
+            <AnimationFrames>12 13 14</AnimationFrames>
+            <AnimationDuration>0.5</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="attack1Animation1">
+            <Material nameRef="attack1Material" />
+            <AnimationFrames>0 1 2 3</AnimationFrames>
+            <AnimationDuration>0.5</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="HulkBlockSpriteBuildAnimation">
+            <Material nameRef="HulkBlockSpriteBuildMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</AnimationFrames>
+            <AnimationDuration>0.833333</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="HulkDeathSpriteBuildAnimation">
+            <Material nameRef="HulkDeathSpriteBuildMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63</AnimationFrames>
+            <AnimationDuration>2.13323</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="HulkIdleSpriteBuildAnimation">
+            <Material nameRef="HulkIdleSpriteBuildMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21</AnimationFrames>
+            <AnimationDuration>0.733333</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="HulkMeleeSpriteBuildAnimation">
+            <Material nameRef="HulkMeleeSpriteBuildMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29</AnimationFrames>
+            <AnimationDuration>1</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="HulkRangedSpriteBuildAnimation">
+            <Material nameRef="HulkRangedSpriteBuildMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30</AnimationFrames>
+            <AnimationDuration>1.03333</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="HulkWalkSpriteBuildAnimation">
+            <Material nameRef="HulkWalkSpriteBuildMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55</AnimationFrames>
+            <AnimationDuration>1.86658</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="GruntWalkAnimation">
+            <Material nameRef="GruntWalkMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11</AnimationFrames>
+            <AnimationDuration>0.6</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="HulkBlockSpriteBuildMedAnimation">
+            <Material nameRef="HulkBlockSpriteBuildMedMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</AnimationFrames>
+            <AnimationDuration>0.833333</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="HulkDeadBodyAnimation">
+            <Material nameRef="HulkDeathSpriteBuildMaterial" />
+            <AnimationFrames>63</AnimationFrames>
+            <AnimationDuration>1</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="Grunt_AttackRevAnimation">
+            <Material nameRef="Grunt_AttackRevMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14</AnimationFrames>
+            <AnimationDuration>0.5</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="GruntWalkRevAnimation">
+            <Material nameRef="GruntWalkRevMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11</AnimationFrames>
+            <AnimationDuration>0.4</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="Grunt_DeathRevAnimation">
+            <Material nameRef="Grunt_DeathRevMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17</AnimationFrames>
+            <AnimationDuration>0.6</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.89867</X>
+                                    <Y>-0.74857</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.89333</X>
+                                    <Y>-0.64571</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.86667</X>
+                                    <Y>0.72571</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.88533</X>
+                                    <Y>0.70286</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultPhysicsMaterial" />
+                </T2DCollisionComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <OneWayPlatformComponent type="GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent">
+                    <CanClimbThrough>false</CanClimbThrough>
+                    <SurfaceForce>0.0</SurfaceForce>
+                </OneWayPlatformComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>4</Layer>
+            <Size>
+                <X>63.753</X>
+                <Y>10.306</Y>
+            </Size>
+            <Position>
+                <X>-43.124</X>
+                <Y>19.909</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="Lv1earth2Material" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.89867</X>
+                                    <Y>-0.74857</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.89333</X>
+                                    <Y>-0.64571</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.86667</X>
+                                    <Y>0.72571</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.88533</X>
+                                    <Y>0.70286</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultPhysicsMaterial" />
+                </T2DCollisionComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <OneWayPlatformComponent type="GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent">
+                    <CanClimbThrough>false</CanClimbThrough>
+                    <SurfaceForce>0.0</SurfaceForce>
+                </OneWayPlatformComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>4</Layer>
+            <Size>
+                <X>43.971</X>
+                <Y>10.306</Y>
+            </Size>
+            <Position>
+                <X>0.000</X>
+                <Y>0.000</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="Lv1earth2Material" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.89867</X>
+                                    <Y>-0.74857</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.89333</X>
+                                    <Y>-0.64571</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.86667</X>
+                                    <Y>0.72571</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.88533</X>
+                                    <Y>0.70286</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultPhysicsMaterial" />
+                </T2DCollisionComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <OneWayPlatformComponent type="GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent">
+                    <CanClimbThrough>false</CanClimbThrough>
+                    <SurfaceForce>0.0</SurfaceForce>
+                </OneWayPlatformComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>4</Layer>
+            <Size>
+                <X>43.971</X>
+                <Y>10.306</Y>
+            </Size>
+            <Position>
+                <X>31.369</X>
+                <Y>19.909</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="Lv1earth2Material" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.89867</X>
+                                    <Y>-0.74857</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.89333</X>
+                                    <Y>-0.64571</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.86667</X>
+                                    <Y>0.72571</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.88533</X>
+                                    <Y>0.70286</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultPhysicsMaterial" />
+                </T2DCollisionComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <OneWayPlatformComponent type="GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent">
+                    <CanClimbThrough>false</CanClimbThrough>
+                    <SurfaceForce>0.0</SurfaceForce>
+                </OneWayPlatformComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>4</Layer>
+            <Size>
+                <X>43.971</X>
+                <Y>10.306</Y>
+            </Size>
+            <Position>
+                <X>31.369</X>
+                <Y>-23.091</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="Lv1earth2Material" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.89867</X>
+                                    <Y>-0.74857</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.89333</X>
+                                    <Y>-0.64571</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.86667</X>
+                                    <Y>0.72571</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.88533</X>
+                                    <Y>0.70286</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultPhysicsMaterial" />
+                </T2DCollisionComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <OneWayPlatformComponent type="GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent">
+                    <CanClimbThrough>false</CanClimbThrough>
+                    <SurfaceForce>0.0</SurfaceForce>
+                </OneWayPlatformComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>4</Layer>
+            <Size>
+                <X>43.971</X>
+                <Y>10.306</Y>
+            </Size>
+            <Position>
+                <X>-33.233</X>
+                <Y>-23.091</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="Lv1earth2Material" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.89867</X>
+                                    <Y>-0.74857</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.89333</X>
+                                    <Y>-0.64571</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.86667</X>
+                                    <Y>0.72571</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.88533</X>
+                                    <Y>0.70286</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultPhysicsMaterial" />
+                </T2DCollisionComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <OneWayPlatformComponent type="GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent">
+                    <CanClimbThrough>false</CanClimbThrough>
+                    <SurfaceForce>0.0</SurfaceForce>
+                </OneWayPlatformComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>4</Layer>
+            <Size>
+                <X>43.971</X>
+                <Y>10.306</Y>
+            </Size>
+            <Position>
+                <X>-0.642</X>
+                <Y>19.847</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="Lv1earth2Material" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <AnimatedSprite name="SpitterTemplate">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DLinkPointComponent type="GarageGames.Torque.T2D.T2DLinkPointComponent">
+                    <LinkPoints>
+                        <LinkPoint type="GarageGames.Torque.T2D.T2DLinkPointComponent+XmlLinkPoint">
+                            <Name>WeaponLinkPoint</Name>
+                            <Position>
+                                <X>-0.378238</X>
+                                <Y>-0.044041</Y>
+                            </Position>
+                            <Rotation>0.0</Rotation>
+                        </LinkPoint>
+                    </LinkPoints>
+                </T2DLinkPointComponent>
+                <SpitterActorComponent type="PlatformerStarter.Enemies.SpitterActorComponent">
+                    <AttackLeftAnim nameRef="SpitterAttackLeftAnimation" />
+                    <AttackRightAnim nameRef="SpitterAttackRightAnimation" />
+                    <AlertLeftAnim nameRef="SpitterpopupleftAnimation" />
+                    <AlertRightAnim nameRef="SpitterpopuprightAnimation" />
+                    <HideLeftAnim nameRef="SpitterHideSwitchLeftAnimation" />
+                    <HideRightAnim nameRef="SpitterHideSwitchRightAnimation" />
+                    <LeftIdleAnim nameRef="SpitterLeftIdleAnimation" />
+                    <RightIdleAnim nameRef="SpitterRightIdleAnimation" />
+                    <WeakSpotTemplate nameRef="SpitterWeakSpotTemplate" />
+                    <WeaponTemplate nameRef="SpitterWeaponTemplate" />
+                    <CoolDown>500</CoolDown>
+                    <AIComponent>
+                        <AIRangedComponent type="PlatformerStarter.Enemies.AIComponents.AIRangedComponent">
+                            <AttackDist>10.000</AttackDist>
+                            <AlertDist>40.000</AlertDist>
+                            <Attacks>true</Attacks>
+                        </AIRangedComponent>
+                    </AIComponent>
+                    <MaxVelocity>
+                        <X>200</X>
+                        <Y>200</Y>
+                    </MaxVelocity>
+                    <Gravity>3</Gravity>
+                    <MaxMoveSpeed>0.000</MaxMoveSpeed>
+                    <GroundAccel>0.000</GroundAccel>
+                    <GroundDecel>0.000</GroundDecel>
+                    <AirAccel>0.000</AirAccel>
+                    <AirDecel>0.000</AirDecel>
+                    <JumpForce>0.000</JumpForce>
+                    <JumpTimeThreshold>0.000</JumpTimeThreshold>
+                    <AllowJumpDown>false</AllowJumpDown>
+                    <JumpDownTimeout>0.000</JumpDownTimeout>
+                    <ClimbUpSpeed>0.000</ClimbUpSpeed>
+                    <ClimbDownSpeed>0.000</ClimbDownSpeed>
+                    <ClimbTimeout>0.000</ClimbTimeout>
+                    <ClimbJumpCoefficient>0.000</ClimbJumpCoefficient>
+                    <GroundCheckYThreshold>0.300</GroundCheckYThreshold>
+                    <GroundYBuffer>0.000</GroundYBuffer>
+                    <LadderAttachXThreshold>0.000</LadderAttachXThreshold>
+                    <MaxGroundNormalY>0.000</MaxGroundNormalY>
+                    <MaxHealth>10.000</MaxHealth>
+                    <Armor>0</Armor>
+                    <Lives>1</Lives>
+                    <DamageTimeout>0.75</DamageTimeout>
+                    <AllowRespawn>false</AllowRespawn>
+                    <ScaleRunAnimBySpeed>false</ScaleRunAnimBySpeed>
+                    <MinRunAnimSpeed>0.25</MinRunAnimSpeed>
+                    <DieAnim nameRef="SpitterDeathRightAnimation" />
+                </SpitterActorComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.29793</X>
+                                    <Y>0.96373</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.29016</X>
+                                    <Y>0.90155</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.38601</X>
+                                    <Y>0.89896</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.39119</X>
+                                    <Y>0.95855</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>true</RenderCollisionBounds>
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dAnimatedSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>27.000</X>
+                <Y>27.000</Y>
+            </Size>
+            <Position>
+                <X>-31.500</X>
+                <Y>56.500</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>false</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <AnimationData nameRef="SpitterLeftIdleAnimation" />
+            <StartFrame>0</StartFrame>
+            <RandomStart>false</RandomStart>
+            <PlayOnLoad>true</PlayOnLoad>
+            <RemoveOnFinished>false</RemoveOnFinished>
+        </AnimatedSprite>
+        <T2DSceneObject name="SpitterWeaponTemplate">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-1.00000</X>
+                                    <Y>-1.00000</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>1.00000</X>
+                                    <Y>-1.00000</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>1.00000</X>
+                                    <Y>1.00000</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-1.00000</X>
+                                    <Y>1.00000</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>true</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+                <WeaponComponent type="PlatformerStarter.WeaponComponent">
+                    <Damage>10</Damage>
+                    <ShotSpeed>30.000</ShotSpeed>
+                    <ProjectileTemplate nameRef="SpitProjectile" />
+                    <LinkPointName></LinkPointName>
+                </WeaponComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>5.000</X>
+                <Y>5.000</Y>
+            </Size>
+            <Position>
+                <X>-5.232</X>
+                <Y>31.097</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>false</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
+        <T2DSceneObject name="SpitterWeakSpotTemplate">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DLinkPointComponent type="GarageGames.Torque.T2D.T2DLinkPointComponent">
+                    <LinkPoints>
+                        <LinkPoint type="GarageGames.Torque.T2D.T2DLinkPointComponent+XmlLinkPoint">
+                            <Name>LinkPoint1</Name>
+                            <Position>
+                                <X>-0.383150</X>
+                                <Y>-0.129046</Y>
+                            </Position>
+                            <Rotation>0.0</Rotation>
+                        </LinkPoint>
+                    </LinkPoints>
+                </T2DLinkPointComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.01818</X>
+                                    <Y>0.88083</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.35325</X>
+                                    <Y>0.37565</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.02338</X>
+                                    <Y>-0.21503</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.23896</X>
+                                    <Y>0.36528</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>27.019</X>
+                <Y>27.102</Y>
+            </Size>
+            <Position>
+                <X>6.491</X>
+                <Y>63.551</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
+        <AnimatedSprite name="BomberTemplate">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <WeaponComponent type="PlatformerStarter.WeaponComponent">
+                    <Damage>50</Damage>
+                    <ShotSpeed>30.000</ShotSpeed>
+                    <ProjectileTemplate nameRef="SpitProjectile" />
+                    <LinkPointName></LinkPointName>
+                </WeaponComponent>
+                <BomberActorComponent type="PlatformerStarter.Enemies.ActorComponents.BomberActorComponent">
+                    <AttackAnim nameRef="bombersplodeAnimation" />
+                    <AIComponent>
+                        <AIKamikazeeComponent type="PlatformerStarter.Enemies.AIComponents.AIKamikazeeComponent">
+                            <AttackDist>15.000</AttackDist>
+                            <AlertDist>40.000</AlertDist>
+                            <Attacks>true</Attacks>
+                        </AIKamikazeeComponent>
+                    </AIComponent>
+                    <MaxVelocity>
+                        <X>200</X>
+                        <Y>200</Y>
+                    </MaxVelocity>
+                    <Gravity>3</Gravity>
+                    <MaxMoveSpeed>20.000</MaxMoveSpeed>
+                    <GroundAccel>3</GroundAccel>
+                    <GroundDecel>5</GroundDecel>
+                    <AirAccel>2</AirAccel>
+                    <AirDecel>0.5</AirDecel>
+                    <JumpForce>135</JumpForce>
+                    <JumpTimeThreshold>0.1</JumpTimeThreshold>
+                    <AllowJumpDown>false</AllowJumpDown>
+                    <JumpDownTimeout>0.18</JumpDownTimeout>
+                    <ClimbUpSpeed>25</ClimbUpSpeed>
+                    <ClimbDownSpeed>45</ClimbDownSpeed>
+                    <ClimbTimeout>0.25</ClimbTimeout>
+                    <ClimbJumpCoefficient>0.5</ClimbJumpCoefficient>
+                    <GroundCheckYThreshold>0.3</GroundCheckYThreshold>
+                    <GroundYBuffer>0.15</GroundYBuffer>
+                    <LadderAttachXThreshold>1</LadderAttachXThreshold>
+                    <MaxGroundNormalY>-0.1</MaxGroundNormalY>
+                    <MaxHealth>100</MaxHealth>
+                    <Armor>0</Armor>
+                    <Lives>10</Lives>
+                    <DamageTimeout>0.75</DamageTimeout>
+                    <AllowRespawn>false</AllowRespawn>
+                    <IdleAnim nameRef="bomberidleAnimation" />
+                    <RunAnim nameRef="bomberhopAnimation" />
+                    <ScaleRunAnimBySpeed>false</ScaleRunAnimBySpeed>
+                    <MinRunAnimSpeed>0.25</MinRunAnimSpeed>
+                </BomberActorComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.00225</X>
+                                    <Y>0.48768</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.22247</X>
+                                    <Y>0.11002</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.03820</X>
+                                    <Y>-0.15599</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.35730</X>
+                                    <Y>0.15271</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dAnimatedSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>21.925</X>
+                <Y>30.000</Y>
+            </Size>
+            <Position>
+                <X>75.963</X>
+                <Y>61.814</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <AnimationData nameRef="bomberidleAnimation" />
+            <StartFrame>0</StartFrame>
+            <RandomStart>false</RandomStart>
+            <PlayOnLoad>true</PlayOnLoad>
+            <RemoveOnFinished>false</RemoveOnFinished>
+        </AnimatedSprite>
+        <T2DSceneObject name="punch">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <AttackCollisionComponent type="PlatformerStarter.AttackCollisionComponent">
+                    <TargetObject nameRef="Amanda" />
+                    <MountLPName>PunchLP</MountLPName>
+                    <MountFrame>1</MountFrame>
+                    <DismountFrame>2</DismountFrame>
+                    <Damage>10</Damage>
+                </AttackCollisionComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.61829</X>
+                                    <Y>0.09492</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.48708</X>
+                                    <Y>0.76600</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.48708</X>
+                                    <Y>-0.52318</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>true</RenderCollisionBounds>
+                    <OnCollision valueOf="PlatformerStarter.AttackCollisionComponent.PunchCollision" />
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.ClampCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>6.862</X>
+                <Y>6.186</Y>
+            </Size>
+            <Position>
+                <X>-29.544</X>
+                <Y>33.093</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
+        <AnimatedSprite name="Amanda">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DLinkPointComponent type="GarageGames.Torque.T2D.T2DLinkPointComponent">
+                    <LinkPoints>
+                        <LinkPoint type="GarageGames.Torque.T2D.T2DLinkPointComponent+XmlLinkPoint">
+                            <Name>PunchLP</Name>
+                            <Position>
+                                <X>0.548654</X>
+                                <Y>0.080268</Y>
+                            </Position>
+                            <Rotation>0.0</Rotation>
+                        </LinkPoint>
+                    </LinkPoints>
+                </T2DLinkPointComponent>
+                <PlayerActorComponent type="PlatformerStarter.PlayerActorComponent">
+                    <AllowGlide>true</AllowGlide>
+                    <MaxGlideFallSpeed>40</MaxGlideFallSpeed>
+                    <PunchCoolDown>150.000</PunchCoolDown>
+                    <PunchAnim nameRef="attack1Animation" />
+                    <JumpPunchAnim nameRef="jumpattack1Animation" />
+                    <MaxVelocity>
+                        <X>200</X>
+                        <Y>200</Y>
+                    </MaxVelocity>
+                    <Gravity>3</Gravity>
+                    <MaxMoveSpeed>65</MaxMoveSpeed>
+                    <GroundAccel>3</GroundAccel>
+                    <GroundDecel>5</GroundDecel>
+                    <AirAccel>2</AirAccel>
+                    <AirDecel>0.5</AirDecel>
+                    <JumpForce>135</JumpForce>
+                    <JumpTimeThreshold>0.1</JumpTimeThreshold>
+                    <AllowJumpDown>true</AllowJumpDown>
+                    <JumpDownTimeout>0.18</JumpDownTimeout>
+                    <ClimbUpSpeed>25</ClimbUpSpeed>
+                    <ClimbDownSpeed>45</ClimbDownSpeed>
+                    <ClimbTimeout>0.25</ClimbTimeout>
+                    <ClimbJumpCoefficient>0.5</ClimbJumpCoefficient>
+                    <GroundCheckYThreshold>0.3</GroundCheckYThreshold>
+                    <GroundYBuffer>0.15</GroundYBuffer>
+                    <LadderAttachXThreshold>1</LadderAttachXThreshold>
+                    <MaxGroundNormalY>-0.1</MaxGroundNormalY>
+                    <MaxHealth>100</MaxHealth>
+                    <Armor>0</Armor>
+                    <Lives>10</Lives>
+                    <DamageTimeout>0.75</DamageTimeout>
+                    <AllowRespawn>false</AllowRespawn>
+                    <IdleAnim nameRef="idlesheetFSfinaAnimation" />
+                    <JumpAnim nameRef="jumpsheet1Animation" />
+                    <FallAnim nameRef="fallAnimation1" />
+                    <RunAnim nameRef="runsheetfinalFfixAnimation" />
+                    <ScaleRunAnimBySpeed>true</ScaleRunAnimBySpeed>
+                    <MinRunAnimSpeed>0.25</MinRunAnimSpeed>
+                    <RunJumpAnim nameRef="jumpsheet1Animation" />
+                    <RunFallAnim nameRef="fallAnimation1" />
+                    <SlideAnim nameRef="slidesheetAnimation" />
+                    <ActionAnim nameRef="attack1Animation" />
+                </PlayerActorComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.09840</X>
+                                    <Y>-0.32472</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.21281</X>
+                                    <Y>-0.32841</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.18993</X>
+                                    <Y>0.46125</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.01602</X>
+                                    <Y>0.84133</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.11670</X>
+                                    <Y>0.46125</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dAnimatedSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>19.385</X>
+                <Y>24.000</Y>
+            </Size>
+            <Position>
+                <X>-35.307</X>
+                <Y>3.000</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <AnimationData nameRef="idlesheetFSfinaAnimation" />
+            <StartFrame>0</StartFrame>
+            <RandomStart>false</RandomStart>
+            <PlayOnLoad>true</PlayOnLoad>
+            <RemoveOnFinished>false</RemoveOnFinished>
+        </AnimatedSprite>
+        <StaticSprite name="SpitProjectile">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.01689</X>
+                                    <Y>0.94257</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.92905</X>
+                                    <Y>-0.00676</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.03041</X>
+                                    <Y>-0.94257</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.96622</X>
+                                    <Y>0.02027</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>5.000</X>
+                <Y>5.000</Y>
+            </Size>
+            <Position>
+                <X>7.500</X>
+                <Y>32.500</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>false</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="GGLogoMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <T2DSpawnObject>
+            <SpawnTemplate nameRef="BomberTemplate" />
+            <Position>
+                <X>30.963</X>
+                <Y>7.160</Y>
+            </Position>
+            <Size>
+                <X>21.925</X>
+                <Y>30.000</Y>
+            </Size>
+            <Rotation>0</Rotation>
+            <SpawnOnce>false</SpawnOnce>
+            <SpawnEnabled>true</SpawnEnabled>
+            <MinSpawnTime>10000.000</MinSpawnTime>
+            <MaxSpawnTime>12000.000</MaxSpawnTime>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+        </T2DSpawnObject>
+        <T2DSpawnObject>
+            <SpawnTemplate nameRef="SpitterTemplate" />
+            <Position>
+                <X>-4.738</X>
+                <Y>-18.500</Y>
+            </Position>
+            <Size>
+                <X>27.000</X>
+                <Y>27.000</Y>
+            </Size>
+            <Rotation>0</Rotation>
+            <SpawnOnce>true</SpawnOnce>
+            <SpawnEnabled>true</SpawnEnabled>
+            <MinSpawnTime>800</MinSpawnTime>
+            <MaxSpawnTime>1200</MaxSpawnTime>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+        </T2DSpawnObject>
+        <T2DSpawnObject>
+            <SpawnTemplate nameRef="SpitterTemplate" />
+            <Position>
+                <X>34.549</X>
+                <Y>-40.216</Y>
+            </Position>
+            <Size>
+                <X>27.000</X>
+                <Y>27.000</Y>
+            </Size>
+            <Rotation>0</Rotation>
+            <SpawnOnce>true</SpawnOnce>
+            <SpawnEnabled>true</SpawnEnabled>
+            <MinSpawnTime>800</MinSpawnTime>
+            <MaxSpawnTime>1200</MaxSpawnTime>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+        </T2DSpawnObject>
+        <T2DSpawnObject>
+            <SpawnTemplate nameRef="SpitterTemplate" />
+            <Position>
+                <X>-33.500</X>
+                <Y>-40.414</Y>
+            </Position>
+            <Size>
+                <X>27.000</X>
+                <Y>27.000</Y>
+            </Size>
+            <Rotation>0</Rotation>
+            <SpawnOnce>true</SpawnOnce>
+            <SpawnEnabled>true</SpawnEnabled>
+            <MinSpawnTime>800</MinSpawnTime>
+            <MaxSpawnTime>1200</MaxSpawnTime>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+        </T2DSpawnObject>
+    </Objects>
+</TorqueSceneData>

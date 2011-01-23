@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!--Torque X Builder - http://www.garagegames.com-->
+<!--Type: TorqueXProject-->
+<!--Target: TGB-->
+<!--Version: 1-->
+<!--Creator: Torque X Builder-->
+<TorqueXProject>
+    <ProjectData>
+        <LastLevel>C:/Users/Dustin/Desktop/TheScarabGauntlet/TheScarabGauntlet/Game/data/levels/Untitled.txscene</LastLevel>
+        <StaticSprites>
+            <SimSet>
+                <canSaveDynamicFields>true</canSaveDynamicFields>
+                <internalName></internalName>
+            </SimSet>
+        </StaticSprites>
+        <Brushes>
+            <SimSet>
+                <canSaveDynamicFields>true</canSaveDynamicFields>
+                <internalName></internalName>
+            </SimSet>
+        </Brushes>
+    </ProjectData>
+</TorqueXProject>

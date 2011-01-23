@@ -1,0 +1,1874 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>images\crystal.png</Source>
+      <Name>images\crystal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\crystal.xnb</Output>
+      <Time>2010-06-05T15:18:52-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\lifebar.png</Source>
+      <Name>images\lifebar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\lifebar.xnb</Output>
+      <Time>2010-06-05T15:18:52-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\idlesheetFSfina.png</Source>
+      <Name>images\idlesheetFSfina</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\idlesheetFSfina.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\jumpsheet1.png</Source>
+      <Name>images\jumpsheet1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\jumpsheet1.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\runsheetfinalFfix.png</Source>
+      <Name>images\runsheetfinalFfix</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\runsheetfinalFfix.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\slidesheet.png</Source>
+      <Name>images\slidesheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\slidesheet.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\amandaswipefinalRS.png</Source>
+      <Name>images\amandaswipefinalRS</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\amandaswipefinalRS.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\amandaswipefinalS.png</Source>
+      <Name>images\amandaswipefinalS</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\amandaswipefinalS.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\attack1.png</Source>
+      <Name>images\attack1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\attack1.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\attack1R.png</Source>
+      <Name>images\attack1R</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\attack1R.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bigtree1.png</Source>
+      <Name>images\bigtree1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\bigtree1.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bigtreemoss2.png</Source>
+      <Name>images\bigtreemoss2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\bigtreemoss2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy1.png</Source>
+      <Name>images\canopy1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\canopy1.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy1dark.png</Source>
+      <Name>images\canopy1dark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\canopy1dark.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy1light.png</Source>
+      <Name>images\canopy1light</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\canopy1light.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy2.png</Source>
+      <Name>images\canopy2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\canopy2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy2Dark.png</Source>
+      <Name>images\canopy2Dark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\canopy2Dark.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy2Light.png</Source>
+      <Name>images\canopy2Light</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\canopy2Light.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy3.png</Source>
+      <Name>images\canopy3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\canopy3.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy3dark.png</Source>
+      <Name>images\canopy3dark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\canopy3dark.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy3Light.png</Source>
+      <Name>images\canopy3Light</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\canopy3Light.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopycurved1.png</Source>
+      <Name>images\canopycurved1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\canopycurved1.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\cloud1.png</Source>
+      <Name>images\cloud1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\cloud1.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\cloud2.png</Source>
+      <Name>images\cloud2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\cloud2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\cloud3.png</Source>
+      <Name>images\cloud3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\cloud3.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\cloud4.png</Source>
+      <Name>images\cloud4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\cloud4.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\cloud5.png</Source>
+      <Name>images\cloud5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\cloud5.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\floatingplatform.png</Source>
+      <Name>images\floatingplatform</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\floatingplatform.xnb</Output>
+      <Time>2010-06-17T20:15:00-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\ForestBG.png</Source>
+      <Name>images\ForestBG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\ForestBG.xnb</Output>
+      <Time>2010-06-04T19:35:12.0193938-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\frontGrowth.png</Source>
+      <Name>images\frontGrowth</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\frontGrowth.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\frontGrowthDark.png</Source>
+      <Name>images\frontGrowthDark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\frontGrowthDark.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\frontGrowthLight.png</Source>
+      <Name>images\frontGrowthLight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\frontGrowthLight.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fungisblueLight.png</Source>
+      <Name>images\fungisblueLight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\fungisblueLight.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fungisbluepatchLight.png</Source>
+      <Name>images\fungisbluepatchLight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\fungisbluepatchLight.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fungispinkLight2.png</Source>
+      <Name>images\fungispinkLight2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\fungispinkLight2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fungispurpleLight.png</Source>
+      <Name>images\fungispurpleLight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\fungispurpleLight.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fungispurpleLight2.png</Source>
+      <Name>images\fungispurpleLight2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\fungispurpleLight2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\GGLogo.png</Source>
+      <Name>images\GGLogo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\GGLogo.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\glidesheetfinal.png</Source>
+      <Name>images\glidesheetfinal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\glidesheetfinal.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\hillvillage.png</Source>
+      <Name>images\hillvillage</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\hillvillage.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\idlesheet1S.png</Source>
+      <Name>images\idlesheet1S</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\idlesheet1S.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\idlesheetFS.png</Source>
+      <Name>images\idlesheetFS</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\idlesheetFS.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\jumpattack1.png</Source>
+      <Name>images\jumpattack1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\jumpattack1.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\jumpattack1R.png</Source>
+      <Name>images\jumpattack1R</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\jumpattack1R.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\jumpsheet1R.png</Source>
+      <Name>images\jumpsheet1R</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\jumpsheet1R.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\kushling.png</Source>
+      <Name>images\kushling</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\kushling.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Leaf1.png</Source>
+      <Name>images\Leaf1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Leaf1.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\leaves.png</Source>
+      <Name>images\leaves</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\leaves.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\leaves2.png</Source>
+      <Name>images\leaves2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\leaves2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\leaves3.png</Source>
+      <Name>images\leaves3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\leaves3.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\lightbreaks.png</Source>
+      <Name>images\lightbreaks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\lightbreaks.xnb</Output>
+      <Time>2010-06-04T19:35:12.9264457-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1bottomgroundleft2.png</Source>
+      <Name>images\Lv1bottomgroundleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1bottomgroundleft2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1bottomgroundright2.png</Source>
+      <Name>images\Lv1bottomgroundright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1bottomgroundright2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1clifffacebottomleft.png</Source>
+      <Name>images\Lv1clifffacebottomleft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1clifffacebottomleft.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1clifffacebottomright.png</Source>
+      <Name>images\Lv1clifffacebottomright</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1clifffacebottomright.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1clifffacenorootleft2.png</Source>
+      <Name>images\Lv1clifffacenorootleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1clifffacenorootleft2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1clifffacenorootright2.png</Source>
+      <Name>images\Lv1clifffacenorootright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1clifffacenorootright2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1clifffacewrootleft2.png</Source>
+      <Name>images\Lv1clifffacewrootleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1clifffacewrootleft2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1clifffacewrootright2.png</Source>
+      <Name>images\Lv1clifffacewrootright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1clifffacewrootright2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1diagleft2.png</Source>
+      <Name>images\Lv1diagleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1diagleft2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1diagmiddleleft2.png</Source>
+      <Name>images\Lv1diagmiddleleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1diagmiddleleft2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1diagmiddleright2.png</Source>
+      <Name>images\Lv1diagmiddleright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1diagmiddleright2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1diagright2.png</Source>
+      <Name>images\Lv1diagright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1diagright2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1diagtopleft2.png</Source>
+      <Name>images\Lv1diagtopleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1diagtopleft2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1diagtopright2.png</Source>
+      <Name>images\Lv1diagtopright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1diagtopright2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1dropedgeleft2.png</Source>
+      <Name>images\Lv1dropedgeleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1dropedgeleft2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1dropedgeright2.png</Source>
+      <Name>images\Lv1dropedgeright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1dropedgeright2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1earth2.png</Source>
+      <Name>images\Lv1earth2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1earth2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1ground2.png</Source>
+      <Name>images\Lv1ground2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1ground2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1groundcornerleft2.png</Source>
+      <Name>images\Lv1groundcornerleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1groundcornerleft2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1groundcornerright2.png</Source>
+      <Name>images\Lv1groundcornerright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1groundcornerright2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1grounddropedgeleft2.png</Source>
+      <Name>images\Lv1grounddropedgeleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1grounddropedgeleft2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1grounddropedgeright2.png</Source>
+      <Name>images\Lv1grounddropedgeright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Lv1grounddropedgeright2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\moss.png</Source>
+      <Name>images\moss</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\moss.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\moss2.png</Source>
+      <Name>images\moss2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\moss2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\mountain1Scroller.png</Source>
+      <Name>images\mountain1Scroller</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\mountain1Scroller.xnb</Output>
+      <Time>2010-06-04T19:35:12.040395-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\mountain2.png</Source>
+      <Name>images\mountain2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\mountain2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\mountiain1.png</Source>
+      <Name>images\mountiain1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\mountiain1.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\particle_effect_candle.png</Source>
+      <Name>images\particle_effect_candle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\particle_effect_candle.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\particle_effect_snow.png</Source>
+      <Name>images\particle_effect_snow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\particle_effect_snow.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\runsheetfinalF.png</Source>
+      <Name>images\runsheetfinalF</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\runsheetfinalF.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\runsheetfinalR.png</Source>
+      <Name>images\runsheetfinalR</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\runsheetfinalR.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\runsheetfinalR2.png</Source>
+      <Name>images\runsheetfinalR2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\runsheetfinalR2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\shadowleaves.png</Source>
+      <Name>images\shadowleaves</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\shadowleaves.xnb</Output>
+      <Time>2010-06-04T19:35:12.4314174-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\sky.png</Source>
+      <Name>images\sky</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\sky.xnb</Output>
+      <Time>2009-11-11T20:04:04-05:00</Time>
+    </Item>
+    <Item>
+      <Source>images\SpitterAttackLeft.png</Source>
+      <Name>images\SpitterAttackLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\SpitterAttackLeft.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\SpitterAttackRight.png</Source>
+      <Name>images\SpitterAttackRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\SpitterAttackRight.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\SpitterDeathLeft.png</Source>
+      <Name>images\SpitterDeathLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\SpitterDeathLeft.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\SpitterDeathRight.png</Source>
+      <Name>images\SpitterDeathRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\SpitterDeathRight.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\SpitterHideSwitchLeft.png</Source>
+      <Name>images\SpitterHideSwitchLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\SpitterHideSwitchLeft.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\SpitterHideSwitchRight.png</Source>
+      <Name>images\SpitterHideSwitchRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\SpitterHideSwitchRight.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Spitterpopupleft.png</Source>
+      <Name>images\Spitterpopupleft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Spitterpopupleft.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Spitterpopupright.png</Source>
+      <Name>images\Spitterpopupright</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Spitterpopupright.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templebottomcornerup.png</Source>
+      <Name>images\templebottomcornerup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\templebottomcornerup.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templediag.png</Source>
+      <Name>images\templediag</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\templediag.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templedown.png</Source>
+      <Name>images\templedown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\templedown.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templedowndiag.png</Source>
+      <Name>images\templedowndiag</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\templedowndiag.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templefloor.png</Source>
+      <Name>images\templefloor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\templefloor.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templeplatcorneright.png</Source>
+      <Name>images\templeplatcorneright</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\templeplatcorneright.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templeplatcornerleft.png</Source>
+      <Name>images\templeplatcornerleft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\templeplatcornerleft.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templeplatformfloor.png</Source>
+      <Name>images\templeplatformfloor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\templeplatformfloor.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templetopcornerleft.png</Source>
+      <Name>images\templetopcornerleft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\templetopcornerleft.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templetopcornerright.png</Source>
+      <Name>images\templetopcornerright</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\templetopcornerright.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templeup.png</Source>
+      <Name>images\templeup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\templeup.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templeupdiag.png</Source>
+      <Name>images\templeupdiag</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\templeupdiag.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\treealone1.png</Source>
+      <Name>images\treealone1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\treealone1.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\treesback.png</Source>
+      <Name>images\treesback</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\treesback.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\treesfront.png</Source>
+      <Name>images\treesfront</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\treesfront.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\undergrowth.png</Source>
+      <Name>images\undergrowth</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\undergrowth.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\undergrowth2.png</Source>
+      <Name>images\undergrowth2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\undergrowth2.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\UndergrowthHigh.png</Source>
+      <Name>images\UndergrowthHigh</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\UndergrowthHigh.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\undergrowthLow.png</Source>
+      <Name>images\undergrowthLow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\undergrowthLow.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\vines.png</Source>
+      <Name>images\vines</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\vines.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bomberhop.png</Source>
+      <Name>images\bomberhop</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\bomberhop.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bomberidle.png</Source>
+      <Name>images\bomberidle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\bomberidle.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bombersplode.png</Source>
+      <Name>images\bombersplode</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\bombersplode.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\GruntWalk.png</Source>
+      <Name>images\GruntWalk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\GruntWalk.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Grunt_Attack.png</Source>
+      <Name>images\Grunt_Attack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Grunt_Attack.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Grunt_Death.png</Source>
+      <Name>images\Grunt_Death</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Grunt_Death.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Background.bmp</Source>
+      <Name>images\Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Background.xnb</Output>
+      <Time>2010-06-13T16:40:08.739177-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkBlockSpriteBuild.png</Source>
+      <Name>images\HulkBlockSpriteBuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\HulkBlockSpriteBuild.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkDeathSpriteBuild.png</Source>
+      <Name>images\HulkDeathSpriteBuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\HulkDeathSpriteBuild.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkIdleSpriteBuild.png</Source>
+      <Name>images\HulkIdleSpriteBuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\HulkIdleSpriteBuild.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkMeleeSpriteBuild.png</Source>
+      <Name>images\HulkMeleeSpriteBuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\HulkMeleeSpriteBuild.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkRangedSpriteBuild.png</Source>
+      <Name>images\HulkRangedSpriteBuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\HulkRangedSpriteBuild.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkWalkSpriteBuild.png</Source>
+      <Name>images\HulkWalkSpriteBuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\HulkWalkSpriteBuild.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bgtreesbackgreen.png</Source>
+      <Name>images\bgtreesbackgreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\bgtreesbackgreen.xnb</Output>
+      <Time>2010-06-04T19:35:12.0903979-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bgtreesfrontgreen.png</Source>
+      <Name>images\bgtreesfrontgreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\bgtreesfrontgreen.xnb</Output>
+      <Time>2010-06-04T19:35:12.0533958-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bgtreesmiddlegreen.png</Source>
+      <Name>images\bgtreesmiddlegreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\bgtreesmiddlegreen.xnb</Output>
+      <Time>2010-06-04T19:35:13.4054731-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\tigertrap.png</Source>
+      <Name>images\tigertrap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\tigertrap.xnb</Output>
+      <Time>2010-06-17T20:12:42-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkBlockSpriteBuildMed.png</Source>
+      <Name>images\HulkBlockSpriteBuildMed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\HulkBlockSpriteBuildMed.xnb</Output>
+      <Time>2010-06-08T13:06:56-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\amandaswipefinal.png</Source>
+      <Name>images\amandaswipefinal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\amandaswipefinal.xnb</Output>
+      <Time>2010-06-10T23:11:41.9957667-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\idlesheetF.png</Source>
+      <Name>images\idlesheetF</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\idlesheetF.xnb</Output>
+      <Time>2010-06-10T23:11:42.3307859-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\GruntWalkRev.png</Source>
+      <Name>images\GruntWalkRev</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\GruntWalkRev.xnb</Output>
+      <Time>2010-06-13T22:47:36.9185775-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Grunt_AttackRev.png</Source>
+      <Name>images\Grunt_AttackRev</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Grunt_AttackRev.xnb</Output>
+      <Time>2010-06-13T22:29:22.2439657-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Grunt_DeathRev.png</Source>
+      <Name>images\Grunt_DeathRev</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Grunt_DeathRev.xnb</Output>
+      <Time>2010-06-13T22:47:47.7061945-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bgtreesbackgreentest.png</Source>
+      <Name>images\bgtreesbackgreentest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\bgtreesbackgreentest.xnb</Output>
+      <Time>2010-06-15T03:16:58-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bgtreesfrontgreentest.png</Source>
+      <Name>images\bgtreesfrontgreentest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\bgtreesfrontgreentest.xnb</Output>
+      <Time>2010-06-15T02:53:06-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bgtreesmiddlegreentest.png</Source>
+      <Name>images\bgtreesmiddlegreentest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\bgtreesmiddlegreentest.xnb</Output>
+      <Time>2010-06-15T03:19:10-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bottomblendgrass.png</Source>
+      <Name>images\bottomblendgrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\bottomblendgrass.xnb</Output>
+      <Time>2010-06-15T02:19:36-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bottomblendgrass2.png</Source>
+      <Name>images\bottomblendgrass2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\bottomblendgrass2.xnb</Output>
+      <Time>2010-06-15T02:33:06-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\elevator_bottom.png</Source>
+      <Name>images\elevator_bottom</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\elevator_bottom.xnb</Output>
+      <Time>2010-06-04T23:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fern.png</Source>
+      <Name>images\fern</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\fern.xnb</Output>
+      <Time>2010-06-15T02:21:48-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\greentreethick.png</Source>
+      <Name>images\greentreethick</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\greentreethick.xnb</Output>
+      <Time>2010-06-16T20:08:46-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\greentreethin.png</Source>
+      <Name>images\greentreethin</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\greentreethin.xnb</Output>
+      <Time>2010-06-16T20:06:54-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\newvine1.png</Source>
+      <Name>images\newvine1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\newvine1.xnb</Output>
+      <Time>2010-06-15T02:23:42-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\newvine2.png</Source>
+      <Name>images\newvine2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\newvine2.xnb</Output>
+      <Time>2010-06-15T02:27:48-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\shadedfgtree.png</Source>
+      <Name>images\shadedfgtree</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\shadedfgtree.xnb</Output>
+      <Time>2010-06-15T02:30:16-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\shadedfgtree2.png</Source>
+      <Name>images\shadedfgtree2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\shadedfgtree2.xnb</Output>
+      <Time>2010-06-16T19:48:16-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\shadedfgtreethick.png</Source>
+      <Name>images\shadedfgtreethick</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\shadedfgtreethick.xnb</Output>
+      <Time>2010-06-16T19:52:02-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\shadedfgtreethin.png</Source>
+      <Name>images\shadedfgtreethin</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\shadedfgtreethin.xnb</Output>
+      <Time>2010-06-16T20:09:48-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkIntroSpriteBuild.png</Source>
+      <Name>images\HulkIntroSpriteBuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\HulkIntroSpriteBuild.xnb</Output>
+      <Time>2010-09-06T20:10:24.5239239-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\KushlingBounce.png</Source>
+      <Name>images\KushlingBounce</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\KushlingBounce.xnb</Output>
+      <Time>2010-04-21T21:02:46-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\KushlingDeathfalll.png</Source>
+      <Name>images\KushlingDeathfalll</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\KushlingDeathfalll.xnb</Output>
+      <Time>2010-04-21T21:06:58-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\KushlingDeathJump.png</Source>
+      <Name>images\KushlingDeathJump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\KushlingDeathJump.xnb</Output>
+      <Time>2010-04-21T21:16:58-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\KushlingIdle.png</Source>
+      <Name>images\KushlingIdle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\KushlingIdle.xnb</Output>
+      <Time>2010-04-21T20:59:18-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\KushlingSpawn.png</Source>
+      <Name>images\KushlingSpawn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\KushlingSpawn.xnb</Output>
+      <Time>2010-04-21T20:54:22-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_ForwardRunSprite.png</Source>
+      <Name>images\Amanda_ForwardRunSprite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_ForwardRunSprite.xnb</Output>
+      <Time>2010-09-17T10:36:17-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_DeathReverseSprite.png</Source>
+      <Name>images\Amanda_DeathReverseSprite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_DeathReverseSprite.xnb</Output>
+      <Time>2010-09-29T01:24:59-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_DeathSprite.png</Source>
+      <Name>images\Amanda_DeathSprite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_DeathSprite.xnb</Output>
+      <Time>2010-09-29T00:28:43-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_FallDeath.png</Source>
+      <Name>images\Amanda_FallDeath</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_FallDeath.xnb</Output>
+      <Time>2010-09-28T21:54:41-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_FallDeathReverse.png</Source>
+      <Name>images\Amanda_FallDeathReverse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_FallDeathReverse.xnb</Output>
+      <Time>2010-09-28T21:57:17-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\amanda_jumpmeleexbuild.png</Source>
+      <Name>images\amanda_jumpmeleexbuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\amanda_jumpmeleexbuild.xnb</Output>
+      <Time>2010-09-29T00:54:33-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_jumpsprite.png</Source>
+      <Name>images\Amanda_jumpsprite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_jumpsprite.xnb</Output>
+      <Time>2010-09-27T02:56:31-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_MeleeSprite.png</Source>
+      <Name>images\Amanda_MeleeSprite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_MeleeSprite.xnb</Output>
+      <Time>2010-09-28T22:21:49-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_ReverseRunSprite.png</Source>
+      <Name>images\Amanda_ReverseRunSprite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_ReverseRunSprite.xnb</Output>
+      <Time>2010-09-26T20:59:46-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_slidesprite.png</Source>
+      <Name>images\Amanda_slidesprite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_slidesprite.xnb</Output>
+      <Time>2010-09-26T19:04:30-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_slidespritereverse.png</Source>
+      <Name>images\Amanda_slidespritereverse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_slidespritereverse.xnb</Output>
+      <Time>2010-09-26T19:06:04-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_SpellcastReverse.png</Source>
+      <Name>images\Amanda_SpellcastReverse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_SpellcastReverse.xnb</Output>
+      <Time>2010-09-28T23:01:14-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_Swipe.png</Source>
+      <Name>images\Amanda_Swipe</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_Swipe.xnb</Output>
+      <Time>2010-09-28T22:47:58-04:00</Time>
+    </Item>
+    <Item>
+      <Source>effects\CustomEffect.fx</Source>
+      <Name>effects\CustomEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\effects\CustomEffect.xnb</Output>
+      <Time>2010-06-04T19:35:01.0037638-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_Idle.png</Source>
+      <Name>images\Amanda_Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_Idle.xnb</Output>
+      <Time>2010-09-29T20:33:59-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_IdleReverse.png</Source>
+      <Name>images\Amanda_IdleReverse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_IdleReverse.xnb</Output>
+      <Time>2010-09-29T20:58:25-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Amanda_ReverseSwipe.png</Source>
+      <Name>images\Amanda_ReverseSwipe</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\images\Amanda_ReverseSwipe.xnb</Output>
+      <Time>2010-10-01T00:04:51-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\data\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\data\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\bin\x86\Debug\data\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2009-05-28T03:16:14-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2009-05-28T03:16:06-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2009-05-28T03:16:16-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2009-05-28T03:16:26-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2009-05-28T03:16:12-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.1.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2010-05-11T00:31:27.4032019-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

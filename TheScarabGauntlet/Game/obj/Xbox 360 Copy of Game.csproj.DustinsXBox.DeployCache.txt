@@ -1,0 +1,321 @@
+4d6f7c36d0ae4e93b808446a4341467d
+0
+DustinsXBox
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\
+129212116300000000
+Default Thumbnail
+2010-06-17T00:55:07.3630502Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\GarageGames.TorqueX.Framework.dll
+2009-09-18T19:08:26.0000000Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\GarageGames.TorqueX.Framework2D.dll
+2009-09-18T19:08:26.0000000Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\GarageGames.TorqueX.PlatFramework.dll
+2010-06-17T01:25:05.1628785Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\PlatformerStarter.application
+2010-06-17T01:27:08.9799604Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\PlatformerStarter.exe
+2010-06-17T01:27:08.5359350Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\PlatformerStarter.exe.manifest
+2010-06-17T01:27:08.9609593Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\torqueSettings.xml
+2010-06-13T20:29:56.0661341Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\levels\grunt_test.txscene
+2010-06-08T03:46:29.1182857Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\levels\hulk_test.txscene
+2010-06-13T01:50:01.6153025Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\levels\Level1.txscene
+2010-06-14T03:02:07.8823938Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\levels\sample_level.txscene
+2010-06-14T02:51:05.1254862Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\amandaswipefinal.xnb
+2010-06-17T01:27:03.2756341Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\amandaswipefinalRS.xnb
+2010-06-17T01:25:09.0521009Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\amandaswipefinalS.xnb
+2010-06-17T01:25:09.6791368Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\attack1.xnb
+2010-06-17T01:25:09.9751537Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\attack1R.xnb
+2010-06-17T01:25:10.2421690Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Background.xnb
+2010-06-17T01:26:15.2208856Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\bgtreesback.xnb
+2010-06-17T01:25:11.5322428Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\bgtreesbackgreen.xnb
+2010-06-17T01:26:57.8583243Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\bgtreesfront.xnb
+2010-06-17T01:25:12.6573071Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\bgtreesfrontgreen.xnb
+2010-06-17T01:26:58.9973894Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\bgtreesmiddle.xnb
+2010-06-17T01:25:13.9463809Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\bgtreesmiddlegreen.xnb
+2010-06-17T01:27:00.0514497Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\bigtree1.xnb
+2010-06-17T01:25:15.1804514Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\bigtreemoss2.xnb
+2010-06-17T01:25:16.1835088Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\black.xnb
+2010-06-17T01:25:16.2215110Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\bomberhop.xnb
+2010-06-17T01:26:11.5656765Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\bomberidle.xnb
+2010-06-17T01:26:12.0827061Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\bombersplode.xnb
+2010-06-17T01:26:12.7097419Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\buildexample2.xnb
+2010-06-17T01:27:03.6726568Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\canopy1.xnb
+2010-06-17T01:25:17.4015785Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\canopy1dark.xnb
+2010-06-17T01:25:18.7076532Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\canopy1light.xnb
+2010-06-17T01:25:20.0157280Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\canopy2.xnb
+2010-06-17T01:25:20.6227627Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\canopy2Dark.xnb
+2010-06-17T01:25:21.2457984Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\canopy2Light.xnb
+2010-06-17T01:25:21.8308318Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\canopy3.xnb
+2010-06-17T01:25:22.8958927Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\canopy3dark.xnb
+2010-06-17T01:25:23.9899553Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\canopy3Light.xnb
+2010-06-17T01:25:25.0800177Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\canopycurved1.xnb
+2010-06-17T01:25:26.2240831Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\cloud1.xnb
+2010-06-17T01:25:27.3531477Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\cloud2.xnb
+2010-06-17T01:25:28.2992018Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\cloud3.xnb
+2010-06-17T01:25:29.3382612Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\cloud4.xnb
+2010-06-17T01:25:30.3553194Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\cloud5.xnb
+2010-06-17T01:25:31.4923844Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\crystal.xnb
+2010-06-17T01:25:05.6439060Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\floatingplatform.xnb
+2010-06-17T01:25:31.7253978Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\forestbackdrop.xnb
+2010-06-17T01:25:32.5174431Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\ForestBG.xnb
+2010-06-17T01:25:32.6244492Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\frontGrowth.xnb
+2010-06-17T01:25:34.1915388Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\frontGrowthDark.xnb
+2010-06-17T01:25:35.8476335Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\frontGrowthLight.xnb
+2010-06-17T01:25:37.4007224Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\fungisblueLight.xnb
+2010-06-17T01:25:37.5467307Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\fungisbluepatchLight.xnb
+2010-06-17T01:25:37.6887388Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\fungisPink.xnb
+2010-06-17T01:27:03.9146707Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\fungisPinkDark.xnb
+2010-06-17T01:27:04.1616848Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\fungisPinkLight.xnb
+2010-06-17T01:27:04.4056988Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\fungispinkLight2.xnb
+2010-06-17T01:25:37.8397475Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\fungispurpleLight.xnb
+2010-06-17T01:25:37.9657547Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\fungispurpleLight2.xnb
+2010-06-17T01:25:38.1537654Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\GGLogo.xnb
+2010-06-17T01:25:38.2617716Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\glidesheetfinal.xnb
+2010-06-17T01:25:39.1838244Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\GruntWalk.xnb
+2010-06-17T01:26:13.2567732Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\GruntWalkRev.xnb
+2010-06-17T01:27:06.1737999Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Grunt_Attack.xnb
+2010-06-17T01:26:13.9118107Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Grunt_AttackRev.xnb
+2010-06-17T01:27:07.1078533Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Grunt_Death.xnb
+2010-06-17T01:26:14.6418524Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Grunt_DeathRev.xnb
+2010-06-17T01:27:08.2649195Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\hillvillage.xnb
+2010-06-17T01:25:41.0129290Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\HulkBlockSpriteBuild.xnb
+2010-06-17T01:26:19.7811464Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\HulkBlockSpriteBuildMed.xnb
+2010-06-17T01:27:02.3195795Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\HulkDeathSpriteBuild.xnb
+2010-06-17T01:26:31.2007996Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\HulkIdleSpriteBuild.xnb
+2010-06-17T01:26:35.7290586Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\HulkMeleeSpriteBuild.xnb
+2010-06-17T01:26:41.1583691Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\HulkRangedSpriteBuild.xnb
+2010-06-17T01:26:46.8206930Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\HulkWalkSpriteBuild.xnb
+2010-06-17T01:26:56.7902632Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\idlesheet1S.xnb
+2010-06-17T01:25:41.7199694Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\idlesheetF.xnb
+2010-06-17T01:27:05.4007557Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\idlesheetFS.xnb
+2010-06-17T01:25:42.4340103Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\idlesheetFSfina.xnb
+2010-06-17T01:25:06.9759822Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\jumpattack1.xnb
+2010-06-17T01:25:42.7160264Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\jumpattack1R.xnb
+2010-06-17T01:25:43.0030428Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\jumpsheet1.xnb
+2010-06-17T01:25:07.4010065Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\jumpsheet1R.xnb
+2010-06-17T01:25:43.5060716Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\kushling.xnb
+2010-06-17T01:25:43.8500913Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Leaf1.xnb
+2010-06-17T01:25:44.1671094Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\leaves.xnb
+2010-06-17T01:25:44.2411136Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\leaves2.xnb
+2010-06-17T01:25:44.4221240Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\leaves3.xnb
+2010-06-17T01:25:44.5261299Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\lifebar.xnb
+2010-06-17T01:25:05.7329111Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\lightbreaks.xnb
+2010-06-17T01:25:45.7321989Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1bottomgroundleft2.xnb
+2010-06-17T01:25:45.8192039Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1bottomgroundright2.xnb
+2010-06-17T01:25:45.8912080Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1clifffacebottomleft.xnb
+2010-06-17T01:25:45.9522115Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1clifffacebottomright.xnb
+2010-06-17T01:25:46.0262157Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1clifffacenorootleft2.xnb
+2010-06-17T01:25:46.0952197Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1clifffacenorootright2.xnb
+2010-06-17T01:25:46.1482227Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1clifffacewrootleft2.xnb
+2010-06-17T01:25:46.2072261Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1clifffacewrootright2.xnb
+2010-06-17T01:25:46.2632293Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1diagleft2.xnb
+2010-06-17T01:25:46.3152323Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1diagmiddleleft2.xnb
+2010-06-17T01:25:46.3902365Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1diagmiddleright2.xnb
+2010-06-17T01:25:46.4702411Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1diagright2.xnb
+2010-06-17T01:25:46.5272444Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1diagtopleft2.xnb
+2010-06-17T01:25:46.5792474Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1diagtopright2.xnb
+2010-06-17T01:25:46.6322504Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1dropedgeleft2.xnb
+2010-06-17T01:25:46.6902537Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1dropedgeright2.xnb
+2010-06-17T01:25:46.7552574Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1earth2.xnb
+2010-06-17T01:25:46.8032602Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1ground2.xnb
+2010-06-17T01:25:46.8732642Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1groundcornerleft2.xnb
+2010-06-17T01:25:46.9502686Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1groundcornerright2.xnb
+2010-06-17T01:25:47.0082719Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1grounddropedgeleft2.xnb
+2010-06-17T01:25:47.0612749Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Lv1grounddropedgeright2.xnb
+2010-06-17T01:25:47.1182782Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\moss.xnb
+2010-06-17T01:25:47.9603263Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\moss2.xnb
+2010-06-17T01:25:48.9003801Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\mountain1Scroller.xnb
+2010-06-17T01:25:49.5274160Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\mountain2.xnb
+2010-06-17T01:25:50.8014889Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\mountiain1.xnb
+2010-06-17T01:25:52.5255875Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\particle_effect_candle.xnb
+2010-06-17T01:25:52.6175927Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\particle_effect_snow.xnb
+2010-06-17T01:25:53.2776305Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\runsheetfinalF.xnb
+2010-06-17T01:25:54.2616868Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\runsheetfinalFfix.xnb
+2010-06-17T01:25:08.2060525Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\runsheetfinalR.xnb
+2010-06-17T01:25:54.8437201Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\runsheetfinalR2.xnb
+2010-06-17T01:25:55.8337767Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\shadowleaves.xnb
+2010-06-17T01:25:56.7828310Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\sky.xnb
+2010-06-17T01:25:56.9838425Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\slidesheet.xnb
+2010-06-17T01:25:08.4380658Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\SpitterAttackLeft.xnb
+2010-06-17T01:25:58.0019007Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\SpitterAttackRight.xnb
+2010-06-17T01:25:59.1299652Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\SpitterDeathLeft.xnb
+2010-06-17T01:25:59.9100098Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\SpitterDeathRight.xnb
+2010-06-17T01:26:00.6950547Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\SpitterHideSwitchLeft.xnb
+2010-06-17T01:26:01.2650873Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\SpitterHideSwitchRight.xnb
+2010-06-17T01:26:01.8851228Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Spitterpopupleft.xnb
+2010-06-17T01:26:02.5031582Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\Spitterpopupright.xnb
+2010-06-17T01:26:03.0771910Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\templebottomcornerup.xnb
+2010-06-17T01:26:03.2211992Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\templediag.xnb
+2010-06-17T01:26:03.2782025Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\templedown.xnb
+2010-06-17T01:26:03.3362058Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\templedowndiag.xnb
+2010-06-17T01:26:03.4132102Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\templefloor.xnb
+2010-06-17T01:26:03.4902146Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\templeplatcorneright.xnb
+2010-06-17T01:26:03.5492180Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\templeplatcornerleft.xnb
+2010-06-17T01:26:03.6162218Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\templeplatformfloor.xnb
+2010-06-17T01:26:03.7032268Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\templetopcornerleft.xnb
+2010-06-17T01:26:03.8132331Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\templetopcornerright.xnb
+2010-06-17T01:26:03.8762367Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\templeup.xnb
+2010-06-17T01:26:03.9402403Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\templeupdiag.xnb
+2010-06-17T01:26:04.0012438Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\tigertrap.xnb
+2010-06-17T01:27:00.3824687Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\treealone1.xnb
+2010-06-17T01:26:05.1323085Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\treesback.xnb
+2010-06-17T01:26:06.6243939Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\treesfront.xnb
+2010-06-17T01:26:08.0864775Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\undergrowth.xnb
+2010-06-17T01:26:08.4895006Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\undergrowth2.xnb
+2010-06-17T01:26:08.7875176Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\UndergrowthHigh.xnb
+2010-06-17T01:26:09.7595732Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\undergrowthLow.xnb
+2010-06-17T01:26:10.3916093Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\images\vines.xnb
+2010-06-17T01:26:10.8356347Z
+C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Release\data\effects\CustomEffect.xnb
+2010-06-17T01:27:08.2789203Z

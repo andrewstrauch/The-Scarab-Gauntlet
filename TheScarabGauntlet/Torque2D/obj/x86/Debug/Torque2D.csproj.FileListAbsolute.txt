@@ -1,0 +1,117 @@
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\SimpleEffect.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\RefractionEffect.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\ClipMap.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\ClipMapBlender.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\BloomCombine.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\BloomExtract.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\GaussianBlur.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\Cubemap.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\DistanceFog.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\DetailEffect.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\ZPassEffect.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\LightingEffect2D.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\LightingEffect3D.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial14.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial16.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial18.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial20.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial22.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial12.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier12.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier14.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier16.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier18.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier20.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier22.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\images\BlueFTexture.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\images\blobShadow.xnb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\Torque2D.dll
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\Torque2D.pdb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.FbxImporter.dll
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\TorqueCore.dll
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\TorqueCore.pdb
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\obj\x86\Debug\Torque2D.dll
+C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\Torque2D\obj\x86\Debug\Torque2D.pdb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\SimpleEffect.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\RefractionEffect.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\ClipMap.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\ClipMapBlender.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\BloomCombine.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\BloomExtract.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\GaussianBlur.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\Cubemap.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\DistanceFog.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\DetailEffect.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\ZPassEffect.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\LightingEffect2D.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\LightingEffect3D.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial14.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial16.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial18.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial20.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial22.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial12.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier12.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier14.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier16.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier18.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier20.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier22.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\images\BlueFTexture.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\images\blobShadow.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\Torque2D.dll
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\Torque2D.pdb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.FbxImporter.dll
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\TorqueCore.dll
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\bin\x86\Debug\TorqueCore.pdb
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\obj\x86\Debug\Torque2D.dll
+C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Torque2D\obj\x86\Debug\Torque2D.pdb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\SimpleEffect.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\RefractionEffect.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\ClipMap.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\ClipMapBlender.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\BloomCombine.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\BloomExtract.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\GaussianBlur.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\Cubemap.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\DistanceFog.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\DetailEffect.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\ZPassEffect.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\LightingEffect2D.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\effects\LightingEffect3D.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial14.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial16.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial18.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial20.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial22.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Arial12.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier12.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier14.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier16.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier18.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier20.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\fonts\Courier22.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\images\BlueFTexture.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\images\blobShadow.xnb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\Torque2D.dll
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\Torque2D.pdb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.FbxImporter.dll
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\TorqueCore.dll
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\TorqueCore.pdb
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\obj\x86\Debug\Torque2D.dll
+C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\obj\x86\Debug\Torque2D.pdb

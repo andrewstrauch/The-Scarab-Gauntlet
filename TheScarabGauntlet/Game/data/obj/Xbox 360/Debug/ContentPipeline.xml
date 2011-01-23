@@ -1,0 +1,1637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>images\crystal.png</Source>
+      <Name>images\crystal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\crystal.xnb</Output>
+      <Time>2010-06-05T11:18:53.6876093-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\lifebar.png</Source>
+      <Name>images\lifebar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\lifebar.xnb</Output>
+      <Time>2010-06-05T11:18:53.7016101-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\idlesheetFSfina.png</Source>
+      <Name>images\idlesheetFSfina</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\idlesheetFSfina.xnb</Output>
+      <Time>2010-06-04T19:35:12.0983984-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\jumpsheet1.png</Source>
+      <Name>images\jumpsheet1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\jumpsheet1.xnb</Output>
+      <Time>2010-06-04T19:35:12.4344176-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\runsheetfinalFfix.png</Source>
+      <Name>images\runsheetfinalFfix</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\runsheetfinalFfix.xnb</Output>
+      <Time>2010-06-04T19:35:12.1654022-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\slidesheet.png</Source>
+      <Name>images\slidesheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\slidesheet.xnb</Output>
+      <Time>2010-06-04T19:35:12.2924095-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\amandaswipefinalRS.png</Source>
+      <Name>images\amandaswipefinalRS</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\amandaswipefinalRS.xnb</Output>
+      <Time>2010-06-04T19:35:12.6394293-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\amandaswipefinalS.png</Source>
+      <Name>images\amandaswipefinalS</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\amandaswipefinalS.xnb</Output>
+      <Time>2010-06-04T19:35:12.6134278-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\attack1.png</Source>
+      <Name>images\attack1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\attack1.xnb</Output>
+      <Time>2010-06-04T19:35:12.2904093-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\attack1R.png</Source>
+      <Name>images\attack1R</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\attack1R.xnb</Output>
+      <Time>2010-06-04T19:35:12.6454296-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bgtreesback.png</Source>
+      <Name>images\bgtreesback</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\bgtreesback.xnb</Output>
+      <Time>2010-06-04T19:35:12.2774086-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bgtreesfront.png</Source>
+      <Name>images\bgtreesfront</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\bgtreesfront.xnb</Output>
+      <Time>2010-06-04T19:35:12.2064045-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bgtreesmiddle.png</Source>
+      <Name>images\bgtreesmiddle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\bgtreesmiddle.xnb</Output>
+      <Time>2010-06-04T19:35:12.3264114-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bigtree1.png</Source>
+      <Name>images\bigtree1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\bigtree1.xnb</Output>
+      <Time>2010-06-04T19:35:12.3684138-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bigtreemoss2.png</Source>
+      <Name>images\bigtreemoss2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\bigtreemoss2.xnb</Output>
+      <Time>2010-06-04T19:35:12.0133935-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\black.png</Source>
+      <Name>images\black</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\black.xnb</Output>
+      <Time>2010-06-04T19:35:12.0253942-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy1.png</Source>
+      <Name>images\canopy1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\canopy1.xnb</Output>
+      <Time>2010-06-04T19:35:12.2274057-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy1dark.png</Source>
+      <Name>images\canopy1dark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\canopy1dark.xnb</Output>
+      <Time>2010-06-04T19:35:12.3324117-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy1light.png</Source>
+      <Name>images\canopy1light</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\canopy1light.xnb</Output>
+      <Time>2010-06-04T19:35:12.3074103-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy2.png</Source>
+      <Name>images\canopy2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\canopy2.xnb</Output>
+      <Time>2010-06-04T19:35:12.6484298-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy2Dark.png</Source>
+      <Name>images\canopy2Dark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\canopy2Dark.xnb</Output>
+      <Time>2010-06-04T19:35:12.2804088-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy2Light.png</Source>
+      <Name>images\canopy2Light</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\canopy2Light.xnb</Output>
+      <Time>2010-06-04T19:35:12.3184109-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy3.png</Source>
+      <Name>images\canopy3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\canopy3.xnb</Output>
+      <Time>2010-06-04T19:35:12.2734084-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy3dark.png</Source>
+      <Name>images\canopy3dark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\canopy3dark.xnb</Output>
+      <Time>2010-06-04T19:35:12.3404122-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopy3Light.png</Source>
+      <Name>images\canopy3Light</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\canopy3Light.xnb</Output>
+      <Time>2010-06-04T19:35:12.3754142-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\canopycurved1.png</Source>
+      <Name>images\canopycurved1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\canopycurved1.xnb</Output>
+      <Time>2010-06-04T19:35:12.1564017-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\cloud1.png</Source>
+      <Name>images\cloud1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\cloud1.xnb</Output>
+      <Time>2010-06-04T19:35:13.2384636-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\cloud2.png</Source>
+      <Name>images\cloud2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\cloud2.xnb</Output>
+      <Time>2010-06-04T19:35:12.3574132-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\cloud3.png</Source>
+      <Name>images\cloud3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\cloud3.xnb</Output>
+      <Time>2010-06-04T19:35:13.2444639-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\cloud4.png</Source>
+      <Name>images\cloud4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\cloud4.xnb</Output>
+      <Time>2010-06-04T19:35:12.3604133-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\cloud5.png</Source>
+      <Name>images\cloud5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\cloud5.xnb</Output>
+      <Time>2010-06-04T19:35:13.2544645-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\floatingplatform.png</Source>
+      <Name>images\floatingplatform</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\floatingplatform.xnb</Output>
+      <Time>2010-06-04T19:35:12.1173994-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\forestbackdrop.png</Source>
+      <Name>images\forestbackdrop</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\forestbackdrop.xnb</Output>
+      <Time>2010-06-04T19:35:12.1143993-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\ForestBG.png</Source>
+      <Name>images\ForestBG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\ForestBG.xnb</Output>
+      <Time>2010-06-04T19:35:12.0193938-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\frontGrowth.png</Source>
+      <Name>images\frontGrowth</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\frontGrowth.xnb</Output>
+      <Time>2010-06-04T19:35:12.284409-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\frontGrowthDark.png</Source>
+      <Name>images\frontGrowthDark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\frontGrowthDark.xnb</Output>
+      <Time>2010-06-04T19:35:12.8944439-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\frontGrowthLight.png</Source>
+      <Name>images\frontGrowthLight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\frontGrowthLight.xnb</Output>
+      <Time>2010-06-04T19:35:12.9364463-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fungisblueLight.png</Source>
+      <Name>images\fungisblueLight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\fungisblueLight.xnb</Output>
+      <Time>2010-06-04T19:35:13.2504643-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fungisbluepatchLight.png</Source>
+      <Name>images\fungisbluepatchLight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\fungisbluepatchLight.xnb</Output>
+      <Time>2010-06-04T19:35:12.2644079-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fungispinkLight2.png</Source>
+      <Name>images\fungispinkLight2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\fungispinkLight2.xnb</Output>
+      <Time>2010-06-04T19:35:12.9004442-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fungispurpleLight.png</Source>
+      <Name>images\fungispurpleLight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\fungispurpleLight.xnb</Output>
+      <Time>2010-06-04T19:35:12.2294059-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fungispurpleLight2.png</Source>
+      <Name>images\fungispurpleLight2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\fungispurpleLight2.xnb</Output>
+      <Time>2010-06-04T19:35:12.0033929-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\GGLogo.png</Source>
+      <Name>images\GGLogo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\GGLogo.xnb</Output>
+      <Time>2010-06-04T19:35:12.0303945-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\glidesheetfinal.png</Source>
+      <Name>images\glidesheetfinal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\glidesheetfinal.xnb</Output>
+      <Time>2010-06-04T19:35:12.4404179-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\hillvillage.png</Source>
+      <Name>images\hillvillage</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\hillvillage.xnb</Output>
+      <Time>2010-06-04T19:35:12.9194453-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\idlesheet1S.png</Source>
+      <Name>images\idlesheet1S</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\idlesheet1S.xnb</Output>
+      <Time>2010-06-04T19:35:12.0163937-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\idlesheetFS.png</Source>
+      <Name>images\idlesheetFS</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\idlesheetFS.xnb</Output>
+      <Time>2010-06-04T19:35:12.1954039-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\jumpattack1.png</Source>
+      <Name>images\jumpattack1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\jumpattack1.xnb</Output>
+      <Time>2010-06-04T19:35:12.1594018-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\jumpattack1R.png</Source>
+      <Name>images\jumpattack1R</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\jumpattack1R.xnb</Output>
+      <Time>2010-06-04T19:35:12.1113991-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\jumpsheet1R.png</Source>
+      <Name>images\jumpsheet1R</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\jumpsheet1R.xnb</Output>
+      <Time>2010-06-04T19:35:12.5614248-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\kushling.png</Source>
+      <Name>images\kushling</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\kushling.xnb</Output>
+      <Time>2010-06-04T19:35:12.0433952-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Leaf1.png</Source>
+      <Name>images\Leaf1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Leaf1.xnb</Output>
+      <Time>2010-06-04T19:35:12.3534129-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\leaves.png</Source>
+      <Name>images\leaves</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\leaves.xnb</Output>
+      <Time>2010-06-04T19:35:12.3454125-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\leaves2.png</Source>
+      <Name>images\leaves2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\leaves2.xnb</Output>
+      <Time>2010-06-04T19:35:12.5154222-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\leaves3.png</Source>
+      <Name>images\leaves3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\leaves3.xnb</Output>
+      <Time>2010-06-04T19:35:12.1053988-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\lightbreaks.png</Source>
+      <Name>images\lightbreaks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\lightbreaks.xnb</Output>
+      <Time>2010-06-04T19:35:12.9264457-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1bottomgroundleft2.png</Source>
+      <Name>images\Lv1bottomgroundleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1bottomgroundleft2.xnb</Output>
+      <Time>2010-06-04T19:35:12.6244284-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1bottomgroundright2.png</Source>
+      <Name>images\Lv1bottomgroundright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1bottomgroundright2.xnb</Output>
+      <Time>2010-06-04T19:35:12.4364177-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1clifffacebottomleft.png</Source>
+      <Name>images\Lv1clifffacebottomleft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1clifffacebottomleft.xnb</Output>
+      <Time>2010-06-04T19:35:12.896444-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1clifffacebottomright.png</Source>
+      <Name>images\Lv1clifffacebottomright</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1clifffacebottomright.xnb</Output>
+      <Time>2010-06-04T19:35:12.6324289-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1clifffacenorootleft2.png</Source>
+      <Name>images\Lv1clifffacenorootleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1clifffacenorootleft2.xnb</Output>
+      <Time>2010-06-04T19:35:12.6874321-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1clifffacenorootright2.png</Source>
+      <Name>images\Lv1clifffacenorootright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1clifffacenorootright2.xnb</Output>
+      <Time>2010-06-04T19:35:12.5534244-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1clifffacewrootleft2.png</Source>
+      <Name>images\Lv1clifffacewrootleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1clifffacewrootleft2.xnb</Output>
+      <Time>2010-06-04T19:35:12.1414008-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1clifffacewrootright2.png</Source>
+      <Name>images\Lv1clifffacewrootright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1clifffacewrootright2.xnb</Output>
+      <Time>2010-06-04T19:35:12.1984041-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1diagleft2.png</Source>
+      <Name>images\Lv1diagleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1diagleft2.xnb</Output>
+      <Time>2010-06-04T19:35:12.2864091-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1diagmiddleleft2.png</Source>
+      <Name>images\Lv1diagmiddleleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1diagmiddleleft2.xnb</Output>
+      <Time>2010-06-04T19:35:12.2014043-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1diagmiddleright2.png</Source>
+      <Name>images\Lv1diagmiddleright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1diagmiddleright2.xnb</Output>
+      <Time>2010-06-04T19:35:12.056396-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1diagright2.png</Source>
+      <Name>images\Lv1diagright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1diagright2.xnb</Output>
+      <Time>2010-06-04T19:35:12.2234055-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1diagtopleft2.png</Source>
+      <Name>images\Lv1diagtopleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1diagtopleft2.xnb</Output>
+      <Time>2010-06-04T19:35:12.9324461-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1diagtopright2.png</Source>
+      <Name>images\Lv1diagtopright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1diagtopright2.xnb</Output>
+      <Time>2010-06-04T19:35:12.1874035-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1dropedgeleft2.png</Source>
+      <Name>images\Lv1dropedgeleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1dropedgeleft2.xnb</Output>
+      <Time>2010-06-04T19:35:12.3234112-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1dropedgeright2.png</Source>
+      <Name>images\Lv1dropedgeright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1dropedgeright2.xnb</Output>
+      <Time>2010-06-04T19:35:12.0003928-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1earth2.png</Source>
+      <Name>images\Lv1earth2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1earth2.xnb</Output>
+      <Time>2010-06-04T19:35:12.3814145-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1ground2.png</Source>
+      <Name>images\Lv1ground2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1ground2.xnb</Output>
+      <Time>2010-06-04T19:35:12.3154108-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1groundcornerleft2.png</Source>
+      <Name>images\Lv1groundcornerleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1groundcornerleft2.xnb</Output>
+      <Time>2010-06-04T19:35:12.9034444-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1groundcornerright2.png</Source>
+      <Name>images\Lv1groundcornerright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1groundcornerright2.xnb</Output>
+      <Time>2010-06-04T19:35:12.1344004-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1grounddropedgeleft2.png</Source>
+      <Name>images\Lv1grounddropedgeleft2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1grounddropedgeleft2.xnb</Output>
+      <Time>2010-06-04T19:35:12.0593961-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Lv1grounddropedgeright2.png</Source>
+      <Name>images\Lv1grounddropedgeright2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Lv1grounddropedgeright2.xnb</Output>
+      <Time>2010-06-04T19:35:12.4134164-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\moss.png</Source>
+      <Name>images\moss</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\moss.xnb</Output>
+      <Time>2010-06-04T19:35:12.1504013-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\moss2.png</Source>
+      <Name>images\moss2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\moss2.xnb</Output>
+      <Time>2010-06-04T19:35:12.547424-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\mountain1Scroller.png</Source>
+      <Name>images\mountain1Scroller</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\mountain1Scroller.xnb</Output>
+      <Time>2010-06-04T19:35:12.040395-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\mountain2.png</Source>
+      <Name>images\mountain2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\mountain2.xnb</Output>
+      <Time>2010-06-04T19:35:12.4184167-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\mountiain1.png</Source>
+      <Name>images\mountiain1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\mountiain1.xnb</Output>
+      <Time>2010-06-04T19:35:12.8904437-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\particle_effect_candle.png</Source>
+      <Name>images\particle_effect_candle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\particle_effect_candle.xnb</Output>
+      <Time>2010-06-04T19:35:12.0493956-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\particle_effect_snow.png</Source>
+      <Name>images\particle_effect_snow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\particle_effect_snow.xnb</Output>
+      <Time>2010-06-04T19:35:12.0463954-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\runsheetfinalF.png</Source>
+      <Name>images\runsheetfinalF</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\runsheetfinalF.xnb</Output>
+      <Time>2010-06-04T19:35:12.4214168-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\runsheetfinalR.png</Source>
+      <Name>images\runsheetfinalR</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\runsheetfinalR.xnb</Output>
+      <Time>2010-06-04T19:35:12.4724198-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\runsheetfinalR2.png</Source>
+      <Name>images\runsheetfinalR2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\runsheetfinalR2.xnb</Output>
+      <Time>2010-06-04T19:35:12.022394-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\shadowleaves.png</Source>
+      <Name>images\shadowleaves</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\shadowleaves.xnb</Output>
+      <Time>2010-06-04T19:35:12.4314174-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\sky.png</Source>
+      <Name>images\sky</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\sky.xnb</Output>
+      <Time>2010-06-04T19:35:12.3204111-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\SpitterAttackLeft.png</Source>
+      <Name>images\SpitterAttackLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\SpitterAttackLeft.xnb</Output>
+      <Time>2010-06-04T19:35:12.0943981-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\SpitterAttackRight.png</Source>
+      <Name>images\SpitterAttackRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\SpitterAttackRight.xnb</Output>
+      <Time>2010-06-04T19:35:12.0333946-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\SpitterDeathLeft.png</Source>
+      <Name>images\SpitterDeathLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\SpitterDeathLeft.xnb</Output>
+      <Time>2010-06-04T19:35:12.1384006-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\SpitterDeathRight.png</Source>
+      <Name>images\SpitterDeathRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\SpitterDeathRight.xnb</Output>
+      <Time>2010-06-04T19:35:12.9234455-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\SpitterHideSwitchLeft.png</Source>
+      <Name>images\SpitterHideSwitchLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\SpitterHideSwitchLeft.xnb</Output>
+      <Time>2010-06-04T19:35:12.6844319-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\SpitterHideSwitchRight.png</Source>
+      <Name>images\SpitterHideSwitchRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\SpitterHideSwitchRight.xnb</Output>
+      <Time>2010-06-04T19:35:12.2034044-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Spitterpopupleft.png</Source>
+      <Name>images\Spitterpopupleft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Spitterpopupleft.xnb</Output>
+      <Time>2010-06-04T19:35:12.1844033-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Spitterpopupright.png</Source>
+      <Name>images\Spitterpopupright</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Spitterpopupright.xnb</Output>
+      <Time>2010-06-04T19:35:12.5674252-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templebottomcornerup.png</Source>
+      <Name>images\templebottomcornerup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\templebottomcornerup.xnb</Output>
+      <Time>2010-06-04T19:35:12.9064446-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templediag.png</Source>
+      <Name>images\templediag</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\templediag.xnb</Output>
+      <Time>2010-06-04T19:35:12.266408-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templedown.png</Source>
+      <Name>images\templedown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\templedown.xnb</Output>
+      <Time>2010-06-04T19:35:12.1474012-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templedowndiag.png</Source>
+      <Name>images\templedowndiag</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\templedowndiag.xnb</Output>
+      <Time>2010-06-04T19:35:12.5444239-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templefloor.png</Source>
+      <Name>images\templefloor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\templefloor.xnb</Output>
+      <Time>2010-06-04T19:35:12.3514128-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templeplatcorneright.png</Source>
+      <Name>images\templeplatcorneright</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\templeplatcorneright.xnb</Output>
+      <Time>2010-06-04T19:35:12.1924037-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templeplatcornerleft.png</Source>
+      <Name>images\templeplatcornerleft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\templeplatcornerleft.xnb</Output>
+      <Time>2010-06-04T19:35:12.0643964-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templeplatformfloor.png</Source>
+      <Name>images\templeplatformfloor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\templeplatformfloor.xnb</Output>
+      <Time>2010-06-04T19:35:12.2954096-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templetopcornerleft.png</Source>
+      <Name>images\templetopcornerleft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\templetopcornerleft.xnb</Output>
+      <Time>2010-06-04T19:35:12.0853976-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templetopcornerright.png</Source>
+      <Name>images\templetopcornerright</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\templetopcornerright.xnb</Output>
+      <Time>2010-06-04T19:35:12.0363948-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templeup.png</Source>
+      <Name>images\templeup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\templeup.xnb</Output>
+      <Time>2010-06-04T19:35:12.5094219-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\templeupdiag.png</Source>
+      <Name>images\templeupdiag</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\templeupdiag.xnb</Output>
+      <Time>2010-06-04T19:35:12.424417-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\treealone1.png</Source>
+      <Name>images\treealone1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\treealone1.xnb</Output>
+      <Time>2010-06-04T19:35:12.30241-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\treesback.png</Source>
+      <Name>images\treesback</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\treesback.xnb</Output>
+      <Time>2010-06-04T19:35:12.5414237-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\treesfront.png</Source>
+      <Name>images\treesfront</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\treesfront.xnb</Output>
+      <Time>2010-06-04T19:35:12.3644136-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\undergrowth.png</Source>
+      <Name>images\undergrowth</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\undergrowth.xnb</Output>
+      <Time>2010-06-04T19:35:12.6424295-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\undergrowth2.png</Source>
+      <Name>images\undergrowth2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\undergrowth2.xnb</Output>
+      <Time>2010-06-04T19:35:12.0623963-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\UndergrowthHigh.png</Source>
+      <Name>images\UndergrowthHigh</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\UndergrowthHigh.xnb</Output>
+      <Time>2010-06-04T19:35:12.6354291-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\undergrowthLow.png</Source>
+      <Name>images\undergrowthLow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\undergrowthLow.xnb</Output>
+      <Time>2010-06-04T19:35:12.1904036-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\vines.png</Source>
+      <Name>images\vines</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\vines.xnb</Output>
+      <Time>2010-06-04T19:35:12.4284172-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bomberhop.png</Source>
+      <Name>images\bomberhop</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\bomberhop.xnb</Output>
+      <Time>2010-06-04T19:35:12.336412-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bomberidle.png</Source>
+      <Name>images\bomberidle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\bomberidle.xnb</Output>
+      <Time>2010-06-04T19:35:12.1083989-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bombersplode.png</Source>
+      <Name>images\bombersplode</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\bombersplode.xnb</Output>
+      <Time>2010-06-04T19:35:12.0283944-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\GruntWalk.png</Source>
+      <Name>images\GruntWalk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\GruntWalk.xnb</Output>
+      <Time>2010-06-04T19:35:12.144401-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Grunt_Attack.png</Source>
+      <Name>images\Grunt_Attack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Grunt_Attack.xnb</Output>
+      <Time>2010-06-04T19:35:13.2324632-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Grunt_Death.png</Source>
+      <Name>images\Grunt_Death</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Grunt_Death.xnb</Output>
+      <Time>2010-06-04T19:35:12.372414-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Background.bmp</Source>
+      <Name>images\Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Background.xnb</Output>
+      <Time>2010-06-13T16:40:08.739177-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkBlockSpriteBuild.png</Source>
+      <Name>images\HulkBlockSpriteBuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\HulkBlockSpriteBuild.xnb</Output>
+      <Time>2010-06-04T19:35:12.180403-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkDeathSpriteBuild.png</Source>
+      <Name>images\HulkDeathSpriteBuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\HulkDeathSpriteBuild.xnb</Output>
+      <Time>2010-06-04T19:35:12.6814317-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkIdleSpriteBuild.png</Source>
+      <Name>images\HulkIdleSpriteBuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\HulkIdleSpriteBuild.xnb</Output>
+      <Time>2010-06-04T19:35:12.1324003-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkMeleeSpriteBuild.png</Source>
+      <Name>images\HulkMeleeSpriteBuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\HulkMeleeSpriteBuild.xnb</Output>
+      <Time>2010-06-04T19:35:12.9584476-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkRangedSpriteBuild.png</Source>
+      <Name>images\HulkRangedSpriteBuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\HulkRangedSpriteBuild.xnb</Output>
+      <Time>2010-06-04T19:35:12.0823974-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkWalkSpriteBuild.png</Source>
+      <Name>images\HulkWalkSpriteBuild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\HulkWalkSpriteBuild.xnb</Output>
+      <Time>2010-06-04T19:35:12.5064217-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bgtreesbackgreen.png</Source>
+      <Name>images\bgtreesbackgreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\bgtreesbackgreen.xnb</Output>
+      <Time>2010-06-04T19:35:12.0903979-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bgtreesfrontgreen.png</Source>
+      <Name>images\bgtreesfrontgreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\bgtreesfrontgreen.xnb</Output>
+      <Time>2010-06-04T19:35:12.0533958-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\bgtreesmiddlegreen.png</Source>
+      <Name>images\bgtreesmiddlegreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="TextureFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\bgtreesmiddlegreen.xnb</Output>
+      <Time>2010-06-04T19:35:13.4054731-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\tigertrap.png</Source>
+      <Name>images\tigertrap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\tigertrap.xnb</Output>
+      <Time>2010-06-06T22:04:10.3422367-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\HulkBlockSpriteBuildMed.png</Source>
+      <Name>images\HulkBlockSpriteBuildMed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\HulkBlockSpriteBuildMed.xnb</Output>
+      <Time>2010-06-08T09:06:56.4917315-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\amandaswipefinal.png</Source>
+      <Name>images\amandaswipefinal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\amandaswipefinal.xnb</Output>
+      <Time>2010-06-10T23:11:41.9957667-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\buildexample2.png</Source>
+      <Name>images\buildexample2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\buildexample2.xnb</Output>
+      <Time>2010-06-10T23:11:41.9677651-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fungisPink.png</Source>
+      <Name>images\fungisPink</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\fungisPink.xnb</Output>
+      <Time>2010-06-10T23:11:42.787812-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fungisPinkDark.png</Source>
+      <Name>images\fungisPinkDark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\fungisPinkDark.xnb</Output>
+      <Time>2010-06-10T23:11:42.0427694-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\fungisPinkLight.png</Source>
+      <Name>images\fungisPinkLight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\fungisPinkLight.xnb</Output>
+      <Time>2010-06-10T23:11:42.2337803-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\idlesheetF.png</Source>
+      <Name>images\idlesheetF</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\idlesheetF.xnb</Output>
+      <Time>2010-06-10T23:11:42.3307859-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\GruntWalkRev.png</Source>
+      <Name>images\GruntWalkRev</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\GruntWalkRev.xnb</Output>
+      <Time>2010-06-13T22:47:36.9185775-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Grunt_AttackRev.png</Source>
+      <Name>images\Grunt_AttackRev</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Grunt_AttackRev.xnb</Output>
+      <Time>2010-06-13T22:29:22.2439657-04:00</Time>
+    </Item>
+    <Item>
+      <Source>images\Grunt_DeathRev.png</Source>
+      <Name>images\Grunt_DeathRev</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\images\Grunt_DeathRev.xnb</Output>
+      <Time>2010-06-13T22:47:47.7061945-04:00</Time>
+    </Item>
+    <Item>
+      <Source>effects\CustomEffect.fx</Source>
+      <Name>effects\CustomEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\effects\CustomEffect.xnb</Output>
+      <Time>2010-06-04T19:35:01.0037638-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Xbox360</TargetPlatform>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>true</CompressContent>
+      <RootDirectory>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\data\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\data\obj\Xbox 360\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Dustin\Documents\TSGGame\TSGGame\Game\bin\Xbox 360\Debug\data\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2009-05-28T03:16:14-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2009-05-28T03:16:06-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2009-05-28T03:16:16-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2009-05-28T03:16:26-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2009-05-28T03:16:12-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.1.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2010-05-11T00:31:27.4032019-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<TorqueEngineSettings>
+  <SimulateFences>true</SimulateFences>
+	<UseFixedTimeStep>true</UseFixedTimeStep>
+	<WindowsGraphicsManagerSettings>
+		<PreferMultiSampling>false</PreferMultiSampling>
+		<PreferredBackBufferHeight>768</PreferredBackBufferHeight>
+		<PreferredBackBufferWidth>1024</PreferredBackBufferWidth>
+	</WindowsGraphicsManagerSettings>
+	<XboxGraphicsManagerSettings>	
+		<PreferMultiSampling>false</PreferMultiSampling>
+		<UseDisplaySizeForBackbuffer>false</UseDisplaySizeForBackbuffer>
+	</XboxGraphicsManagerSettings>
+</TorqueEngineSettings>
