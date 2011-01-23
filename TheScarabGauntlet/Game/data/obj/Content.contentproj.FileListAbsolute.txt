@@ -8,3 +8,4 @@ C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\data\obj\x86\Re
 C:\Users\Dustin\Desktop\The Scarab Gauntlet\TSGGame\TSGGame\Game\data\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\Game\data\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\data\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\data\obj\x86\Debug\ResolveAssemblyReference.cache

@@ -10,7 +10,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\crystal.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\crystal.xnb</Output>
       <Time>2010-06-05T15:18:52-04:00</Time>
     </Item>
     <Item>
@@ -22,7 +22,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\lifebar.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\lifebar.xnb</Output>
       <Time>2010-06-05T15:18:52-04:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\idlesheetFSfina.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\idlesheetFSfina.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -46,7 +46,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\jumpsheet1.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\jumpsheet1.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -58,7 +58,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\runsheetfinalFfix.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\runsheetfinalFfix.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\slidesheet.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\slidesheet.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -82,7 +82,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\amandaswipefinalRS.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\amandaswipefinalRS.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -94,7 +94,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\amandaswipefinalS.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\amandaswipefinalS.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\attack1.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\attack1.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -118,7 +118,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\attack1R.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\attack1R.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -130,7 +130,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bigtree1.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bigtree1.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -142,7 +142,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bigtreemoss2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bigtreemoss2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -154,7 +154,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy1.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy1.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -166,7 +166,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy1dark.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy1dark.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -178,7 +178,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy1light.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy1light.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -190,7 +190,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -202,7 +202,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy2Dark.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy2Dark.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -214,7 +214,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy2Light.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy2Light.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -226,7 +226,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy3.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy3.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -238,7 +238,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy3dark.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy3dark.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -250,7 +250,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy3Light.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopy3Light.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -262,7 +262,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopycurved1.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\canopycurved1.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -274,7 +274,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\cloud1.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\cloud1.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -286,7 +286,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\cloud2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\cloud2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -298,7 +298,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\cloud3.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\cloud3.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -310,7 +310,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\cloud4.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\cloud4.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -322,7 +322,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\cloud5.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\cloud5.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -334,7 +334,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\floatingplatform.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\floatingplatform.xnb</Output>
       <Time>2010-06-17T20:15:00-04:00</Time>
     </Item>
     <Item>
@@ -346,7 +346,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\ForestBG.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\ForestBG.xnb</Output>
       <Time>2010-06-04T19:35:12-04:00</Time>
     </Item>
     <Item>
@@ -358,7 +358,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\frontGrowth.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\frontGrowth.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -370,7 +370,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\frontGrowthDark.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\frontGrowthDark.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -382,7 +382,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\frontGrowthLight.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\frontGrowthLight.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -394,7 +394,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\fungisblueLight.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\fungisblueLight.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -406,7 +406,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\fungisbluepatchLight.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\fungisbluepatchLight.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -418,7 +418,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\fungispinkLight2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\fungispinkLight2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -430,7 +430,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\fungispurpleLight.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\fungispurpleLight.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -442,7 +442,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\fungispurpleLight2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\fungispurpleLight2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -454,7 +454,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\GGLogo.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\GGLogo.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -466,7 +466,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\glidesheetfinal.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\glidesheetfinal.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -478,7 +478,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\hillvillage.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\hillvillage.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -490,7 +490,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\idlesheet1S.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\idlesheet1S.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -502,7 +502,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\idlesheetFS.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\idlesheetFS.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -514,7 +514,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\jumpattack1.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\jumpattack1.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -526,7 +526,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\jumpattack1R.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\jumpattack1R.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -538,7 +538,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\jumpsheet1R.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\jumpsheet1R.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -550,7 +550,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\kushling.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\kushling.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -562,7 +562,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Leaf1.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Leaf1.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -574,7 +574,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\leaves.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\leaves.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -586,7 +586,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\leaves2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\leaves2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -598,7 +598,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\leaves3.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\leaves3.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -610,7 +610,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\lightbreaks.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\lightbreaks.xnb</Output>
       <Time>2010-06-04T19:35:12-04:00</Time>
     </Item>
     <Item>
@@ -622,7 +622,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1bottomgroundleft2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1bottomgroundleft2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -634,7 +634,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1bottomgroundright2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1bottomgroundright2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -646,7 +646,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1clifffacebottomleft.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1clifffacebottomleft.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -658,7 +658,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1clifffacebottomright.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1clifffacebottomright.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -670,7 +670,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1clifffacenorootleft2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1clifffacenorootleft2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -682,7 +682,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1clifffacenorootright2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1clifffacenorootright2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -694,7 +694,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1clifffacewrootleft2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1clifffacewrootleft2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -706,7 +706,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1clifffacewrootright2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1clifffacewrootright2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -718,7 +718,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1diagleft2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1diagleft2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -730,7 +730,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1diagmiddleleft2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1diagmiddleleft2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -742,7 +742,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1diagmiddleright2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1diagmiddleright2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -754,7 +754,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1diagright2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1diagright2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -766,7 +766,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1diagtopleft2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1diagtopleft2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -778,7 +778,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1diagtopright2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1diagtopright2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -790,7 +790,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1dropedgeleft2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1dropedgeleft2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -802,7 +802,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1dropedgeright2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1dropedgeright2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -814,7 +814,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1earth2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1earth2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -826,7 +826,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1ground2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1ground2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -838,7 +838,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1groundcornerleft2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1groundcornerleft2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -850,7 +850,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1groundcornerright2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1groundcornerright2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -862,7 +862,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1grounddropedgeleft2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1grounddropedgeleft2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -874,7 +874,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1grounddropedgeright2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Lv1grounddropedgeright2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -886,7 +886,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\moss.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\moss.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -898,7 +898,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\moss2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\moss2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -910,7 +910,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\mountain1Scroller.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\mountain1Scroller.xnb</Output>
       <Time>2010-06-04T19:35:12-04:00</Time>
     </Item>
     <Item>
@@ -922,7 +922,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\mountain2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\mountain2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -934,7 +934,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\mountiain1.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\mountiain1.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -946,7 +946,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\particle_effect_candle.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\particle_effect_candle.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -958,7 +958,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\particle_effect_snow.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\particle_effect_snow.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -970,7 +970,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\runsheetfinalF.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\runsheetfinalF.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -982,7 +982,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\runsheetfinalR.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\runsheetfinalR.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -994,7 +994,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\runsheetfinalR2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\runsheetfinalR2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1006,7 +1006,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\shadowleaves.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\shadowleaves.xnb</Output>
       <Time>2010-06-04T19:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1018,7 +1018,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\sky.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\sky.xnb</Output>
       <Time>2009-11-11T20:04:04-05:00</Time>
     </Item>
     <Item>
@@ -1030,7 +1030,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\SpitterAttackLeft.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\SpitterAttackLeft.xnb</Output>
       <Time>2010-10-24T10:40:01-04:00</Time>
     </Item>
     <Item>
@@ -1042,7 +1042,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\SpitterAttackRight.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\SpitterAttackRight.xnb</Output>
       <Time>2010-10-24T10:39:51-04:00</Time>
     </Item>
     <Item>
@@ -1054,7 +1054,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\SpitterDeathLeft.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\SpitterDeathLeft.xnb</Output>
       <Time>2010-10-24T10:39:43-04:00</Time>
     </Item>
     <Item>
@@ -1066,7 +1066,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\SpitterDeathRight.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\SpitterDeathRight.xnb</Output>
       <Time>2010-10-24T10:39:35-04:00</Time>
     </Item>
     <Item>
@@ -1078,7 +1078,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\SpitterHideSwitchLeft.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\SpitterHideSwitchLeft.xnb</Output>
       <Time>2010-10-24T10:39:22-04:00</Time>
     </Item>
     <Item>
@@ -1090,7 +1090,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\SpitterHideSwitchRight.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\SpitterHideSwitchRight.xnb</Output>
       <Time>2010-10-24T10:39:14-04:00</Time>
     </Item>
     <Item>
@@ -1102,7 +1102,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Spitterpopupleft.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Spitterpopupleft.xnb</Output>
       <Time>2010-10-24T10:39:01-04:00</Time>
     </Item>
     <Item>
@@ -1114,7 +1114,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Spitterpopupright.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Spitterpopupright.xnb</Output>
       <Time>2010-10-24T10:38:50-04:00</Time>
     </Item>
     <Item>
@@ -1126,7 +1126,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templebottomcornerup.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templebottomcornerup.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1138,7 +1138,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templediag.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templediag.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1150,7 +1150,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templedown.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templedown.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1162,7 +1162,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templedowndiag.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templedowndiag.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1174,7 +1174,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templefloor.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templefloor.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1186,7 +1186,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templeplatcorneright.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templeplatcorneright.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1198,7 +1198,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templeplatcornerleft.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templeplatcornerleft.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1210,7 +1210,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templeplatformfloor.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templeplatformfloor.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1222,7 +1222,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templetopcornerleft.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templetopcornerleft.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1234,7 +1234,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templetopcornerright.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templetopcornerright.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1246,7 +1246,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templeup.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templeup.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1258,7 +1258,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templeupdiag.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\templeupdiag.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1270,7 +1270,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\treealone1.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\treealone1.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1282,7 +1282,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\treesback.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\treesback.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1294,7 +1294,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\treesfront.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\treesfront.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1306,7 +1306,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\undergrowth.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\undergrowth.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1318,7 +1318,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\undergrowth2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\undergrowth2.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1330,7 +1330,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\UndergrowthHigh.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\UndergrowthHigh.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1342,7 +1342,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\undergrowthLow.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\undergrowthLow.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1354,7 +1354,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\vines.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\vines.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1366,7 +1366,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bomberhop.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bomberhop.xnb</Output>
       <Time>2010-10-24T10:42:53-04:00</Time>
     </Item>
     <Item>
@@ -1378,7 +1378,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bomberidle.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bomberidle.xnb</Output>
       <Time>2010-10-24T10:42:44-04:00</Time>
     </Item>
     <Item>
@@ -1390,7 +1390,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bombersplode.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bombersplode.xnb</Output>
       <Time>2010-10-24T10:42:35-04:00</Time>
     </Item>
     <Item>
@@ -1402,7 +1402,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkDeathSpriteBuild.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkDeathSpriteBuild.xnb</Output>
       <Time>2010-10-24T10:41:14-04:00</Time>
     </Item>
     <Item>
@@ -1414,7 +1414,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkIdleSpriteBuild.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkIdleSpriteBuild.xnb</Output>
       <Time>2010-10-24T10:41:00-04:00</Time>
     </Item>
     <Item>
@@ -1426,7 +1426,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkMeleeSpriteBuild.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkMeleeSpriteBuild.xnb</Output>
       <Time>2010-10-24T10:40:37-04:00</Time>
     </Item>
     <Item>
@@ -1438,7 +1438,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkRangedSpriteBuild.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkRangedSpriteBuild.xnb</Output>
       <Time>2010-10-24T10:40:27-04:00</Time>
     </Item>
     <Item>
@@ -1450,7 +1450,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkWalkSpriteBuild.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkWalkSpriteBuild.xnb</Output>
       <Time>2010-10-24T10:40:15-04:00</Time>
     </Item>
     <Item>
@@ -1462,7 +1462,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bgtreesbackgreen.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bgtreesbackgreen.xnb</Output>
       <Time>2010-06-04T19:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1474,7 +1474,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bgtreesfrontgreen.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bgtreesfrontgreen.xnb</Output>
       <Time>2010-06-04T19:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1486,7 +1486,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bgtreesmiddlegreen.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bgtreesmiddlegreen.xnb</Output>
       <Time>2010-06-04T19:35:13-04:00</Time>
     </Item>
     <Item>
@@ -1498,7 +1498,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\tigertrap.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\tigertrap.xnb</Output>
       <Time>2010-06-17T20:12:42-04:00</Time>
     </Item>
     <Item>
@@ -1510,7 +1510,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkBlockSpriteBuildMed.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkBlockSpriteBuildMed.xnb</Output>
       <Time>2010-10-24T10:41:23-04:00</Time>
     </Item>
     <Item>
@@ -1522,7 +1522,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\amandaswipefinal.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\amandaswipefinal.xnb</Output>
       <Time>2010-06-10T23:11:41-04:00</Time>
     </Item>
     <Item>
@@ -1534,7 +1534,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\idlesheetF.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\idlesheetF.xnb</Output>
       <Time>2010-06-10T23:11:42-04:00</Time>
     </Item>
     <Item>
@@ -1546,7 +1546,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\GruntWalkRev.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\GruntWalkRev.xnb</Output>
       <Time>2010-10-24T10:41:45-04:00</Time>
     </Item>
     <Item>
@@ -1558,7 +1558,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Grunt_AttackRev.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Grunt_AttackRev.xnb</Output>
       <Time>2010-10-24T10:42:14-04:00</Time>
     </Item>
     <Item>
@@ -1570,7 +1570,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Grunt_DeathRev.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Grunt_DeathRev.xnb</Output>
       <Time>2010-10-24T10:41:59-04:00</Time>
     </Item>
     <Item>
@@ -1582,7 +1582,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bgtreesbackgreentest.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bgtreesbackgreentest.xnb</Output>
       <Time>2010-06-15T03:16:58-04:00</Time>
     </Item>
     <Item>
@@ -1594,7 +1594,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bgtreesfrontgreentest.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bgtreesfrontgreentest.xnb</Output>
       <Time>2010-06-15T02:53:06-04:00</Time>
     </Item>
     <Item>
@@ -1606,7 +1606,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bgtreesmiddlegreentest.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bgtreesmiddlegreentest.xnb</Output>
       <Time>2010-06-15T03:19:10-04:00</Time>
     </Item>
     <Item>
@@ -1618,7 +1618,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bottomblendgrass.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bottomblendgrass.xnb</Output>
       <Time>2010-06-15T02:19:36-04:00</Time>
     </Item>
     <Item>
@@ -1630,7 +1630,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bottomblendgrass2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\bottomblendgrass2.xnb</Output>
       <Time>2010-06-15T02:33:06-04:00</Time>
     </Item>
     <Item>
@@ -1642,7 +1642,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\elevator_bottom.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\elevator_bottom.xnb</Output>
       <Time>2010-06-04T23:35:12-04:00</Time>
     </Item>
     <Item>
@@ -1654,7 +1654,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\fern.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\fern.xnb</Output>
       <Time>2010-06-15T02:21:48-04:00</Time>
     </Item>
     <Item>
@@ -1666,7 +1666,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\greentreethick.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\greentreethick.xnb</Output>
       <Time>2010-06-16T20:08:46-04:00</Time>
     </Item>
     <Item>
@@ -1678,7 +1678,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\greentreethin.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\greentreethin.xnb</Output>
       <Time>2010-06-16T20:06:54-04:00</Time>
     </Item>
     <Item>
@@ -1690,7 +1690,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\newvine1.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\newvine1.xnb</Output>
       <Time>2010-06-15T02:23:42-04:00</Time>
     </Item>
     <Item>
@@ -1702,7 +1702,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\newvine2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\newvine2.xnb</Output>
       <Time>2010-06-15T02:27:48-04:00</Time>
     </Item>
     <Item>
@@ -1714,7 +1714,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\shadedfgtree.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\shadedfgtree.xnb</Output>
       <Time>2010-06-15T02:30:16-04:00</Time>
     </Item>
     <Item>
@@ -1726,7 +1726,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\shadedfgtree2.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\shadedfgtree2.xnb</Output>
       <Time>2010-06-16T19:48:16-04:00</Time>
     </Item>
     <Item>
@@ -1738,7 +1738,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\shadedfgtreethick.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\shadedfgtreethick.xnb</Output>
       <Time>2010-06-16T19:52:02-04:00</Time>
     </Item>
     <Item>
@@ -1750,7 +1750,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\shadedfgtreethin.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\shadedfgtreethin.xnb</Output>
       <Time>2010-06-16T20:09:48-04:00</Time>
     </Item>
     <Item>
@@ -1762,7 +1762,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkIntroSpriteBuild.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\HulkIntroSpriteBuild.xnb</Output>
       <Time>2010-10-24T10:40:49-04:00</Time>
     </Item>
     <Item>
@@ -1774,7 +1774,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\KushlingBounce.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\KushlingBounce.xnb</Output>
       <Time>2010-04-21T21:02:46-04:00</Time>
     </Item>
     <Item>
@@ -1786,7 +1786,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\KushlingDeathfalll.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\KushlingDeathfalll.xnb</Output>
       <Time>2010-04-21T21:06:58-04:00</Time>
     </Item>
     <Item>
@@ -1798,7 +1798,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\KushlingDeathJump.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\KushlingDeathJump.xnb</Output>
       <Time>2010-04-21T21:16:58-04:00</Time>
     </Item>
     <Item>
@@ -1810,7 +1810,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\KushlingIdle.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\KushlingIdle.xnb</Output>
       <Time>2010-04-21T20:59:18-04:00</Time>
     </Item>
     <Item>
@@ -1822,7 +1822,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\KushlingSpawn.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\KushlingSpawn.xnb</Output>
       <Time>2010-04-21T20:54:22-04:00</Time>
     </Item>
     <Item>
@@ -1834,7 +1834,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_ForwardRunSprite.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_ForwardRunSprite.xnb</Output>
       <Time>2010-10-24T10:27:16-04:00</Time>
     </Item>
     <Item>
@@ -1846,7 +1846,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_DeathReverseSprite.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_DeathReverseSprite.xnb</Output>
       <Time>2010-10-24T10:30:37-04:00</Time>
     </Item>
     <Item>
@@ -1858,7 +1858,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_DeathSprite.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_DeathSprite.xnb</Output>
       <Time>2010-10-24T10:30:28-04:00</Time>
     </Item>
     <Item>
@@ -1870,7 +1870,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_FallDeath.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_FallDeath.xnb</Output>
       <Time>2010-10-24T10:27:48-04:00</Time>
     </Item>
     <Item>
@@ -1882,7 +1882,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_FallDeathReverse.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_FallDeathReverse.xnb</Output>
       <Time>2010-10-24T10:27:28-04:00</Time>
     </Item>
     <Item>
@@ -1894,7 +1894,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\amanda_jumpmeleexbuild.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\amanda_jumpmeleexbuild.xnb</Output>
       <Time>2010-10-24T10:29:52-04:00</Time>
     </Item>
     <Item>
@@ -1906,7 +1906,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_jumpsprite.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_jumpsprite.xnb</Output>
       <Time>2010-10-24T10:29:38-04:00</Time>
     </Item>
     <Item>
@@ -1918,7 +1918,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_MeleeSprite.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_MeleeSprite.xnb</Output>
       <Time>2010-10-24T10:29:24-04:00</Time>
     </Item>
     <Item>
@@ -1930,7 +1930,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_ReverseRunSprite.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_ReverseRunSprite.xnb</Output>
       <Time>2010-10-24T10:29:14-04:00</Time>
     </Item>
     <Item>
@@ -1942,7 +1942,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_slidesprite.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_slidesprite.xnb</Output>
       <Time>2010-10-24T10:28:51-04:00</Time>
     </Item>
     <Item>
@@ -1954,7 +1954,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_slidespritereverse.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_slidespritereverse.xnb</Output>
       <Time>2010-10-24T10:28:36-04:00</Time>
     </Item>
     <Item>
@@ -1966,7 +1966,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_SpellcastReverse.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_SpellcastReverse.xnb</Output>
       <Time>2010-10-24T10:28:17-04:00</Time>
     </Item>
     <Item>
@@ -1978,7 +1978,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_Swipe.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_Swipe.xnb</Output>
       <Time>2010-10-24T10:28:02-04:00</Time>
     </Item>
     <Item>
@@ -1987,8 +1987,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\startMenu.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\startMenu.xnb</Output>
       <Time>2011-01-16T16:52:30.4809409-05:00</Time>
+    </Item>
+    <Item>
+      <Source>images\olmectotemleft.png</Source>
+      <Name>images\olmectotemleft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\olmectotemleft.xnb</Output>
+      <Time>2011-01-17T23:14:18.225625-05:00</Time>
+    </Item>
+    <Item>
+      <Source>images\olmectotemright.png</Source>
+      <Name>images\olmectotemright</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\olmectotemright.xnb</Output>
+      <Time>2011-01-17T23:14:18.8816625-05:00</Time>
     </Item>
     <Item>
       <Source>images\Amanda_Idle.png</Source>
@@ -1999,7 +2017,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_Idle.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_Idle.xnb</Output>
       <Time>2010-10-24T10:27:01-04:00</Time>
     </Item>
     <Item>
@@ -2011,7 +2029,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_IdleReverse.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_IdleReverse.xnb</Output>
       <Time>2010-10-24T10:30:16-04:00</Time>
     </Item>
     <Item>
@@ -2023,7 +2041,7 @@
         <Data Key="TextureFormat">NoChange</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_ReverseSwipe.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\Amanda_ReverseSwipe.xnb</Output>
       <Time>2010-10-24T10:29:02-04:00</Time>
     </Item>
     <Item>
@@ -2032,36 +2050,18 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\effects\CustomEffect.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\effects\CustomEffect.xnb</Output>
       <Time>2010-06-04T19:35:01-04:00</Time>
-    </Item>
-    <Item>
-      <Source>images\olmectotemleft.png</Source>
-      <Name>images\olmectotemleft</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\olmectotemleft.xnb</Output>
-      <Time>2011-01-17T23:14:18.225625-05:00</Time>
-    </Item>
-    <Item>
-      <Source>images\olmectotemright.png</Source>
-      <Name>images\olmectotemright</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\images\olmectotemright.xnb</Output>
-      <Time>2011-01-17T23:14:18.8816625-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\data\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\data\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\</OutputDirectory>
+      <RootDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\data\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\data\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\bin\x86\Debug\data\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
