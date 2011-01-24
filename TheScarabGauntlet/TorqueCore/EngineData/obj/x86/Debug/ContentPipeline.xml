@@ -7,7 +7,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\SimpleEffect.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\SimpleEffect.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\RefractionEffect.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\RefractionEffect.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\ClipMap.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\ClipMap.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\ClipMapBlender.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\ClipMapBlender.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\BloomCombine.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\BloomCombine.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\BloomExtract.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\BloomExtract.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\GaussianBlur.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\GaussianBlur.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\Cubemap.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\Cubemap.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\DistanceFog.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\DistanceFog.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -88,7 +88,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\DetailEffect.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\DetailEffect.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -97,7 +97,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\ZPassEffect.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\ZPassEffect.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\LightingEffect2D.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\LightingEffect2D.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -115,7 +115,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\LightingEffect3D.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\effects\LightingEffect3D.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -124,7 +124,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Arial14.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Arial14.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -133,7 +133,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Arial16.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Arial16.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -142,7 +142,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Arial18.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Arial18.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -151,7 +151,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Arial20.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Arial20.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -160,7 +160,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Arial22.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Arial22.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -169,7 +169,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Arial12.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Arial12.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -178,7 +178,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Courier12.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Courier12.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -187,7 +187,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Courier14.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Courier14.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -196,7 +196,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Courier16.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Courier16.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -205,7 +205,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Courier18.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Courier18.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -214,7 +214,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Courier20.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Courier20.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -223,7 +223,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Courier22.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\fonts\Courier22.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -236,7 +236,7 @@
         <Data Key="ColorKeyEnabled">False</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\images\BlueFTexture.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\images\BlueFTexture.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <Item>
@@ -245,7 +245,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\images\blobShadow.xnb</Output>
+      <Output>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\images\blobShadow.xnb</Output>
       <Time>2010-08-17T11:40:12-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -253,10 +253,10 @@
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\EngineData\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\EngineData\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\</OutputDirectory>
+      <RootDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\EngineData\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\EngineData\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\bin\x86\Debug\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

@@ -84,7 +84,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>O+4QOLWKIiRL77SN8JaOiKvjN58=</dsig:DigestValue>
+        <dsig:DigestValue>VnFVRq/r8CE1kWUGRWwur6KPJV0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -96,7 +96,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Bptkc5r2yihB7x83kjlwF1coBWk=</dsig:DigestValue>
+        <dsig:DigestValue>ofy8u3zjT+TPLRvXRtcvum8QE8Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -557,6 +557,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>FLjWM4bDFHoYWr+lLwnhRD//T6s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="data\images\CrystalSpike.xnb" size="33781">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zXdCXfntFo57zSPSv5mXww0BMRM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="data\images\elevator_bottom.xnb" size="61525">
@@ -1459,6 +1468,15 @@
       <dsig:DigestValue>73FYUKx2zdKl8cR5RxrFACwbzGo=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="data\images\swingingtrap.xnb" size="512085">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YjvEhhdS/mXWW0b2WAdHMWfbRQs=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="data\images\templebottomcornerup.xnb" size="65621">
     <hash>
       <dsig:Transforms>
@@ -1468,6 +1486,24 @@
       <dsig:DigestValue>MG6xhPQNsks4weX9rIaoVn+yrHI=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="data\images\TempleBrickDown.xnb" size="65621">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GyZ44GskmXqWrOOCYydf13ixf48=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="data\images\TempleBrickUp.xnb" size="65621">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>qk3czkKx+zcZb+yggvKpXCNadLo=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="data\images\templediag.xnb" size="65621">
     <hash>
       <dsig:Transforms>
@@ -1475,6 +1511,78 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>tiCRS89K2ZXy7DldmDYL1isSVb8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="data\images\TempleDiagBottomLeft.xnb" size="65621">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5aZ5M6iwwqPGccIkkByYRFvzPLM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="data\images\TempleDiagBottomRight.xnb" size="65621">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Tye8WKISihkR/TF72UfMjWLK5kw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="data\images\TempleDiagMidLeft.xnb" size="65621">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>v2o1fKT5gqqYYgkmMxmeTSUq8xE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="data\images\TempleDiagMidRight.xnb" size="65621">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6OTLDmYB4zKF/eXNRI3Ehq2HaE0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="data\images\TempleDiagonalLeft.xnb" size="65621">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cjUQ2vNTr4KTp0LENQ9fbkNoeh0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="data\images\TempleDiagonalRight.xnb" size="65621">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rB6Sn3UUk4YbIcF9XZPULBj2e90=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="data\images\TempleDiagTopLeft.xnb" size="65621">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tc15KaUsFivOa7Bps4XLtUixsLs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="data\images\TempleDiagTopRight.xnb" size="65621">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Jp9xFNhSiFjLlvSqD2bxtr3kbyM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="data\images\templedown.xnb" size="65621">
@@ -1495,13 +1603,22 @@
       <dsig:DigestValue>RHwFsgUIu/2//Q9Vs4+El8EgJoM=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="data\images\TempleDropTrap.xnb" size="2048085">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>x9rX2Cbugt1jzPsIEpfhnWVM4F8=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="data\images\templefloor.xnb" size="65621">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Xm2QS/PRECSoMSSsILaCxIbXBOk=</dsig:DigestValue>
+      <dsig:DigestValue>2CR0HGzX2XhKVlxY2lbrSAwpx+Q=</dsig:DigestValue>
     </hash>
   </file>
   <file name="data\images\templeplatcorneright.xnb" size="65621">
@@ -1547,6 +1664,24 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>LB3SNNmZZytau0TMKZLixxuhv04=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="data\images\TempleTrapHinge.xnb" size="65621">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>OXx9ObYuyApsr2Amg4hd4K37ciQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="data\images\TempleTrapTile.xnb" size="65621">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uJZNj89Fj1JcZ0JFnHaNWARu+ZA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="data\images\templeup.xnb" size="65621">

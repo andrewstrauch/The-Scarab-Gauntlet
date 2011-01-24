@@ -158,7 +158,6 @@
     <None Include="Game.txproj">
       <Name>Game</Name>
     </None>
-    <None Include="Game_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <NestedContentProject Include="data\Content.contentproj">

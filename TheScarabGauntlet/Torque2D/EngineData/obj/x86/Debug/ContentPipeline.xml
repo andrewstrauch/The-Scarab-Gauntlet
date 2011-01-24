@@ -6,10 +6,10 @@
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\EngineData\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\EngineData\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\</OutputDirectory>
+      <RootDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Torque2D\EngineData\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Torque2D\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Torque2D\EngineData\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

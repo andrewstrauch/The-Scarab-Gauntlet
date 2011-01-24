@@ -1,3 +1,4 @@
 C:\Users\Dustin\Documents\Visual Studio 2008\Projects\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\EngineData\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Dustin\Desktop\TheScarabGauntletnew\TheScarabGauntlet\TorqueCore\EngineData\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Dustin\Desktop\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\EngineData\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\EngineData\obj\x86\Debug\ResolveAssemblyReference.cache
