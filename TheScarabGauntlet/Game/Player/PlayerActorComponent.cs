@@ -394,6 +394,8 @@ namespace PlatformerStarter
             UpdateHealthBar();
 
             base._die(damage, sourceObject);
+
+            CheckpointManager.Instance.LoadCheckPoint();
         }
 
         protected override void _tookDamage(float damage, T2DSceneObject sourceObject)
@@ -432,6 +434,7 @@ namespace PlatformerStarter
             _alive = true;
             _health = _maxHealth;
 
+            UpdateHealthBar();
             // swith to the spawn anim state
             spawning = true;
             FSM.Instance.SetState(_animationManager, "spawn");

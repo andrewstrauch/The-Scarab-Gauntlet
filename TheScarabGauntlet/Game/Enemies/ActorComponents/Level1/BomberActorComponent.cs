@@ -64,7 +64,7 @@ namespace PlatformerStarter.Enemies.ActorComponents
                 exploded = true;
             }
 
-            if(AnimatedSprite.CurrentFrame == AnimatedSprite.FinalFrame)
+            if(AnimatedSprite.CurrentFrame >= AnimatedSprite.FinalFrame)
                 _die(_maxHealth, this.Actor);
         }
 

@@ -2138,6 +2138,19 @@
         <Type>System.String</Type>
       </Element>
     </Type>
+    <Type name="ScarabCollectibleComponent" fullName="PlatformerStarter.Common.Collectibles.ScarabCollectibleComponent">
+      <Dependencies>
+        <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
+      </Dependencies>
+      <IsComponent>true</IsComponent>
+      <Element name="Components">
+        <IsList>true</IsList>
+        <Type>GarageGames.Torque.Core.TorqueComponent</Type>
+      </Element>
+      <Element name="Name">
+        <Type>System.String</Type>
+      </Element>
+    </Type>
     <Type name="SolidPlatformComponent" fullName="GarageGames.Torque.PlatformerFramework.SolidPlatformComponent">
       <Dependencies>
         <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
@@ -4236,6 +4249,7 @@
         <Type>GarageGames.Torque.T2D.T2DWorldLimitComponent</Type>
         <Type>PlatformerStarter.AttackCollisionComponent</Type>
         <Type>PlatformerStarter.BoundedRotationComponent</Type>
+        <Type>PlatformerStarter.Common.Collectibles.ScarabCollectibleComponent</Type>
         <Type>PlatformerStarter.Common.CutsceneTrigger</Type>
         <Type>PlatformerStarter.Common.MountLinkComponent</Type>
         <Type>PlatformerStarter.Common.Traps.SwingingTrapComponent</Type>
