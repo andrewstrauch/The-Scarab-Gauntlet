@@ -1,8 +1,0 @@
-C:\Users\Dustin\Documents\TSGGame\TSGGame\PlatformerFramework\bin\Xbox 360\Release\GarageGames.TorqueX.PlatFramework.dll
-C:\Users\Dustin\Documents\TSGGame\TSGGame\PlatformerFramework\bin\Xbox 360\Release\GarageGames.TorqueX.PlatFramework.pdb
-C:\Users\Dustin\Documents\TSGGame\TSGGame\PlatformerFramework\bin\Xbox 360\Release\GarageGames.TorqueX.Framework.dll
-C:\Users\Dustin\Documents\TSGGame\TSGGame\PlatformerFramework\bin\Xbox 360\Release\GarageGames.TorqueX.Framework2D.dll
-C:\Users\Dustin\Documents\TSGGame\TSGGame\PlatformerFramework\obj\Xbox 360\Release\ResolveAssemblyReference.cache
-C:\Users\Dustin\Documents\TSGGame\TSGGame\PlatformerFramework\obj\Xbox 360\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Dustin\Documents\TSGGame\TSGGame\PlatformerFramework\obj\Xbox 360\Release\GarageGames.TorqueX.PlatFramework.dll
-C:\Users\Dustin\Documents\TSGGame\TSGGame\PlatformerFramework\obj\Xbox 360\Release\GarageGames.TorqueX.PlatFramework.pdb
