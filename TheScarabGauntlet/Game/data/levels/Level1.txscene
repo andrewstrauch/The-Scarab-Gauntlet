@@ -8850,8 +8850,8 @@
             </SortPoint>
             <Mounts>
                 <Mount>
-                    <Object nameRef="MountChild0" />
-                    <LinkPoint>WeakSpotLP</LinkPoint>
+                    <Object nameRef="hulk_cannon" />
+                    <LinkPoint>WeaponLP</LinkPoint>
                     <OwnedByMount>false</OwnedByMount>
                     <SnapToMount>true</SnapToMount>
                     <TrackMountRotation>true</TrackMountRotation>
@@ -8870,8 +8870,8 @@
                     <InheritMountFlip>false</InheritMountFlip>
                 </Mount>
                 <Mount>
-                    <Object nameRef="hulk_cannon" />
-                    <LinkPoint>WeaponLP</LinkPoint>
+                    <Object nameRef="MountChild0" />
+                    <LinkPoint>WeakSpotLP</LinkPoint>
                     <OwnedByMount>false</OwnedByMount>
                     <SnapToMount>true</SnapToMount>
                     <TrackMountRotation>true</TrackMountRotation>
@@ -8886,6 +8886,101 @@
             <PlayOnLoad>true</PlayOnLoad>
             <RemoveOnFinished>false</RemoveOnFinished>
         </AnimatedSprite>
+        <T2DSceneObject name="hulk_cannon">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <WeaponComponent type="PlatformerStarter.WeaponComponent">
+                    <Damage>10</Damage>
+                    <ShotSpeed>100.000</ShotSpeed>
+                    <ShotAngle>-95.000</ShotAngle>
+                    <LinkPointName></LinkPointName>
+                    <ProjectileTemplate nameRef="hulk_projectile" />
+                </WeaponComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>8.385</X>
+                <Y>7.206</Y>
+            </Size>
+            <Position>
+                <X>7082.950</X>
+                <Y>-46.621</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
+        <StaticSprite name="swipe_anchor">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <SwipeAttackComponent type="PlatformerStarter.SwipeAttackComponent">
+                    <SwipeObject nameRef="hulk_swipe_object" />
+                    <LinkPointName>LinkPoint1</LinkPointName>
+                    <MountOffset>
+                        <X>2.000</X>
+                        <Y>-0.080</Y>
+                    </MountOffset>
+                    <Damage>50</Damage>
+                </SwipeAttackComponent>
+                <BoundedRotationComponent type="PlatformerStarter.BoundedRotationComponent">
+                    <StartRotation>80.000</StartRotation>
+                    <EndRotation>-100.000</EndRotation>
+                    <RotationSpeed>20.000</RotationSpeed>
+                    <FacingLeft>true</FacingLeft>
+                </BoundedRotationComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>10.580</X>
+                <Y>9.206</Y>
+            </Size>
+            <Position>
+                <X>7087.466</X>
+                <Y>-35.114</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>false</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="GGLogoMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
         <T2DSceneObject name="MountChild0">
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -8959,101 +9054,6 @@
             <Visible>true</Visible>
             <VisibilityLevel>1</VisibilityLevel>
             <FlipX>true</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-        </T2DSceneObject>
-        <StaticSprite name="swipe_anchor">
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <SwipeAttackComponent type="PlatformerStarter.SwipeAttackComponent">
-                    <SwipeObject nameRef="hulk_swipe_object" />
-                    <LinkPointName>LinkPoint1</LinkPointName>
-                    <MountOffset>
-                        <X>2.000</X>
-                        <Y>-0.080</Y>
-                    </MountOffset>
-                    <Damage>50</Damage>
-                </SwipeAttackComponent>
-                <BoundedRotationComponent type="PlatformerStarter.BoundedRotationComponent">
-                    <StartRotation>80.000</StartRotation>
-                    <EndRotation>-100.000</EndRotation>
-                    <RotationSpeed>20.000</RotationSpeed>
-                    <FacingLeft>true</FacingLeft>
-                </BoundedRotationComponent>
-                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
-                    <Velocity>
-                        <X>0</X>
-                        <Y>0</Y>
-                    </Velocity>
-                    <AngularVelocity>0.0</AngularVelocity>
-                    <InverseMass>1.0</InverseMass>
-                    <RotationScale>1.0</RotationScale>
-                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
-                </T2DPhysicsComponent>
-            </Components>
-            <ObjectType>
-                <object objTypeRef="t2dSpriteType" />
-            </ObjectType>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>10.580</X>
-                <Y>9.206</Y>
-            </Size>
-            <Position>
-                <X>7087.466</X>
-                <Y>-35.114</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>false</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-            <Material nameRef="GGLogoMaterial" />
-            <MaterialRegionIndex>0</MaterialRegionIndex>
-        </StaticSprite>
-        <T2DSceneObject name="hulk_cannon">
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <WeaponComponent type="PlatformerStarter.WeaponComponent">
-                    <Damage>10</Damage>
-                    <ShotSpeed>100.000</ShotSpeed>
-                    <ShotAngle>-95.000</ShotAngle>
-                    <LinkPointName></LinkPointName>
-                    <ProjectileTemplate nameRef="hulk_projectile" />
-                </WeaponComponent>
-            </Components>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>8.385</X>
-                <Y>7.206</Y>
-            </Size>
-            <Position>
-                <X>7082.950</X>
-                <Y>-46.621</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
             <FlipY>false</FlipY>
             <SortPoint>
                 <X>0.000000</X>
@@ -49279,6 +49279,8 @@
                 <Y>0.000000</Y>
             </SortPoint>
             <AnimationData nameRef="" />
+            <StartFrame>C:/Program Files/Torque/Torque X 3.1.5 Pro/TXB2D/tools/levelEditor/gui/images/iconAdd.png</StartFrame>
+            <RandomStart>false</RandomStart>
             <PlayOnLoad>true</PlayOnLoad>
             <RemoveOnFinished>false</RemoveOnFinished>
         </AnimatedSprite>
@@ -76301,124 +76303,6 @@
             <Material nameRef="canopycurved1Material" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
-        <AnimatedSprite name="Grunt">
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <GruntActorComponent type="PlatformerStarter.Enemies.GruntActorComponent">
-                    <AttackAnim nameRef="Grunt_AttackRevAnimation1" />
-                    <CoolDown>500</CoolDown>
-                    <AttackObjectTemplate nameRef="grunt_swipe" />
-                    <AttackSpeed>25</AttackSpeed>
-                    <AIComponent>
-                        <AIChaseComponent type="PlatformerStarter.Enemies.AIComponents.AIChaseComponent">
-                            <Bounces>false</Bounces>
-                            <AttackDist>25.000</AttackDist>
-                            <AlertDist>50.000</AlertDist>
-                            <Attacks>true</Attacks>
-                        </AIChaseComponent>
-                    </AIComponent>
-                    <MaxVelocity>
-                        <X>200</X>
-                        <Y>200</Y>
-                    </MaxVelocity>
-                    <Gravity>3</Gravity>
-                    <MaxMoveSpeed>25.000</MaxMoveSpeed>
-                    <GroundAccel>16.000</GroundAccel>
-                    <GroundDecel>5</GroundDecel>
-                    <AirAccel>5.000</AirAccel>
-                    <AirDecel>0.5</AirDecel>
-                    <JumpForce>60.000</JumpForce>
-                    <JumpTimeThreshold>0.1</JumpTimeThreshold>
-                    <AllowJumpDown>true</AllowJumpDown>
-                    <JumpDownTimeout>0.18</JumpDownTimeout>
-                    <ClimbUpSpeed>25</ClimbUpSpeed>
-                    <ClimbDownSpeed>45</ClimbDownSpeed>
-                    <ClimbTimeout>0.25</ClimbTimeout>
-                    <ClimbJumpCoefficient>0.5</ClimbJumpCoefficient>
-                    <GroundCheckYThreshold>0.3</GroundCheckYThreshold>
-                    <GroundYBuffer>0.15</GroundYBuffer>
-                    <LadderAttachXThreshold>1</LadderAttachXThreshold>
-                    <MaxGroundNormalY>-0.1</MaxGroundNormalY>
-                    <MaxHealth>10.000</MaxHealth>
-                    <Armor>0</Armor>
-                    <Lives>1</Lives>
-                    <DamageTimeout>0.75</DamageTimeout>
-                    <AllowRespawn>false</AllowRespawn>
-                    <RunAnim nameRef="GruntWalkRevAnimation" />
-                    <ScaleRunAnimBySpeed>false</ScaleRunAnimBySpeed>
-                    <MinRunAnimSpeed>0.25</MinRunAnimSpeed>
-                    <DieAnim nameRef="Grunt_DeathRevAnimation" />
-                </GruntActorComponent>
-                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
-                    <Velocity>
-                        <X>0</X>
-                        <Y>0</Y>
-                    </Velocity>
-                    <AngularVelocity>0.0</AngularVelocity>
-                    <InverseMass>1.0</InverseMass>
-                    <RotationScale>1.0</RotationScale>
-                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
-                </T2DPhysicsComponent>
-                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
-                    <Images>
-                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
-                            <CollisionPolyBasis>
-                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>0.22307</X>
-                                    <Y>-0.24893</Y>
-                                </Vector2>
-                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>-0.11077</X>
-                                    <Y>0.81792</Y>
-                                </Vector2>
-                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>-0.26555</X>
-                                    <Y>-0.25178</Y>
-                                </Vector2>
-                            </CollisionPolyBasis>
-                            <CollisionPolyScale>
-                                <X>1</X>
-                                <Y>1</Y>
-                            </CollisionPolyScale>
-                        </T2DPolyImage>
-                    </Images>
-                    <RenderCollisionBounds>true</RenderCollisionBounds>
-                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.ClampCollision" />
-                    <SolveOverlap>true</SolveOverlap>
-                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
-                </T2DCollisionComponent>
-            </Components>
-            <ObjectType>
-                <object objTypeRef="t2dAnimatedSpriteType" />
-            </ObjectType>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>true</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>25.313</X>
-                <Y>27.000</Y>
-            </Size>
-            <Position>
-                <X>-419.212</X>
-                <Y>8.500</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-            <AnimationData nameRef="" />
-            <PlayOnLoad>true</PlayOnLoad>
-            <RemoveOnFinished>false</RemoveOnFinished>
-        </AnimatedSprite>
         <StaticSprite>
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -79240,8 +79124,8 @@
             </SortPoint>
             <Mounts>
                 <Mount>
-                    <Object nameRef="mouth_1" />
-                    <LinkPoint>LinkPoint1</LinkPoint>
+                    <Object nameRef="mouth_2" />
+                    <LinkPoint>LinkPoint2</LinkPoint>
                     <OwnedByMount>false</OwnedByMount>
                     <SnapToMount>true</SnapToMount>
                     <TrackMountRotation>true</TrackMountRotation>
@@ -79250,8 +79134,8 @@
                     <InheritMountFlip>false</InheritMountFlip>
                 </Mount>
                 <Mount>
-                    <Object nameRef="mouth_2" />
-                    <LinkPoint>LinkPoint2</LinkPoint>
+                    <Object nameRef="mouth_1" />
+                    <LinkPoint>LinkPoint1</LinkPoint>
                     <OwnedByMount>false</OwnedByMount>
                     <SnapToMount>true</SnapToMount>
                     <TrackMountRotation>true</TrackMountRotation>
@@ -79263,42 +79147,6 @@
             <Material nameRef="olmectotemleftMaterial" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
-        <T2DSceneObject name="mouth_1">
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <WeaponComponent type="PlatformerStarter.WeaponComponent">
-                    <Damage>5</Damage>
-                    <ShotSpeed>50.000</ShotSpeed>
-                    <ShotAngle>-90.000</ShotAngle>
-                    <LinkPointName></LinkPointName>
-                    <ProjectileTemplate nameRef="projectile" />
-                </WeaponComponent>
-            </Components>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>9.272</X>
-                <Y>9.520</Y>
-            </Size>
-            <Position>
-                <X>1018.452</X>
-                <Y>21.008</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-        </T2DSceneObject>
         <T2DSceneObject name="mouth_2">
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -79308,7 +79156,7 @@
                     <ShotSpeed>50.000</ShotSpeed>
                     <ShotAngle>-90.000</ShotAngle>
                     <LinkPointName></LinkPointName>
-                    <ProjectileTemplate nameRef="projectile" />
+                    <ProjectileTemplate nameRef="tiki_projectile" />
                 </WeaponComponent>
             </Components>
             <Pool>false</Pool>
@@ -79323,6 +79171,42 @@
             <Position>
                 <X>1018.729</X>
                 <Y>44.943</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
+        <T2DSceneObject name="mouth_1">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <WeaponComponent type="PlatformerStarter.WeaponComponent">
+                    <Damage>5</Damage>
+                    <ShotSpeed>50.000</ShotSpeed>
+                    <ShotAngle>-90.000</ShotAngle>
+                    <LinkPointName></LinkPointName>
+                    <ProjectileTemplate nameRef="tiki_projectile" />
+                </WeaponComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>9.272</X>
+                <Y>9.520</Y>
+            </Size>
+            <Position>
+                <X>1018.452</X>
+                <Y>21.008</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>
@@ -79893,5 +79777,94 @@
             <Material nameRef="skyMaterial" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
+        <T2DSceneObject name="tiki_projectile">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DLinkPointComponent type="GarageGames.Torque.T2D.T2DLinkPointComponent">
+                    <LinkPoints>
+                        <LinkPoint type="GarageGames.Torque.T2D.T2DLinkPointComponent+XmlLinkPoint">
+                            <Name>LinkPoint1</Name>
+                            <Position>
+                                <X>-0.087179</X>
+                                <Y>0.092308</Y>
+                            </Position>
+                            <Rotation>0.0</Rotation>
+                        </LinkPoint>
+                    </LinkPoints>
+                </T2DLinkPointComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <ProjectileComponent type="PlatformerStarter.ProjectileComponent">
+                    <MilliSecondsToLive>3000</MilliSecondsToLive>
+                    <Gravity>0.0</Gravity>
+                    <Damage>5</Damage>
+                </ProjectileComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.86173</X>
+                                    <Y>0.08148</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.00741</X>
+                                    <Y>-0.87654</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.90123</X>
+                                    <Y>0.11605</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.07160</X>
+                                    <Y>0.92593</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <OnCollision valueOf="PlatformerStarter.ProjectileComponent.ProjectileCollision" />
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.KillCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>5.000</X>
+                <Y>5.000</Y>
+            </Size>
+            <Position>
+                <X>-442.500</X>
+                <Y>42.500</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
     </Objects>
 </TorqueSceneData>
