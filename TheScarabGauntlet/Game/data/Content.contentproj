@@ -36,10 +36,6 @@
       <Processor>TextureProcessor</Processor>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
     </Compile>
-    <Content Include="levels\sample_level.txscene">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>sample_level</Name>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d" />
@@ -751,12 +747,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="levels\hulk_test.txscene">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>hulk_test</Name>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="images\bomberhop.png">
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -786,10 +776,6 @@
       <Name>music</Name>
       <Processor>SoundEffectProcessor</Processor>
     </None>
-    <Content Include="levels\grunt_test.txscene">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>grunt_test</Name>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="images\HulkDeathSpriteBuild.png">
@@ -986,12 +972,6 @@
       <Name>shadedfgtreethin</Name>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="levels\Level2.txscene">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>Level2</Name>
-    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup />
@@ -1213,89 +1193,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="images\CrystalSpike.png">
-      <Name>CrystalSpike</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\swingingtrap.png">
-      <Name>swingingtrap</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\TempleBrickDown.png">
-      <Name>TempleBrickDown</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\TempleBrickUp.png">
-      <Name>TempleBrickUp</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\TempleDiagBottomLeft.png">
-      <Name>TempleDiagBottomLeft</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\TempleDiagBottomRight.png">
-      <Name>TempleDiagBottomRight</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\TempleDiagMidLeft.png">
-      <Name>TempleDiagMidLeft</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\TempleDiagMidRight.png">
-      <Name>TempleDiagMidRight</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\TempleDiagonalLeft.png">
-      <Name>TempleDiagonalLeft</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\TempleDiagonalRight.png">
-      <Name>TempleDiagonalRight</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\TempleDiagTopLeft.png">
-      <Name>TempleDiagTopLeft</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\TempleDiagTopRight.png">
-      <Name>TempleDiagTopRight</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\TempleDropTrap.png">
-      <Name>TempleDropTrap</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\TempleTrapHinge.png">
-      <Name>TempleTrapHinge</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="images\TempleTrapTile.png">
-      <Name>TempleTrapTile</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Content Include="levels\test.txscene">
-      <Name>test</Name>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <None Include="levels\traps_test.txscene">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Name>traps_test</Name>
-    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup />

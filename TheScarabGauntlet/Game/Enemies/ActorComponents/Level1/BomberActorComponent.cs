@@ -55,16 +55,19 @@ namespace PlatformerStarter.Enemies.ActorComponents
 
             if (AnimatedSprite.CurrentFrame == (AnimatedSprite.FinalFrame-7))
             {
+                WeaponComponent weapon = SceneObject.Components.FindComponent<WeaponComponent>();
                 if (SceneObject != null && !exploded)
                 {
-                    SceneObject.Components.FindComponent<WeaponComponent>().FireAt(new Vector2(-1, 0));
-                    SceneObject.Components.FindComponent<WeaponComponent>().FireAt(new Vector2(0, -1));
-                    SceneObject.Components.FindComponent<WeaponComponent>().FireAt(new Vector2(1, 0));
+                    weapon.FireAt(new Vector2(-1, 0));
+                    weapon.FireAt(new Vector2(-1, -1));
+                    weapon.FireAt(new Vector2(0, -1));
+                    weapon.FireAt(new Vector2(1, -1));
+                    weapon.FireAt(new Vector2(1, 0));
                 }
                 exploded = true;
             }
 
-            if(AnimatedSprite.CurrentFrame == AnimatedSprite.FinalFrame)
+            if(AnimatedSprite.CurrentFrame >= AnimatedSprite.FinalFrame)
                 _die(_maxHealth, this.Actor);
         }
 
