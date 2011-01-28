@@ -7945,7 +7945,7 @@
                 <T2DLinkPointComponent type="GarageGames.Torque.T2D.T2DLinkPointComponent" />
                 <WeaponComponent type="PlatformerStarter.WeaponComponent">
                     <Damage>50</Damage>
-                    <ShotSpeed>70.000</ShotSpeed>
+                    <ShotSpeed>90.000</ShotSpeed>
                     <ShotAngle>45.0</ShotAngle>
                     <LinkPointName></LinkPointName>
                     <ProjectileTemplate nameRef="projectile" />
@@ -8066,43 +8066,6 @@
             <PlayOnLoad>true</PlayOnLoad>
             <RemoveOnFinished>false</RemoveOnFinished>
         </AnimatedSprite>
-        <T2DSceneObject name="spitter_weapon">
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <WeaponComponent type="PlatformerStarter.WeaponComponent">
-                    <Damage>10</Damage>
-                    <ShotSpeed>50.000</ShotSpeed>
-                    <ShotAngle>0.000</ShotAngle>
-                    <LinkPointName>WeaponLinkPoint</LinkPointName>
-                    <ProjectileTemplate nameRef="projectile" />
-                    <MountObject nameRef="sptter_template" />
-                </WeaponComponent>
-            </Components>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>true</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>5.000</X>
-                <Y>5.000</Y>
-            </Size>
-            <Position>
-                <X>-495.374</X>
-                <Y>17.500</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>false</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-        </T2DSceneObject>
         <AnimatedSprite name="grunt_template">
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -8313,19 +8276,27 @@
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
             <Components inPlace="true">
-                <CheckpointSystemSpawnedObjectComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnedObjectComponent" />
                 <T2DLinkPointComponent type="GarageGames.Torque.T2D.T2DLinkPointComponent">
                     <LinkPoints>
                         <LinkPoint type="GarageGames.Torque.T2D.T2DLinkPointComponent+XmlLinkPoint">
-                            <Name>WeaponLinkPoint</Name>
+                            <Name></Name>
                             <Position>
-                                <X>-0.378238</X>
-                                <Y>-0.044041</Y>
+                                <X>-0.559055</X>
+                                <Y>-0.185039</Y>
+                            </Position>
+                            <Rotation>0.0</Rotation>
+                        </LinkPoint>
+                        <LinkPoint type="GarageGames.Torque.T2D.T2DLinkPointComponent+XmlLinkPoint">
+                            <Name>LinkPoint2</Name>
+                            <Position>
+                                <X>-0.011811</X>
+                                <Y>-0.055118</Y>
                             </Position>
                             <Rotation>0.0</Rotation>
                         </LinkPoint>
                     </LinkPoints>
                 </T2DLinkPointComponent>
+                <CheckpointSystemSpawnedObjectComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnedObjectComponent" />
                 <SpitterActorComponent type="PlatformerStarter.Enemies.SpitterActorComponent">
                     <AttackLeftAnim nameRef="SpitterAttackLeftAnimation" />
                     <AttackRightAnim nameRef="SpitterAttackRightAnimation" />
@@ -8337,11 +8308,12 @@
                     <RightIdleAnim nameRef="SpitterRightIdleAnimation" />
                     <WeakSpotTemplate nameRef="spitter_weak_point" />
                     <WeaponTemplate nameRef="spitter_weapon" />
+                    <WeaponLinkPoint>LinkPoint2</WeaponLinkPoint>
                     <CoolDown>500</CoolDown>
                     <AIComponent>
                         <AIRangedComponent type="PlatformerStarter.Enemies.AIComponents.AIRangedComponent">
-                            <AttackDist>25.000</AttackDist>
-                            <AlertDist>40.000</AlertDist>
+                            <AttackDist>50.000</AttackDist>
+                            <AlertDist>60.000</AlertDist>
                             <Attacks>true</Attacks>
                         </AIRangedComponent>
                     </AIComponent>
@@ -8432,8 +8404,50 @@
                 <Y>27.000</Y>
             </Size>
             <Position>
-                <X>-498.160</X>
-                <Y>-49.415</Y>
+                <X>-491.500</X>
+                <Y>-46.500</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>false</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>-0.000000</X>
+                <Y>-0.011811</Y>
+            </SortPoint>
+            <AnimationData nameRef="SpitterLeftIdleAnimation" />
+            <StartFrame>0</StartFrame>
+            <RandomStart>false</RandomStart>
+            <PlayOnLoad>true</PlayOnLoad>
+            <RemoveOnFinished>false</RemoveOnFinished>
+        </AnimatedSprite>
+        <T2DSceneObject name="spitter_weapon">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <WeaponComponent type="PlatformerStarter.WeaponComponent">
+                    <Damage>10</Damage>
+                    <ShotSpeed>50.000</ShotSpeed>
+                    <ShotAngle>0.000</ShotAngle>
+                    <LinkPointName>WeaponLinkPoint</LinkPointName>
+                    <ProjectileTemplate nameRef="projectile" />
+                    <MountObject nameRef="sptter_template" />
+                </WeaponComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>5.000</X>
+                <Y>5.000</Y>
+            </Size>
+            <Position>
+                <X>-491.659</X>
+                <Y>-47.244</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>false</CollisionsEnabled>
@@ -8445,12 +8459,7 @@
                 <X>0.000000</X>
                 <Y>0.000000</Y>
             </SortPoint>
-            <AnimationData nameRef="SpitterLeftIdleAnimation" />
-            <StartFrame>0</StartFrame>
-            <RandomStart>false</RandomStart>
-            <PlayOnLoad>true</PlayOnLoad>
-            <RemoveOnFinished>false</RemoveOnFinished>
-        </AnimatedSprite>
+        </T2DSceneObject>
         <T2DSceneObject name="punch">
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -8565,7 +8574,7 @@
                         <Y>200</Y>
                     </MaxVelocity>
                     <Gravity>3.200</Gravity>
-                    <MaxMoveSpeed>60.000</MaxMoveSpeed>
+                    <MaxMoveSpeed>55.000</MaxMoveSpeed>
                     <GroundAccel>1.000</GroundAccel>
                     <GroundDecel>5</GroundDecel>
                     <AirAccel>2</AirAccel>
@@ -8592,7 +8601,7 @@
                     <FallAnim nameRef="Amanda_FallAnimation" />
                     <RunAnim nameRef="Amanda_ForwardRunSpriteAnimation" />
                     <ScaleRunAnimBySpeed>true</ScaleRunAnimBySpeed>
-                    <MinRunAnimSpeed>0.25</MinRunAnimSpeed>
+                    <MinRunAnimSpeed>0.500</MinRunAnimSpeed>
                     <RunJumpAnim nameRef="AmandaRunJumpAnimation" />
                     <RunFallAnim nameRef="Amanda_FallDeathAnimation" />
                     <SlideAnim nameRef="Amanda_slidespriteAnimation" />
@@ -12107,42 +12116,6 @@
             <Material nameRef="newvine2Material" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
-        <T2DSpawnObject>
-            <SpawnTemplate nameRef="Grunt" />
-            <Position>
-                <X>1721.414</X>
-                <Y>-17.546</Y>
-            </Position>
-            <Size>
-                <X>25.313</X>
-                <Y>27.000</Y>
-            </Size>
-            <Rotation>0</Rotation>
-            <SpawnOnce>true</SpawnOnce>
-            <SpawnEnabled>true</SpawnEnabled>
-            <MinSpawnTime>800</MinSpawnTime>
-            <MaxSpawnTime>1200</MaxSpawnTime>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-        </T2DSpawnObject>
-        <T2DSpawnObject>
-            <SpawnTemplate nameRef="Grunt" />
-            <Position>
-                <X>1748.079</X>
-                <Y>-17.220</Y>
-            </Position>
-            <Size>
-                <X>25.313</X>
-                <Y>27.000</Y>
-            </Size>
-            <Rotation>0</Rotation>
-            <SpawnOnce>true</SpawnOnce>
-            <SpawnEnabled>true</SpawnEnabled>
-            <MinSpawnTime>800</MinSpawnTime>
-            <MaxSpawnTime>1200</MaxSpawnTime>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-        </T2DSpawnObject>
         <StaticSprite>
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -21705,7 +21678,7 @@
             <Components inPlace="true">
                 <OneWayPlatformComponent type="GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent">
                     <CanClimbThrough>true</CanClimbThrough>
-                    <SurfaceForce>1.000</SurfaceForce>
+                    <SurfaceForce>0.000</SurfaceForce>
                 </OneWayPlatformComponent>
                 <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
                     <Velocity>
@@ -21738,8 +21711,8 @@
                                     <Y>-0.31818</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>0.65858</X>
-                                    <Y>0.12727</Y>
+                                    <X>0.66237</X>
+                                    <Y>0.11518</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
                                     <X>-0.65672</X>
@@ -21771,7 +21744,7 @@
                 <Y>22.683</Y>
             </Size>
             <Position>
-                <X>-482.422</X>
+                <X>-481.422</X>
                 <Y>228.658</Y>
             </Position>
             <Rotation>0</Rotation>
@@ -49279,8 +49252,8 @@
                 <Y>0.000000</Y>
             </SortPoint>
             <AnimationData nameRef="" />
-            <StartFrame>C:/Program Files/Torque/Torque X 3.1.5 Pro/TXB2D/tools/levelEditor/gui/images/iconAdd.png</StartFrame>
-            <RandomStart>false</RandomStart>
+            <StartFrame>5</StartFrame>
+            <RandomStart>true</RandomStart>
             <PlayOnLoad>true</PlayOnLoad>
             <RemoveOnFinished>false</RemoveOnFinished>
         </AnimatedSprite>
@@ -79865,6 +79838,93 @@
                 <X>0.000000</X>
                 <Y>0.000000</Y>
             </SortPoint>
+            <Mounts>
+                <Mount>
+                    <Object nameRef="MountChild2" />
+                    <LinkPoint>LinkPoint1</LinkPoint>
+                    <OwnedByMount>true</OwnedByMount>
+                    <SnapToMount>true</SnapToMount>
+                    <TrackMountRotation>true</TrackMountRotation>
+                    <MountForce>0</MountForce>
+                    <InheritMountVisibility>false</InheritMountVisibility>
+                    <InheritMountFlip>false</InheritMountFlip>
+                </Mount>
+            </Mounts>
         </T2DSceneObject>
+        <StaticSprite name="MountChild2">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>10.276</X>
+                <Y>9.646</Y>
+            </Size>
+            <Position>
+                <X>-442.718</X>
+                <Y>42.731</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="particle_effect_candleMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
+                    <Target nameRef="Amanda" />
+                    <MinSpawnDistance>0</MinSpawnDistance>
+                    <MaxSpawnDistance>150</MaxSpawnDistance>
+                    <AutoDespawnObjects>true</AutoDespawnObjects>
+                    <SpawnObject nameRef="spitter_template" />
+                    <SpawnLimit>1</SpawnLimit>
+                    <SpawnTimeout>1000</SpawnTimeout>
+                </CheckpointSystemSpawnPointComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>27.337</X>
+                <Y>31.706</Y>
+            </Size>
+            <Position>
+                <X>-13.669</X>
+                <Y>3.031</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="SpitterAttackLeftMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
     </Objects>
 </TorqueSceneData>

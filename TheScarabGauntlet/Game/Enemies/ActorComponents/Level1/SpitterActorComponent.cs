@@ -27,12 +27,12 @@ namespace PlatformerStarter.Enemies
         private T2DAnimationData hideRightAnim;
         private T2DAnimationData leftIdleAnim;
         private T2DAnimationData rightIdleAnim;
-        private T2DSceneObject weaponTemplate;
-        private T2DSceneObject weaponObject;
         private T2DSceneObject weakSpotTemplate;
         private T2DSceneObject weakSpotObject;
         private WeaponComponent weaponComponent;
         private Timer attackTimer;
+        private T2DSceneObject weaponTemplate;
+        private string weaponLinkPoint;
         private float coolDown;
         private bool justShot;
         #endregion
@@ -88,6 +88,11 @@ namespace PlatformerStarter.Enemies
             get { return weaponTemplate; }
             set { weaponTemplate = value; }
         }
+        public string WeaponLinkPoint
+        {
+            get { return weaponLinkPoint; }
+            set { weaponLinkPoint = value; }
+        }
         [TorqueXmlSchemaType(DefaultValue = "500")]
         public float CoolDown
         {
@@ -114,6 +119,7 @@ namespace PlatformerStarter.Enemies
             obj2.CoolDown = CoolDown;
             obj2.WeakSpotTemplate = WeakSpotTemplate;
             obj2.WeaponTemplate = WeaponTemplate;
+            obj2.WeaponLinkPoint = WeaponLinkPoint;
         }
 
         /// <summary>
@@ -164,13 +170,6 @@ namespace PlatformerStarter.Enemies
                 justShot = true;
             }
         }
-
-        public override void OnRemoveNotify(TorqueBase removed)
-        {
-            base.OnRemoveNotify(removed);
-
-            weaponObject.MarkForDelete = true;
-        }
         #endregion
 
         #region Private Routines
@@ -194,15 +193,6 @@ namespace PlatformerStarter.Enemies
             attackTimer = new Timer("spitterAttackTimer");
             attackTimer.MillisecondsUntilExpire = coolDown;
 
-            if (weaponTemplate != null)
-            {
-                weaponObject = weaponTemplate.Clone() as T2DSceneObject;
-                weaponObject.Position = SceneObject.Position;
-                SceneObject.Mount(weaponObject, "WeaponLinkPoint", false);
-                TorqueObjectDatabase.Instance.Register(weaponObject);
-                weaponComponent = weaponObject.Components.FindComponent<WeaponComponent>();
-            }
-
             if (weakSpotTemplate != null)
             {
                 weakSpotObject = weakSpotTemplate.Clone() as T2DSceneObject;
@@ -210,16 +200,18 @@ namespace PlatformerStarter.Enemies
                     SceneObject.Collision.InstallImage(image);
             }
 
+            T2DSceneObject weapon = weaponTemplate.Clone() as T2DSceneObject;
+            TorqueObjectDatabase.Instance.Register(weapon);
+
+            if (weapon != null)
+            {
+                weapon.Mount(SceneObject, weaponLinkPoint, true);
+                weaponComponent = weapon.Components.FindComponent<WeaponComponent>();
+            }
+            
             justShot = false;
 
             return true;
-        }
-
-        protected override void _die(float damage, T2DSceneObject sourceObject)
-        {
-            base._die(damage, sourceObject);
-
-            weaponObject.OnUnregister();
         }
 
         protected override void _createAnimationManager()

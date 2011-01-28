@@ -2234,6 +2234,9 @@
       <Element name="WeaponTemplate">
         <Type>GarageGames.Torque.T2D.T2DSceneObject</Type>
       </Element>
+      <Element name="WeaponLinkPoint">
+        <Type>System.String</Type>
+      </Element>
       <Element name="CoolDown">
         <Type>System.Single</Type>
         <DefaultValue>500</DefaultValue>
