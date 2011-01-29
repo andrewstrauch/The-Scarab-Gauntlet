@@ -1292,6 +1292,22 @@
         <Type>System.String</Type>
       </Element>
     </Type>
+    <Type name="HealthCollectibleComponent" fullName="PlatformerStarter.Common.Collectibles.HealthCollectibleComponent">
+      <Dependencies>
+        <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
+      </Dependencies>
+      <IsComponent>true</IsComponent>
+      <Element name="HealingValue">
+        <Type>System.Int32</Type>
+      </Element>
+      <Element name="Components">
+        <IsList>true</IsList>
+        <Type>GarageGames.Torque.Core.TorqueComponent</Type>
+      </Element>
+      <Element name="Name">
+        <Type>System.String</Type>
+      </Element>
+    </Type>
     <Type name="HulkActorComponent" fullName="PlatformerStarter.Enemies.ActorComponents.HulkActorComponent">
       <Dependencies>
         <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
@@ -3271,22 +3287,6 @@
     <Type name="FSMState" fullName="GarageGames.Torque.PlatformerFramework.FSMState">
       <IsInstantiable>false</IsInstantiable>
       <Element name="StateName">
-        <Type>System.String</Type>
-      </Element>
-    </Type>
-    <Type name="HealthCollectibleComponent" fullName="PlatformerStarter.Common.Collectibles.HealthCollectibleComponent">
-      <Dependencies>
-        <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
-      </Dependencies>
-      <IsComponent>true</IsComponent>
-      <Element name="HealingValue">
-        <Type>System.Int32</Type>
-      </Element>
-      <Element name="Components">
-        <IsList>true</IsList>
-        <Type>GarageGames.Torque.Core.TorqueComponent</Type>
-      </Element>
-      <Element name="Name">
         <Type>System.String</Type>
       </Element>
     </Type>

@@ -24,7 +24,7 @@
                 <BinCount>256</BinCount>
             </T2DSceneContainer>
         </T2DSceneGraph>
-        <Camera2D name="">
+        <Camera2D name="Camera">
             <CenterPosition>
                 <X>-277.500000</X>
                 <Y>-22.482233</Y>
@@ -79924,10 +79924,89 @@
             <Material nameRef="SpitterAttackLeftMaterial" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
+        <StaticSprite name="healt_collectible">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <CheckpointSystemSpawnedObjectComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnedObjectComponent" />
+                <HealthCollectibleComponent type="PlatformerStarter.Common.Collectibles.HealthCollectibleComponent">
+                    <HealingValue>10</HealingValue>
+                </HealthCollectibleComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.00820</X>
+                                    <Y>-0.08977</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.11066</X>
+                                    <Y>0.04802</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.01230</X>
+                                    <Y>0.14823</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.09016</X>
+                                    <Y>0.03967</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>25.476</X>
+                <Y>25.007</Y>
+            </Size>
+            <Position>
+                <X>-449.297</X>
+                <Y>65.970</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="particle_effect_snowMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
         <StaticSprite>
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
             <Components inPlace="true">
+                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
+                    <Target nameRef="Amanda" />
+                    <MinSpawnDistance>0</MinSpawnDistance>
+                    <MaxSpawnDistance>150</MaxSpawnDistance>
+                    <AutoDespawnObjects>true</AutoDespawnObjects>
+                    <SpawnObject nameRef="healt_collectible" />
+                    <SpawnLimit>1</SpawnLimit>
+                    <SpawnTimeout>1000</SpawnTimeout>
+                </CheckpointSystemSpawnPointComponent>
                 <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
                     <Velocity>
                         <X>0</X>
@@ -79980,12 +80059,12 @@
             <IsPersistent>false</IsPersistent>
             <Layer>0</Layer>
             <Size>
-                <X>67.500</X>
-                <Y>78.287</Y>
+                <X>32.974</X>
+                <Y>35.000</Y>
             </Size>
             <Position>
-                <X>-440.271</X>
-                <Y>10.864</Y>
+                <X>98.513</X>
+                <Y>27.500</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>
