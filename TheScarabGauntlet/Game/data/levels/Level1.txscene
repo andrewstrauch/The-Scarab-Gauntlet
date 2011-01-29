@@ -49252,6 +49252,8 @@
                 <Y>0.000000</Y>
             </SortPoint>
             <AnimationData nameRef="" />
+            <StartFrame>117.430</StartFrame>
+            <RandomStart>true</RandomStart>
             <PlayOnLoad>true</PlayOnLoad>
             <RemoveOnFinished>false</RemoveOnFinished>
         </AnimatedSprite>
@@ -79931,6 +79933,10 @@
                 <CheckpointSystemSpawnedObjectComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnedObjectComponent" />
                 <HealthCollectibleComponent type="PlatformerStarter.Common.Collectibles.HealthCollectibleComponent">
                     <HealingValue>10</HealingValue>
+                    <Movement>
+                        <XMagnitude>2.500</XMagnitude>
+                        <YMagnitude>5.000</YMagnitude>
+                    </Movement>
                 </HealthCollectibleComponent>
                 <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
                     <Images>
@@ -80064,7 +80070,7 @@
             </Size>
             <Position>
                 <X>98.513</X>
-                <Y>27.500</Y>
+                <Y>32.500</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>

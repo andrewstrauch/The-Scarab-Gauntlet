@@ -1090,6 +1090,14 @@
         <Type>System.String</Type>
       </Element>
     </Type>
+    <Type name="FigureEight" fullName="PlatformerStarter.Common.Collectibles.FigureEight">
+      <Element name="XMagnitude">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="YMagnitude">
+        <Type>System.Single</Type>
+      </Element>
+    </Type>
     <Type name="GruntActorComponent" fullName="PlatformerStarter.Enemies.GruntActorComponent">
       <Dependencies>
         <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
@@ -1299,6 +1307,9 @@
       <IsComponent>true</IsComponent>
       <Element name="HealingValue">
         <Type>System.Int32</Type>
+      </Element>
+      <Element name="Movement">
+        <Type>PlatformerStarter.Common.Collectibles.FigureEight</Type>
       </Element>
       <Element name="Components">
         <IsList>true</IsList>
