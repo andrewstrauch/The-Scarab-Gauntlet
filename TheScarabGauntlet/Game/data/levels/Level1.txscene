@@ -24,7 +24,7 @@
                 <BinCount>256</BinCount>
             </T2DSceneContainer>
         </T2DSceneGraph>
-        <Camera2D name="Camera">
+        <Camera2D name="">
             <CenterPosition>
                 <X>-277.500000</X>
                 <Y>-22.482233</Y>
@@ -8859,8 +8859,8 @@
             </SortPoint>
             <Mounts>
                 <Mount>
-                    <Object nameRef="hulk_cannon" />
-                    <LinkPoint>WeaponLP</LinkPoint>
+                    <Object nameRef="MountChild0" />
+                    <LinkPoint>WeakSpotLP</LinkPoint>
                     <OwnedByMount>false</OwnedByMount>
                     <SnapToMount>true</SnapToMount>
                     <TrackMountRotation>true</TrackMountRotation>
@@ -8879,8 +8879,8 @@
                     <InheritMountFlip>false</InheritMountFlip>
                 </Mount>
                 <Mount>
-                    <Object nameRef="MountChild0" />
-                    <LinkPoint>WeakSpotLP</LinkPoint>
+                    <Object nameRef="hulk_cannon" />
+                    <LinkPoint>WeaponLP</LinkPoint>
                     <OwnedByMount>false</OwnedByMount>
                     <SnapToMount>true</SnapToMount>
                     <TrackMountRotation>true</TrackMountRotation>
@@ -8895,101 +8895,6 @@
             <PlayOnLoad>true</PlayOnLoad>
             <RemoveOnFinished>false</RemoveOnFinished>
         </AnimatedSprite>
-        <T2DSceneObject name="hulk_cannon">
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <WeaponComponent type="PlatformerStarter.WeaponComponent">
-                    <Damage>10</Damage>
-                    <ShotSpeed>100.000</ShotSpeed>
-                    <ShotAngle>-95.000</ShotAngle>
-                    <LinkPointName></LinkPointName>
-                    <ProjectileTemplate nameRef="hulk_projectile" />
-                </WeaponComponent>
-            </Components>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>8.385</X>
-                <Y>7.206</Y>
-            </Size>
-            <Position>
-                <X>7082.950</X>
-                <Y>-46.621</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-        </T2DSceneObject>
-        <StaticSprite name="swipe_anchor">
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <SwipeAttackComponent type="PlatformerStarter.SwipeAttackComponent">
-                    <SwipeObject nameRef="hulk_swipe_object" />
-                    <LinkPointName>LinkPoint1</LinkPointName>
-                    <MountOffset>
-                        <X>2.000</X>
-                        <Y>-0.080</Y>
-                    </MountOffset>
-                    <Damage>50</Damage>
-                </SwipeAttackComponent>
-                <BoundedRotationComponent type="PlatformerStarter.BoundedRotationComponent">
-                    <StartRotation>80.000</StartRotation>
-                    <EndRotation>-100.000</EndRotation>
-                    <RotationSpeed>20.000</RotationSpeed>
-                    <FacingLeft>true</FacingLeft>
-                </BoundedRotationComponent>
-                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
-                    <Velocity>
-                        <X>0</X>
-                        <Y>0</Y>
-                    </Velocity>
-                    <AngularVelocity>0.0</AngularVelocity>
-                    <InverseMass>1.0</InverseMass>
-                    <RotationScale>1.0</RotationScale>
-                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
-                </T2DPhysicsComponent>
-            </Components>
-            <ObjectType>
-                <object objTypeRef="t2dSpriteType" />
-            </ObjectType>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>10.580</X>
-                <Y>9.206</Y>
-            </Size>
-            <Position>
-                <X>7087.466</X>
-                <Y>-35.114</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>false</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-            <Material nameRef="GGLogoMaterial" />
-            <MaterialRegionIndex>0</MaterialRegionIndex>
-        </StaticSprite>
         <T2DSceneObject name="MountChild0">
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -9063,6 +8968,101 @@
             <Visible>true</Visible>
             <VisibilityLevel>1</VisibilityLevel>
             <FlipX>true</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
+        <StaticSprite name="swipe_anchor">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <SwipeAttackComponent type="PlatformerStarter.SwipeAttackComponent">
+                    <SwipeObject nameRef="hulk_swipe_object" />
+                    <LinkPointName>LinkPoint1</LinkPointName>
+                    <MountOffset>
+                        <X>2.000</X>
+                        <Y>-0.080</Y>
+                    </MountOffset>
+                    <Damage>50</Damage>
+                </SwipeAttackComponent>
+                <BoundedRotationComponent type="PlatformerStarter.BoundedRotationComponent">
+                    <StartRotation>80.000</StartRotation>
+                    <EndRotation>-100.000</EndRotation>
+                    <RotationSpeed>20.000</RotationSpeed>
+                    <FacingLeft>true</FacingLeft>
+                </BoundedRotationComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>10.580</X>
+                <Y>9.206</Y>
+            </Size>
+            <Position>
+                <X>7087.466</X>
+                <Y>-35.114</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>false</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="GGLogoMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <T2DSceneObject name="hulk_cannon">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <WeaponComponent type="PlatformerStarter.WeaponComponent">
+                    <Damage>10</Damage>
+                    <ShotSpeed>100.000</ShotSpeed>
+                    <ShotAngle>-95.000</ShotAngle>
+                    <LinkPointName></LinkPointName>
+                    <ProjectileTemplate nameRef="hulk_projectile" />
+                </WeaponComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>8.385</X>
+                <Y>7.206</Y>
+            </Size>
+            <Position>
+                <X>7082.950</X>
+                <Y>-46.621</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
             <FlipY>false</FlipY>
             <SortPoint>
                 <X>0.000000</X>
@@ -49252,8 +49252,6 @@
                 <Y>0.000000</Y>
             </SortPoint>
             <AnimationData nameRef="" />
-            <StartFrame>5</StartFrame>
-            <RandomStart>true</RandomStart>
             <PlayOnLoad>true</PlayOnLoad>
             <RemoveOnFinished>false</RemoveOnFinished>
         </AnimatedSprite>
@@ -79097,8 +79095,8 @@
             </SortPoint>
             <Mounts>
                 <Mount>
-                    <Object nameRef="mouth_2" />
-                    <LinkPoint>LinkPoint2</LinkPoint>
+                    <Object nameRef="mouth_1" />
+                    <LinkPoint>LinkPoint1</LinkPoint>
                     <OwnedByMount>false</OwnedByMount>
                     <SnapToMount>true</SnapToMount>
                     <TrackMountRotation>true</TrackMountRotation>
@@ -79107,8 +79105,8 @@
                     <InheritMountFlip>false</InheritMountFlip>
                 </Mount>
                 <Mount>
-                    <Object nameRef="mouth_1" />
-                    <LinkPoint>LinkPoint1</LinkPoint>
+                    <Object nameRef="mouth_2" />
+                    <LinkPoint>LinkPoint2</LinkPoint>
                     <OwnedByMount>false</OwnedByMount>
                     <SnapToMount>true</SnapToMount>
                     <TrackMountRotation>true</TrackMountRotation>
@@ -79120,42 +79118,6 @@
             <Material nameRef="olmectotemleftMaterial" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
-        <T2DSceneObject name="mouth_2">
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <WeaponComponent type="PlatformerStarter.WeaponComponent">
-                    <Damage>5</Damage>
-                    <ShotSpeed>50.000</ShotSpeed>
-                    <ShotAngle>-90.000</ShotAngle>
-                    <LinkPointName></LinkPointName>
-                    <ProjectileTemplate nameRef="tiki_projectile" />
-                </WeaponComponent>
-            </Components>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>9.272</X>
-                <Y>9.520</Y>
-            </Size>
-            <Position>
-                <X>1018.729</X>
-                <Y>44.943</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-        </T2DSceneObject>
         <T2DSceneObject name="mouth_1">
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -79180,6 +79142,42 @@
             <Position>
                 <X>1018.452</X>
                 <Y>21.008</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
+        <T2DSceneObject name="mouth_2">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <WeaponComponent type="PlatformerStarter.WeaponComponent">
+                    <Damage>5</Damage>
+                    <ShotSpeed>50.000</ShotSpeed>
+                    <ShotAngle>-90.000</ShotAngle>
+                    <LinkPointName></LinkPointName>
+                    <ProjectileTemplate nameRef="tiki_projectile" />
+                </WeaponComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>9.272</X>
+                <Y>9.520</Y>
+            </Size>
+            <Position>
+                <X>1018.729</X>
+                <Y>44.943</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>
@@ -79924,6 +79922,82 @@
                 <Y>0.000000</Y>
             </SortPoint>
             <Material nameRef="SpitterAttackLeftMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-1.00000</X>
+                                    <Y>-1.00000</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>1.00000</X>
+                                    <Y>-1.00000</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>1.00000</X>
+                                    <Y>1.00000</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-1.00000</X>
+                                    <Y>1.00000</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>67.500</X>
+                <Y>78.287</Y>
+            </Size>
+            <Position>
+                <X>-440.271</X>
+                <Y>10.864</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="particle_effect_snowMaterial" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
     </Objects>

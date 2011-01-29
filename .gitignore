@@ -11,7 +11,10 @@ TheScarabGauntlet/Game/*.suo
 TheScarabGauntlet/PlatformerFramework/bin
 TheScarabGauntlet/PlatformerFramework/obj
 TheScarabGauntlet/Torque2D/bin
+TheScarabGauntlet/Torque2D/EngineData/obj
 TheScarabGauntlet/Torque2D/obj
+TheScarabGauntlet/Torque2D/Torque2D.csproj.Debug.cachefile
 TheScarabGauntlet/TorqueCore/bin
 TheScarabGauntlet/TorqueCore/obj
 TheScarabGauntlet/TorqueCore/EngineData
+TheScarabGauntlet/TorqueCore/TorqueCore.csproj.Debug.cachefile

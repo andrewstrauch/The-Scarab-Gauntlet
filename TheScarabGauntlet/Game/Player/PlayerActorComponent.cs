@@ -274,6 +274,15 @@ namespace PlatformerStarter
             attackActions.GetAction("invincibility").ReadyToAct = false;
         }
 
+        public override bool HealDamage(float damage, T2DSceneObject sourceObject)
+        {
+            bool healed = base.HealDamage(damage, sourceObject);
+
+            UpdateHealthBar();
+
+            return healed;
+        }
+
         #endregion
 
         #region Private Routines
