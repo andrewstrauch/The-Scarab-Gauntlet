@@ -772,10 +772,11 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
     </Compile>
-    <None Include="music.wav">
-      <Name>music</Name>
-      <Processor>SoundEffectProcessor</Processor>
-    </None>
+    <Compile Include="sound\SGSounds.xap">
+      <Name>SGSounds</Name>
+      <Importer>XactImporter</Importer>
+      <Processor>XactProcessor</Processor>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="images\HulkDeathSpriteBuild.png">

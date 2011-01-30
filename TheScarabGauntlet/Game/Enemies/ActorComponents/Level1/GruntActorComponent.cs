@@ -8,6 +8,7 @@ using GarageGames.Torque.Core;
 using GarageGames.Torque.T2D;
 using GarageGames.Torque.XNA;
 using GarageGames.Torque.GUI;
+using GarageGames.Torque.GameUtil;
 using GarageGames.Torque.PlatformerFramework;
 
 namespace PlatformerStarter.Enemies
@@ -191,6 +192,14 @@ namespace PlatformerStarter.Enemies
             _animationManager = new GruntActorAnimationManager(this);
         }
 
+        protected override void _initAnimationManager()
+        {
+            _soundBank = "grunt";
+            _useAnimationManagerSoundEvents = true;
+            _animationManager.SetSoundEvent(RunAnim, "walk");
+            _animationManager.SetSoundEvent(AttackAnim, "attack");
+            _animationManager.SetSoundEvent(DieAnim, "death");
+        }
 
         #endregion
 
@@ -227,8 +236,6 @@ namespace PlatformerStarter.Enemies
 
                     if (actorAnimMgr.actorComponent == null)
                         return;
-                    
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;
                 }
 
                 public override string Execute(IFSMObject obj)
@@ -271,8 +278,6 @@ namespace PlatformerStarter.Enemies
 
                     if (actorAnimMgr.actorComponent._scaleRunAnimBySpeed)
                         actorAnimMgr.actorComponent.AnimatedSprite.AnimationTimeScale = actorAnimMgr.actorComponent._runAnimSpeedScale / actorAnimMgr.actorComponent._maxMoveSpeed;
-
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;                    
                 }
 
                 public override string Execute(IFSMObject obj)

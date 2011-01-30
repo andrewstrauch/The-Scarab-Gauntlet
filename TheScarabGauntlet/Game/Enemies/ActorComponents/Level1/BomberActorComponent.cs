@@ -81,5 +81,13 @@ namespace PlatformerStarter.Enemies.ActorComponents
 
             return true;
         }
+
+        protected override void _initAnimationManager()
+        {
+            _soundBank = "bomber";
+            _useAnimationManagerSoundEvents = true;
+            _animationManager.SetSoundEvent(RunAnim, "walk");
+            _animationManager.SetSoundEvent(AttackAnim, "explode");
+        }
     }
 }

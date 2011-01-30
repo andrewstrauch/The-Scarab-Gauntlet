@@ -31,6 +31,7 @@ namespace PlatformerStarter
         bool paused = false;
         List<TorqueObject> _players = new List<TorqueObject>();
         Pause_GUI pauseGUI;
+        Cue music;
 
         #region Properties
         public static Game Instance
@@ -78,40 +79,39 @@ namespace PlatformerStarter
             base.Update(gameTime);
 
             totalTime += gameTime.ElapsedGameTime.Milliseconds;
+
+            if (music.IsStopping)
+                music.Play();
         }
 
         protected override void BeginRun()
         {
             base.BeginRun();
             pauseGUI = new Pause_GUI();
-//#if !DEBUG
+
+#if !DEBUG
             StartMenu_GUI openingMenu = new StartMenu_GUI();
             GUICanvas.Instance.SetContentControl(openingMenu);
-//#else
+#else
             // load the test level        
-  //          SceneLoader.Load(@"data\levels\Level1.txscene");
-//#endif
-            
-            //1_new.txscene");
-            //SceneLoader.Load(@"data\levels\sample_level.txscene");
-           //SceneLoader.Load(@"data\levels\traps_test.txscene");
-           //SceneLoader.Load(@"data\levels\test.txscene");
+            SceneLoader.Load(@"data\levels\Level1.txscene");
+#endif
+            InitializeSound();
 
-            //SceneLoader.Load(@"data\levels\hulk_test.txscene");
-
-
-            // create game gui
-           /* GUIStyle playStyle = new GUIStyle();
-            GUISceneview play = new GUISceneview();
-            play.Name = "PlayScreen";
-            play.Style = playStyle;
-            T2DSceneCamera camera = TorqueObjectDatabase.Instance.FindObject<T2DSceneCamera>("Camera");
-            play.Camera = camera;
-            GUICanvas.Instance.SetContentControl(play);
-            */
-            // game start
             _gameStart = Time;
 
+        }
+
+        private void InitializeSound()
+        {
+            SoundManager.Instance.RegisterSoundGroup("amanda", @"data\sound\Amanda.xwb", @"data\sound\Amanda.xsb");
+            SoundManager.Instance.RegisterSoundGroup("spitter", @"data\sound\spitter.xwb", @"data\sound\spitter.xsb");
+            SoundManager.Instance.RegisterSoundGroup("grunt", @"data\sound\grunt.xwb", @"data\sound\grunt.xsb");
+            SoundManager.Instance.RegisterSoundGroup("bomber", @"data\sound\bomber.xwb", @"data\sound\bomber.xsb");
+            SoundManager.Instance.RegisterSoundGroup("hulk", @"data\sound\hulk.xwb", @"data\sound\hulk.xsb");
+            SoundManager.Instance.RegisterSoundGroup("music", @"data\sound\music.xwb", @"data\sound\music.xsb");
+
+            music = SoundManager.Instance.PlaySound("music", "level1");
         }
 
         public void TogglePause()

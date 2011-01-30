@@ -478,7 +478,19 @@ namespace PlatformerStarter
 
         protected override void _initAnimationManager()
         {
-            _useAnimationManagerSoundEvents = false;
+            _useAnimationManagerSoundEvents = true;
+            /*_animationManager.SetSoundEvent(
+                _animationManager.SetSoundEvent(
+                _animationManager.SetSoundEvent(
+                _animationManager.SetSoundEvent(
+                _animationManager.SetSoundEvent(
+                _animationManager.SetSoundEvent(
+                _animationManager.SetSoundEvent(
+                _animationManager.SetSoundEvent(
+                _animationManager.SetSoundEvent(
+                _animationManager.SetSoundEvent(
+                _animationManager.SetSoundEvent(
+                _animationManager.SetSoundEvent(*/
         }
         #endregion
 
@@ -618,7 +630,9 @@ namespace PlatformerStarter
                     actorAnimMgr.actorComponent.attackActions.GetAction("lightAttack").Timer.Start();
                     actorAnimMgr.actorComponent.attackActions.GetAction("lightAttack").ReadyToAct = false;
 
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;
+                    SoundManager.Instance.PlaySound("amanda", "amanda_melee1");
+
+                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = true;
                 }
 
                 public override string Execute(IFSMObject obj)
@@ -653,6 +667,7 @@ namespace PlatformerStarter
                     actorAnimMgr.actorComponent.attackActions.GetAction("heavyAttack").Timer.Start();
                     actorAnimMgr.actorComponent.attackActions.GetAction("heavyAttack").ReadyToAct = false;
 
+                    SoundManager.Instance.PlaySound("amanda", "amanda_swipe1");
                     actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;
                 }
 

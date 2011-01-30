@@ -218,6 +218,21 @@ namespace PlatformerStarter.Enemies
         {
             _animationManager = new SpitterActorAnimationManager(this);
         }
+
+        protected override void _initAnimationManager()
+        {
+            _useAnimationManagerSoundEvents = true;
+
+            _soundBank = "spitter";
+            _useAnimationManagerSoundEvents = true;
+            _animationManager.SetSoundEvent(HideLeftAnim, "hide");
+            _animationManager.SetSoundEvent(HideRightAnim, "hide");
+            _animationManager.SetSoundEvent(AlertLeftAnim, "alert");
+            _animationManager.SetSoundEvent(AlertRightAnim, "alert");
+            _animationManager.SetSoundEvent(AttackLeftAnim, "attack");
+            _animationManager.SetSoundEvent(AttackRightAnim, "attack");
+            _animationManager.SetSoundEvent(DieAnim, "death");
+        }
         #endregion
 
         #region Animation Manager
@@ -262,8 +277,7 @@ namespace PlatformerStarter.Enemies
 
                     if (!actorAnimMgr._transitioning)
                         actorAnimMgr._playAnimation(actorAnimMgr._transitioningTo);
-
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;
+    
                 }
 
                 public override string Execute(IFSMObject obj)
@@ -315,9 +329,6 @@ namespace PlatformerStarter.Enemies
                     else
                         if (!actorAnimMgr._transitioning)
                             actorAnimMgr._playAnimation(actorAnimMgr._transitioningTo);
-
-
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;
 
                     actorAnimMgr.actorComponent.ExposeWeakSpot();
                 }
