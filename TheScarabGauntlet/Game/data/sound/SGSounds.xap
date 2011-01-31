@@ -214,6 +214,19 @@ Global Settings
         Min = 0.000000;
         Max = 1000000.000000;
     }
+
+    Compression Preset
+    {
+        Name = compression;
+        Xbox Format Tag = 357;
+        Target Sample Rate = 48000;
+        XMA Quality = 60;
+        Find Best Quality = 0;
+        High Freq Cut = 0;
+        Loop = 0;
+        PC Format Tag = 2;
+        Samples Per Block = 128;
+    }
 }
 
 Wave Bank
