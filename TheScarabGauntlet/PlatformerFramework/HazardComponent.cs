@@ -99,7 +99,7 @@ namespace GarageGames.Torque.PlatformerFramework
         /// <summary>
         /// The amount of damage to attempt to deal to Actors that enter the trigger.
         /// </summary>
-        protected float _damage = 10;
+        protected float _damage;
 
         #endregion
     }

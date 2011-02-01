@@ -1834,6 +1834,23 @@
         <Type>System.String</Type>
       </Element>
     </Type>
+    <Type name="PitHazardComponent" fullName="PlatformerStarter.PitHazardComponent">
+      <Dependencies>
+        <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
+      </Dependencies>
+      <IsComponent>true</IsComponent>
+      <Element name="Damage">
+        <Type>System.Single</Type>
+        <DefaultValue>100</DefaultValue>
+      </Element>
+      <Element name="Components">
+        <IsList>true</IsList>
+        <Type>GarageGames.Torque.Core.TorqueComponent</Type>
+      </Element>
+      <Element name="Name">
+        <Type>System.String</Type>
+      </Element>
+    </Type>
     <Type name="PlatformMoveComponent" fullName="GarageGames.Torque.PlatformerFramework.PlatformMoveComponent">
       <IsComponent>true</IsComponent>
       <Element name="Path">
@@ -1865,14 +1882,6 @@
         <Type>GarageGames.Torque.T2D.T2DPhysicsComponent</Type>
       </Dependencies>
       <IsComponent>true</IsComponent>
-      <Element name="AllowGlide">
-        <Type>System.Boolean</Type>
-        <DefaultValue>1</DefaultValue>
-      </Element>
-      <Element name="MaxGlideFallSpeed">
-        <Type>System.Single</Type>
-        <DefaultValue>40</DefaultValue>
-      </Element>
       <Element name="LightAttackCoolDown">
         <Type>System.Int32</Type>
       </Element>
@@ -1884,12 +1893,6 @@
       </Element>
       <Element name="InvincibilityLength">
         <Type>System.Int32</Type>
-      </Element>
-      <Element name="GlideAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="RunGlideAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
       </Element>
       <Element name="SpawnAnim">
         <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
@@ -1904,6 +1907,12 @@
         <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
       </Element>
       <Element name="JumpSwipeAnim">
+        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
+      </Element>
+      <Element name="FallDeathAnim">
+        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
+      </Element>
+      <Element name="HitDeathAnim">
         <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
       </Element>
       <Element name="MaxVelocity">
@@ -3930,6 +3939,7 @@
         <Type>PlatformerStarter.Enemies.SpitterActorComponent</Type>
         <Type>PlatformerStarter.EnemyAttackCollisionComponent</Type>
         <Type>PlatformerStarter.FallingPlatformBehavior</Type>
+        <Type>PlatformerStarter.PitHazardComponent</Type>
         <Type>PlatformerStarter.PlayerActorComponent</Type>
         <Type>PlatformerStarter.ProjectileComponent</Type>
         <Type>PlatformerStarter.ReplacementComponent</Type>

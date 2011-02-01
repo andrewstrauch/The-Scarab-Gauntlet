@@ -17,12 +17,9 @@ using PlatformerStarter.Player;
 namespace PlatformerStarter
 {
     [TorqueXmlSchemaType]
-    class PlayerActorComponent : ActorComponent
+    public class PlayerActorComponent : ActorComponent
     {
         #region Private Members
-        private bool allowGlide = false;
-        private bool glide;
-        private bool gliding;
         private bool spawning = false;
         private bool isInvincible = false;
         private float maxGlideFallSpeed = 40;
@@ -31,8 +28,8 @@ namespace PlatformerStarter
         private float baseShotCoolDown;
         private float invincibilityLength;
         private T2DAnimationData spawnAnim;
-        private T2DAnimationData glideAnim;
-        private T2DAnimationData runGlideAnim;
+        private T2DAnimationData fallDeathAnim;
+        private T2DAnimationData hitDeathAnim;
         private T2DAnimationData jumpPunchAnim;
         private T2DAnimationData jumpSwipeAnim;
         private T2DAnimationData punchAnim;
@@ -45,20 +42,6 @@ namespace PlatformerStarter
         #endregion
 
         #region Public Properties
-        [TorqueXmlSchemaType(DefaultValue = "1")]
-        public bool AllowGlide
-        {
-            get { return allowGlide; }
-            set { allowGlide = value; }
-        }
-
-        [TorqueXmlSchemaType(DefaultValue = "40")]
-        public float MaxGlideFallSpeed
-        {
-            get { return maxGlideFallSpeed; }
-            set { maxGlideFallSpeed = value; }
-        }
-
         public int LightAttackCoolDown
         {
             get { return (int)lightAttackCoolDown; }
@@ -83,17 +66,6 @@ namespace PlatformerStarter
             set { invincibilityLength = (int)value; }
         }
 
-        public T2DAnimationData GlideAnim
-        {
-            get { return glideAnim; }
-            set { glideAnim = value; }
-        }
-
-        public T2DAnimationData RunGlideAnim
-        {
-            get { return runGlideAnim; }
-            set { runGlideAnim = value; }
-        }
         public T2DAnimationData SpawnAnim
         {
             get { return spawnAnim; }
@@ -138,6 +110,7 @@ namespace PlatformerStarter
                 swipeAnim = value;
             }
         }
+
         public T2DAnimationData JumpSwipeAnim
         {
             get { return jumpSwipeAnim; }
@@ -149,6 +122,18 @@ namespace PlatformerStarter
                 jumpSwipeAnim = value;
             }
         }
+
+        public T2DAnimationData FallDeathAnim
+        {
+            get { return fallDeathAnim; }
+            set { fallDeathAnim = value; }
+        }
+
+        public T2DAnimationData HitDeathAnim
+        {
+            get { return hitDeathAnim; }
+            set { hitDeathAnim = value; }
+        }
         #endregion
 
         #region Public Routines
@@ -158,27 +143,12 @@ namespace PlatformerStarter
 
             PlayerActorComponent obj2 = obj as PlayerActorComponent;
 
-            obj2.AllowGlide = AllowGlide;
-            obj2.MaxGlideFallSpeed = MaxGlideFallSpeed;
-            obj2.GlideAnim = GlideAnim;
-            obj2.RunGlideAnim = RunGlideAnim;
             obj2.SpawnAnim = SpawnAnim;
             obj2.PunchAnim = PunchAnim;
             obj2.SwipeAnim = SwipeAnim;
             obj2.JumpSwipeAnim = JumpSwipeAnim;
             obj2.JumpPunchAnim = JumpPunchAnim;
-        }
-
-        /// <summary>
-        /// Makes the player glide.
-        /// </summary>
-        /// <param name="value">The value of whether to glide or not.</param>
-        public virtual void Glide(bool value)
-        {
-            if (allowGlide)
-                glide = value;
-            else
-                glide = false;
+            obj2.FallDeathAnim = FallDeathAnim;
         }
 
         /// <summary>
@@ -283,6 +253,13 @@ namespace PlatformerStarter
             return healed;
         }
 
+        /// <summary>
+        /// Switches the current death animation to the fall death animation.
+        /// </summary>
+        public void SwitchToFallDeath()
+        {
+            DieAnim = FallDeathAnim;
+        }
         #endregion
 
         #region Private Routines
@@ -478,19 +455,18 @@ namespace PlatformerStarter
 
         protected override void _initAnimationManager()
         {
+            _soundBank = "amanda";
             _useAnimationManagerSoundEvents = true;
-            /*_animationManager.SetSoundEvent(
-                _animationManager.SetSoundEvent(
-                _animationManager.SetSoundEvent(
-                _animationManager.SetSoundEvent(
-                _animationManager.SetSoundEvent(
-                _animationManager.SetSoundEvent(
-                _animationManager.SetSoundEvent(
-                _animationManager.SetSoundEvent(
-                _animationManager.SetSoundEvent(
-                _animationManager.SetSoundEvent(
-                _animationManager.SetSoundEvent(
-                _animationManager.SetSoundEvent(*/
+            _animationManager.SetSoundEvent(PunchAnim, "amanda_melee1");
+            _animationManager.SetSoundEvent(SwipeAnim, "amanda_swipe1");
+            _animationManager.SetSoundEvent(JumpAnim, "amanda_jump1");
+            _animationManager.SetSoundEvent(RunJumpAnim, "amanda_jump1");
+            _animationManager.SetSoundEvent(JumpPunchAnim, "amanda_melee1");
+            _animationManager.SetSoundEvent(JumpSwipeAnim, "amanda_swipe1");
+
+            _useAnimationStepSoundList = true;
+            _animationManager.AddStepSoundFrame(RunAnim, 15, "amanda_run1");
+            _animationManager.AddStepSoundFrame(RunAnim, 64, "amanda_run1");
         }
         #endregion
 
@@ -523,23 +499,12 @@ namespace PlatformerStarter
 
                 // set inherited velocity to 0 if we passed zero or we aren't moving
                 if (!((playerActor._moveSpeed.X + playerActor._inheritedVelocity.X < 0) == (playerActor._previousTotalVelocityX < 0))
-                    || playerActor.glide && playerActor._moveSpeed.X == 0)
+                    && playerActor._moveSpeed.X == 0)
                 {
                     playerActor._moveSpeed.X += playerActor._inheritedVelocity.X;
                     playerActor._inheritedVelocity.X = 0;
                 }
 
-                // if glide is set, clamp it
-                if (playerActor.glide && playerActor._actor.Physics.VelocityY > 0)
-                {
-                    playerActor._actor.Physics.VelocityY = MathHelper.Clamp(playerActor._actor.Physics.VelocityY,
-                        0, playerActor.maxGlideFallSpeed);
-                    playerActor.gliding = true;
-                }
-                else
-                {
-                    playerActor.gliding = false;
-                }
             }
         }
 
@@ -602,10 +567,8 @@ namespace PlatformerStarter
                 FSM.Instance.RegisterState<IdleState>(this, "idle");
                 FSM.Instance.RegisterState<RunState>(this, "run");
                 FSM.Instance.RegisterState<JumpState>(this, "jump");
-                FSM.Instance.RegisterState<GlideState>(this, "glide");
                 FSM.Instance.RegisterState<FallState>(this, "fall");
                 FSM.Instance.RegisterState<RunJumpState>(this, "runJump");
-                FSM.Instance.RegisterState<RunGlideState>(this, "runGlide");
                 FSM.Instance.RegisterState<RunFallState>(this, "runFall");
                 FSM.Instance.RegisterState<ClimbJumpState>(this, "climbJump");
                 FSM.Instance.RegisterState<SpawnState>(this, "spawn");
@@ -629,10 +592,6 @@ namespace PlatformerStarter
 
                     actorAnimMgr.actorComponent.attackActions.GetAction("lightAttack").Timer.Start();
                     actorAnimMgr.actorComponent.attackActions.GetAction("lightAttack").ReadyToAct = false;
-
-                    SoundManager.Instance.PlaySound("amanda", "amanda_melee1");
-
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = true;
                 }
 
                 public override string Execute(IFSMObject obj)
@@ -666,9 +625,7 @@ namespace PlatformerStarter
 
                     actorAnimMgr.actorComponent.attackActions.GetAction("heavyAttack").Timer.Start();
                     actorAnimMgr.actorComponent.attackActions.GetAction("heavyAttack").ReadyToAct = false;
-
-                    SoundManager.Instance.PlaySound("amanda", "amanda_swipe1");
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;
+                    
                 }
 
                 public override string Execute(IFSMObject obj)
@@ -701,9 +658,7 @@ namespace PlatformerStarter
                         return;
 
                     actorAnimMgr.actorComponent.attackActions.GetAction("baseShot").Timer.Start();
-                    actorAnimMgr.actorComponent.attackActions.GetAction("baseShot").ReadyToAct = false;
-
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;
+                    actorAnimMgr.actorComponent.attackActions.GetAction("baseShot").ReadyToAct = false;                  
                 }
 
                 public override string Execute(IFSMObject obj)
@@ -724,59 +679,6 @@ namespace PlatformerStarter
                 }
             }
 
-            new public class IdleState : ActorAnimationManager.IdleState
-            {
-                public override void Enter(IFSMObject obj)
-                {
-                    base.Enter(obj);
-
-                    PlayerActorAnimationManager actorAnimMgr = obj as PlayerActorAnimationManager;
-
-                    if (actorAnimMgr.actorComponent == null)
-                        return;
-
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;
-                }
-
-                public override void Exit(IFSMObject obj)
-                {
-                    base.Exit(obj);
-
-                    PlayerActorAnimationManager actorAnimMgr = obj as PlayerActorAnimationManager;
-
-                    if (actorAnimMgr.actorComponent == null)
-                        return;
-
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;
-                }
-            }
-
-            new public class RunState : ActorAnimationManager.RunState
-            {
-                public override void Enter(IFSMObject obj)
-                {
-                    base.Enter(obj);
-
-                    PlayerActorAnimationManager actorAnimMgr = obj as PlayerActorAnimationManager;
-
-                    if (actorAnimMgr.actorComponent == null)
-                        return;
-
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;
-                }
-                public override void Exit(IFSMObject obj)
-                {
-                    base.Exit(obj);
-
-                    PlayerActorAnimationManager actorAnimMgr = obj as PlayerActorAnimationManager;
-
-                    if (actorAnimMgr.actorComponent == null)
-                        return;
-
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;
-                }
-            }
-
             new public class JumpState : ActorAnimationManager.JumpState
             {
                 public override string Execute(IFSMObject obj)
@@ -791,25 +693,10 @@ namespace PlatformerStarter
                     if (!actorAnimMgr.actorComponent.Alive)
                         return "die";
 
-                    if (actorAnimMgr.actorComponent._Climbing)
-                    {
-                        if (actorAnimMgr.actorComponent._moveSpeed.Y < 0)
-                            return "climbUp";
-                        else if (actorAnimMgr.actorComponent._moveSpeed.Y > 0)
-                            return "climbDown";
-                        else
-                            return "climbIdle";
-                    }
-
                     if (!actorAnimMgr.actorComponent._onGround)
                     {
                         if (actorAnimMgr.actorComponent._actor.Physics.VelocityX > 0)
-                        {
-                            if (actorAnimMgr.actorComponent.glide)
-                                return "glide";
-                            else
-                                return "fall";
-                        }
+                            return "fall";
                     }
                     else
                     {
@@ -837,85 +724,13 @@ namespace PlatformerStarter
                     if (!actorAnimMgr.actorComponent._alive)
                         return "die";
 
-                    if (actorAnimMgr.actorComponent._Climbing)
-                    {
-                        if (actorAnimMgr.actorComponent._moveSpeed.Y < 0)
-                            return "climbUp";
-                        else if (actorAnimMgr.actorComponent._moveSpeed.Y > 0)
-                            return "climbDown";
-
-                        return "climbIdle";
-                    }
-
-                    if (!actorAnimMgr.actorComponent._onGround)
-                    {
-                        if (actorAnimMgr.actorComponent._actor.Physics.VelocityY > 0 && actorAnimMgr.actorComponent.glide)
-                            return "glide";
-                    }
-                    else
+                    if (actorAnimMgr.actorComponent.OnGround)
                     {
                         if (actorAnimMgr.actorComponent._moveLeft || actorAnimMgr.actorComponent._moveRight)
                             return "run";
-
-                        return "idle";
+                        else
+                            return "idle";
                     }
-
-                    return null;
-                }
-            }
-
-            public class GlideState : AnimationState
-            {
-                public override void Enter(IFSMObject obj)
-                {
-                    base.Enter(obj);
-
-                    PlayerActorAnimationManager actorAnimMgr = obj as PlayerActorAnimationManager;
-
-                    if (actorAnimMgr.actorComponent == null)
-                        return;
-
-                    actorAnimMgr._transitioningTo = actorAnimMgr.actorComponent.GlideAnim;
-
-                    if (!actorAnimMgr._transitioning)
-                        actorAnimMgr._playAnimation(actorAnimMgr._transitioningTo);
-                }
-
-                public override string Execute(IFSMObject obj)
-                {
-                    base.Execute(obj);
-
-                    PlayerActorAnimationManager actorAnimMgr = obj as PlayerActorAnimationManager;
-
-                    if (actorAnimMgr.actorComponent == null)
-                        return null;
-
-                    if (!actorAnimMgr.actorComponent._alive)
-                        return "die";
-
-                    if (actorAnimMgr.actorComponent._Climbing)
-                    {
-                        if (actorAnimMgr.actorComponent._moveSpeed.Y < 0)
-                            return "climbUp";
-                        else if (actorAnimMgr.actorComponent._moveSpeed.Y > 0)
-                            return "climbDown";
-
-                        return "climbIdle";
-                    }
-
-                    if (!actorAnimMgr.actorComponent._onGround)
-                    {
-                        if (actorAnimMgr.actorComponent._actor.Physics.VelocityY > 0 && !actorAnimMgr.actorComponent.glide)
-                            return "fall";
-                    }
-                    else
-                    {
-                        if (actorAnimMgr.actorComponent._moveLeft || actorAnimMgr.actorComponent._moveRight)
-                            return "run";
-
-                        return "idle";
-                    }
-
                     return null;
                 }
             }
@@ -948,18 +763,15 @@ namespace PlatformerStarter
                     {
                         if (actorAnimMgr.actorComponent._actor.Physics.VelocityY > 0)
                         {
-                            if (actorAnimMgr.actorComponent.glide)
-                                return "runGlide";
-                            else
-                                return "runFall";
+                            return "runFall";
                         }
                     }
                     else
                     {
                         if (actorAnimMgr.actorComponent._moveLeft || actorAnimMgr.actorComponent._moveRight)
                             return "run";
-
-                        return "idle";
+                        else
+                            return "idle";
                     }
 
                     return null;
@@ -980,141 +792,13 @@ namespace PlatformerStarter
                     if (!actorAnimMgr.actorComponent._alive)
                         return "die";
 
-                    if (actorAnimMgr.actorComponent._Climbing)
-                    {
-                        if (actorAnimMgr.actorComponent._moveSpeed.Y < 0)
-                            return "climbUp";
-                        else if (actorAnimMgr.actorComponent._moveSpeed.Y > 0)
-                            return "climbDown";
-
-                        return "climbIdle";
-                    }
-
-                    if (!actorAnimMgr.actorComponent._onGround)
-                    {
-                        if (actorAnimMgr.actorComponent._actor.Physics.VelocityY > 0 && actorAnimMgr.actorComponent.glide)
-                            return "runGlide";
-                    }
-                    else
+                    if (actorAnimMgr.actorComponent.OnGround)
                     {
                         if (actorAnimMgr.actorComponent._moveLeft || actorAnimMgr.actorComponent._moveRight)
                             return "run";
-
-                        return "idle";
+                        else
+                            return "idle";
                     }
-
-                    return null;
-                }
-            }
-
-            public class RunGlideState : AnimationState
-            {
-                public override void Enter(IFSMObject obj)
-                {
-                    base.Enter(obj);
-
-                    PlayerActorAnimationManager actorAnimMgr = obj as PlayerActorAnimationManager;
-
-                    if (actorAnimMgr.actorComponent == null)
-                        return;
-
-                    actorAnimMgr._transitioningTo = actorAnimMgr.actorComponent.GlideAnim;
-
-                    if (!actorAnimMgr._transitioning)
-                        actorAnimMgr._playAnimation(actorAnimMgr._transitioningTo);
-                }
-
-                public override string Execute(IFSMObject obj)
-                {
-                    base.Execute(obj);
-
-                    PlayerActorAnimationManager actorAnimMgr = obj as PlayerActorAnimationManager;
-
-                    if (actorAnimMgr.actorComponent == null)
-                        return null;
-
-                    if (!actorAnimMgr.actorComponent._alive)
-                        return "die";
-
-                    if (actorAnimMgr.actorComponent._Climbing)
-                    {
-                        if (actorAnimMgr.actorComponent._moveSpeed.Y < 0)
-                            return "climbUp";
-                        else if (actorAnimMgr.actorComponent._moveSpeed.Y > 0)
-                            return "climbDown";
-
-                        return "climbIdle";
-                    }
-
-                    if (!actorAnimMgr.actorComponent._onGround)
-                    {
-                        if (actorAnimMgr.actorComponent._actor.Physics.VelocityY > 0 && !actorAnimMgr.actorComponent.glide)
-                            return "runFall";
-                    }
-                    else
-                    {
-                        if (actorAnimMgr.actorComponent._moveLeft || actorAnimMgr.actorComponent._moveRight)
-                            return "run";
-
-                        return "idle";
-                    }
-
-                    return null;
-                }
-            }
-
-            new public class ClimbJumpState : ActorAnimationManager.ClimbJumpState
-            {
-                public override string Execute(IFSMObject obj)
-                {
-                    base.Execute(obj);
-
-                    PlayerActorAnimationManager actorAnimMgr = obj as PlayerActorAnimationManager;
-
-                    if (actorAnimMgr.actorComponent == null)
-                        return null;
-
-                    if (!actorAnimMgr.actorComponent._alive)
-                        return "die";
-
-                    if (actorAnimMgr.actorComponent._Climbing)
-                    {
-                        if (actorAnimMgr.actorComponent._moveSpeed.Y < 0)
-                            return "climbUp";
-                        else if (actorAnimMgr.actorComponent._moveSpeed.Y > 0)
-                            return "climbDown";
-
-                        return "climbIdle";
-                    }
-
-                    if (!actorAnimMgr.actorComponent._onGround)
-                    {
-                        if (actorAnimMgr.actorComponent._actor.Physics.VelocityY > 0)
-                        {
-                            if (actorAnimMgr.actorComponent.glide)
-                            {
-                                if (actorAnimMgr.actorComponent._moveLeft || actorAnimMgr.actorComponent._moveRight)
-                                    return "runGlide";
-                                else
-                                    return "glide";
-                            }
-                            else
-                            {
-                                if (actorAnimMgr.actorComponent._moveLeft || actorAnimMgr.actorComponent._moveRight)
-                                    return "runFall";
-                                else
-                                    return "fall";
-                            }
-                        }
-                    }
-                    else
-                    {
-                        if (actorAnimMgr.actorComponent._moveLeft || actorAnimMgr.actorComponent._moveRight)
-                            return "run";
-
-                        return "idle";
-                    }
-
                     return null;
                 }
             }
@@ -1149,6 +833,21 @@ namespace PlatformerStarter
                     }
 
                     return null;
+                }
+            }
+
+            new public class DieState : ActorAnimationManager.DieState
+            {
+                public override void Enter(IFSMObject obj)
+                {
+                    base.Enter(obj);
+
+                    T2DSceneCamera camera = TorqueObjectDatabase.Instance.FindObject<T2DSceneCamera>();
+
+                    if (camera == null)
+                        return;
+
+                    camera.Dismount();
                 }
             }
         }

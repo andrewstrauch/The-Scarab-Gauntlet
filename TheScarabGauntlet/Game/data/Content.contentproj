@@ -44,6 +44,12 @@
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d" />
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PlatformerFramework\PlatformerFramework.csproj">
+      <Project>{BEA1A23A-2521-4DBB-9DBA-E21CBEC3DD27}</Project>
+      <Name>PlatformerFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <PostBuildEvent>"$(TargetPath)" -exportschema "$(ProjectDir)myschema.txschema"</PostBuildEvent>
   </PropertyGroup>

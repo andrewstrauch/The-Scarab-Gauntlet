@@ -244,8 +244,8 @@ Wave Bank
     PC Bank Last Modified High = 0;
     Header Last Modified Low = 0;
     Header Last Modified High = 0;
-    Bank Last Revised Low = 3040138625;
-    Bank Last Revised High = 30130376;
+    Bank Last Revised Low = 2619779053;
+    Bank Last Revised High = 30130550;
 
     Wave
     {
@@ -272,29 +272,6 @@ Wave Bank
 
     Wave
     {
-        Name = amanda_allyougot2;
-        File = amanda_allyougot2.wav;
-        Build Settings Last Modified Low = 2289425514;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 422640;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 3132918528;
-            Last Modified High = 30114907;
-        }
-    }
-
-    Wave
-    {
         Name = amanda_ewwgross1;
         File = amanda_ewwgross1.wav;
         Build Settings Last Modified Low = 2289425514;
@@ -312,29 +289,6 @@ Wave Bank
             Loop Region Length = 0;
             File Type = 1;
             Last Modified Low = 1157951232;
-            Last Modified High = 30114908;
-        }
-    }
-
-    Wave
-    {
-        Name = amanda_ewwgross2;
-        File = amanda_ewwgross2.wav;
-        Build Settings Last Modified Low = 2289435514;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 302280;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 1417951232;
             Last Modified High = 30114908;
         }
     }
@@ -387,52 +341,6 @@ Wave Bank
 
     Wave
     {
-        Name = amanda_hit2;
-        File = amanda_hit2.wav;
-        Build Settings Last Modified Low = 2289445515;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 66048;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 548016640;
-            Last Modified High = 30114910;
-        }
-    }
-
-    Wave
-    {
-        Name = amanda_hit3;
-        File = amanda_hit3.wav;
-        Build Settings Last Modified Low = 2289455516;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 54704;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 688016640;
-            Last Modified High = 30114910;
-        }
-    }
-
-    Wave
-    {
         Name = amanda_jump1;
         File = amanda_jump1.wav;
         Build Settings Last Modified Low = 2289465516;
@@ -456,29 +364,6 @@ Wave Bank
 
     Wave
     {
-        Name = amanda_jump2;
-        File = amanda_jump2.wav;
-        Build Settings Last Modified Low = 2289465516;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 43284;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 1482983936;
-            Last Modified High = 30114909;
-        }
-    }
-
-    Wave
-    {
         Name = amanda_jumpland1;
         File = amanda_jumpland1.wav;
         Build Settings Last Modified Low = 2289475517;
@@ -496,29 +381,6 @@ Wave Bank
             Loop Region Length = 0;
             File Type = 1;
             Last Modified Low = 1642983936;
-            Last Modified High = 30114909;
-        }
-    }
-
-    Wave
-    {
-        Name = amanda_jumpland2;
-        File = amanda_jumpland2.wav;
-        Build Settings Last Modified Low = 2289475517;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 190820;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 2182983936;
             Last Modified High = 30114909;
         }
     }
@@ -594,98 +456,6 @@ Wave Bank
 
     Wave
     {
-        Name = amanda_melee2;
-        File = amanda_melee2.wav;
-        Build Settings Last Modified Low = 2289495518;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 53760;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 2802983936;
-            Last Modified High = 30114909;
-        }
-    }
-
-    Wave
-    {
-        Name = amanda_melee3;
-        File = amanda_melee3.wav;
-        Build Settings Last Modified Low = 2289505518;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 77312;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 2882983936;
-            Last Modified High = 30114909;
-        }
-    }
-
-    Wave
-    {
-        Name = amanda_melee4;
-        File = amanda_melee4.wav;
-        Build Settings Last Modified Low = 2289505518;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 45440;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 3422983936;
-            Last Modified High = 30114909;
-        }
-    }
-
-    Wave
-    {
-        Name = amanda_melee5;
-        File = amanda_melee5.wav;
-        Build Settings Last Modified Low = 2289515519;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 33124;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 3582983936;
-            Last Modified High = 30114909;
-        }
-    }
-
-    Wave
-    {
         Name = amanda_meleepunch1;
         File = amanda_meleepunch1.wav;
         Build Settings Last Modified Low = 2289515519;
@@ -704,29 +474,6 @@ Wave Bank
             File Type = 1;
             Last Modified Low = 3902983936;
             Last Modified High = 30114909;
-        }
-    }
-
-    Wave
-    {
-        Name = amanda_nasty2;
-        File = amanda_nasty2.wav;
-        Build Settings Last Modified Low = 2289525520;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 358912;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 1957951232;
-            Last Modified High = 30114908;
         }
     }
 
@@ -755,75 +502,6 @@ Wave Bank
 
     Wave
     {
-        Name = amanda_run2;
-        File = amanda_run2.wav;
-        Build Settings Last Modified Low = 2289535520;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 53248;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 3577951232;
-            Last Modified High = 30114908;
-        }
-    }
-
-    Wave
-    {
-        Name = amanda_run3;
-        File = amanda_run3.wav;
-        Build Settings Last Modified Low = 2289545521;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 44032;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 3677951232;
-            Last Modified High = 30114908;
-        }
-    }
-
-    Wave
-    {
-        Name = amanda_run4;
-        File = amanda_run4.wav;
-        Build Settings Last Modified Low = 2289545521;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 56320;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 3797951232;
-            Last Modified High = 30114908;
-        }
-    }
-
-    Wave
-    {
         Name = amanda_swipe1;
         File = amanda_swipe1.wav;
         Build Settings Last Modified Low = 2289555521;
@@ -842,52 +520,6 @@ Wave Bank
             File Type = 1;
             Last Modified Low = 4102983936;
             Last Modified High = 30114909;
-        }
-    }
-
-    Wave
-    {
-        Name = amanda_swipe2;
-        File = amanda_swipe2.wav;
-        Build Settings Last Modified Low = 2289555521;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 110592;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 4242983936;
-            Last Modified High = 30114909;
-        }
-    }
-
-    Wave
-    {
-        Name = amanda_swipe3;
-        File = amanda_swipe3.wav;
-        Build Settings Last Modified Low = 2289565522;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 131700;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 188016640;
-            Last Modified High = 30114910;
         }
     }
 
@@ -939,29 +571,6 @@ Wave Bank
 
     Wave
     {
-        Name = amanda_thatwaseasy2;
-        File = amanda_thatwaseasy2.wav;
-        Build Settings Last Modified Low = 2289585523;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 294400;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 877951232;
-            Last Modified High = 30114908;
-        }
-    }
-
-    Wave
-    {
         Name = amanda_thoughbeatme1;
         File = amanda_thoughbeatme1.wav;
         Build Settings Last Modified Low = 2289595524;
@@ -1005,52 +614,6 @@ Wave Bank
             Last Modified High = 30114907;
         }
     }
-
-    Wave
-    {
-        Name = amanda_waiting2;
-        File = amanda_waiting2.wav;
-        Build Settings Last Modified Low = 2289605524;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 222720;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 2132918528;
-            Last Modified High = 30114907;
-        }
-    }
-
-    Wave
-    {
-        Name = amanda_waiting3;
-        File = amanda_waiting3.wav;
-        Build Settings Last Modified Low = 2289605524;
-        Build Settings Last Modified High = 30130370;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 328240;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 2512918528;
-            Last Modified High = 30114907;
-        }
-    }
 }
 
 Wave Bank
@@ -1068,15 +631,15 @@ Wave Bank
     PC Bank Last Modified High = 0;
     Header Last Modified Low = 0;
     Header Last Modified High = 0;
-    Bank Last Revised Low = 3405379515;
-    Bank Last Revised High = 30130376;
+    Bank Last Revised Low = 3065185306;
+    Bank Last Revised High = 30130548;
 
     Wave
     {
         Name = level1;
-        File = music.wav;
-        Build Settings Last Modified Low = 2485196884;
-        Build Settings Last Modified High = 30130376;
+        File = beta score.wav;
+        Build Settings Last Modified Low = 2847243661;
+        Build Settings Last Modified High = 30130548;
 
         Cache
         {
@@ -1084,13 +647,13 @@ Wave Bank
             Channels = 2;
             Sampling Rate = 44100;
             Bits Per Sample = 1;
-            Play Region Offset = 1024;
-            Play Region Length = 41593200;
+            Play Region Offset = 44;
+            Play Region Length = 14417920;
             Loop Region Offset = 0;
             Loop Region Length = 0;
             File Type = 1;
-            Last Modified Low = 236719488;
-            Last Modified High = 30093772;
+            Last Modified Low = 914601600;
+            Last Modified High = 30130400;
         }
     }
 }
@@ -1575,53 +1138,6 @@ Sound Bank
 
     Sound
     {
-        Name = amanda_allyougot2;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_allyougot2;
-                    Entry Index = 1;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
         Name = amanda_ewwgross1;
         Volume = -1200;
         Pitch = 0;
@@ -1659,54 +1175,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_ewwgross1;
-                    Entry Index = 2;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_ewwgross2;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_ewwgross2;
-                    Entry Index = 3;
+                    Entry Index = 1;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -1753,7 +1222,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_falldeath;
-                    Entry Index = 4;
+                    Entry Index = 2;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -1800,54 +1269,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_hit1;
-                    Entry Index = 5;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_hit2;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_hit2;
-                    Entry Index = 6;
+                    Entry Index = 3;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -1894,54 +1316,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_jump1;
-                    Entry Index = 8;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_jump2;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_jump2;
-                    Entry Index = 9;
+                    Entry Index = 4;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -1988,54 +1363,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_jumpland1;
-                    Entry Index = 10;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_jumpland2;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_jumpland2;
-                    Entry Index = 11;
+                    Entry Index = 5;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -2082,7 +1410,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_laughthatwasfun1;
-                    Entry Index = 12;
+                    Entry Index = 6;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -2129,7 +1457,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_letsdoitagain;
-                    Entry Index = 13;
+                    Entry Index = 7;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -2140,7 +1468,7 @@ Sound Bank
     Sound
     {
         Name = amanda_melee1;
-        Volume = -1200;
+        Volume = -70;
         Pitch = 0;
         Priority = 0;
 
@@ -2176,195 +1504,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_melee1;
-                    Entry Index = 14;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_melee2;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_melee2;
-                    Entry Index = 15;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_melee3;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_melee3;
-                    Entry Index = 16;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_melee4;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_melee4;
-                    Entry Index = 17;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_melee5;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_melee5;
-                    Entry Index = 18;
+                    Entry Index = 8;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -2375,7 +1515,7 @@ Sound Bank
     Sound
     {
         Name = amanda_meleepunch1;
-        Volume = -1200;
+        Volume = -70;
         Pitch = 0;
         Priority = 0;
 
@@ -2411,54 +1551,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_meleepunch1;
-                    Entry Index = 19;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_nasty2;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_nasty2;
-                    Entry Index = 20;
+                    Entry Index = 9;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -2469,7 +1562,7 @@ Sound Bank
     Sound
     {
         Name = amanda_run1;
-        Volume = -1200;
+        Volume = -70;
         Pitch = 0;
         Priority = 0;
 
@@ -2505,148 +1598,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_run1;
-                    Entry Index = 21;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_run2;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_run2;
-                    Entry Index = 22;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_run3;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_run3;
-                    Entry Index = 23;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_run4;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_run4;
-                    Entry Index = 24;
+                    Entry Index = 10;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -2657,7 +1609,7 @@ Sound Bank
     Sound
     {
         Name = amanda_swipe1;
-        Volume = -1200;
+        Volume = -70;
         Pitch = 0;
         Priority = 0;
 
@@ -2693,101 +1645,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_swipe1;
-                    Entry Index = 25;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_swipe2;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_swipe2;
-                    Entry Index = 26;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_swipe3;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_swipe3;
-                    Entry Index = 27;
+                    Entry Index = 11;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -2798,7 +1656,7 @@ Sound Bank
     Sound
     {
         Name = amanda_thatsnasty1;
-        Volume = -1200;
+        Volume = -70;
         Pitch = 0;
         Priority = 0;
 
@@ -2834,7 +1692,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_thatsnasty1;
-                    Entry Index = 28;
+                    Entry Index = 12;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -2845,7 +1703,7 @@ Sound Bank
     Sound
     {
         Name = amanda_thatwaseasy1;
-        Volume = -1200;
+        Volume = -70;
         Pitch = 0;
         Priority = 0;
 
@@ -2881,54 +1739,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_thatwaseasy1;
-                    Entry Index = 29;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_thatwaseasy2;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_thatwaseasy2;
-                    Entry Index = 30;
+                    Entry Index = 13;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -2939,7 +1750,7 @@ Sound Bank
     Sound
     {
         Name = amanda_thoughbeatme1;
-        Volume = -1200;
+        Volume = -70;
         Pitch = 0;
         Priority = 0;
 
@@ -2975,7 +1786,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_thoughbeatme1;
-                    Entry Index = 31;
+                    Entry Index = 14;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -2986,7 +1797,7 @@ Sound Bank
     Sound
     {
         Name = amanda_waiting1;
-        Volume = -1200;
+        Volume = -70;
         Pitch = 0;
         Priority = 0;
 
@@ -3022,148 +1833,7 @@ Sound Bank
                     Bank Name = Amanda;
                     Bank Index = 0;
                     Entry Name = amanda_waiting1;
-                    Entry Index = 32;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_waiting2;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_waiting2;
-                    Entry Index = 33;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_waiting3;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_waiting3;
-                    Entry Index = 34;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = amanda_hit3;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = Amanda;
-                    Bank Index = 0;
-                    Entry Name = amanda_hit3;
-                    Entry Index = 7;
+                    Entry Index = 15;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -3193,26 +1863,6 @@ Sound Bank
 
     Cue
     {
-        Name = amanda_allyougot2;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_allyougot2;
-            Index = 1;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
         Name = amanda_ewwgross1;
 
         Variation
@@ -3225,27 +1875,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_ewwgross1;
-            Index = 2;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_ewwgross2;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_ewwgross2;
-            Index = 3;
+            Index = 1;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3265,7 +1895,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_falldeath;
-            Index = 4;
+            Index = 2;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3285,27 +1915,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_hit1;
-            Index = 5;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_hit2;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_hit2;
-            Index = 6;
+            Index = 3;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3325,27 +1935,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_jump1;
-            Index = 7;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_jump2;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_jump2;
-            Index = 8;
+            Index = 4;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3365,27 +1955,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_jumpland1;
-            Index = 9;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_jumpland2;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_jumpland2;
-            Index = 10;
+            Index = 5;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3405,7 +1975,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_laughthatwasfun1;
-            Index = 11;
+            Index = 6;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3425,7 +1995,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_letsdoitagain;
-            Index = 12;
+            Index = 7;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3445,87 +2015,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_melee1;
-            Index = 13;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_melee2;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_melee2;
-            Index = 14;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_melee3;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_melee3;
-            Index = 15;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_melee4;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_melee4;
-            Index = 16;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_melee5;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_melee5;
-            Index = 17;
+            Index = 8;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3545,27 +2035,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_meleepunch1;
-            Index = 18;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_nasty2;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_nasty2;
-            Index = 19;
+            Index = 9;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3585,67 +2055,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_run1;
-            Index = 20;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_run2;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_run2;
-            Index = 21;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_run3;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_run3;
-            Index = 22;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_run4;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_run4;
-            Index = 23;
+            Index = 10;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3665,47 +2075,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_swipe1;
-            Index = 24;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_swipe2;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_swipe2;
-            Index = 25;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_swipe3;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_swipe3;
-            Index = 26;
+            Index = 11;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3725,7 +2095,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_thatsnasty1;
-            Index = 27;
+            Index = 12;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3745,27 +2115,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_thatwaseasy1;
-            Index = 28;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_thatwaseasy2;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_thatwaseasy2;
-            Index = 29;
+            Index = 13;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3785,7 +2135,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_thoughbeatme1;
-            Index = 30;
+            Index = 14;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3805,67 +2155,7 @@ Sound Bank
         Sound Entry
         {
             Name = amanda_waiting1;
-            Index = 31;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_waiting2;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_waiting2;
-            Index = 32;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_waiting3;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_waiting3;
-            Index = 33;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
-        Name = amanda_hit3;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = amanda_hit3;
-            Index = 34;
+            Index = 15;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3885,13 +2175,13 @@ Sound Bank
     Sound
     {
         Name = level1;
-        Volume = -3800;
+        Volume = -1380;
         Pitch = 0;
         Priority = 0;
 
         Category Entry
         {
-            Name = Default;
+            Name = Music;
         }
 
         Track
@@ -4321,7 +2611,7 @@ Sound Bank
     Sound
     {
         Name = death;
-        Volume = -1200;
+        Volume = -30;
         Pitch = 0;
         Priority = 0;
 
@@ -4368,7 +2658,7 @@ Sound Bank
     Sound
     {
         Name = hide;
-        Volume = -1200;
+        Volume = -30;
         Pitch = 0;
         Priority = 0;
 
@@ -4415,7 +2705,7 @@ Sound Bank
     Sound
     {
         Name = alert;
-        Volume = -1200;
+        Volume = -30;
         Pitch = 0;
         Priority = 0;
 
@@ -4462,7 +2752,7 @@ Sound Bank
     Sound
     {
         Name = attack;
-        Volume = -1200;
+        Volume = -30;
         Pitch = 0;
         Priority = 0;
 

@@ -86,8 +86,11 @@ namespace PlatformerStarter.Enemies.ActorComponents
         {
             _soundBank = "bomber";
             _useAnimationManagerSoundEvents = true;
-            _animationManager.SetSoundEvent(RunAnim, "walk");
+            //_animationManager.SetSoundEvent(RunAnim, "walk");
             _animationManager.SetSoundEvent(AttackAnim, "explode");
+
+            _useAnimationStepSoundList = true;
+            _animationManager.AddStepSoundFrame(RunAnim, 1, "walk");
         }
     }
 }

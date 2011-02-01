@@ -199,6 +199,8 @@ namespace PlatformerStarter.Enemies
             _animationManager.SetSoundEvent(RunAnim, "walk");
             _animationManager.SetSoundEvent(AttackAnim, "attack");
             _animationManager.SetSoundEvent(DieAnim, "death");
+            //_useAnimationStepSoundList = true;
+            //_animationManager.AddStepSoundFrame(RunAnim, 1, "walk"); 
         }
 
         #endregion
