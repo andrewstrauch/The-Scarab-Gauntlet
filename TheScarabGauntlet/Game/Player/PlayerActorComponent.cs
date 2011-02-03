@@ -260,6 +260,14 @@ namespace PlatformerStarter
         {
             DieAnim = FallDeathAnim;
         }
+
+        public void ToggleControl()
+        {
+            if (this.IsPossessed)
+                Controller.UnpossessMover(this);
+            else
+                Controller.PossessMover(this);
+        }
         #endregion
 
         #region Private Routines
