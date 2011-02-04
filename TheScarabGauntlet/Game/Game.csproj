@@ -101,6 +101,7 @@
     <Compile Include="Common\Collectibles\HealthCollectibleComponent.cs" />
     <Compile Include="Common\Collectibles\IMovement.cs" />
     <Compile Include="Common\Collectibles\ScarabCollectibleComponent.cs" />
+    <Compile Include="Common\GUI\LoadingGUI.cs" />
     <Compile Include="Common\PitHazardComponent.cs" />
     <Compile Include="Common\Util\CameraManager.cs" />
     <Compile Include="Common\CustomCollision.cs" />

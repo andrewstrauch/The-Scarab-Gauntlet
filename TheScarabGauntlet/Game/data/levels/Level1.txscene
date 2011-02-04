@@ -1020,6 +1020,16 @@
             <IsTranslucent>false</IsTranslucent>
             <IsAdditive>false</IsAdditive>
         </SimpleMaterial>
+        <SimpleMaterial name="hulk_projectileMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/hulk projectile.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="spitooeyMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/spitooey.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
     </Materials>
     <Objects>
         <T2DCollisionMaterial name="DefaultPhysicsMaterial">
@@ -1320,218 +1330,12 @@
             <AnimationDuration>1.09999</AnimationDuration>
             <AnimationCycle>false</AnimationCycle>
         </AnimationData>
-        <T2DParticleEffect name="Tiki">
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <ObjectType>
-                <object objTypeRef="t2dParticleEffectType" />
-            </ObjectType>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>true</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>4</Layer>
-            <Size>
-                <X>20.000</X>
-                <Y>20.000</Y>
-            </Size>
-            <Position>
-                <X>-622.507</X>
-                <Y>-258.761</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>false</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-            <CurrentEffectData>
-                <LifeMode>Infinite</LifeMode>
-                <Lifetime>0.000000</Lifetime>
-                <Emitters>
-                    <EmitterData>
-                        <Name>UntitledEmitter</Name>
-                        <Material nameRef="particle_effect_candleMaterial" />
-                        <MaterialRegionIndex>0</MaterialRegionIndex>
-                        <FixedParticleAspect>true</FixedParticleAspect>
-                        <FixedAreaAspect>false</FixedAreaAspect>
-                        <FixedForceAngle>0</FixedForceAngle>
-                        <ParticleOrientation>Fixed</ParticleOrientation>
-                        <OrientationAngleOffset>0</OrientationAngleOffset>
-                        <OrientationKeepAligned>false</OrientationKeepAligned>
-                        <OrientationRandomArc>360</OrientationRandomArc>
-                        <InitialAge>0</InitialAge>
-                        <EmitterArea>Point</EmitterArea>
-                        <ParticlePivotPoint>
-                            <X>0.000000</X>
-                            <Y>0.000000</Y>
-                        </ParticlePivotPoint>
-                        <AreaOffset>
-                            <X>0</X>
-                            <Y>0</Y>
-                        </AreaOffset>
-                        <UseEffectEmission>false</UseEffectEmission>
-                        <LinkEmissionRotation>false</LinkEmissionRotation>
-                        <AttachPositionToEmitter>false</AttachPositionToEmitter>
-                        <AttachRotationToEmitter>true</AttachRotationToEmitter>
-                        <SingleParticle>false</SingleParticle>
-                        <FirstInFrontOrder>false</FirstInFrontOrder>
-                        <MaxAreaXBase>
-                            <PrimaryKey>20</PrimaryKey>
-                        </MaxAreaXBase>
-                        <MaxAreaYBase>
-                            <PrimaryKey>20</PrimaryKey>
-                        </MaxAreaYBase>
-                        <ParticleLifeBase>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>2.000000</PrimaryKey>
-                        </ParticleLifeBase>
-                        <ParticleLifeVariation>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </ParticleLifeVariation>
-                        <QuantityBase>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>6.139240</PrimaryKey>
-                        </QuantityBase>
-                        <QuantityVariation>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </QuantityVariation>
-                        <SizeXBase>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>6.139240</PrimaryKey>
-                        </SizeXBase>
-                        <SizeXVariation>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </SizeXVariation>
-                        <SizeXLife>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                            <Keys>
-                                <Key>
-                                    <Time>0.157059</Time>
-                                    <Value>3.759494</Value>
-                                </Key>
-                                <Key>
-                                    <Time>0.506471</Time>
-                                    <Value>0.974684</Value>
-                                </Key>
-                                <Key>
-                                    <Time>1.000000</Time>
-                                    <Value>-0.417721</Value>
-                                </Key>
-                            </Keys>
-                        </SizeXLife>
-                        <SizeYBase>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </SizeYBase>
-                        <SizeYVariation>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </SizeYVariation>
-                        <SizeYLife>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>1.000000</PrimaryKey>
-                        </SizeYLife>
-                        <SpeedBase>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>19.620255</PrimaryKey>
-                        </SpeedBase>
-                        <SpeedVariation>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>5.696200</PrimaryKey>
-                        </SpeedVariation>
-                        <SpeedLife>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.139241</PrimaryKey>
-                        </SpeedLife>
-                        <SpinBase>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </SpinBase>
-                        <SpinVariation>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </SpinVariation>
-                        <SpinLife>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </SpinLife>
-                        <FixedForceBase>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </FixedForceBase>
-                        <FixedForceVariation>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </FixedForceVariation>
-                        <FixedForceLife>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>12.531647</PrimaryKey>
-                        </FixedForceLife>
-                        <RandomMotionBase>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </RandomMotionBase>
-                        <RandomMotionVariation>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </RandomMotionVariation>
-                        <RandomMotionLife>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>1.000000</PrimaryKey>
-                        </RandomMotionLife>
-                        <EmissionForceBase>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </EmissionForceBase>
-                        <EmissionForceVariation>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </EmissionForceVariation>
-                        <EmissionAngleBase>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </EmissionAngleBase>
-                        <EmissionAngleVariation>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </EmissionAngleVariation>
-                        <EmissionArcBase>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>9.569618</PrimaryKey>
-                        </EmissionArcBase>
-                        <EmissionArcVariation>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.000000</PrimaryKey>
-                        </EmissionArcVariation>
-                        <RedChannelLife>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>1.000000</PrimaryKey>
-                        </RedChannelLife>
-                        <GreenChannelLife>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>1.000000</PrimaryKey>
-                        </GreenChannelLife>
-                        <BlueChannelLife>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>1.000000</PrimaryKey>
-                        </BlueChannelLife>
-                        <VisibilityLife>
-                            <ValueScale>1</ValueScale>
-                            <PrimaryKey>0.799367</PrimaryKey>
-                        </VisibilityLife>
-                    </EmitterData>
-                </Emitters>
-            </CurrentEffectData>
-        </T2DParticleEffect>
+        <AnimationData name="HulkIntroSpriteBuildAnimation">
+            <Material nameRef="HulkIntroSpriteBuildMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41</AnimationFrames>
+            <AnimationDuration>1.39996</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
         <TileLayer>
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -7033,10 +6837,10 @@
                 <T2DLinkPointComponent type="GarageGames.Torque.T2D.T2DLinkPointComponent" />
                 <WeaponComponent type="PlatformerStarter.WeaponComponent">
                     <Damage>50</Damage>
-                    <ShotSpeed>70.000</ShotSpeed>
+                    <ShotSpeed>100.000</ShotSpeed>
                     <ShotAngle>45.0</ShotAngle>
                     <LinkPointName></LinkPointName>
-                    <ProjectileTemplate nameRef="projectile" />
+                    <ProjectileTemplate nameRef="bomber_projectile" />
                 </WeaponComponent>
                 <BomberActorComponent type="PlatformerStarter.Enemies.ActorComponents.BomberActorComponent">
                     <AttackAnim nameRef="bombersplodeAnimation" />
@@ -7163,7 +6967,7 @@
                     <ShotSpeed>60.000</ShotSpeed>
                     <ShotAngle>0.000</ShotAngle>
                     <LinkPointName>WeaponLinkPoint</LinkPointName>
-                    <ProjectileTemplate nameRef="projectile" />
+                    <ProjectileTemplate nameRef="spitter_projectile" />
                     <MountObject nameRef="sptter_template" />
                 </WeaponComponent>
             </Components>
@@ -7319,6 +7123,8 @@
                 <Y>0.000000</Y>
             </SortPoint>
             <AnimationData nameRef="" />
+            <StartFrame>0.000</StartFrame>
+            <RandomStart>false</RandomStart>
             <PlayOnLoad>true</PlayOnLoad>
             <RemoveOnFinished>false</RemoveOnFinished>
         </AnimatedSprite>
@@ -7412,8 +7218,8 @@
                 <AttackCollisionComponent type="PlatformerStarter.AttackCollisionComponent">
                     <TargetObject nameRef="Amanda" />
                     <MountLPName>PunchLP</MountLPName>
-                    <MountFrame>1</MountFrame>
-                    <DismountFrame>2</DismountFrame>
+                    <MountFrame>4</MountFrame>
+                    <DismountFrame>10</DismountFrame>
                     <Damage>10</Damage>
                 </AttackCollisionComponent>
                 <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
@@ -7439,7 +7245,7 @@
                             </CollisionPolyScale>
                         </T2DPolyImage>
                     </Images>
-                    <RenderCollisionBounds>true</RenderCollisionBounds>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
                     <OnCollision valueOf="PlatformerStarter.AttackCollisionComponent.PunchCollision" />
                     <ResolveCollision valueOf="PlatformerStarter.Common.CustomCollision.ImmovableCollision" />
                     <SolveOverlap>false</SolveOverlap>
@@ -7487,8 +7293,8 @@
                         <LinkPoint type="GarageGames.Torque.T2D.T2DLinkPointComponent+XmlLinkPoint">
                             <Name>PunchLP</Name>
                             <Position>
-                                <X>0.548654</X>
-                                <Y>0.080268</Y>
+                                <X>0.718205</X>
+                                <Y>0.081498</Y>
                             </Position>
                             <Rotation>0.0</Rotation>
                         </LinkPoint>
@@ -7602,7 +7408,7 @@
                 <Y>36.594</Y>
             </Size>
             <Position>
-                <X>-272.354</X>
+                <X>-266.155</X>
                 <Y>-3.297</Y>
             </Position>
             <Rotation>0</Rotation>
@@ -7677,17 +7483,17 @@
                 <HulkActorComponent type="PlatformerStarter.Enemies.ActorComponents.HulkActorComponent">
                     <MeleeAnim nameRef="HulkMeleeSpriteBuildAnimation" />
                     <LaunchAnim nameRef="HulkRangedSpriteBuildAnimation" />
-                    <IntroAnim nameRef="HulkDeathSpriteBuildAnimation" />
+                    <IntroAnim nameRef="HulkIntroSpriteBuildAnimation" />
                     <MeleeCoolDown>500.000</MeleeCoolDown>
                     <ProjectileCoolDown>2000</ProjectileCoolDown>
-                    <MeleeRotationController nameRef="swipe_anchor" />
-                    <ShoulderCannonObject nameRef="shoulder_cannon" />
+                    <MeleeRotationController nameRef="hulk_swipe_anchor" />
+                    <ShoulderCannonObject nameRef="Hulk_weapon" />
                     <AIComponent>
                         <AIHybridComponent type="PlatformerStarter.Enemies.AIHybridComponent">
-                            <MaxRangedDist>70.000</MaxRangedDist>
-                            <MinRangedDist>50.000</MinRangedDist>
+                            <MaxRangedDist>100.000</MaxRangedDist>
+                            <MinRangedDist>80.000</MinRangedDist>
                             <AttackDist>20.000</AttackDist>
-                            <AlertDist>100.000</AlertDist>
+                            <AlertDist>300.000</AlertDist>
                             <Attacks>true</Attacks>
                         </AIHybridComponent>
                     </AIComponent>
@@ -7713,9 +7519,9 @@
                     <GroundYBuffer>0.15</GroundYBuffer>
                     <LadderAttachXThreshold>1</LadderAttachXThreshold>
                     <MaxGroundNormalY>-0.1</MaxGroundNormalY>
-                    <MaxHealth>100</MaxHealth>
+                    <MaxHealth>250.000</MaxHealth>
                     <Armor>0</Armor>
-                    <Lives>10</Lives>
+                    <Lives>0</Lives>
                     <DamageTimeout>0.75</DamageTimeout>
                     <AllowRespawn>false</AllowRespawn>
                     <IdleAnim nameRef="HulkIdleSpriteBuildAnimation" />
@@ -7761,7 +7567,7 @@
                             </CollisionPolyScale>
                         </T2DPolyImage>
                     </Images>
-                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <RenderCollisionBounds>true</RenderCollisionBounds>
                     <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
                     <SolveOverlap>true</SolveOverlap>
                     <CollisionMaterial nameRef="DefaultCollisionMaterial" />
@@ -7795,6 +7601,16 @@
             </SortPoint>
             <Mounts>
                 <Mount>
+                    <Object nameRef="Hulk_weapon" />
+                    <LinkPoint>WeaponLP</LinkPoint>
+                    <OwnedByMount>false</OwnedByMount>
+                    <SnapToMount>true</SnapToMount>
+                    <TrackMountRotation>true</TrackMountRotation>
+                    <MountForce>0</MountForce>
+                    <InheritMountVisibility>false</InheritMountVisibility>
+                    <InheritMountFlip>false</InheritMountFlip>
+                </Mount>
+                <Mount>
                     <Object nameRef="swipe_anchor" />
                     <LinkPoint>AnchorLP</LinkPoint>
                     <OwnedByMount>false</OwnedByMount>
@@ -7811,6 +7627,42 @@
             <PlayOnLoad>true</PlayOnLoad>
             <RemoveOnFinished>false</RemoveOnFinished>
         </AnimatedSprite>
+        <T2DSceneObject name="Hulk_weapon">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <WeaponComponent type="PlatformerStarter.WeaponComponent">
+                    <Damage>20</Damage>
+                    <ShotSpeed>100.000</ShotSpeed>
+                    <ShotAngle>-85.000</ShotAngle>
+                    <LinkPointName></LinkPointName>
+                    <ProjectileTemplate nameRef="hulk_projectile" />
+                </WeaponComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>18.320</X>
+                <Y>15.141</Y>
+            </Size>
+            <Position>
+                <X>7095.007</X>
+                <Y>-54.475</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
         <StaticSprite name="swipe_anchor">
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -7855,7 +7707,7 @@
             </Size>
             <Position>
                 <X>7098.478</X>
-                <Y>-44.722</Y>
+                <Y>-44.723</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>
@@ -23509,76 +23361,6 @@
             <Material nameRef="UndergrowthHighMaterial" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
-        <T2DSceneObject>
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <SolidPlatformComponent type="GarageGames.Torque.PlatformerFramework.SolidPlatformComponent">
-                    <SurfaceForce>0.0</SurfaceForce>
-                </SolidPlatformComponent>
-                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
-                    <Velocity>
-                        <X>0</X>
-                        <Y>0</Y>
-                    </Velocity>
-                    <AngularVelocity>0.0</AngularVelocity>
-                    <InverseMass>1.0</InverseMass>
-                    <RotationScale>1.0</RotationScale>
-                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
-                </T2DPhysicsComponent>
-                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
-                    <Images>
-                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
-                            <CollisionPolyBasis>
-                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>1.00000</X>
-                                    <Y>1.00000</Y>
-                                </Vector2>
-                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>-0.99754</X>
-                                    <Y>1.00000</Y>
-                                </Vector2>
-                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>1.00000</X>
-                                    <Y>-0.97294</Y>
-                                </Vector2>
-                            </CollisionPolyBasis>
-                            <CollisionPolyScale>
-                                <X>1</X>
-                                <Y>1</Y>
-                            </CollisionPolyScale>
-                        </T2DPolyImage>
-                    </Images>
-                    <RenderCollisionBounds>false</RenderCollisionBounds>
-                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
-                    <SolveOverlap>true</SolveOverlap>
-                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
-                </T2DCollisionComponent>
-            </Components>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>13</Layer>
-            <Size>
-                <X>100.000</X>
-                <Y>100.000</Y>
-            </Size>
-            <Position>
-                <X>7160.000</X>
-                <Y>-11.835</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-        </T2DSceneObject>
         <StaticSprite>
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -23768,8 +23550,8 @@
                 <AttackCollisionComponent type="PlatformerStarter.AttackCollisionComponent">
                     <TargetObject nameRef="Amanda" />
                     <MountLPName>PunchLP</MountLPName>
-                    <MountFrame>1</MountFrame>
-                    <DismountFrame>2</DismountFrame>
+                    <MountFrame>5</MountFrame>
+                    <DismountFrame>15</DismountFrame>
                     <Damage>20</Damage>
                 </AttackCollisionComponent>
                 <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
@@ -23795,7 +23577,7 @@
                             </CollisionPolyScale>
                         </T2DPolyImage>
                     </Images>
-                    <RenderCollisionBounds>true</RenderCollisionBounds>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
                     <OnCollision valueOf="PlatformerStarter.AttackCollisionComponent.PunchCollision" />
                     <ResolveCollision valueOf="PlatformerStarter.Common.CustomCollision.ImmovableCollision" />
                     <SolveOverlap>false</SolveOverlap>
@@ -23870,7 +23652,7 @@
                             </CollisionPolyScale>
                         </T2DPolyImage>
                     </Images>
-                    <RenderCollisionBounds>true</RenderCollisionBounds>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
                     <OnCollision valueOf="PlatformerStarter.EnemyAttackCollisionComponent.EnemyCollision" />
                     <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.ClampCollision" />
                     <SolveOverlap>true</SolveOverlap>
@@ -24053,12 +23835,12 @@
             <IsPersistent>false</IsPersistent>
             <Layer>0</Layer>
             <Size>
-                <X>46.939</X>
-                <Y>6.156</Y>
+                <X>61.939</X>
+                <Y>6.115</Y>
             </Size>
             <Position>
-                <X>7103.470</X>
-                <Y>133.037</Y>
+                <X>7114.030</X>
+                <Y>160.815</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>false</CollisionsEnabled>
@@ -24145,7 +23927,7 @@
             <Components inPlace="true">
                 <ProjectileComponent type="PlatformerStarter.ProjectileComponent">
                     <MilliSecondsToLive>10000</MilliSecondsToLive>
-                    <Gravity>4.000</Gravity>
+                    <Gravity>2.000</Gravity>
                     <Damage>10</Damage>
                 </ProjectileComponent>
                 <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
@@ -24163,20 +23945,20 @@
                         <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
                             <CollisionPolyBasis>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>-1.00000</X>
-                                    <Y>-1.00000</Y>
+                                    <X>-0.74484</X>
+                                    <Y>0.00725</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>1.00000</X>
-                                    <Y>-1.00000</Y>
+                                    <X>0.01823</X>
+                                    <Y>-0.76329</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>1.00000</X>
-                                    <Y>1.00000</Y>
+                                    <X>0.76428</X>
+                                    <Y>0.06522</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>-1.00000</X>
-                                    <Y>1.00000</Y>
+                                    <X>-0.00122</X>
+                                    <Y>0.72464</Y>
                                 </Vector2>
                             </CollisionPolyBasis>
                             <CollisionPolyScale>
@@ -24205,8 +23987,8 @@
                 <Y>12.817</Y>
             </Size>
             <Position>
-                <X>7049.928</X>
-                <Y>121.408</Y>
+                <X>7036.369</X>
+                <Y>198.592</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>
@@ -24218,7 +24000,7 @@
                 <X>0.000000</X>
                 <Y>0.000000</Y>
             </SortPoint>
-            <Material nameRef="GGLogoMaterial" />
+            <Material nameRef="hulk_projectileMaterial" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
         <T2DSpawnObject>
@@ -36847,6 +36629,18 @@
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
             <Components inPlace="true">
+                <T2DLinkPointComponent type="GarageGames.Torque.T2D.T2DLinkPointComponent">
+                    <LinkPoints>
+                        <LinkPoint type="GarageGames.Torque.T2D.T2DLinkPointComponent+XmlLinkPoint">
+                            <Name>LinkPoint1</Name>
+                            <Position>
+                                <X>0.121272</X>
+                                <Y>-0.937676</Y>
+                            </Position>
+                            <Rotation>0.0</Rotation>
+                        </LinkPoint>
+                    </LinkPoints>
+                </T2DLinkPointComponent>
                 <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
                     <Images>
                         <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
@@ -36906,13 +36700,73 @@
                 <X>0.000000</X>
                 <Y>0.000000</Y>
             </SortPoint>
+            <Mounts>
+                <Mount>
+                    <Object nameRef="mouth2" />
+                    <LinkPoint>LinkPoint1</LinkPoint>
+                    <OwnedByMount>false</OwnedByMount>
+                    <SnapToMount>true</SnapToMount>
+                    <TrackMountRotation>true</TrackMountRotation>
+                    <MountForce>0</MountForce>
+                    <InheritMountVisibility>false</InheritMountVisibility>
+                    <InheritMountFlip>false</InheritMountFlip>
+                </Mount>
+            </Mounts>
             <Material nameRef="UndergrowthHighMaterial" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
+        <T2DSceneObject name="mouth2">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <WeaponComponent type="PlatformerStarter.WeaponComponent">
+                    <Damage>10</Damage>
+                    <ShotSpeed>30.000</ShotSpeed>
+                    <ShotAngle>-90.000</ShotAngle>
+                    <LinkPointName></LinkPointName>
+                    <ProjectileTemplate nameRef="tiki_projectile" />
+                </WeaponComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>16.099</X>
+                <Y>11.569</Y>
+            </Size>
+            <Position>
+                <X>3932.972</X>
+                <Y>-35.269</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
         <StaticSprite>
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
             <Components inPlace="true">
+                <T2DLinkPointComponent type="GarageGames.Torque.T2D.T2DLinkPointComponent">
+                    <LinkPoints>
+                        <LinkPoint type="GarageGames.Torque.T2D.T2DLinkPointComponent+XmlLinkPoint">
+                            <Name>LinkPoint1</Name>
+                            <Position>
+                                <X>-0.870371</X>
+                                <Y>-0.346125</Y>
+                            </Position>
+                            <Rotation>0.0</Rotation>
+                        </LinkPoint>
+                    </LinkPoints>
+                </T2DLinkPointComponent>
                 <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
                     <Images>
                         <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
@@ -36972,9 +36826,57 @@
                 <X>0.000000</X>
                 <Y>0.000000</Y>
             </SortPoint>
+            <Mounts>
+                <Mount>
+                    <Object nameRef="mouth3" />
+                    <LinkPoint>LinkPoint1</LinkPoint>
+                    <OwnedByMount>false</OwnedByMount>
+                    <SnapToMount>true</SnapToMount>
+                    <TrackMountRotation>true</TrackMountRotation>
+                    <MountForce>0</MountForce>
+                    <InheritMountVisibility>false</InheritMountVisibility>
+                    <InheritMountFlip>false</InheritMountFlip>
+                </Mount>
+            </Mounts>
             <Material nameRef="UndergrowthHighMaterial" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
+        <T2DSceneObject name="mouth3">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <WeaponComponent type="PlatformerStarter.WeaponComponent">
+                    <Damage>10</Damage>
+                    <ShotSpeed>30.000</ShotSpeed>
+                    <ShotAngle>-90.000</ShotAngle>
+                    <LinkPointName></LinkPointName>
+                    <ProjectileTemplate nameRef="tiki_projectile" />
+                </WeaponComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>16.099</X>
+                <Y>11.569</Y>
+            </Size>
+            <Position>
+                <X>3934.248</X>
+                <Y>-12.559</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
         <StaticSprite>
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -42646,7 +42548,7 @@
                 <CheckpointSystemSpawnedObjectComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnedObjectComponent" />
                 <GruntActorComponent type="PlatformerStarter.Enemies.GruntActorComponent">
                     <AttackAnim nameRef="Grunt_AttackRevAnimation1" />
-                    <CoolDown>500</CoolDown>
+                    <CoolDown>2000.000</CoolDown>
                     <AttackObjectTemplate nameRef="grunt_swipe" />
                     <AttackSpeed>25</AttackSpeed>
                     <AIComponent>
@@ -42662,7 +42564,7 @@
                         <Y>200</Y>
                     </MaxVelocity>
                     <Gravity>3</Gravity>
-                    <MaxMoveSpeed>65</MaxMoveSpeed>
+                    <MaxMoveSpeed>35.000</MaxMoveSpeed>
                     <GroundAccel>3</GroundAccel>
                     <GroundDecel>5</GroundDecel>
                     <AirAccel>2</AirAccel>
@@ -42679,9 +42581,9 @@
                     <GroundYBuffer>0.15</GroundYBuffer>
                     <LadderAttachXThreshold>1</LadderAttachXThreshold>
                     <MaxGroundNormalY>-0.1</MaxGroundNormalY>
-                    <MaxHealth>100</MaxHealth>
+                    <MaxHealth>20.000</MaxHealth>
                     <Armor>0</Armor>
-                    <Lives>10</Lives>
+                    <Lives>1</Lives>
                     <DamageTimeout>0.75</DamageTimeout>
                     <AllowRespawn>false</AllowRespawn>
                     <RunAnim nameRef="GruntWalkRevAnimation" />
@@ -42704,20 +42606,16 @@
                         <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
                             <CollisionPolyBasis>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>-1.00000</X>
-                                    <Y>-1.00000</Y>
+                                    <X>-0.28354</X>
+                                    <Y>-0.26031</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>1.00000</X>
-                                    <Y>-1.00000</Y>
+                                    <X>0.28354</X>
+                                    <Y>-0.24040</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>1.00000</X>
-                                    <Y>1.00000</Y>
-                                </Vector2>
-                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>-1.00000</X>
-                                    <Y>1.00000</Y>
+                                    <X>-0.09146</X>
+                                    <Y>0.82077</Y>
                                 </Vector2>
                             </CollisionPolyBasis>
                             <CollisionPolyScale>
@@ -44517,7 +44415,7 @@
                     <GroundYBuffer>0.15</GroundYBuffer>
                     <LadderAttachXThreshold>1</LadderAttachXThreshold>
                     <MaxGroundNormalY>-0.1</MaxGroundNormalY>
-                    <MaxHealth>5.000</MaxHealth>
+                    <MaxHealth>10.000</MaxHealth>
                     <Armor>0</Armor>
                     <Lives>0</Lives>
                     <DamageTimeout>0.75</DamageTimeout>
@@ -45165,9 +45063,58 @@
             <Material nameRef="olmectotemrightMaterial" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
-        <StaticSprite>
+        <StaticSprite name="totem1">
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <TikiFlameTrapComponent type="PlatformerStarter.Common.Traps.TikiFlameTrapComponent">
+                    <MountedWeapons>
+                        <TimedWeapon type="PlatformerStarter.Common.Traps.TimedWeapon">
+                            <WeaponName>mouth1</WeaponName>
+                            <CoolDown>3000</CoolDown>
+                            <StartTime>1500</StartTime>
+                        </TimedWeapon>
+                        <TimedWeapon type="PlatformerStarter.Common.Traps.TimedWeapon">
+                            <WeaponName>mouth3</WeaponName>
+                            <CoolDown>3000</CoolDown>
+                            <StartTime>1500</StartTime>
+                        </TimedWeapon>
+                        <TimedWeapon type="PlatformerStarter.Common.Traps.TimedWeapon">
+                            <WeaponName>mouth2</WeaponName>
+                            <CoolDown>3000</CoolDown>
+                            <StartTime>500</StartTime>
+                        </TimedWeapon>
+                    </MountedWeapons>
+                </TikiFlameTrapComponent>
+                <T2DLinkPointComponent type="GarageGames.Torque.T2D.T2DLinkPointComponent">
+                    <LinkPoints>
+                        <LinkPoint type="GarageGames.Torque.T2D.T2DLinkPointComponent+XmlLinkPoint">
+                            <Name>LinkPoint1</Name>
+                            <Position>
+                                <X>-0.159292</X>
+                                <Y>-0.224622</Y>
+                            </Position>
+                            <Rotation>0.0</Rotation>
+                        </LinkPoint>
+                        <LinkPoint type="GarageGames.Torque.T2D.T2DLinkPointComponent+XmlLinkPoint">
+                            <Name>LinkPoint2</Name>
+                            <Position>
+                                <X>-0.203540</X>
+                                <Y>0.149028</Y>
+                            </Position>
+                            <Rotation>0.0</Rotation>
+                        </LinkPoint>
+                        <LinkPoint type="GarageGames.Torque.T2D.T2DLinkPointComponent+XmlLinkPoint">
+                            <Name>LinkPoint3</Name>
+                            <Position>
+                                <X>-0.159292</X>
+                                <Y>0.533477</Y>
+                            </Position>
+                            <Rotation>0.0</Rotation>
+                        </LinkPoint>
+                    </LinkPoints>
+                </T2DLinkPointComponent>
+            </Components>
             <ObjectType>
                 <object objTypeRef="t2dSpriteType" />
             </ObjectType>
@@ -45194,9 +45141,57 @@
                 <X>0.000000</X>
                 <Y>0.000000</Y>
             </SortPoint>
+            <Mounts>
+                <Mount>
+                    <Object nameRef="mouth1" />
+                    <LinkPoint>LinkPoint1</LinkPoint>
+                    <OwnedByMount>false</OwnedByMount>
+                    <SnapToMount>true</SnapToMount>
+                    <TrackMountRotation>true</TrackMountRotation>
+                    <MountForce>0</MountForce>
+                    <InheritMountVisibility>false</InheritMountVisibility>
+                    <InheritMountFlip>false</InheritMountFlip>
+                </Mount>
+            </Mounts>
             <Material nameRef="olmectotemleftMaterial" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
+        <T2DSceneObject name="mouth1">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <WeaponComponent type="PlatformerStarter.WeaponComponent">
+                    <Damage>10</Damage>
+                    <ShotSpeed>30.000</ShotSpeed>
+                    <ShotAngle>-90.000</ShotAngle>
+                    <LinkPointName></LinkPointName>
+                    <ProjectileTemplate nameRef="tiki_projectile" />
+                </WeaponComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>16.099</X>
+                <Y>11.569</Y>
+            </Size>
+            <Position>
+                <X>3934.248</X>
+                <Y>-57.342</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
         <StaticSprite>
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -45384,9 +45379,9 @@
                     <GroundYBuffer>0.15</GroundYBuffer>
                     <LadderAttachXThreshold>1</LadderAttachXThreshold>
                     <MaxGroundNormalY>-0.1</MaxGroundNormalY>
-                    <MaxHealth>100</MaxHealth>
+                    <MaxHealth>10.000</MaxHealth>
                     <Armor>0</Armor>
-                    <Lives>10</Lives>
+                    <Lives>1</Lives>
                     <DamageTimeout>0.75</DamageTimeout>
                     <AllowRespawn>false</AllowRespawn>
                     <IdleAnim nameRef="SpitterRightIdleAnimation" />
@@ -45900,6 +45895,36 @@
         <StaticSprite>
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.88788</X>
+                                    <Y>-0.92688</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.66727</X>
+                                    <Y>-0.82581</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.63472</X>
+                                    <Y>0.83441</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
             <ObjectType>
                 <object objTypeRef="t2dSpriteType" />
             </ObjectType>
@@ -45932,6 +45957,36 @@
         <StaticSprite>
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.66897</X>
+                                    <Y>-0.83888</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.90690</X>
+                                    <Y>-0.94629</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.56897</X>
+                                    <Y>0.82814</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.ClampCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
             <ObjectType>
                 <object objTypeRef="t2dSpriteType" />
             </ObjectType>
@@ -48916,6 +48971,9 @@
         <StaticSprite>
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DLinkPointComponent type="GarageGames.Torque.T2D.T2DLinkPointComponent" />
+            </Components>
             <ObjectType>
                 <object objTypeRef="t2dSpriteType" />
             </ObjectType>
@@ -49706,88 +49764,6 @@
                 </Emitters>
             </CurrentEffectData>
         </T2DParticleEffect>
-        <StaticSprite name="projectile">
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <ProjectileComponent type="PlatformerStarter.ProjectileComponent">
-                    <MilliSecondsToLive>4000</MilliSecondsToLive>
-                    <Gravity>0.0</Gravity>
-                    <Damage>5</Damage>
-                </ProjectileComponent>
-                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
-                    <Velocity>
-                        <X>0</X>
-                        <Y>0</Y>
-                    </Velocity>
-                    <AngularVelocity>0.0</AngularVelocity>
-                    <InverseMass>1.0</InverseMass>
-                    <RotationScale>1.0</RotationScale>
-                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
-                </T2DPhysicsComponent>
-                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
-                    <Images>
-                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
-                            <CollisionPolyBasis>
-                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>0.85495</X>
-                                    <Y>0.01856</Y>
-                                </Vector2>
-                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>0.01538</X>
-                                    <Y>0.88454</Y>
-                                </Vector2>
-                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>-0.89011</X>
-                                    <Y>0.00206</Y>
-                                </Vector2>
-                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>0.05055</X>
-                                    <Y>-0.86804</Y>
-                                </Vector2>
-                            </CollisionPolyBasis>
-                            <CollisionPolyScale>
-                                <X>1</X>
-                                <Y>1</Y>
-                            </CollisionPolyScale>
-                        </T2DPolyImage>
-                    </Images>
-                    <RenderCollisionBounds>true</RenderCollisionBounds>
-                    <OnCollision valueOf="PlatformerStarter.ProjectileComponent.ProjectileCollision" />
-                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.ClampCollision" />
-                    <SolveOverlap>true</SolveOverlap>
-                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
-                </T2DCollisionComponent>
-            </Components>
-            <ObjectType>
-                <object objTypeRef="t2dSpriteType" />
-            </ObjectType>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>true</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>10.000</X>
-                <Y>10.667</Y>
-            </Size>
-            <Position>
-                <X>-650.392</X>
-                <Y>-255.684</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-            <Material nameRef="GGLogoMaterial" />
-            <MaterialRegionIndex>0</MaterialRegionIndex>
-        </StaticSprite>
         <StaticSprite>
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -52617,38 +52593,6 @@
 <![CDATA[0,0,0 1,0,1 2,0,2 3,0,2 4,0,2 5,0,2 6,0,2 7,0,2 8,0,3 9,0,4 0,1,5 1,1,6 2,1,6 3,1,6 4,1,6 5,1,6 6,1,6 7,1,6 8,1,6 1,2,6 2,2,6 3,2,6 4,2,6 5,2,6 6,2,6 7,2,6 8,2,6 1,3,6 2,3,6 3,3,6 4,3,6 5,3,6 6,3,6 7,3,6 8,3,6 1,4,6 2,4,6 3,4,6 4,4,6 5,4,6 6,4,6 7,4,6 8,4,6 1,5,6 2,5,6 3,5,6 4,5,6 5,5,6 6,5,6 7,5,6 8,5,6 1,6,6 2,6,6 3,6,6 4,6,6 5,6,6 6,6,6 7,6,6 8,6,6 1,7,6 2,7,6 3,7,6 4,7,6 5,7,6 6,7,6 7,7,6 8,7,6 1,8,6 2,8,6 3,8,6 4,8,6 5,8,6 6,8,6 7,8,6 8,8,6 1,9,6 2,9,6 3,9,6 4,9,6 5,9,6 6,9,6 7,9,6 8,9,6 9,1,7 0,2,8 0,3,8 0,4,8 0,5,8 0,6,8 0,7,8 0,8,8 0,9,8 9,2,9 9,3,9 9,4,9 9,5,9 9,6,9 9,7,9 9,8,9 9,9,9]]>
             </TileDefinitions>
         </TileLayer>
-        <StaticSprite>
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <ObjectType>
-                <object objTypeRef="t2dSpriteType" />
-            </ObjectType>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>18</Layer>
-            <Size>
-                <X>512.833</X>
-                <Y>74.970</Y>
-            </Size>
-            <Position>
-                <X>6948.584</X>
-                <Y>-25.435</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-            <Material nameRef="" />
-            <MaterialRegionIndex>0</MaterialRegionIndex>
-        </StaticSprite>
         <T2DSceneObject name="Vert">
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -53282,8 +53226,8 @@
                 <Y>36.209</Y>
             </Size>
             <Position>
-                <X>1048.976</X>
-                <Y>146.895</Y>
+                <X>1083.976</X>
+                <Y>148.105</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>
@@ -54010,7 +53954,7 @@
             </Size>
             <Position>
                 <X>10064.001</X>
-                <Y>-112.229</Y>
+                <Y>-112.962</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>
@@ -54409,5 +54353,965 @@
                 <Y>0.000000</Y>
             </SortPoint>
         </T2DSceneObject>
+        <T2DSceneObject name="tiki_projectile">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <ProjectileComponent type="PlatformerStarter.ProjectileComponent">
+                    <MilliSecondsToLive>3000</MilliSecondsToLive>
+                    <Gravity>0.0</Gravity>
+                    <Damage>10</Damage>
+                </ProjectileComponent>
+                <T2DLinkPointComponent type="GarageGames.Torque.T2D.T2DLinkPointComponent">
+                    <LinkPoints>
+                        <LinkPoint type="GarageGames.Torque.T2D.T2DLinkPointComponent+XmlLinkPoint">
+                            <Name>LinkPoint1</Name>
+                            <Position>
+                                <X>-0.062500</X>
+                                <Y>0.003906</Y>
+                            </Position>
+                            <Rotation>0.0</Rotation>
+                        </LinkPoint>
+                    </LinkPoints>
+                </T2DLinkPointComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.87109</X>
+                                    <Y>0.15234</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.12109</X>
+                                    <Y>0.92969</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.85938</X>
+                                    <Y>0.09375</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.04297</X>
+                                    <Y>-0.81641</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <OnCollision valueOf="PlatformerStarter.ProjectileComponent.ProjectileCollision" />
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>5.000</X>
+                <Y>5.000</Y>
+            </Size>
+            <Position>
+                <X>-625.641</X>
+                <Y>-259.565</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>true</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Mounts>
+                <Mount>
+                    <Object nameRef="Tiki" />
+                    <LinkPoint>LinkPoint1</LinkPoint>
+                    <OwnedByMount>true</OwnedByMount>
+                    <SnapToMount>true</SnapToMount>
+                    <TrackMountRotation>true</TrackMountRotation>
+                    <MountForce>0</MountForce>
+                    <InheritMountVisibility>false</InheritMountVisibility>
+                    <InheritMountFlip>false</InheritMountFlip>
+                </Mount>
+            </Mounts>
+        </T2DSceneObject>
+        <T2DParticleEffect name="Tiki">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <ObjectType>
+                <object objTypeRef="t2dParticleEffectType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>4</Layer>
+            <Size>
+                <X>14.899</X>
+                <Y>13.830</Y>
+            </Size>
+            <Position>
+                <X>-625.484</X>
+                <Y>-259.556</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>false</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <CurrentEffectData>
+                <LifeMode>Infinite</LifeMode>
+                <Lifetime>0.000000</Lifetime>
+                <Emitters>
+                    <EmitterData>
+                        <Name>UntitledEmitter</Name>
+                        <Material nameRef="particle_effect_candleMaterial" />
+                        <MaterialRegionIndex>0</MaterialRegionIndex>
+                        <FixedParticleAspect>true</FixedParticleAspect>
+                        <FixedAreaAspect>false</FixedAreaAspect>
+                        <FixedForceAngle>0</FixedForceAngle>
+                        <ParticleOrientation>Fixed</ParticleOrientation>
+                        <OrientationAngleOffset>0</OrientationAngleOffset>
+                        <OrientationKeepAligned>false</OrientationKeepAligned>
+                        <OrientationRandomArc>360</OrientationRandomArc>
+                        <InitialAge>0</InitialAge>
+                        <EmitterArea>Point</EmitterArea>
+                        <ParticlePivotPoint>
+                            <X>0.000000</X>
+                            <Y>0.000000</Y>
+                        </ParticlePivotPoint>
+                        <AreaOffset>
+                            <X>0</X>
+                            <Y>0</Y>
+                        </AreaOffset>
+                        <UseEffectEmission>false</UseEffectEmission>
+                        <LinkEmissionRotation>false</LinkEmissionRotation>
+                        <AttachPositionToEmitter>false</AttachPositionToEmitter>
+                        <AttachRotationToEmitter>true</AttachRotationToEmitter>
+                        <SingleParticle>false</SingleParticle>
+                        <FirstInFrontOrder>false</FirstInFrontOrder>
+                        <MaxAreaXBase>
+                            <PrimaryKey>14.899</PrimaryKey>
+                        </MaxAreaXBase>
+                        <MaxAreaYBase>
+                            <PrimaryKey>13.83</PrimaryKey>
+                        </MaxAreaYBase>
+                        <ParticleLifeBase>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>2.000000</PrimaryKey>
+                        </ParticleLifeBase>
+                        <ParticleLifeVariation>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </ParticleLifeVariation>
+                        <QuantityBase>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>6.139240</PrimaryKey>
+                        </QuantityBase>
+                        <QuantityVariation>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </QuantityVariation>
+                        <SizeXBase>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>6.139240</PrimaryKey>
+                        </SizeXBase>
+                        <SizeXVariation>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </SizeXVariation>
+                        <SizeXLife>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                            <Keys>
+                                <Key>
+                                    <Time>0.157059</Time>
+                                    <Value>3.759494</Value>
+                                </Key>
+                                <Key>
+                                    <Time>0.506471</Time>
+                                    <Value>0.974684</Value>
+                                </Key>
+                                <Key>
+                                    <Time>1.000000</Time>
+                                    <Value>-0.417721</Value>
+                                </Key>
+                            </Keys>
+                        </SizeXLife>
+                        <SizeYBase>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </SizeYBase>
+                        <SizeYVariation>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </SizeYVariation>
+                        <SizeYLife>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>1.000000</PrimaryKey>
+                        </SizeYLife>
+                        <SpeedBase>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>19.620255</PrimaryKey>
+                        </SpeedBase>
+                        <SpeedVariation>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>5.696200</PrimaryKey>
+                        </SpeedVariation>
+                        <SpeedLife>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.139241</PrimaryKey>
+                        </SpeedLife>
+                        <SpinBase>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </SpinBase>
+                        <SpinVariation>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </SpinVariation>
+                        <SpinLife>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </SpinLife>
+                        <FixedForceBase>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </FixedForceBase>
+                        <FixedForceVariation>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </FixedForceVariation>
+                        <FixedForceLife>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>12.531647</PrimaryKey>
+                        </FixedForceLife>
+                        <RandomMotionBase>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </RandomMotionBase>
+                        <RandomMotionVariation>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </RandomMotionVariation>
+                        <RandomMotionLife>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>1.000000</PrimaryKey>
+                        </RandomMotionLife>
+                        <EmissionForceBase>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </EmissionForceBase>
+                        <EmissionForceVariation>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </EmissionForceVariation>
+                        <EmissionAngleBase>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </EmissionAngleBase>
+                        <EmissionAngleVariation>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </EmissionAngleVariation>
+                        <EmissionArcBase>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>9.569618</PrimaryKey>
+                        </EmissionArcBase>
+                        <EmissionArcVariation>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.000000</PrimaryKey>
+                        </EmissionArcVariation>
+                        <RedChannelLife>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>1.000000</PrimaryKey>
+                        </RedChannelLife>
+                        <GreenChannelLife>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>1.000000</PrimaryKey>
+                        </GreenChannelLife>
+                        <BlueChannelLife>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>1.000000</PrimaryKey>
+                        </BlueChannelLife>
+                        <VisibilityLife>
+                            <ValueScale>1</ValueScale>
+                            <PrimaryKey>0.799367</PrimaryKey>
+                        </VisibilityLife>
+                    </EmitterData>
+                </Emitters>
+            </CurrentEffectData>
+        </T2DParticleEffect>
+        <T2DSceneObject>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <TrapTriggerComponent type="PlatformerStarter.Common.Triggers.TrapTriggerComponent">
+                    <TrapObject nameRef="totem1" />
+                </TrapTriggerComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-1.00000</X>
+                                    <Y>-1.00000</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>1.00000</X>
+                                    <Y>-1.00000</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>1.00000</X>
+                                    <Y>1.00000</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-1.00000</X>
+                                    <Y>1.00000</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>71.530</X>
+                <Y>88.412</Y>
+            </Size>
+            <Position>
+                <X>3915.764</X>
+                <Y>-39.206</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
+        <StaticSprite name="spitter_projectile">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <ProjectileComponent type="PlatformerStarter.ProjectileComponent">
+                    <MilliSecondsToLive>4000</MilliSecondsToLive>
+                    <Gravity>0.0</Gravity>
+                    <Damage>5</Damage>
+                </ProjectileComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.13903</X>
+                                    <Y>0.00785</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.04188</X>
+                                    <Y>0.14286</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.19263</X>
+                                    <Y>0.01099</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.04858</X>
+                                    <Y>-0.18053</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <OnCollision valueOf="PlatformerStarter.ProjectileComponent.ProjectileCollision" />
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.ClampCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>10.000</X>
+                <Y>10.667</Y>
+            </Size>
+            <Position>
+                <X>-670.000</X>
+                <Y>-274.667</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="spitooeyMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <T2DSceneObject name="bomber_projectile">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <ProjectileComponent type="PlatformerStarter.ProjectileComponent">
+                    <MilliSecondsToLive>2000</MilliSecondsToLive>
+                    <Gravity>0.0</Gravity>
+                    <Damage>20</Damage>
+                </ProjectileComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.92941</X>
+                                    <Y>-0.00894</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.00504</X>
+                                    <Y>0.88909</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.86891</X>
+                                    <Y>0.00179</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.05546</X>
+                                    <Y>-0.87478</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <OnCollision valueOf="PlatformerStarter.ProjectileComponent.ProjectileCollision" />
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>9.774</X>
+                <Y>9.184</Y>
+            </Size>
+            <Position>
+                <X>-651.670</X>
+                <Y>-236.530</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
+                    <Target nameRef="Amanda" />
+                    <MinSpawnDistance>0</MinSpawnDistance>
+                    <MaxSpawnDistance>150</MaxSpawnDistance>
+                    <AutoDespawnObjects>true</AutoDespawnObjects>
+                    <SpawnObject nameRef="Checkpoint" />
+                    <SpawnLimit>1</SpawnLimit>
+                    <SpawnTimeout>1000</SpawnTimeout>
+                </CheckpointSystemSpawnPointComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>72.202</X>
+                <Y>52.617</Y>
+            </Size>
+            <Position>
+                <X>5603.899</X>
+                <Y>-68.691</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="scarab_jewelMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite name="projectile">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <ProjectileComponent type="PlatformerStarter.ProjectileComponent">
+                    <MilliSecondsToLive>4000</MilliSecondsToLive>
+                    <Gravity>0.0</Gravity>
+                    <Damage>5</Damage>
+                </ProjectileComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.85495</X>
+                                    <Y>0.01856</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.01538</X>
+                                    <Y>0.88454</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.89011</X>
+                                    <Y>0.00206</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.05055</X>
+                                    <Y>-0.86804</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>true</RenderCollisionBounds>
+                    <OnCollision valueOf="PlatformerStarter.ProjectileComponent.ProjectileCollision" />
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.ClampCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>10.000</X>
+                <Y>10.667</Y>
+            </Size>
+            <Position>
+                <X>-650.392</X>
+                <Y>-255.684</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="GGLogoMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite name="health">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <CheckpointSystemSpawnedObjectComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnedObjectComponent" />
+                <HealthCollectibleComponent type="PlatformerStarter.Common.Collectibles.HealthCollectibleComponent">
+                    <HealingValue>10</HealingValue>
+                    <Movement>
+                        <XMagnitude>5.000</XMagnitude>
+                        <YMagnitude>5.000</YMagnitude>
+                    </Movement>
+                </HealthCollectibleComponent>
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.07646</X>
+                                    <Y>0.10269</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.01649</X>
+                                    <Y>0.15640</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.11544</X>
+                                    <Y>0.08689</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.03448</X>
+                                    <Y>-0.12480</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>27.254</X>
+                <Y>25.864</Y>
+            </Size>
+            <Position>
+                <X>-688.627</X>
+                <Y>-227.932</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="particle_effect_snowMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
+                    <Target nameRef="Amanda" />
+                    <MinSpawnDistance>0</MinSpawnDistance>
+                    <MaxSpawnDistance>100.000</MaxSpawnDistance>
+                    <AutoDespawnObjects>true</AutoDespawnObjects>
+                    <SpawnObject nameRef="health" />
+                    <SpawnLimit>1</SpawnLimit>
+                    <SpawnTimeout>1000</SpawnTimeout>
+                </CheckpointSystemSpawnPointComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>100.996</X>
+                <Y>114.775</Y>
+            </Size>
+            <Position>
+                <X>985.498</X>
+                <Y>37.387</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="particle_effect_snowMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
+                    <Target nameRef="Amanda" />
+                    <MinSpawnDistance>0</MinSpawnDistance>
+                    <MaxSpawnDistance>100.000</MaxSpawnDistance>
+                    <AutoDespawnObjects>true</AutoDespawnObjects>
+                    <SpawnObject nameRef="health" />
+                    <SpawnLimit>1</SpawnLimit>
+                    <SpawnTimeout>1000</SpawnTimeout>
+                </CheckpointSystemSpawnPointComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>100.996</X>
+                <Y>114.775</Y>
+            </Size>
+            <Position>
+                <X>1358.253</X>
+                <Y>147.613</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="particle_effect_snowMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
+                    <Target nameRef="Amanda" />
+                    <MinSpawnDistance>0</MinSpawnDistance>
+                    <MaxSpawnDistance>100.000</MaxSpawnDistance>
+                    <AutoDespawnObjects>true</AutoDespawnObjects>
+                    <SpawnObject nameRef="health" />
+                    <SpawnLimit>1</SpawnLimit>
+                    <SpawnTimeout>1000</SpawnTimeout>
+                </CheckpointSystemSpawnPointComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>100.996</X>
+                <Y>114.775</Y>
+            </Size>
+            <Position>
+                <X>4163.021</X>
+                <Y>-22.613</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="particle_effect_snowMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
+                    <Target nameRef="Amanda" />
+                    <MinSpawnDistance>0</MinSpawnDistance>
+                    <MaxSpawnDistance>100.000</MaxSpawnDistance>
+                    <AutoDespawnObjects>true</AutoDespawnObjects>
+                    <SpawnObject nameRef="health" />
+                    <SpawnLimit>1</SpawnLimit>
+                    <SpawnTimeout>1000</SpawnTimeout>
+                </CheckpointSystemSpawnPointComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>100.996</X>
+                <Y>114.775</Y>
+            </Size>
+            <Position>
+                <X>5440.498</X>
+                <Y>-97.387</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="particle_effect_snowMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
+                    <Target nameRef="Amanda" />
+                    <MinSpawnDistance>0</MinSpawnDistance>
+                    <MaxSpawnDistance>100.000</MaxSpawnDistance>
+                    <AutoDespawnObjects>true</AutoDespawnObjects>
+                    <SpawnObject nameRef="health" />
+                    <SpawnLimit>1</SpawnLimit>
+                    <SpawnTimeout>1000</SpawnTimeout>
+                </CheckpointSystemSpawnPointComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>100.996</X>
+                <Y>114.775</Y>
+            </Size>
+            <Position>
+                <X>5887.820</X>
+                <Y>-192.387</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="particle_effect_snowMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
     </Objects>
 </TorqueSceneData>

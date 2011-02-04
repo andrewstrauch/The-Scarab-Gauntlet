@@ -74,7 +74,8 @@ namespace PlatformerStarter.Common
 
                 foreach (T2DSceneObject obj in mountedObjects)
                     TorqueObjectDatabase.Instance.Register(obj);
-TorqueObjectDatabase.Instance.Register(mount);
+                
+                TorqueObjectDatabase.Instance.Register(mount);
                 float rotation = 0.0f;
                 Vector2 linkPointOffset;
 

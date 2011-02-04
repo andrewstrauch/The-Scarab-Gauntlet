@@ -151,7 +151,7 @@ namespace PlatformerStarter.Enemies.ActorComponents
             if (shoulderCannonObject != null)
                 shoulderCannon = shoulderCannonObject.Components.FindComponent<WeaponComponent>();
 
-            SceneObject.Collision.CollidesWith -= ExtPlatformerData.MeleeDamageObjectType;
+            //SceneObject.Collision.CollidesWith -= ExtPlatformerData.MeleeDamageObjectType;
 
             return true;
         }

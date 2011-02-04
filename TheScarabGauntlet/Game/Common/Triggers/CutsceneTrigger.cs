@@ -51,7 +51,7 @@ namespace PlatformerStarter.Common
 
             if (player != null && player.OnGround)
             {
-                player.ToggleControl();// ((PlayerController)player.Controller).TogglePlayerControl();
+                ((PlayerController)player.Controller).TogglePlayerControl();
                 playerEntered = true;
                 player.HorizontalStop();
 
@@ -114,7 +114,7 @@ namespace PlatformerStarter.Common
                             camera.Zoom(0.5f, 3000f);
                             T2DSceneObject player = (T2DSceneObject)TorqueObjectDatabase.Instance.FindObject("Amanda");
                             PlayerActorComponent actor = player.Components.FindComponent<PlayerActorComponent>();
-                            actor.ToggleControl();// ((PlayerController)actor.Controller).TogglePlayerControl();
+                            ((PlayerController)actor.Controller).TogglePlayerControl();
                             SceneObject.MarkForDelete = true;
                          }
                     }

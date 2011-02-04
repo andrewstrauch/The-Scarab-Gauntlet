@@ -41,6 +41,8 @@ namespace PlatformerStarter
             pauseText.Position = new Vector2(positionX - (pauseText.Size.X / 2), positionY);
             pauseText.Visible = true;
             pauseText.Folder = this;
+
+
         }
 
         #endregion

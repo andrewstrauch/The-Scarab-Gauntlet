@@ -159,10 +159,9 @@ namespace PlatformerStarter
 
         private void On_Play()
         {
+            // Load game
             HealthBar_GUI playGUI = new HealthBar_GUI();
             GUICanvas.Instance.SetContentControl(playGUI);
-
-            // Load game
             Game.Instance.SceneLoader.Load(@"data\levels\Level1.txscene");
         }
 
