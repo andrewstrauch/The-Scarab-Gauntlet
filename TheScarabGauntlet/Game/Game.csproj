@@ -160,9 +160,9 @@
     <Compile Include="Common\WeakSpotComponent.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Game.txproj">
+    <Content Include="Game.txproj">
       <Name>Game</Name>
-    </None>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <NestedContentProject Include="data\Content.contentproj">

@@ -50,6 +50,11 @@
       <Name>PlatformerFramework</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="levels\BomberBurst1.eff">
+      <Name>BomberBurst1</Name>
+    </Content>
+  </ItemGroup>
   <PropertyGroup>
     <PostBuildEvent>"$(TargetPath)" -exportschema "$(ProjectDir)myschema.txschema"</PostBuildEvent>
   </PropertyGroup>
@@ -746,6 +751,86 @@
       <Processor>TextureProcessor</Processor>
       <Name>vines</Name>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="images\brokenpickaxe.png">
+      <Name>brokenpickaxe</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\hulkgroundrocks.png">
+      <Name>hulkgroundrocks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\leftsidehulkcliff.png">
+      <Name>leftsidehulkcliff</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\level 1 stuff.png">
+      <Name>level 1 stuff</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\rightsidehulkcliff.png">
+      <Name>rightsidehulkcliff</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\ropebridgeplank.png">
+      <Name>ropebridgeplank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\ropebridgepost.png">
+      <Name>ropebridgepost</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\ropebridgerope.png">
+      <Name>ropebridgerope</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\ropebridgestartrope.png">
+      <Name>ropebridgestartrope</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\shadowleavesmask2.png">
+      <Name>shadowleavesmask2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\skyorangey.png">
+      <Name>skyorangey</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\skypurple.png">
+      <Name>skypurple</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\sun.png">
+      <Name>sun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\sunorangesky.png">
+      <Name>sunorangesky</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\tiki.png">
+      <Name>tiki</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\scarab jewel.png">
+      <Name>scarab jewel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
     </Compile>
     <Content Include="levels\Level1.txscene">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
