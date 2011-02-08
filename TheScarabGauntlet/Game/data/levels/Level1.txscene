@@ -7123,8 +7123,6 @@
                 <Y>0.000000</Y>
             </SortPoint>
             <AnimationData nameRef="" />
-            <StartFrame>0.000</StartFrame>
-            <RandomStart>false</RandomStart>
             <PlayOnLoad>true</PlayOnLoad>
             <RemoveOnFinished>false</RemoveOnFinished>
         </AnimatedSprite>
@@ -8995,24 +8993,6 @@
 <![CDATA[0,0,0 1,0,1 2,0,2 3,0,2 4,0,2 5,0,2 6,0,2 7,0,2 8,0,3 9,0,4 0,1,5 1,1,6 2,1,6 3,1,6 4,1,6 5,1,6 6,1,6 7,1,6 8,1,6 1,2,6 2,2,6 3,2,6 4,2,6 5,2,6 6,2,6 7,2,6 8,2,6 1,3,6 2,3,6 3,3,6 4,3,6 5,3,6 6,3,6 7,3,6 8,3,6 1,4,6 2,4,6 3,4,6 4,4,6 5,4,6 6,4,6 7,4,6 8,4,6 1,5,6 2,5,6 3,5,6 4,5,6 5,5,6 6,5,6 7,5,6 8,5,6 1,6,6 2,6,6 3,6,6 4,6,6 5,6,6 6,6,6 7,6,6 8,6,6 1,7,6 2,7,6 3,7,6 4,7,6 5,7,6 6,7,6 7,7,6 8,7,6 1,8,6 2,8,6 3,8,6 4,8,6 5,8,6 6,8,6 7,8,6 8,8,6 1,9,6 2,9,6 3,9,6 4,9,6 5,9,6 6,9,6 7,9,6 8,9,6 9,1,7 0,2,8 0,3,8 0,4,8 0,5,8 0,6,8 0,7,8 0,8,8 0,9,8 9,2,9 9,3,9 9,4,9 9,5,9 9,6,9 9,7,9 9,8,9 9,9,9]]>
             </TileDefinitions>
         </TileLayer>
-        <T2DSpawnObject>
-            <SpawnTemplate nameRef="grunt_template" />
-            <Position>
-                <X>6006.062</X>
-                <Y>2.810</Y>
-            </Position>
-            <Size>
-                <X>20.000</X>
-                <Y>19.856</Y>
-            </Size>
-            <Rotation>0</Rotation>
-            <SpawnOnce>true</SpawnOnce>
-            <SpawnEnabled>true</SpawnEnabled>
-            <MinSpawnTime>800</MinSpawnTime>
-            <MaxSpawnTime>1200</MaxSpawnTime>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-        </T2DSpawnObject>
         <T2DSceneObject>
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -9619,8 +9599,12 @@
                                     <Y>0.33653</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>-0.02578</X>
-                                    <Y>-0.95210</Y>
+                                    <X>-0.98584</X>
+                                    <Y>-0.94656</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.01983</X>
+                                    <Y>-0.95420</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
                                     <X>1.00000</X>
@@ -45958,21 +45942,29 @@
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
             <Components inPlace="true">
+                <OneWayPlatformComponent type="GarageGames.Torque.PlatformerFramework.OneWayPlatformComponent">
+                    <CanClimbThrough>false</CanClimbThrough>
+                    <SurfaceForce>0.0</SurfaceForce>
+                </OneWayPlatformComponent>
                 <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
                     <Images>
                         <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
                             <CollisionPolyBasis>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>-0.66897</X>
-                                    <Y>-0.83888</Y>
+                                    <X>-0.64211</X>
+                                    <Y>-0.82514</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>0.90690</X>
-                                    <Y>-0.94629</Y>
+                                    <X>0.89123</X>
+                                    <Y>-0.89290</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>-0.56897</X>
-                                    <Y>0.82814</Y>
+                                    <X>0.38596</X>
+                                    <Y>0.70929</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.58947</X>
+                                    <Y>0.82732</Y>
                                 </Vector2>
                             </CollisionPolyBasis>
                             <CollisionPolyScale>
@@ -52109,7 +52101,7 @@
                 <Y>100.000</Y>
             </Size>
             <Position>
-                <X>5597.675</X>
+                <X>5597.230</X>
                 <Y>83.906</Y>
             </Position>
             <Rotation>0</Rotation>
@@ -53017,8 +53009,8 @@
                 <Y>28.079</Y>
             </Size>
             <Position>
-                <X>5705.220</X>
-                <Y>44.040</Y>
+                <X>5702.673</X>
+                <Y>39.040</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>
@@ -53954,7 +53946,7 @@
             </Size>
             <Position>
                 <X>10064.001</X>
-                <Y>-112.962</Y>
+                <Y>-112.036</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>
@@ -55084,221 +55076,6 @@
             <Position>
                 <X>-688.627</X>
                 <Y>-227.932</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-            <Material nameRef="particle_effect_snowMaterial" />
-            <MaterialRegionIndex>0</MaterialRegionIndex>
-        </StaticSprite>
-        <StaticSprite>
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
-                    <Target nameRef="Amanda" />
-                    <MinSpawnDistance>0</MinSpawnDistance>
-                    <MaxSpawnDistance>100.000</MaxSpawnDistance>
-                    <AutoDespawnObjects>true</AutoDespawnObjects>
-                    <SpawnObject nameRef="health" />
-                    <SpawnLimit>1</SpawnLimit>
-                    <SpawnTimeout>1000</SpawnTimeout>
-                </CheckpointSystemSpawnPointComponent>
-            </Components>
-            <ObjectType>
-                <object objTypeRef="t2dSpriteType" />
-            </ObjectType>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>100.996</X>
-                <Y>114.775</Y>
-            </Size>
-            <Position>
-                <X>985.498</X>
-                <Y>37.387</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-            <Material nameRef="particle_effect_snowMaterial" />
-            <MaterialRegionIndex>0</MaterialRegionIndex>
-        </StaticSprite>
-        <StaticSprite>
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
-                    <Target nameRef="Amanda" />
-                    <MinSpawnDistance>0</MinSpawnDistance>
-                    <MaxSpawnDistance>100.000</MaxSpawnDistance>
-                    <AutoDespawnObjects>true</AutoDespawnObjects>
-                    <SpawnObject nameRef="health" />
-                    <SpawnLimit>1</SpawnLimit>
-                    <SpawnTimeout>1000</SpawnTimeout>
-                </CheckpointSystemSpawnPointComponent>
-            </Components>
-            <ObjectType>
-                <object objTypeRef="t2dSpriteType" />
-            </ObjectType>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>100.996</X>
-                <Y>114.775</Y>
-            </Size>
-            <Position>
-                <X>1358.253</X>
-                <Y>147.613</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-            <Material nameRef="particle_effect_snowMaterial" />
-            <MaterialRegionIndex>0</MaterialRegionIndex>
-        </StaticSprite>
-        <StaticSprite>
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
-                    <Target nameRef="Amanda" />
-                    <MinSpawnDistance>0</MinSpawnDistance>
-                    <MaxSpawnDistance>100.000</MaxSpawnDistance>
-                    <AutoDespawnObjects>true</AutoDespawnObjects>
-                    <SpawnObject nameRef="health" />
-                    <SpawnLimit>1</SpawnLimit>
-                    <SpawnTimeout>1000</SpawnTimeout>
-                </CheckpointSystemSpawnPointComponent>
-            </Components>
-            <ObjectType>
-                <object objTypeRef="t2dSpriteType" />
-            </ObjectType>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>100.996</X>
-                <Y>114.775</Y>
-            </Size>
-            <Position>
-                <X>4163.021</X>
-                <Y>-22.613</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-            <Material nameRef="particle_effect_snowMaterial" />
-            <MaterialRegionIndex>0</MaterialRegionIndex>
-        </StaticSprite>
-        <StaticSprite>
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
-                    <Target nameRef="Amanda" />
-                    <MinSpawnDistance>0</MinSpawnDistance>
-                    <MaxSpawnDistance>100.000</MaxSpawnDistance>
-                    <AutoDespawnObjects>true</AutoDespawnObjects>
-                    <SpawnObject nameRef="health" />
-                    <SpawnLimit>1</SpawnLimit>
-                    <SpawnTimeout>1000</SpawnTimeout>
-                </CheckpointSystemSpawnPointComponent>
-            </Components>
-            <ObjectType>
-                <object objTypeRef="t2dSpriteType" />
-            </ObjectType>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>100.996</X>
-                <Y>114.775</Y>
-            </Size>
-            <Position>
-                <X>5440.498</X>
-                <Y>-97.387</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-            <Material nameRef="particle_effect_snowMaterial" />
-            <MaterialRegionIndex>0</MaterialRegionIndex>
-        </StaticSprite>
-        <StaticSprite>
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
-                    <Target nameRef="Amanda" />
-                    <MinSpawnDistance>0</MinSpawnDistance>
-                    <MaxSpawnDistance>100.000</MaxSpawnDistance>
-                    <AutoDespawnObjects>true</AutoDespawnObjects>
-                    <SpawnObject nameRef="health" />
-                    <SpawnLimit>1</SpawnLimit>
-                    <SpawnTimeout>1000</SpawnTimeout>
-                </CheckpointSystemSpawnPointComponent>
-            </Components>
-            <ObjectType>
-                <object objTypeRef="t2dSpriteType" />
-            </ObjectType>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>100.996</X>
-                <Y>114.775</Y>
-            </Size>
-            <Position>
-                <X>5887.820</X>
-                <Y>-192.387</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>
