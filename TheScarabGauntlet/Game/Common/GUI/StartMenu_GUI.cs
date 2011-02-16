@@ -11,6 +11,7 @@ using GarageGames.Torque.Core.Xml;
 using GarageGames.Torque.Sim;
 using GarageGames.Torque.GUI;
 using GarageGames.Torque.MathUtil;
+using GarageGames.Torque.GameUtil;
 using System.Collections;
 
 namespace PlatformerStarter
@@ -163,6 +164,7 @@ namespace PlatformerStarter
             HealthBar_GUI playGUI = new HealthBar_GUI();
             GUICanvas.Instance.SetContentControl(playGUI);
             Game.Instance.SceneLoader.Load(@"data\levels\Level1.txscene");
+            SoundManager.Instance.PlaySound("music", "level1");
         }
 
 

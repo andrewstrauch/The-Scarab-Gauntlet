@@ -164,10 +164,10 @@ namespace PlatformerStarter
             inputMap.BindCommand(gamepadId, (int)XGamePadDevice.GamePadObjects.Start, null, Game.Instance.TogglePause); 
 
             int keyboardId = InputManager.Instance.FindDevice("keyboard0");
-            inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.Space, MoveMapTypes.Button, 0);
+            inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.W, MoveMapTypes.Button, 0);
             inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.D, MoveMapTypes.StickDigitalRight, 0);
             inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.A, MoveMapTypes.StickDigitalLeft, 0);
-            inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.W, MoveMapTypes.StickDigitalUp, 0);
+           // inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.W, MoveMapTypes.StickDigitalUp, 0);
             inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.S, MoveMapTypes.StickDigitalDown, 0);
             inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.U, MoveMapTypes.Button, 1);
             inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.I, MoveMapTypes.Button, 2);

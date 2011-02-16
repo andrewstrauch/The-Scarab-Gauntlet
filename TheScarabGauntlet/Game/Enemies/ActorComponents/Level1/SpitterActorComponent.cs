@@ -9,6 +9,7 @@ using GarageGames.Torque.Sim;
 using GarageGames.Torque.T2D;
 using GarageGames.Torque.SceneGraph;
 using GarageGames.Torque.MathUtil;
+using GarageGames.Torque.GameUtil;
 using GarageGames.Torque.XNA;
 
 using GarageGames.Torque.PlatformerFramework;
@@ -227,8 +228,8 @@ namespace PlatformerStarter.Enemies
             _useAnimationManagerSoundEvents = true;
             _animationManager.SetSoundEvent(HideLeftAnim, "hide");
             _animationManager.SetSoundEvent(HideRightAnim, "hide");
-            _animationManager.SetSoundEvent(AlertLeftAnim, "alert");
-            _animationManager.SetSoundEvent(AlertRightAnim, "alert");
+            //_animationManager.SetSoundEvent(AlertLeftAnim, "alert");
+            //_animationManager.SetSoundEvent(AlertRightAnim, "alert");
             _animationManager.SetSoundEvent(AttackLeftAnim, "attack");
             _animationManager.SetSoundEvent(AttackRightAnim, "attack");
             _animationManager.SetSoundEvent(DieAnim, "death");
@@ -296,9 +297,12 @@ namespace PlatformerStarter.Enemies
 
                     if (controller == null)
                         return null;
-                   
-                    if(controller.InAlertRange)
+
+                    if (controller.InAlertRange)
+                    {
+                        SoundManager.Instance.PlaySound("spitter", "alert");
                         return "alert";
+                    }
 
                     return null;
                 }

@@ -80,8 +80,7 @@ namespace PlatformerStarter
 
             totalTime += gameTime.ElapsedGameTime.Milliseconds;
 
-            if (music.IsStopping)
-                music.Play();
+            PlatformerStarter.Common.ParallaxManager.Instance.Update();
         }
 
         protected override void BeginRun()
@@ -110,8 +109,6 @@ namespace PlatformerStarter
             SoundManager.Instance.RegisterSoundGroup("bomber", @"data\sound\bomber.xwb", @"data\sound\bomber.xsb");
             SoundManager.Instance.RegisterSoundGroup("hulk", @"data\sound\hulk.xwb", @"data\sound\hulk.xsb");
             SoundManager.Instance.RegisterSoundGroup("music", @"data\sound\music.xwb", @"data\sound\music.xsb");
-
-            music = SoundManager.Instance.PlaySound("music", "level1");
         }
 
         public void TogglePause()
@@ -134,10 +131,10 @@ namespace PlatformerStarter
         public void Reset()
         {
             SceneLoader.UnloadLastScene();
-            
-            if(paused)
+
+            if (paused)
                 TogglePause();
-            
+
             SceneLoader.Load(@"data\levels\Level1.txscene");//SceneLoader.Load(@"data\levels\Level1.txscene");
         }
     }

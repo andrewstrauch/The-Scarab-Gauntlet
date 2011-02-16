@@ -283,7 +283,10 @@ namespace PlatformerStarter.Enemies.ActorComponents
                         return null;
 
                     if (actorAnimMgr.actorComponent.AnimatedSprite.CurrentFrame == 8)
-                        actorAnimMgr.actorComponent.shoulderCannon.Fire();
+                    {
+                        T2DSceneObject player = TorqueObjectDatabase.Instance.FindObject<T2DSceneObject>("Amanda");
+                        actorAnimMgr.actorComponent.shoulderCannon.FireAtTarget(player.Position);
+                    }
 
                     return base.Execute(obj);
                 }

@@ -1795,6 +1795,19 @@
         <Type>System.String</Type>
       </Element>
     </Type>
+    <Type name="ParallaxComponent" fullName="PlatformerStarter.Common.ParallaxComponent">
+      <IsComponent>true</IsComponent>
+      <Element name="ScrollMagnitude">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="Components">
+        <IsList>true</IsList>
+        <Type>GarageGames.Torque.Core.TorqueComponent</Type>
+      </Element>
+      <Element name="Name">
+        <Type>System.String</Type>
+      </Element>
+    </Type>
     <Type name="ParallaxXScrollerComponent" fullName="GarageGames.Torque.PlatformerFramework.ParallaxXScrollerComponent">
       <IsComponent>true</IsComponent>
       <Element name="ParallaxFactorX">
@@ -3921,6 +3934,7 @@
         <Type>PlatformerStarter.Common.Collectibles.ScarabCollectibleComponent</Type>
         <Type>PlatformerStarter.Common.CutsceneTrigger</Type>
         <Type>PlatformerStarter.Common.MountLinkComponent</Type>
+        <Type>PlatformerStarter.Common.ParallaxComponent</Type>
         <Type>PlatformerStarter.Common.Traps.SwingingTrapComponent</Type>
         <Type>PlatformerStarter.Common.Traps.TikiFlameTrapComponent</Type>
         <Type>PlatformerStarter.Common.Traps.TrapComponent</Type>

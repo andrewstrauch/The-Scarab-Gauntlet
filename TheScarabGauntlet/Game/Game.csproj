@@ -118,6 +118,8 @@
     <Compile Include="Common\SwipeAttackComponent.cs" />
     <Compile Include="Common\Traps\SwingingTrapComponent.cs" />
     <Compile Include="Common\Triggers\TrapTrigger.cs" />
+    <Compile Include="Common\Util\ParallaxComponent.cs" />
+    <Compile Include="Common\Util\ParallaxManager.cs" />
     <Compile Include="Common\WeaponComponent.cs" />
     <Compile Include="Enemies\ActorComponents\General\EnemyActorComponent.cs" />
     <Compile Include="Enemies\ActorComponents\General\IRangedActor.cs" />

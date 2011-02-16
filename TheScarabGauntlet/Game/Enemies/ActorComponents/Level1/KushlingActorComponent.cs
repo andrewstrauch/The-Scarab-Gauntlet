@@ -75,6 +75,15 @@ namespace PlatformerStarter.Enemies.ActorComponents.Level1
             _animationManager = new KushlingActorAnimationManager(this);
         }
 
+        protected override void _initAnimationManager()
+        {
+            _soundBank = "kushling";
+            _useAnimationManagerSoundEvents = true;
+            _animationManager.SetSoundEvent(IdleAnim, "idle");
+            _animationManager.SetSoundEvent(RunAnim, "attack");
+            _animationManager.SetSoundEvent(DieAnim, "death");
+        }
+
         /// <summary>
         /// T2DOnCollision delegate to handle damage between the kushling and the player
         /// </summary>

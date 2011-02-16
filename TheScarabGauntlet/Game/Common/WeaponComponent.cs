@@ -108,6 +108,27 @@ namespace PlatformerStarter
         }
 
         /// <summary>
+        /// Fires a projectile at a target.
+        /// </summary>
+        /// <param name="target">The target to shoot at.</param>
+        public void FireAtTarget(Vector2 target)
+        {
+            if (projectileTemplate.IsTemplate)
+            {
+                T2DSceneObject projectile = projectileTemplate.Clone() as T2DSceneObject;
+                ProjectileComponent projComponent = projectile.Components.FindComponent<ProjectileComponent>();
+                float distance = projectile.Position.X - target.X;
+                float gravity = projComponent.Gravity;
+                float theta = 0.5f * (float)Math.Acos((double)((gravity * distance) / (shotSpeed * shotSpeed)));
+
+                projectile.Position = SceneObject.Position;
+                projectile.Physics.Velocity = T2DVectorUtil.VectorFromAngle(shotAngle) * shotSpeed;
+
+                TorqueObjectDatabase.Instance.Register(projectile);
+            }
+        }
+
+        /// <summary>
         /// Fires off a projectile in the given direction
         /// </summary>
         /// <param name="direction">The direction the projectile is to be shot at</param>
