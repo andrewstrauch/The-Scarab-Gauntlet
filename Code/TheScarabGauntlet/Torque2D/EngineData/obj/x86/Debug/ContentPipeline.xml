@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Torque2D\EngineData\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Torque2D\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Torque2D\EngineData\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Torque2D\bin\x86\Debug\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Windows\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.1.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-01-04T23:21:29.3573959-05:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

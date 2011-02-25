@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!--Torque X Builder - http://www.garagegames.com-->
+<!--Type: sceneObject-->
+<!--Target: TorqueX-->
+<!--Version: 2-->
+<!--Creator: Torque X Builder-->
+<TXNALevelData>
+    <Version>1.0</Version>
+    <Objects>
+        <TileLayer>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dTileLayerType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>250.000</X>
+                <Y>50.000</Y>
+            </Size>
+            <Position>
+                <X>-771.113</X>
+                <Y>3.854</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>false</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <MapSize>
+                <X>5</X>
+                <Y>1</Y>
+            </MapSize>
+            <TileSize>
+                <X>50.000000</X>
+                <Y>50.000000</Y>
+            </TileSize>
+            <TileTypes>
+                <TileType>
+                    <Index>0</Index>
+                    <Material nameRef="mountain1Material" />
+                    <MaterialRegionIndex>0</MaterialRegionIndex>
+                    <ObjectType>
+                        <object objTypeRef="TileType" />
+                    </ObjectType>
+                </TileType>
+                <TileType>
+                    <Index>1</Index>
+                    <Material nameRef="mountain2Material" />
+                    <MaterialRegionIndex>0</MaterialRegionIndex>
+                    <ObjectType>
+                        <object objTypeRef="TileType" />
+                    </ObjectType>
+                </TileType>
+            </TileTypes>
+            <TileDefinitions>
+<![CDATA[0,0,0 3,0,0,x 1,0,1]]>
+            </TileDefinitions>
+        </TileLayer>
+    </Objects>
+</TXNALevelData>

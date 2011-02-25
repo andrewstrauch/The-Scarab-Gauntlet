@@ -1,0 +1,284 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectGuid>{252563EA-C374-4968-AE76-EC3C888D0514}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlatformerStarter</RootNamespace>
+    <AssemblyName>TheScarabGauntlet</AssemblyName>
+    <XnaFrameworkVersion>v3.1</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <StartupObject>PlatformerStarter.GameStarter</StartupObject>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <Thumbnail>
+    </Thumbnail>
+    <XnaCrossPlatformGroupID>{7e679b09-0c5a-4292-9758-2ba2ffa9e4e1}</XnaCrossPlatformGroupID>
+    <XnaUpgrade>
+    </XnaUpgrade>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>1E8E3601AB368974F38E70A29B00BF1ACA652BD6</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Game_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <PublishUrl>C:\Users\Dustin\Desktop\Build\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>The Scarab Gauntlet</ProductName>
+    <PublisherName>Acid Lab Studios</PublisherName>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>0.0.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE%3bTORQUEX_2D%3bWINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+    <XnaCompressContent>True</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GarageGames.TorqueX.Framework, Version=3.1.5.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="GarageGames.TorqueX.Framework2D, Version=3.1.5.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d" />
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AttackCollisionComponent.cs" />
+    <Compile Include="Common\BoundedRotationComponent.cs" />
+    <Compile Include="Common\Collectibles\FigureEight.cs" />
+    <Compile Include="Common\Collectibles\HealthCollectibleComponent.cs" />
+    <Compile Include="Common\Collectibles\IMovement.cs" />
+    <Compile Include="Common\Collectibles\ScarabCollectibleComponent.cs" />
+    <Compile Include="Common\GUI\GameOverGUI.cs" />
+    <Compile Include="Common\ItemDropComponent.cs" />
+    <Compile Include="Common\PitHazardComponent.cs" />
+    <Compile Include="Common\Util\CameraManager.cs" />
+    <Compile Include="Common\CustomCollision.cs" />
+    <Compile Include="Common\PlatformBehaviors.cs" />
+    <Compile Include="Common\Util\MountedParticle.cs" />
+    <Compile Include="Common\Traps\TikiFlameTrapComponent.cs" />
+    <Compile Include="Common\Traps\TrapComponent.cs" />
+    <Compile Include="Common\Triggers\CutsceneTrigger.cs" />
+    <Compile Include="Common\EnemyAttackCollisionComponent.cs" />
+    <Compile Include="Common\GUI\StartMenu_GUI.cs" />
+    <Compile Include="Common\GUI\Pause_GUI.cs" />
+    <Compile Include="Common\MountLinkComponent.cs" />
+    <Compile Include="Common\ProjectileComponent.cs" />
+    <Compile Include="Common\ReplacementComponent.cs" />
+    <Compile Include="Common\SwipeAttackComponent.cs" />
+    <Compile Include="Common\Traps\SwingingTrapComponent.cs" />
+    <Compile Include="Common\Triggers\TrapTrigger.cs" />
+    <Compile Include="Common\Util\ParallaxComponent.cs" />
+    <Compile Include="Common\Util\ParallaxManager.cs" />
+    <Compile Include="Common\WeaponComponent.cs" />
+    <Compile Include="Enemies\ActorComponents\General\EnemyActorComponent.cs" />
+    <Compile Include="Enemies\ActorComponents\General\IRangedActor.cs" />
+    <Compile Include="Enemies\ActorComponents\Level1\BairneActorComponent.cs" />
+    <Compile Include="Enemies\ActorComponents\Level1\KushlingActorComponent.cs" />
+    <Compile Include="Enemies\AIComponents\Components\AIHybridComponent.cs" />
+    <Compile Include="Enemies\ActorComponents\Level1\BomberActorComponent.cs" />
+    <Compile Include="Enemies\ActorComponents\Level1\HulkActorComponent.cs" />
+    <Compile Include="Enemies\ActorComponents\Level1\SpitterActorComponent.cs" />
+    <Compile Include="Enemies\AIComponents\Components\AIChaseComponent.cs" />
+    <Compile Include="Enemies\AIComponents\Components\BaseAIComponent.cs" />
+    <Compile Include="Enemies\AIComponents\Controllers\AIChaseController.cs" />
+    <Compile Include="Enemies\ActorComponents\Level1\GruntActorComponent.cs" />
+    <Compile Include="Enemies\ActorComponents\General\IBehavior.cs" />
+    <Compile Include="Enemies\ActorComponents\General\IEnemyActor.cs" />
+    <Compile Include="Enemies\AIComponents\Controllers\AIHybridController.cs" />
+    <Compile Include="Enemies\AIComponents\Components\AIKamikazeeComponent.cs" />
+    <Compile Include="Enemies\AIComponents\Controllers\AIKamikazeeController.cs" />
+    <Compile Include="Enemies\AIComponents\Controllers\AIRangedAttackController.cs" />
+    <Compile Include="Enemies\AIComponents\Components\AIRangedComponent.cs" />
+    <Compile Include="Enemies\AIComponents\Controllers\BaseAIController.cs" />
+    <Compile Include="Game.cs">
+      <Name>Game</Name>
+    </Compile>
+    <Compile Include="Common\GUI\HealthBar_GUI.cs" />
+    <Compile Include="JukeBox.cs" />
+    <Compile Include="Main.cs">
+      <Name>Main</Name>
+    </Compile>
+    <Compile Include="Player\PlayerActions.cs" />
+    <Compile Include="Player\PlayerActorComponent.cs">
+      <Name>PlayerActorComponent</Name>
+    </Compile>
+    <Compile Include="Player\PlayerController.cs">
+      <Name>PlayerController</Name>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <Name>AssemblyInfo</Name>
+    </Compile>
+    <Compile Include="Common\WeakSpotComponent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.txproj">
+      <Name>Game</Name>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="data\Content.contentproj">
+      <Project>{e724e5f2-be1d-481f-946d-371f82aa1f15}</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlatformerFramework\PlatformerFramework.csproj">
+      <Project>{F4AF5A44-40B4-454B-84F4-9618AB762869}</Project>
+      <Name>PlatformerFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.3.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.Xna.Framework">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Xna.Framework.Game">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="torqueSettings.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Content Include="torqueSettings.xml">
+      <Name>torqueSettings</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+call "$(TargetPath)" -exportschema 
+</PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Game.ico">
+      <Name>Game</Name>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" Condition="" />
+  <PropertyGroup>
+    <PostBuildEvent>if NOT "$(PlatformName)"=="x86" GOTO end 
+call "$(TargetPath)" -exportschema "$(ProjectDir)myschema.txschema" 
+echo Torque Component Schema Generated
+:end
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

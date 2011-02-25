@@ -60,7 +60,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\x86\Release</OutputPath>
-    <DefineConstants>TRACE%3bTORQUEX_2D%3bWINDOWS</DefineConstants>
+    <DefineConstants>TRACE;TORQUEX_2D;WINDOWS;TORQUE_CONSOLE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoStdLib>true</NoStdLib>
@@ -120,6 +120,10 @@
     <Compile Include="CollectibleComponent.cs">
       <Name>CollectibleComponent</Name>
     </Compile>
+    <Compile Include="Extensions\Console.cs" />
+    <Compile Include="Extensions\ConsoleParser.cs" />
+    <Compile Include="Extensions\CustomConsoleRoutinePool.cs" />
+    <Compile Include="Extensions\GUITextEdit.cs" />
     <Compile Include="Extensions\TorqueTools.cs" />
     <Compile Include="Extensions\ExtPlatformerData.cs" />
     <Compile Include="Extensions\PathComponent.cs" />

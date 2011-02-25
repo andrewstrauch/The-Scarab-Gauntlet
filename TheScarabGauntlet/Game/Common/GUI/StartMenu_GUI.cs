@@ -22,6 +22,7 @@ namespace PlatformerStarter
 
         private ArrayList _buttons = new ArrayList();
         private int _currentSelection = 0;
+        private TorqueSceneData currentScene;
 
         #endregion
 
@@ -163,8 +164,9 @@ namespace PlatformerStarter
             // Load game
             HealthBar_GUI playGUI = new HealthBar_GUI();
             GUICanvas.Instance.SetContentControl(playGUI);
-            Game.Instance.SceneLoader.Load(@"data\levels\Level1.txscene");
-            SoundManager.Instance.PlaySound("music", "level1");
+            TorqueSceneData currentScene = Game.Instance.SceneLoader.Load(@"data\levels\Level1.txscene");
+            Game.Instance.SetCurrentScene(currentScene);
+            SoundManager.Instance.PlaySound("music", "level 1");
         }
 
 

@@ -1,0 +1,17 @@
+data\sound\SGSounds.xgs
+data\sound\Amanda.xwb
+data\sound\music.xwb
+data\sound\grunt.xwb
+data\sound\spitter.xwb
+data\sound\bomber.xwb
+data\sound\hulk.xwb
+data\sound\kushling.xwb
+data\sound\sounds.xwb
+data\sound\Amanda.xsb
+data\sound\music.xsb
+data\sound\grunt.xsb
+data\sound\bomber.xsb
+data\sound\spitter.xsb
+data\sound\hulk.xsb
+data\sound\kushling.xsb
+data\sound\sounds.xsb

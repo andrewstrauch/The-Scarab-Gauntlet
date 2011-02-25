@@ -64,7 +64,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\x86\Release</OutputPath>
-    <DefineConstants>TRACE%3bTORQUEX_2D%3bWINDOWS</DefineConstants>
+    <DefineConstants>TRACE;TORQUEX_2D;WINDOWS;TORQUE_CONSOLE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoStdLib>true</NoStdLib>
@@ -101,6 +101,8 @@
     <Compile Include="Common\Collectibles\HealthCollectibleComponent.cs" />
     <Compile Include="Common\Collectibles\IMovement.cs" />
     <Compile Include="Common\Collectibles\ScarabCollectibleComponent.cs" />
+    <Compile Include="Common\GUI\GameOverGUI.cs" />
+    <Compile Include="Common\ItemDropComponent.cs" />
     <Compile Include="Common\PitHazardComponent.cs" />
     <Compile Include="Common\Util\CameraManager.cs" />
     <Compile Include="Common\CustomCollision.cs" />

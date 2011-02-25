@@ -352,11 +352,70 @@ namespace PlatformerStarter
             healthbar.NumCollectedCrystals = 0;
             GUICanvas.Instance.SetContentControl(healthbar);
 
+#if TORQUE_CONSOLE
+            CustomConsoleRoutinePool.Instance.RegisterMethod(HealPlayer);
+            CustomConsoleRoutinePool.Instance.RegisterMethod(WarpToCheckpoint);
+#endif
+
             //Console.Write(PunchAnim.Name);
 
             return true;
         }
 
+        #region Debug Routines
+
+#if TORQUE_CONSOLE
+
+        protected bool HealPlayer(out string error, string[] parameters)
+        {
+            error = null;
+
+            if (parameters != null)
+            {
+                string sHealth = parameters[parameters.Length - 1];
+                if (sHealth != null)
+                {
+                    int healAmt;
+                    if (!int.TryParse(sHealth, out healAmt))
+                    {
+                        error = sHealth + " is not a valid input for this routine.";
+                        return false;
+                    }
+                    else
+                        HealDamage(healAmt, null);
+                }
+            }
+            else
+                HealDamage(MaxHealth, null);
+
+            return true;
+        }
+
+        protected bool WarpToCheckpoint(out string error, string[] parameters)
+        {
+            error = null;
+
+            if (parameters != null)
+            {
+                string checkpointName = parameters[0];
+                T2DSceneObject checkpoint = TorqueObjectDatabase.Instance.FindObject(checkpointName) as T2DSceneObject;
+
+                if (checkpoint != null)
+                {
+                    SceneObject.Position = checkpoint.Position;
+                    return true;
+                }
+
+                error = checkpointName + " does not exist.";
+            }
+            else
+                error = "Checkpoint name needed.  Please enter the name of a checkpoint.";
+
+            return false;
+        }
+
+#endif
+        #endregion
         protected override void _PostRegister()
         {
             base._PostRegister();

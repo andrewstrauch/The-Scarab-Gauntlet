@@ -14,10 +14,11 @@ using GarageGames.Torque.GameUtil;
 using GarageGames.Torque.GUI;
 using GarageGames.Torque.T2D;
 using GarageGames.Torque.Platform;
-using GarageGames.Torque.Util;
+//using GarageGames.Torque.Util;
 using GarageGames.Torque.XNA;
 
 using GarageGames.Torque.PlatformerFramework;
+using PlatformerStarter.Common.GUI;
 
 namespace PlatformerStarter
 {
@@ -32,6 +33,7 @@ namespace PlatformerStarter
         List<TorqueObject> _players = new List<TorqueObject>();
         Pause_GUI pauseGUI;
         Cue music;
+        TorqueSceneData currentScene;
 
         #region Properties
         public static Game Instance
@@ -93,9 +95,14 @@ namespace PlatformerStarter
             GUICanvas.Instance.SetContentControl(openingMenu);
 #else
             // load the test level        
-            SceneLoader.Load(@"data\levels\Level1.txscene");
+            SceneLoader.Load(@"data\levels\hulk_test.txscene");
 #endif
             InitializeSound();
+
+            TorqueConsole.Echo("Hello?");
+#if TORQUE_CONSOLE
+            CustomConsoleRoutinePool.Instance.RegisterMethod(LoadLevel);
+#endif
 
             _gameStart = Time;
 
@@ -135,7 +142,61 @@ namespace PlatformerStarter
             if (paused)
                 TogglePause();
 
-            SceneLoader.Load(@"data\levels\Level1.txscene");//SceneLoader.Load(@"data\levels\Level1.txscene");
+            currentScene = SceneLoader.Load(@"data\levels\Level1.txscene");//SceneLoader.Load(@"data\levels\Level1.txscene");
         }
+
+        public static void EndGame()
+        {
+            Game.Instance.Engine.GameTimeScale = 0.0f;
+            GUICanvas.Instance.PushDialogControl(new GameOver_GUI(), 1);
+        }
+
+        public void SetCurrentScene(TorqueSceneData currentScene)
+        {
+            this.currentScene = currentScene;
+        }
+
+        #region Debug Routines
+
+#if TORQUE_CONSOLE
+        private bool LoadLevel(out string error, string[] parameters)
+        {
+            error = null;
+
+            if (parameters != null)
+            {
+                string scene = parameters[0];
+                currentScene.OnUnloaded = delegate()
+                {
+                    foreach (object obj in currentScene.Objects)
+                    {
+                        T2DSceneObject txObj = null;
+                        try
+                        {
+                            txObj = (T2DSceneObject)obj;
+                        }
+                        catch (Exception e)
+                        {
+                            TorqueConsole.Error("SceneObject cast failed");
+                        }
+                        if (txObj != null)
+                            txObj.Visible = false;
+                    }
+                };
+
+                currentScene = SceneLoader.Load(@"data\levels\" + scene + ".txscene");
+
+                currentScene.Unload();
+                //SceneLoader.UnloadLastScene();
+                return true;
+            }
+            else
+                error = "No level specified.  Please specify a level to load.";
+
+            return false;
+        }
+#endif
+        
+        #endregion
     }
 }
