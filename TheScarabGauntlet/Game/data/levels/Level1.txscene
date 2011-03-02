@@ -921,115 +921,6 @@
                 <CellCountY>4</CellCountY>
             </TextureDivider>
         </SimpleMaterial>
-        <SimpleMaterial name="Amanda_DeathSpriteMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/Amanda_DeathSprite.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
-                <CellCountX>10</CellCountX>
-                <CellCountY>4</CellCountY>
-            </TextureDivider>
-        </SimpleMaterial>
-        <SimpleMaterial name="lightbreaksMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/lightbreaks.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="ForestBGMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/ForestBG.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="elevator_bottomMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/elevator_bottom.png</TextureFilename>
-            <IsTranslucent>true</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="frontGrowthLightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/frontGrowthLight.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="templebottomcornerupMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/templebottomcornerup.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="templediagMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/templediag.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="templedownMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/templedown.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="templedowndiagMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/templedowndiag.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="templefloorMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/templefloor.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="templeplatcornerightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/templeplatcorneright.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="templeplatcornerleftMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/templeplatcornerleft.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="templeplatformfloorMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/templeplatformfloor.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="templetopcornerleftMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/templetopcornerleft.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="templetopcornerrightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/templetopcornerright.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="templeupMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/templeup.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="templeupdiagMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/templeupdiag.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="mountain1ScrollerMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/mountain1Scroller.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="canopy3LightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/canopy3Light.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="canopy2LightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/canopy2Light.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="canopy1lightMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/canopy1light.png</TextureFilename>
-            <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
     </Materials>
     <Objects>
         <T2DCollisionMaterial name="DefaultPhysicsMaterial">
@@ -1186,10 +1077,10 @@
             <AnimationDuration>0.333333</AnimationDuration>
             <AnimationCycle>true</AnimationCycle>
         </AnimationData>
-        <AnimationData name="bombersplodeAnimation">
+        <AnimationData name="BomberWarningAnimation">
             <Material nameRef="bombersplodeMaterial" />
-            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11</AnimationFrames>
-            <AnimationDuration>0.4</AnimationDuration>
+            <AnimationFrames>0 1</AnimationFrames>
+            <AnimationDuration>0.0666664</AnimationDuration>
             <AnimationCycle>false</AnimationCycle>
         </AnimationData>
         <AnimationData name="Grunt_AttackRevAnimation1">
@@ -1318,12 +1209,6 @@
             <AnimationDuration>0.533333</AnimationDuration>
             <AnimationCycle>false</AnimationCycle>
         </AnimationData>
-        <AnimationData name="Amanda_DeathSpriteAnimation">
-            <Material nameRef="Amanda_DeathSpriteMaterial" />
-            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39</AnimationFrames>
-            <AnimationDuration>1.3333</AnimationDuration>
-            <AnimationCycle>false</AnimationCycle>
-        </AnimationData>
         <AnimationData name="Amanda_jumpAnimation">
             <Material nameRef="Amanda_jumpspriteMaterial" />
             <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19</AnimationFrames>
@@ -1334,6 +1219,12 @@
             <Material nameRef="Amanda_jumpspriteMaterial" />
             <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32</AnimationFrames>
             <AnimationDuration>1.09999</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="BomberExplodeAnimation">
+            <Material nameRef="bombersplodeMaterial" />
+            <AnimationFrames>2 3 4 5 6 7 8 9 10 11</AnimationFrames>
+            <AnimationDuration>0.333333</AnimationDuration>
             <AnimationCycle>false</AnimationCycle>
         </AnimationData>
         <TileLayer>
@@ -6629,7 +6520,16 @@
                     <ProjectileTemplate nameRef="bomber_projectile" />
                 </WeaponComponent>
                 <BomberActorComponent type="PlatformerStarter.Enemies.ActorComponents.BomberActorComponent">
-                    <AttackAnim nameRef="bombersplodeAnimation" />
+                    <WarningAnim nameRef="BomberWarningAnimation" />
+                    <ExplodeAnim nameRef="BomberExplodeAnimation" />
+                    <ExplodeEffect>
+                        <Effect nameRef="green" />
+                        <Offset>
+                            <X>0</X>
+                            <Y>0</Y>
+                        </Offset>
+                    </ExplodeEffect>
+                    <ExplosionDelay>1.000</ExplosionDelay>
                     <AIComponent>
                         <AIKamikazeeComponent type="PlatformerStarter.Enemies.AIComponents.AIKamikazeeComponent">
                             <AttackDist>30.000</AttackDist>
@@ -45787,7 +45687,7 @@
             <Material nameRef="hulkgroundrocksMaterial" />
             <MaterialRegionIndex>0</MaterialRegionIndex>
         </StaticSprite>
-        <T2DParticleEffect>
+        <T2DParticleEffect name="green">
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
             <ObjectType>
@@ -45795,7 +45695,7 @@
             </ObjectType>
             <Pool>false</Pool>
             <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
+            <IsTemplate>true</IsTemplate>
             <IsPersistent>false</IsPersistent>
             <Layer>0</Layer>
             <Size>
@@ -49272,10 +49172,15 @@
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
             <Components inPlace="true">
-                <HealthCollectibleComponent type="PlatformerStarter.Common.Collectibles.HealthCollectibleComponent">
-                    <HealingValue>50</HealingValue>
-                </HealthCollectibleComponent>
-                <ScarabCollectibleComponent type="PlatformerStarter.Common.Collectibles.ScarabCollectibleComponent" />
+                <ScarabCollectibleComponent type="PlatformerStarter.Common.Collectibles.ScarabCollectibleComponent">
+                    <Effect>
+                        <Effect nameRef="green" />
+                        <Offset>
+                            <X>0</X>
+                            <Y>0</Y>
+                        </Offset>
+                    </Effect>
+                </ScarabCollectibleComponent>
                 <CheckpointSystemSpawnedObjectComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnedObjectComponent" />
                 <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
                     <Images>
@@ -50850,8 +50755,8 @@
                 <Y>10.667</Y>
             </Size>
             <Position>
-                <X>-670.000</X>
-                <Y>-274.667</Y>
+                <X>-650.000</X>
+                <Y>-279.667</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>

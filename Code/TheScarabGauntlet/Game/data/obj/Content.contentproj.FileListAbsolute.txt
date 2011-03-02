@@ -1,4 +1,0 @@
-C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\data\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\data\obj\x86\Debug\sound\SGSounds.xml
-C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\data\obj\x86\Release\ResolveAssemblyReference.cache
-C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\Game\data\obj\x86\Release\sound\SGSounds.xml

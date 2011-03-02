@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 using GarageGames.Torque.Core;
 using GarageGames.Torque.T2D;
 using GarageGames.Torque.XNA;
+using GarageGames.Torque.GameUtil;
 using GarageGames.Torque.PlatformerFramework;
 using PlatformerStarter.Common;
 
@@ -163,6 +164,15 @@ namespace PlatformerStarter.Enemies.ActorComponents
             _animationManager = new HulkActorAnimationManager(this);
         }
 
+        protected override void _initAnimationManager()
+        {
+            _soundBank = "hulk";
+            _useAnimationManagerSoundEvents = true;
+            _animationManager.SetSoundEvent(IntroAnim, "spawn");
+            _animationManager.SetSoundEvent(RunAnim, "walk");
+            _animationManager.SetSoundEvent(DieAnim, "death");
+        }
+
         public class HulkActorAnimationManager : ActorAnimationManager
         {
             private HulkActorComponent actorComponent;
@@ -251,6 +261,7 @@ namespace PlatformerStarter.Enemies.ActorComponents
                 public override void Enter(IFSMObject obj)
                 {
                     base.Enter(obj);
+                    SoundManager.Instance.PlaySound("hulk", "attack");
                 }
 
                 public override string Execute(IFSMObject obj)
@@ -259,7 +270,7 @@ namespace PlatformerStarter.Enemies.ActorComponents
 
                     if (actorAnimMgr.actorComponent.AnimatedSprite.CurrentFrame == 9)
                         actorAnimMgr.actorComponent.meleeComponent.StartAttack();
-
+                    
                     return base.Execute(obj);
                 }
 
@@ -274,6 +285,7 @@ namespace PlatformerStarter.Enemies.ActorComponents
                 public override void Enter(IFSMObject obj)
                 {
                     base.Enter(obj);
+                    SoundManager.Instance.PlaySound("hulk", "fire");
                 }
 
                 public override string Execute(IFSMObject obj)

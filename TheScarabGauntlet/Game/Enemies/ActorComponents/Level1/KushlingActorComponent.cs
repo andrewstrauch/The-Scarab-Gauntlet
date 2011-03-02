@@ -47,6 +47,9 @@ namespace PlatformerStarter.Enemies.ActorComponents.Level1
             obj2.Damage = Damage;
         }
 
+        public override void Attack()
+        {
+        }
 
         #endregion
 
@@ -99,17 +102,20 @@ namespace PlatformerStarter.Enemies.ActorComponents.Level1
 
             if (theirObject.TestObjectType(PlatformerData.ActorObjectType))
             {
-                ActorComponent actor = theirObject.Components.FindComponent<ActorComponent>();
+                PlayerActorComponent actor = theirObject.Components.FindComponent<PlayerActorComponent>();
 
                 // Deal damage to the enemy
-                if (actor != null)
+                if (actor != null && !actor.IsInvincible)
                     actor.TakeDamage(damage, myObject, true, true);
             }
 
-            else if(theirObject.TestObjectType(PlatformerData.EnemyObjectType))
+            else if (theirObject.TestObjectType(PlatformerData.EnemyObjectType))
             {
                 resolve = T2DPhysicsComponent.ClampCollision;
             }
+
+            else
+                resolve = null;
         }
 
         #endregion
@@ -146,8 +152,7 @@ namespace PlatformerStarter.Enemies.ActorComponents.Level1
 
                     if (actorAnimMgr.actorComponent == null)
                         return;
-
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;
+                    
                 }
 
                 public override string Execute(IFSMObject obj)
@@ -190,8 +195,6 @@ namespace PlatformerStarter.Enemies.ActorComponents.Level1
 
                     if (actorAnimMgr.actorComponent._scaleRunAnimBySpeed)
                         actorAnimMgr.actorComponent.AnimatedSprite.AnimationTimeScale = actorAnimMgr.actorComponent._runAnimSpeedScale / actorAnimMgr.actorComponent._maxMoveSpeed;
-
-                    actorAnimMgr.actorComponent._useAnimationManagerSoundEvents = false;
                 }
 
                 public override string Execute(IFSMObject obj)

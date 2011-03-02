@@ -99,11 +99,11 @@ namespace PlatformerStarter
 #endif
             InitializeSound();
 
-            TorqueConsole.Echo("Hello?");
+            TorqueConsole.Echo("Loading Level.");
 #if TORQUE_CONSOLE
             CustomConsoleRoutinePool.Instance.RegisterMethod(LoadLevel);
 #endif
-
+            SoundManager.Instance.PlaySound("music", "introscreen");
             _gameStart = Time;
 
         }
@@ -114,6 +114,7 @@ namespace PlatformerStarter
             SoundManager.Instance.RegisterSoundGroup("spitter", @"data\sound\spitter.xwb", @"data\sound\spitter.xsb");
             SoundManager.Instance.RegisterSoundGroup("grunt", @"data\sound\grunt.xwb", @"data\sound\grunt.xsb");
             SoundManager.Instance.RegisterSoundGroup("bomber", @"data\sound\bomber.xwb", @"data\sound\bomber.xsb");
+            SoundManager.Instance.RegisterSoundGroup("kushling", @"data\sound\kushling.xwb", @"data\sound\kushling.xsb");
             SoundManager.Instance.RegisterSoundGroup("hulk", @"data\sound\hulk.xwb", @"data\sound\hulk.xsb");
             SoundManager.Instance.RegisterSoundGroup("music", @"data\sound\music.xwb", @"data\sound\music.xsb");
         }
@@ -184,9 +185,8 @@ namespace PlatformerStarter
                     }
                 };
 
-                currentScene = SceneLoader.Load(@"data\levels\" + scene + ".txscene");
-
                 currentScene.Unload();
+                currentScene = SceneLoader.Load(@"data\levels\" + scene + ".txscene");
                 //SceneLoader.UnloadLastScene();
                 return true;
             }

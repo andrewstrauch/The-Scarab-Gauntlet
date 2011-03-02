@@ -49,7 +49,7 @@ namespace PlatformerStarter.Common
             // Start player's flashing animation to indicate she was hit.
             PlayerActorComponent actor = theirObject.Components.FindComponent<PlayerActorComponent>();
 
-            if (actor != null)
+            if (actor != null && !actor.IsInvincible)
                 actor.ApplyDamageEffects();
         }
         #endregion

@@ -10,7 +10,7 @@ using GarageGames.Torque.PlatformerFramework;
 namespace PlatformerStarter.Enemies
 {
     [TorqueXmlSchemaType]
-    public class EnemyActorComponent : ActorComponent, IEnemyActor
+    public abstract class EnemyActorComponent : ActorComponent, IEnemyActor
     {
         protected List<IBehavior> actorBehavior;
         protected bool readyToAttack;
@@ -54,9 +54,7 @@ namespace PlatformerStarter.Enemies
             return (_actor.Position - camera.Position);
         }
 
-        public virtual void Attack()
-        {
-        }
+        public abstract void Attack();
 
         public override bool TakeDamage(float damage, T2DSceneObject sourceObject)
         {
@@ -100,24 +98,6 @@ namespace PlatformerStarter.Enemies
             readyToAttack = true;
 
             return true;
-        }
-
-        protected override void _initAnimationManager()
-        {
-            // set the sound bank for this actor
-            // _soundBank = "drill";
-
-            _useAnimationManagerSoundEvents = false;
-            //_animationManager.SetSoundEvent(TorqueObjectDatabase.Instance.FindObject("drill_fall_to_rollAnimation") as T2DAnimationData, "land_drill");
-            //_animationManager.SetSoundEvent(DieAnim, "land_drill");
-
-            _useAnimationStepSoundList = false;
-            //_animationManager.AddStepSoundFrame(DieAnim, 4, "drill_dies");
-        }
-
-        protected override void _resetActor()
-        {
-            base._resetActor();
         }
     }
 }

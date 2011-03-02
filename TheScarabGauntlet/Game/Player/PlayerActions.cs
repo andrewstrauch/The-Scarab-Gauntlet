@@ -78,8 +78,6 @@ namespace PlatformerStarter.Player
         {
             foreach (KeyValuePair<string, PlayerAction> action in actions)
             {
-                if (action.Key == "invincibility")
-                    ;// Game.Instance.Window.Title = action.Value.Timer.Delta.ToString();
                 if (action.Value.Timer.Expired)
                 {
                     action.Value.ReadyToAct = true;
@@ -89,6 +87,11 @@ namespace PlatformerStarter.Player
                         action.Value.OnTimerEnd();
                 }
             }
+        }
+
+        public int GetRemainingActionTime(string action)
+        {
+            return (int)(actions[action].Timer.Delta * 100);
         }
         #endregion
     }

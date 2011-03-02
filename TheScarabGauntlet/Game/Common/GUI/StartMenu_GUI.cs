@@ -164,6 +164,7 @@ namespace PlatformerStarter
             // Load game
             HealthBar_GUI playGUI = new HealthBar_GUI();
             GUICanvas.Instance.SetContentControl(playGUI);
+            SoundManager.Instance.StopAllCues();
             TorqueSceneData currentScene = Game.Instance.SceneLoader.Load(@"data\levels\Level1.txscene");
             Game.Instance.SetCurrentScene(currentScene);
             SoundManager.Instance.PlaySound("music", "level 1");

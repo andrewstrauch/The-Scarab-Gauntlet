@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 using PlatformerStarter.Common.Traps;
 using Microsoft.Xna.Framework;
 using GarageGames.Torque.T2D;

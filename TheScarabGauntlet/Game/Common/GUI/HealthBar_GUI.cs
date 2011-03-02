@@ -60,7 +60,7 @@ namespace PlatformerStarter
 
             // Create Text Style
             GUITextStyle styleText = new GUITextStyle();
-            styleText.FontType = "Arial20"; // Change to desired
+            styleText.FontType = "Arial22"; // Change to desired
             styleText.TextColor[CustomColor.ColorBase] = Color.White; // Change to desired
             styleText.SizeToText = true;
             styleText.Alignment = TextAlignment.JustifyLeft;
@@ -109,7 +109,7 @@ namespace PlatformerStarter
             // Create picture object
             GUIBitmap healthBarBorder = new GUIBitmap();
             healthBarBorder.Style = bitmapStyle; 
-            healthBarBorder.Size = new Vector2(300, 25); // The size of the health bar
+            healthBarBorder.Size = new Vector2(310, 40); // The size of the health bar
             healthBarBorder.Bitmap = @"data\images\lifebar";
             healthBarBorder.Folder = this;
             healthBarBorder.Visible = true;
@@ -118,7 +118,7 @@ namespace PlatformerStarter
             // Create picture object
             GUIBitmap crystalBitmap = new GUIBitmap();
             crystalBitmap.Style = bitmapStyle; 
-            crystalBitmap.Size = new Vector2(25, 60); // The size of the crystal
+            crystalBitmap.Size = new Vector2(30, 65); // The size of the crystal
             crystalBitmap.Bitmap = @"data\images\crystal";
             crystalBitmap.Folder = this;
             crystalBitmap.Visible = true;
@@ -128,11 +128,11 @@ namespace PlatformerStarter
             healthBar = new GUIControl();
             healthBar.Style = healthStyle;
             //healthBar.Size = new Vector2(healthBarBorder.Size.X - 8, healthBarBorder.Size.Y - 5);
-            healthBar.Size = new Vector2(292, 20); // offset size to fit inside health bar
+            healthBar.Size = new Vector2(301, 34); // offset size to fit inside health bar
             healthBar.Folder = this;
             healthBar.Visible = true;
             //healthBar.Position = new Vector2(healthBarBorder.Position.X + 5, healthBarBorder.Position.Y + 3);
-            healthBar.Position = new Vector2(25, 63); // offset pos to fit inside health bar
+            healthBar.Position = new Vector2(25, 64); // offset pos to fit inside health bar
             
             // used calculate health bar size (see draw)
             maxHealthBarSize = healthBar.Size.X;

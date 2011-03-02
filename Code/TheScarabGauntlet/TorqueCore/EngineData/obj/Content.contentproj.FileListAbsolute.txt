@@ -1,2 +1,0 @@
-C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\EngineData\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Dustin\Documents\Code\C#\TheScarabGauntlet\TheScarabGauntlet\TorqueCore\EngineData\obj\x86\Release\ResolveAssemblyReference.cache

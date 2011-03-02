@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 
 using GarageGames.Torque.Core;
 using GarageGames.Torque.T2D;
@@ -196,7 +197,7 @@ namespace PlatformerStarter.Enemies
         {
             _soundBank = "grunt";
             _useAnimationManagerSoundEvents = true;
-            _animationManager.SetSoundEvent(RunAnim, "walk");
+            //_animationManager.SetSoundEvent(RunAnim, "walk");
             _animationManager.SetSoundEvent(AttackAnim, "attack");
             _animationManager.SetSoundEvent(DieAnim, "death");
         }
@@ -208,6 +209,7 @@ namespace PlatformerStarter.Enemies
         {
             private GruntActorComponent actorComponent;
             private AIChaseController controller;
+            private Cue currentSound;
 
             public GruntActorAnimationManager(GruntActorComponent actorComponent)
                 : base(actorComponent)
@@ -278,6 +280,8 @@ namespace PlatformerStarter.Enemies
 
                     if (actorAnimMgr.actorComponent._scaleRunAnimBySpeed)
                         actorAnimMgr.actorComponent.AnimatedSprite.AnimationTimeScale = actorAnimMgr.actorComponent._runAnimSpeedScale / actorAnimMgr.actorComponent._maxMoveSpeed;
+
+                    actorAnimMgr.currentSound = SoundManager.Instance.PlaySound("grunt", "walk");
                 }
 
                 public override string Execute(IFSMObject obj)
@@ -295,6 +299,16 @@ namespace PlatformerStarter.Enemies
                         return "idle";
 
                     return null;
+                }
+
+                public override void Exit(IFSMObject obj)
+                {
+                    base.Exit(obj);
+
+                    GruntActorAnimationManager actorAnimMgr = obj as GruntActorAnimationManager;
+                    
+                    if(actorAnimMgr.currentSound.IsPlaying)
+                        actorAnimMgr.currentSound.Stop(AudioStopOptions.Immediate);
                 }
             }
 

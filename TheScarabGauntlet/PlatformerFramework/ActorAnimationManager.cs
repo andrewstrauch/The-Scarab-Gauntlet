@@ -457,7 +457,7 @@ namespace GarageGames.Torque.PlatformerFramework
                             if (table.StepSounds.Contains(frameIndex) && table.Enabled)
                             {
                                 float distance = Vector2.Distance((_actorComponent.SceneObject.SceneGraph.Camera as T2DSceneCamera).Position, _actorComponent._animatedSprite.Position);
-                                SoundManager.Instance.PlaySound(_actorComponent._soundBank,
+                                _currentSoundCue = SoundManager.Instance.PlaySound(_actorComponent._soundBank,
                                                                 table.StepSounds[frameIndex] as string,
                                                                 distance);
                             }

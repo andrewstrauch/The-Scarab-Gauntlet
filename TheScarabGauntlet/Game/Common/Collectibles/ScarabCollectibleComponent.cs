@@ -8,13 +8,40 @@ using GarageGames.Torque.Core;
 using GarageGames.Torque.T2D;
 using GarageGames.Torque.PlatformerFramework;
 using GarageGames.Torque.XNA;
+using PlatformerStarter.Common.Util;
 
 namespace PlatformerStarter.Common.Collectibles
 {
     [TorqueXmlSchemaType]
     public class ScarabCollectibleComponent : CollectibleComponent
     {
+        #region Private Members
+        private SpawnedParticle effect;
+        #endregion
+
+        #region Public Properties
+        
+        public SpawnedParticle Effect
+        {
+            get { return effect; }
+            set { effect = value; }
+        }
+
+        #endregion
+
+        #region Public Routines
+
+        public override void CopyTo(TorqueComponent obj)
+        {
+            base.CopyTo(obj);
+
+            ScarabCollectibleComponent obj2 = obj as ScarabCollectibleComponent;
+            obj2.Effect = Effect;
+        }
+        #endregion
+
         #region Private Routines
+
         protected override bool _confirmPickup(T2DSceneObject ourObject, T2DSceneObject theirObject, ActorComponent actor)
         {
             if(actor is PlayerActorComponent)
@@ -23,8 +50,8 @@ namespace PlatformerStarter.Common.Collectibles
                 {
                     CheckpointSystemSpawnedObjectComponent spawnedComp = ourObject.Components.FindComponent<CheckpointSystemSpawnedObjectComponent>();
 
-      //              if(spawnedComp != null)
-        //                spawnedComp.Recover = false;
+                    if(spawnedComp != null)
+                        spawnedComp.Recover = false;
                 }*/
                 
                 // Play sound effect here!
@@ -37,6 +64,7 @@ namespace PlatformerStarter.Common.Collectibles
                 else
                     actor.RespawnPosition = actor.Actor.Position;
 
+                effect.Spawn(SceneObject.Position);
                 // true = yes, i was picked up. delete me!
                 return true;
             }

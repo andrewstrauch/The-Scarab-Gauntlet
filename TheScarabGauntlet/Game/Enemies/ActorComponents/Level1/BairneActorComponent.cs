@@ -63,6 +63,10 @@ namespace PlatformerStarter.Enemies.ActorComponents.Level1
             obj2.Animations = Animations;
         }
 
+        public override void Attack()
+        {
+        }
+
         #endregion
 
         #region Private Routines

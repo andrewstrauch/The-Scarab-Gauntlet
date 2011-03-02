@@ -66,6 +66,11 @@ namespace PlatformerStarter
             set { invincibilityLength = (int)value; }
         }
 
+        public bool IsInvincible
+        {
+            get { return isInvincible; }
+        }
+
         public T2DAnimationData SpawnAnim
         {
             get { return spawnAnim; }
@@ -183,7 +188,7 @@ namespace PlatformerStarter
         /// <summary>
         /// Makes the player "swipe"
         /// </summary>
-        public virtual void Swipe()
+        public void Swipe()
         {
             if (attackActions.GetAction("heavyAttack").ReadyToAct)
             {
@@ -201,7 +206,7 @@ namespace PlatformerStarter
         /// <summary>
         /// Makes the player "punch"
         /// </summary>
-        public virtual void Punch()
+        public void Punch()
         {
             if (attackActions.GetAction("lightAttack").ReadyToAct)
             {
@@ -239,7 +244,8 @@ namespace PlatformerStarter
         public void ApplyDamageEffects()
         {
             isInvincible = true;
-            SceneObject.CollisionsEnabled = false;
+            SceneObject.ObjectType -= PlatformerData.ActorObjectType;
+            //SceneObject.CollisionsEnabled = false;  // IT'S A BUG!!!!
             attackActions.GetAction("invincibility").Timer.Start();
             attackActions.GetAction("invincibility").ReadyToAct = false;
         }
@@ -282,13 +288,15 @@ namespace PlatformerStarter
 
             if (isInvincible)
             {
-                /*if ((Game.Instance.Engine.GameTime.TotalGameTime.Seconds) % 0.5 == 0)
+                int time = attackActions.GetRemainingActionTime("invincibility");
+                if (time % 2 == 0)
                     SceneObject.Visible = false;
                 else
-                    SceneObject.Visible = true;*/
+                    SceneObject.Visible = true;
             }
-            else
-                SceneObject.CollisionsEnabled = true;
+            //else
+              //  SceneObject.ObjectType += PlatformerData.ActorObjectType;
+                //SceneObject.CollisionsEnabled = true;
         }
 
         private void ToggleInvincibility()

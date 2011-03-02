@@ -218,14 +218,10 @@ Global Settings
     Compression Preset
     {
         Name = compression;
-        Xbox Format Tag = 357;
-        Target Sample Rate = 48000;
-        XMA Quality = 60;
-        Find Best Quality = 0;
-        High Freq Cut = 0;
-        Loop = 0;
-        PC Format Tag = 2;
-        Samples Per Block = 128;
+        Xbox Format Tag = 353;
+        WMA Quality = 52;
+        PC Format Tag = 353;
+        WMA Quality = 50;
     }
 }
 
@@ -631,15 +627,16 @@ Wave Bank
     PC Bank Last Modified High = 0;
     Header Last Modified Low = 0;
     Header Last Modified High = 0;
-    Bank Last Revised Low = 790237870;
-    Bank Last Revised High = 30134440;
+    Bank Last Revised Low = 3234762711;
+    Bank Last Revised High = 30135994;
 
     Wave
     {
         Name = level 1;
         File = ..\..\..\..\..\..\..\..\..\..\Dropbox\Matt's Concepts\Music and Sound Effects\beta score.wav;
-        Build Settings Last Modified Low = 4165372554;
-        Build Settings Last Modified High = 30134439;
+        Build Settings Last Modified Low = 1161794144;
+        Build Settings Last Modified High = 30135994;
+        Compression Preset Name = compression;
 
         Cache
         {
@@ -654,6 +651,30 @@ Wave Bank
             File Type = 1;
             Last Modified Low = 3815810048;
             Last Modified High = 30134412;
+        }
+    }
+
+    Wave
+    {
+        Name = introscreen;
+        File = introscreen.wav;
+        Build Settings Last Modified Low = 1840994630;
+        Build Settings Last Modified High = 30135993;
+        Compression Preset Name = compression;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 6608912;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1657416960;
+            Last Modified High = 30135990;
         }
     }
 }
@@ -782,8 +803,8 @@ Wave Bank
             Loop Region Offset = 0;
             Loop Region Length = 0;
             File Type = 1;
-            Last Modified Low = 2691180672;
-            Last Modified High = 30091768;
+            Last Modified Low = 2355896558;
+            Last Modified High = 30130392;
         }
     }
 
@@ -805,8 +826,8 @@ Wave Bank
             Loop Region Offset = 0;
             Loop Region Length = 0;
             File Type = 1;
-            Last Modified Low = 2711180672;
-            Last Modified High = 30091768;
+            Last Modified Low = 2355956561;
+            Last Modified High = 30130392;
         }
     }
 
@@ -828,8 +849,8 @@ Wave Bank
             Loop Region Offset = 0;
             Loop Region Length = 0;
             File Type = 1;
-            Last Modified Low = 2721180672;
-            Last Modified High = 30091768;
+            Last Modified Low = 2355996564;
+            Last Modified High = 30130392;
         }
     }
 
@@ -851,8 +872,8 @@ Wave Bank
             Loop Region Offset = 0;
             Loop Region Length = 0;
             File Type = 1;
-            Last Modified Low = 2361180672;
-            Last Modified High = 30091768;
+            Last Modified Low = 2356026565;
+            Last Modified High = 30130392;
         }
     }
 }
@@ -960,8 +981,8 @@ Wave Bank
     PC Bank Last Modified High = 0;
     Header Last Modified Low = 0;
     Header Last Modified High = 0;
-    Bank Last Revised Low = 529081725;
-    Bank Last Revised High = 30130378;
+    Bank Last Revised Low = 4035425646;
+    Bank Last Revised High = 30135802;
 
     Wave
     {
@@ -981,8 +1002,8 @@ Wave Bank
             Loop Region Offset = 0;
             Loop Region Length = 0;
             File Type = 1;
-            Last Modified Low = 2531180672;
-            Last Modified High = 30091768;
+            Last Modified Low = 2334815352;
+            Last Modified High = 30130392;
         }
     }
 
@@ -1004,8 +1025,8 @@ Wave Bank
             Loop Region Offset = 0;
             Loop Region Length = 0;
             File Type = 1;
-            Last Modified Low = 2561180672;
-            Last Modified High = 30091768;
+            Last Modified Low = 2334925358;
+            Last Modified High = 30130392;
         }
     }
 
@@ -1027,31 +1048,8 @@ Wave Bank
             Loop Region Offset = 0;
             Loop Region Length = 0;
             File Type = 1;
-            Last Modified Low = 2571180672;
-            Last Modified High = 30091768;
-        }
-    }
-
-    Wave
-    {
-        Name = idle;
-        File = hulk_idle.wav;
-        Build Settings Last Modified Low = 168151081;
-        Build Settings Last Modified High = 30130378;
-
-        Cache
-        {
-            Format Tag = 0;
-            Channels = 2;
-            Sampling Rate = 44100;
-            Bits Per Sample = 1;
-            Play Region Offset = 44;
-            Play Region Length = 582700;
-            Loop Region Offset = 0;
-            Loop Region Length = 0;
-            File Type = 1;
-            Last Modified Low = 2591180672;
-            Last Modified High = 30091768;
+            Last Modified Low = 2334975361;
+            Last Modified High = 30130392;
         }
     }
 
@@ -1073,8 +1071,8 @@ Wave Bank
             Loop Region Offset = 0;
             Loop Region Length = 0;
             File Type = 1;
-            Last Modified Low = 2611180672;
-            Last Modified High = 30091768;
+            Last Modified Low = 2335165372;
+            Last Modified High = 30130392;
         }
     }
 
@@ -1096,8 +1094,8 @@ Wave Bank
             Loop Region Offset = 0;
             Loop Region Length = 0;
             File Type = 1;
-            Last Modified Low = 2631180672;
-            Last Modified High = 30091768;
+            Last Modified Low = 2335245377;
+            Last Modified High = 30130392;
         }
     }
 }
@@ -1117,15 +1115,15 @@ Wave Bank
     PC Bank Last Modified High = 0;
     Header Last Modified Low = 0;
     Header Last Modified High = 0;
-    Bank Last Revised Low = 2421310735;
-    Bank Last Revised High = 30133433;
+    Bank Last Revised Low = 3152720245;
+    Bank Last Revised High = 30135805;
 
     Wave
     {
         Name = attack;
         File = kush_attack.wav;
-        Build Settings Last Modified Low = 1823633864;
-        Build Settings Last Modified High = 30133433;
+        Build Settings Last Modified Low = 2742006753;
+        Build Settings Last Modified High = 30135805;
 
         Cache
         {
@@ -1147,8 +1145,8 @@ Wave Bank
     {
         Name = death;
         File = kush_death2.wav;
-        Build Settings Last Modified Low = 1823633864;
-        Build Settings Last Modified High = 30133433;
+        Build Settings Last Modified Low = 2742016754;
+        Build Settings Last Modified High = 30135805;
 
         Cache
         {
@@ -1170,8 +1168,8 @@ Wave Bank
     {
         Name = idle;
         File = kush_idle.wav;
-        Build Settings Last Modified Low = 1823643865;
-        Build Settings Last Modified High = 30133433;
+        Build Settings Last Modified Low = 2742016754;
+        Build Settings Last Modified High = 30135805;
 
         Cache
         {
@@ -1193,8 +1191,8 @@ Wave Bank
     {
         Name = spawn;
         File = kush_spawn2.wav;
-        Build Settings Last Modified Low = 1823643865;
-        Build Settings Last Modified High = 30133433;
+        Build Settings Last Modified Low = 2742026754;
+        Build Settings Last Modified High = 30135805;
 
         Cache
         {
@@ -1228,8 +1226,8 @@ Wave Bank
     PC Bank Last Modified High = 0;
     Header Last Modified Low = 0;
     Header Last Modified High = 0;
-    Bank Last Revised Low = 1483105861;
-    Bank Last Revised High = 30134441;
+    Bank Last Revised Low = 2317558049;
+    Bank Last Revised High = 30135978;
 
     Wave
     {
@@ -1245,12 +1243,12 @@ Wave Bank
             Sampling Rate = 44100;
             Bits Per Sample = 1;
             Play Region Offset = 44;
-            Play Region Length = 1581056;
+            Play Region Length = 352256;
             Loop Region Offset = 0;
             Loop Region Length = 0;
             File Type = 1;
-            Last Modified Low = 2535810048;
-            Last Modified High = 30134412;
+            Last Modified Low = 1752547072;
+            Last Modified High = 30134618;
         }
     }
 
@@ -2420,7 +2418,7 @@ Sound Bank
     Sound
     {
         Name = level 1;
-        Volume = -730;
+        Volume = -600;
         Pitch = 0;
         Priority = 0;
 
@@ -2465,6 +2463,54 @@ Sound Bank
         }
     }
 
+    Sound
+    {
+        Name = introscreen;
+        Volume = -1320;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Default;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = music;
+                    Bank Index = 1;
+                    Entry Name = introscreen;
+                    Entry Index = 1;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
     Cue
     {
         Name = level 1;
@@ -2480,6 +2526,26 @@ Sound Bank
         {
             Name = level 1;
             Index = 0;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = introscreen;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = introscreen;
+            Index = 1;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3202,7 +3268,7 @@ Sound Bank
     Sound
     {
         Name = attack;
-        Volume = -1200;
+        Volume = 30;
         Pitch = 0;
         Priority = 0;
 
@@ -3249,7 +3315,7 @@ Sound Bank
     Sound
     {
         Name = death;
-        Volume = -1200;
+        Volume = 30;
         Pitch = 0;
         Priority = 0;
 
@@ -3296,7 +3362,7 @@ Sound Bank
     Sound
     {
         Name = fire;
-        Volume = -1200;
+        Volume = -420;
         Pitch = 0;
         Priority = 0;
 
@@ -3342,55 +3408,8 @@ Sound Bank
 
     Sound
     {
-        Name = idle;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = hulk;
-                    Bank Index = 5;
-                    Entry Name = idle;
-                    Entry Index = 3;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
         Name = spawn;
-        Volume = -1200;
+        Volume = 480;
         Pitch = 0;
         Priority = 0;
 
@@ -3426,7 +3445,7 @@ Sound Bank
                     Bank Name = hulk;
                     Bank Index = 5;
                     Entry Name = spawn;
-                    Entry Index = 4;
+                    Entry Index = 3;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -3437,7 +3456,7 @@ Sound Bank
     Sound
     {
         Name = walk;
-        Volume = -1200;
+        Volume = 30;
         Pitch = 0;
         Priority = 0;
 
@@ -3473,7 +3492,7 @@ Sound Bank
                     Bank Name = hulk;
                     Bank Index = 5;
                     Entry Name = walk;
-                    Entry Index = 5;
+                    Entry Index = 4;
                     Weight = 255;
                     Weight Min = 0;
                 }
@@ -3543,26 +3562,6 @@ Sound Bank
 
     Cue
     {
-        Name = idle;
-
-        Variation
-        {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
-        }
-
-        Sound Entry
-        {
-            Name = idle;
-            Index = 3;
-            Weight Min = 0;
-            Weight Max = 255;
-        }
-    }
-
-    Cue
-    {
         Name = spawn;
 
         Variation
@@ -3575,7 +3574,7 @@ Sound Bank
         Sound Entry
         {
             Name = spawn;
-            Index = 4;
+            Index = 3;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3595,7 +3594,7 @@ Sound Bank
         Sound Entry
         {
             Name = walk;
-            Index = 5;
+            Index = 4;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3611,100 +3610,6 @@ Sound Bank
     Windows Bank Path Edited = 0;
     Header Last Modified High = 0;
     Header Last Modified Low = 0;
-
-    Sound
-    {
-        Name = death;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = kushling;
-                    Bank Index = 6;
-                    Entry Name = death;
-                    Entry Index = 1;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
-
-    Sound
-    {
-        Name = attack;
-        Volume = -1200;
-        Pitch = 0;
-        Priority = 0;
-
-        Category Entry
-        {
-            Name = Default;
-        }
-
-        Track
-        {
-            Volume = 0;
-            Use Filter = 0;
-
-            Play Wave Event
-            {
-                Break Loop = 0;
-                Use Speaker Position = 0;
-                Use Center Speaker = 1;
-                New Speaker Position On Loop = 1;
-                Speaker Position Angle = 0.000000;
-                Speaer Position Arc = 0.000000;
-
-                Event Header
-                {
-                    Timestamp = 0;
-                    Relative = 0;
-                    Random Recurrence = 0;
-                    Random Offset = 0;
-                }
-
-                Wave Entry
-                {
-                    Bank Name = kushling;
-                    Bank Index = 6;
-                    Entry Name = attack;
-                    Entry Index = 0;
-                    Weight = 255;
-                    Weight Min = 0;
-                }
-            }
-        }
-    }
 
     Sound
     {
@@ -3756,7 +3661,7 @@ Sound Bank
     Sound
     {
         Name = idle;
-        Volume = -1200;
+        Volume = 480;
         Pitch = 0;
         Priority = 0;
 
@@ -3800,23 +3705,97 @@ Sound Bank
         }
     }
 
-    Cue
+    Sound
     {
         Name = death;
+        Volume = 420;
+        Pitch = 0;
+        Priority = 0;
 
-        Variation
+        Category Entry
         {
-            Variation Type = 3;
-            Variation Table Type = 1;
-            New Variation on Loop = 0;
+            Name = Default;
         }
 
-        Sound Entry
+        Track
         {
-            Name = death;
-            Index = 0;
-            Weight Min = 0;
-            Weight Max = 255;
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = kushling;
+                    Bank Index = 6;
+                    Entry Name = death;
+                    Entry Index = 1;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = attack;
+        Volume = 420;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Default;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = kushling;
+                    Bank Index = 6;
+                    Entry Name = attack;
+                    Entry Index = 0;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
         }
     }
 
@@ -3834,7 +3813,7 @@ Sound Bank
         Sound Entry
         {
             Name = attack;
-            Index = 1;
+            Index = 3;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3854,7 +3833,7 @@ Sound Bank
         Sound Entry
         {
             Name = spawn;
-            Index = 2;
+            Index = 0;
             Weight Min = 0;
             Weight Max = 255;
         }
@@ -3874,7 +3853,27 @@ Sound Bank
         Sound Entry
         {
             Name = idle;
-            Index = 3;
+            Index = 1;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = death;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = death;
+            Index = 2;
             Weight Min = 0;
             Weight Max = 255;
         }

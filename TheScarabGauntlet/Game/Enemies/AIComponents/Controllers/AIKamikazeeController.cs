@@ -26,7 +26,6 @@ namespace PlatformerStarter.Enemies
         {
             FSM.Instance.RegisterState<IdleState>(this, "idle");
             FSM.Instance.RegisterState<MoveState>(this, "move");
-            //FSM.Instance.RegisterState<MoveRightState>(this, "moveRight");
             FSM.Instance.RegisterState<AttackState>(this, "attack");
 
 

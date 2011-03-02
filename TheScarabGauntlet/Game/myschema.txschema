@@ -525,8 +525,17 @@
         <Type>GarageGames.Torque.T2D.T2DPhysicsComponent</Type>
       </Dependencies>
       <IsComponent>true</IsComponent>
-      <Element name="AttackAnim">
+      <Element name="WarningAnim">
         <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
+      </Element>
+      <Element name="ExplodeAnim">
+        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
+      </Element>
+      <Element name="ExplodeEffect">
+        <Type>PlatformerStarter.Common.Util.SpawnedParticle</Type>
+      </Element>
+      <Element name="ExplosionDelay">
+        <Type>System.Single</Type>
       </Element>
       <Element name="AIComponent">
         <IsList>true</IsList>
@@ -855,177 +864,6 @@
       </Element>
       <Element name="Direction">
         <Type>Microsoft.Xna.Framework.Vector3</Type>
-      </Element>
-    </Type>
-    <Type name="EnemyActorComponent" fullName="PlatformerStarter.Enemies.EnemyActorComponent">
-      <Dependencies>
-        <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
-        <Type>GarageGames.Torque.T2D.T2DPhysicsComponent</Type>
-      </Dependencies>
-      <IsComponent>true</IsComponent>
-      <Element name="AIComponent">
-        <IsList>true</IsList>
-        <Type>PlatformerStarter.Enemies.IBehavior</Type>
-      </Element>
-      <Element name="MaxVelocity">
-        <Type>Microsoft.Xna.Framework.Vector2</Type>
-        <DefaultValue>200 200</DefaultValue>
-      </Element>
-      <Element name="Gravity">
-        <Type>System.Single</Type>
-        <DefaultValue>3</DefaultValue>
-      </Element>
-      <Element name="MaxMoveSpeed">
-        <Type>System.Single</Type>
-        <DefaultValue>65</DefaultValue>
-      </Element>
-      <Element name="GroundAccel">
-        <Type>System.Single</Type>
-        <DefaultValue>3</DefaultValue>
-      </Element>
-      <Element name="GroundDecel">
-        <Type>System.Single</Type>
-        <DefaultValue>5</DefaultValue>
-      </Element>
-      <Element name="AirAccel">
-        <Type>System.Single</Type>
-        <DefaultValue>2</DefaultValue>
-      </Element>
-      <Element name="AirDecel">
-        <Type>System.Single</Type>
-        <DefaultValue>0.5</DefaultValue>
-      </Element>
-      <Element name="JumpForce">
-        <Type>System.Single</Type>
-        <DefaultValue>135</DefaultValue>
-      </Element>
-      <Element name="JumpTimeThreshold">
-        <Type>System.Single</Type>
-        <DefaultValue>0.1</DefaultValue>
-      </Element>
-      <Element name="AllowJumpDown">
-        <Type>System.Boolean</Type>
-        <DefaultValue>1</DefaultValue>
-      </Element>
-      <Element name="JumpDownTimeout">
-        <Type>System.Single</Type>
-        <DefaultValue>0.18</DefaultValue>
-      </Element>
-      <Element name="ClimbUpSpeed">
-        <Type>System.Single</Type>
-        <DefaultValue>25</DefaultValue>
-      </Element>
-      <Element name="ClimbDownSpeed">
-        <Type>System.Single</Type>
-        <DefaultValue>45</DefaultValue>
-      </Element>
-      <Element name="ClimbTimeout">
-        <Type>System.Single</Type>
-        <DefaultValue>0.25</DefaultValue>
-      </Element>
-      <Element name="ClimbJumpCoefficient">
-        <Type>System.Single</Type>
-        <DefaultValue>0.5</DefaultValue>
-      </Element>
-      <Element name="GroundCheckYThreshold">
-        <Type>System.Single</Type>
-        <DefaultValue>0.3</DefaultValue>
-      </Element>
-      <Element name="GroundYBuffer">
-        <Type>System.Single</Type>
-        <DefaultValue>0.15</DefaultValue>
-      </Element>
-      <Element name="LadderAttachXThreshold">
-        <Type>System.Single</Type>
-        <DefaultValue>1</DefaultValue>
-      </Element>
-      <Element name="MaxGroundNormalY">
-        <Type>System.Single</Type>
-        <DefaultValue>-0.1</DefaultValue>
-      </Element>
-      <Element name="MaxHealth">
-        <Type>System.Single</Type>
-        <DefaultValue>100</DefaultValue>
-      </Element>
-      <Element name="Armor">
-        <Type>System.Single</Type>
-        <DefaultValue>0</DefaultValue>
-      </Element>
-      <Element name="Lives">
-        <Type>System.Int32</Type>
-        <DefaultValue>10</DefaultValue>
-      </Element>
-      <Element name="DamageTimeout">
-        <Type>System.Single</Type>
-        <DefaultValue>0.75</DefaultValue>
-      </Element>
-      <Element name="AllowRespawn">
-        <Type>System.Boolean</Type>
-        <DefaultValue>0</DefaultValue>
-      </Element>
-      <Element name="IdleAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="JumpAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="FallAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="RunAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="ScaleRunAnimBySpeed">
-        <Type>System.Boolean</Type>
-        <DefaultValue>0</DefaultValue>
-      </Element>
-      <Element name="MinRunAnimSpeed">
-        <Type>System.Single</Type>
-        <DefaultValue>0.25</DefaultValue>
-      </Element>
-      <Element name="RunJumpAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="RunFallAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="SlideAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="ClimbIdleAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="ClimbUpAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="ClimbDownAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="ClimbJumpAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="ActionAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="DamageAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="DieAnim">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="AnimationTransitions">
-        <IsList>true</IsList>
-        <Type>GarageGames.Torque.PlatformerFramework.ActorComponent+XMLTransitionData</Type>
-      </Element>
-      <Element name="SceneObject">
-        <Type>GarageGames.Torque.T2D.T2DSceneObject</Type>
-      </Element>
-      <Element name="Components">
-        <IsList>true</IsList>
-        <Type>GarageGames.Torque.Core.TorqueComponent</Type>
-      </Element>
-      <Element name="Name">
-        <Type>System.String</Type>
       </Element>
     </Type>
     <Type name="EnemyAttackCollisionComponent" fullName="PlatformerStarter.EnemyAttackCollisionComponent">
@@ -2205,6 +2043,9 @@
         <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
       </Dependencies>
       <IsComponent>true</IsComponent>
+      <Element name="Effect">
+        <Type>PlatformerStarter.Common.Util.SpawnedParticle</Type>
+      </Element>
       <Element name="Components">
         <IsList>true</IsList>
         <Type>GarageGames.Torque.Core.TorqueComponent</Type>
@@ -3292,6 +3133,52 @@
         <Type>System.Single</Type>
       </Element>
     </Type>
+    <Type name="EffectLifeMode" fullName="GarageGames.Torque.T2D.T2DParticleEffectData+EffectLifeMode">
+      <IsEnum>true</IsEnum>
+      <Element name="Infinite">
+        <IsStatic>true</IsStatic>
+        <Type>GarageGames.Torque.T2D.T2DParticleEffectData+EffectLifeMode</Type>
+      </Element>
+      <Element name="Cycle">
+        <IsStatic>true</IsStatic>
+        <Type>GarageGames.Torque.T2D.T2DParticleEffectData+EffectLifeMode</Type>
+      </Element>
+      <Element name="Stop">
+        <IsStatic>true</IsStatic>
+        <Type>GarageGames.Torque.T2D.T2DParticleEffectData+EffectLifeMode</Type>
+      </Element>
+      <Element name="Kill">
+        <IsStatic>true</IsStatic>
+        <Type>GarageGames.Torque.T2D.T2DParticleEffectData+EffectLifeMode</Type>
+      </Element>
+    </Type>
+    <Type name="EffectStartEvent" fullName="GarageGames.Torque.T2D.T2DParticleEffect+EffectStartEvent">
+      <IsDelegate>true</IsDelegate>
+      <IsInstantiable>false</IsInstantiable>
+    </Type>
+    <Type name="EffectStopEvent" fullName="GarageGames.Torque.T2D.T2DParticleEffect+EffectStopEvent">
+      <IsDelegate>true</IsDelegate>
+      <IsInstantiable>false</IsInstantiable>
+    </Type>
+    <Type name="EmitterAreaType" fullName="GarageGames.Torque.T2D.T2DParticleEmitterData+EmitterAreaType">
+      <IsEnum>true</IsEnum>
+      <Element name="Point">
+        <IsStatic>true</IsStatic>
+        <Type>GarageGames.Torque.T2D.T2DParticleEmitterData+EmitterAreaType</Type>
+      </Element>
+      <Element name="LineX">
+        <IsStatic>true</IsStatic>
+        <Type>GarageGames.Torque.T2D.T2DParticleEmitterData+EmitterAreaType</Type>
+      </Element>
+      <Element name="LineY">
+        <IsStatic>true</IsStatic>
+        <Type>GarageGames.Torque.T2D.T2DParticleEmitterData+EmitterAreaType</Type>
+      </Element>
+      <Element name="Rectangle">
+        <IsStatic>true</IsStatic>
+        <Type>GarageGames.Torque.T2D.T2DParticleEmitterData+EmitterAreaType</Type>
+      </Element>
+    </Type>
     <Type name="Force" fullName="GarageGames.Torque.T2D.T2DForceComponent+Force">
       <DerivedTypes>
         <Type>GarageGames.Torque.T2D.T2DForceComponent+DragForce</Type>
@@ -3443,6 +3330,21 @@
     <Type name="OnRegisteredDelegate" fullName="GarageGames.Torque.Core.OnRegisteredDelegate">
       <IsDelegate>true</IsDelegate>
       <IsInstantiable>false</IsInstantiable>
+    </Type>
+    <Type name="ParticleOrientationMode" fullName="GarageGames.Torque.T2D.T2DParticleEmitterData+ParticleOrientationMode">
+      <IsEnum>true</IsEnum>
+      <Element name="Aligned">
+        <IsStatic>true</IsStatic>
+        <Type>GarageGames.Torque.T2D.T2DParticleEmitterData+ParticleOrientationMode</Type>
+      </Element>
+      <Element name="Fixed">
+        <IsStatic>true</IsStatic>
+        <Type>GarageGames.Torque.T2D.T2DParticleEmitterData+ParticleOrientationMode</Type>
+      </Element>
+      <Element name="Random">
+        <IsStatic>true</IsStatic>
+        <Type>GarageGames.Torque.T2D.T2DParticleEmitterData+ParticleOrientationMode</Type>
+      </Element>
     </Type>
     <Type name="PlatformPathNode" fullName="GarageGames.Torque.PlatformerFramework.PlatformMoveComponent+PlatformPathNode">
       <Element name="Position">
@@ -3666,6 +3568,14 @@
         <Type>System.Single</Type>
       </Element>
     </Type>
+    <Type name="SpawnedParticle" fullName="PlatformerStarter.Common.Util.SpawnedParticle">
+      <Element name="Effect">
+        <Type>GarageGames.Torque.T2D.T2DParticleEffect</Type>
+      </Element>
+      <Element name="Offset">
+        <Type>Microsoft.Xna.Framework.Vector2</Type>
+      </Element>
+    </Type>
     <Type name="StickProcessor" fullName="GarageGames.Torque.T2D.T2DProcessComponent+StickProcessor">
       <Element name="StickIndex">
         <Type>System.Int32</Type>
@@ -3764,9 +3674,318 @@
         <Type>System.String</Type>
       </Element>
     </Type>
+    <Type name="T2DGraphKey" fullName="GarageGames.Torque.T2D.T2DGraphKey">
+      <Element name="Time">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="Value">
+        <Type>System.Single</Type>
+      </Element>
+    </Type>
+    <Type name="T2DKeyGraph" fullName="GarageGames.Torque.T2D.T2DKeyGraph">
+      <Element name="ValueScale">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="DefaultValue">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="PrimaryKey">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="Keys">
+        <IsList>true</IsList>
+        <Type>GarageGames.Torque.T2D.T2DGraphKey</Type>
+      </Element>
+    </Type>
     <Type name="T2DOnCollisionDelegate" fullName="GarageGames.Torque.T2D.T2DOnCollisionDelegate">
       <IsDelegate>true</IsDelegate>
       <IsInstantiable>false</IsInstantiable>
+    </Type>
+    <Type name="T2DParticleEffect" fullName="GarageGames.Torque.T2D.T2DParticleEffect">
+      <Element name="Mounts">
+        <IsList>true</IsList>
+        <Type>GarageGames.Torque.T2D.T2DSceneObject+XmlMount</Type>
+      </Element>
+      <Element name="Age">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="PlayOnLoad">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="CurrentEffectData">
+        <Type>GarageGames.Torque.T2D.T2DParticleEffectData</Type>
+      </Element>
+      <Element name="SceneGraph">
+        <Type>GarageGames.Torque.SceneGraph.BaseSceneGraph</Type>
+      </Element>
+      <Element name="Layer">
+        <Type>System.Int32</Type>
+      </Element>
+      <Element name="LayerDepth">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="Size">
+        <Type>Microsoft.Xna.Framework.Vector2</Type>
+      </Element>
+      <Element name="Position">
+        <Type>Microsoft.Xna.Framework.Vector2</Type>
+      </Element>
+      <Element name="Rotation">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="SortPoint">
+        <Type>Microsoft.Xna.Framework.Vector2</Type>
+      </Element>
+      <Element name="TrackMountRotation">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="InheritMountFlip">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="InheritMountVisibility">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="MountForce">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="UseMountForce">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="CollisionsEnabled">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="Visible">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="VisibilityLevel">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="FlipX">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="FlipY">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="CreateWithPhysics">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="CreateWithCollision">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="CreateWithWorldLimit">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="CreateWithLinkPoints">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="Components">
+        <IsList>true</IsList>
+        <Type>GarageGames.Torque.Core.TorqueComponent</Type>
+      </Element>
+      <Element name="ObjectType">
+        <Type>GarageGames.Torque.Core.TorqueObjectType</Type>
+      </Element>
+      <Element name="Pool">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="PoolWithComponents">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="IsTemplate">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="IsPersistent">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="OnRegistered">
+        <Type>GarageGames.Torque.Core.OnRegisteredDelegate</Type>
+      </Element>
+      <Element name="Name">
+        <Type>System.String</Type>
+      </Element>
+      <Element name="OnEffectStart">
+        <Type>GarageGames.Torque.T2D.T2DParticleEffect+EffectStartEvent</Type>
+      </Element>
+      <Element name="OnEffectStop">
+        <Type>GarageGames.Torque.T2D.T2DParticleEffect+EffectStopEvent</Type>
+      </Element>
+    </Type>
+    <Type name="T2DParticleEffectData" fullName="GarageGames.Torque.T2D.T2DParticleEffectData">
+      <Element name="LifeMode">
+        <Type>GarageGames.Torque.T2D.T2DParticleEffectData+EffectLifeMode</Type>
+      </Element>
+      <Element name="Lifetime">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="Emitters">
+        <IsList>true</IsList>
+        <Type>GarageGames.Torque.T2D.T2DParticleEmitterData</Type>
+      </Element>
+      <Element name="Name">
+        <Type>System.String</Type>
+      </Element>
+    </Type>
+    <Type name="T2DParticleEmitterData" fullName="GarageGames.Torque.T2D.T2DParticleEmitterData">
+      <Element name="ParticleLifeBase">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="ParticleLifeVariation">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="QuantityBase">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="QuantityVariation">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="SizeXBase">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="SizeXVariation">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="SizeXLife">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="SizeYBase">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="SizeYVariation">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="SizeYLife">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="SpeedBase">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="SpeedVariation">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="SpeedLife">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="SpinBase">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="SpinVariation">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="SpinLife">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="FixedForceBase">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="FixedForceVariation">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="FixedForceLife">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="RandomMotionBase">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="RandomMotionVariation">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="RandomMotionLife">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="EmissionForceBase">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="EmissionForceVariation">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="EmissionAngleBase">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="EmissionAngleVariation">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="EmissionArcBase">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="EmissionArcVariation">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="RedChannelLife">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="GreenChannelLife">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="BlueChannelLife">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="VisibilityLife">
+        <Type>GarageGames.Torque.T2D.T2DKeyGraph</Type>
+      </Element>
+      <Element name="Hidden">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="FixedParticleAspect">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="FixedAreaAspect">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="FixedForceAngle">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="ParticleOrientation">
+        <Type>GarageGames.Torque.T2D.T2DParticleEmitterData+ParticleOrientationMode</Type>
+      </Element>
+      <Element name="OrientationAngleOffset">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="OrientationRandomArc">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="InitialAge">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="EmitterArea">
+        <Type>GarageGames.Torque.T2D.T2DParticleEmitterData+EmitterAreaType</Type>
+      </Element>
+      <Element name="ParticlePivotPoint">
+        <Type>Microsoft.Xna.Framework.Vector2</Type>
+      </Element>
+      <Element name="UseEffectEmission">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="LinkEmissionRotation">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="AttachPositionToEmitter">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="AttachRotationToEmitter">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="SingleParticle">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="FirstInFrontOrder">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="Name">
+        <Type>System.String</Type>
+      </Element>
+      <Element name="MaterialName">
+        <Type>System.String</Type>
+      </Element>
+      <Element name="Material">
+        <Type>GarageGames.Torque.Materials.RenderMaterial</Type>
+      </Element>
+      <Element name="MaterialRegionIndex">
+        <Type>System.Int32</Type>
+      </Element>
+      <Element name="TextureCoords">
+        <IsList>true</IsList>
+        <Type>Microsoft.Xna.Framework.Vector2</Type>
+      </Element>
     </Type>
     <Type name="T2DPolyImage" fullName="GarageGames.Torque.T2D.T2DPolyImage">
       <Element name="CollisionPolyBasis">
@@ -3962,7 +4181,6 @@
         <Type>PlatformerStarter.Enemies.AIComponents.AIRangedComponent</Type>
         <Type>PlatformerStarter.Enemies.AIHybridComponent</Type>
         <Type>PlatformerStarter.Enemies.BaseAIComponent</Type>
-        <Type>PlatformerStarter.Enemies.EnemyActorComponent</Type>
         <Type>PlatformerStarter.Enemies.GruntActorComponent</Type>
         <Type>PlatformerStarter.Enemies.SpitterActorComponent</Type>
         <Type>PlatformerStarter.EnemyAttackCollisionComponent</Type>
