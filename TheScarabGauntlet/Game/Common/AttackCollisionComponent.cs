@@ -11,6 +11,7 @@ using GarageGames.Torque.T2D;
 using GarageGames.Torque.SceneGraph;
 using GarageGames.Torque.MathUtil;
 using GarageGames.Torque.PlatformerFramework;
+using PlatformerStarter.Enemies;
 
 namespace PlatformerStarter
 {
@@ -176,11 +177,11 @@ namespace PlatformerStarter
             
             if(theirObject.TestObjectType(PlatformerData.ActorObjectType))
             {
-                ActorComponent actor = theirObject.Components.FindComponent<ActorComponent>();
+                EnemyActorComponent actor = theirObject.Components.FindComponent<EnemyActorComponent>();
 
                 // Deal damage to the enemy
                 if (actor != null)
-                    actor.TakeDamage(damage, theirObject, true, true);
+                    actor.TakeDamage(damage, theirObject);
             }
 
             else

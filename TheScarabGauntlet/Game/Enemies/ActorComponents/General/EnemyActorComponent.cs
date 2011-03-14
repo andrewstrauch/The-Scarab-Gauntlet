@@ -14,6 +14,8 @@ namespace PlatformerStarter.Enemies
     {
         protected List<IBehavior> actorBehavior;
         protected bool readyToAttack;
+        private int numDroppedCrystals;
+        private T2DSceneObject crystalTemplate;
 
         #region Properties
         public List<IBehavior> AIComponent
@@ -27,6 +29,16 @@ namespace PlatformerStarter.Enemies
             get { return readyToAttack; }
             set { readyToAttack = value; }
         }
+        public int NumDroppedCrystals
+        {
+            get { return numDroppedCrystals; }
+            set { numDroppedCrystals = value; }
+        }
+        public T2DSceneObject CrystalTemplate
+        {
+            get { return crystalTemplate; }
+            set { crystalTemplate = value; }
+        }
         #endregion
 
         public override void CopyTo(TorqueComponent obj)
@@ -36,6 +48,8 @@ namespace PlatformerStarter.Enemies
             EnemyActorComponent obj2 = obj as EnemyActorComponent;
 
             obj2.AIComponent = AIComponent;
+            obj2.CrystalTemplate = CrystalTemplate;
+            obj2.NumDroppedCrystals = NumDroppedCrystals;
         }
 
         protected override void _preUpdate(float elapsed)
@@ -58,7 +72,20 @@ namespace PlatformerStarter.Enemies
 
         public override bool TakeDamage(float damage, T2DSceneObject sourceObject)
         {
-            return false;
+            if(!Alive)
+                return false;
+
+            float startHealth = _health;
+
+            _health -= damage;
+            _health = MathHelper.Clamp(_health, 0, _maxHealth);
+
+            if (_health == 0)
+                _die(startHealth - _health, sourceObject);
+            else
+                _tookDamage(startHealth - _health, sourceObject);
+
+            return true;
         }
 
         protected override void _die(float damage, T2DSceneObject sourceObject)
@@ -72,6 +99,24 @@ namespace PlatformerStarter.Enemies
 
                 if (spawned != null)
                     spawned.Recover = false;
+            }
+
+            DropCrystals();
+        }
+
+        private void DropCrystals()
+        {
+            if (crystalTemplate != null)
+            {
+                T2DSceneObject crystal;
+                Random rand = new Random();
+
+                for (int i = 0; i < numDroppedCrystals; ++i)
+                {
+                    crystal = crystalTemplate.Clone() as T2DSceneObject;
+                    crystal.Position = SceneObject.Position + new Vector2(rand.Next(-10, 11), 0);
+                    TorqueObjectDatabase.Instance.Register(crystal);
+                }
             }
         }
 

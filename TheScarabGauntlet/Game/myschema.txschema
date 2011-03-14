@@ -84,7 +84,6 @@
       </Element>
       <Element name="MaxHealth">
         <Type>System.Single</Type>
-        <DefaultValue>100</DefaultValue>
       </Element>
       <Element name="Armor">
         <Type>System.Single</Type>
@@ -361,6 +360,12 @@
         <IsList>true</IsList>
         <Type>PlatformerStarter.Enemies.IBehavior</Type>
       </Element>
+      <Element name="NumDroppedCrystals">
+        <Type>System.Int32</Type>
+      </Element>
+      <Element name="CrystalTemplate">
+        <Type>GarageGames.Torque.T2D.T2DSceneObject</Type>
+      </Element>
       <Element name="MaxVelocity">
         <Type>Microsoft.Xna.Framework.Vector2</Type>
         <DefaultValue>200 200</DefaultValue>
@@ -439,7 +444,6 @@
       </Element>
       <Element name="MaxHealth">
         <Type>System.Single</Type>
-        <DefaultValue>100</DefaultValue>
       </Element>
       <Element name="Armor">
         <Type>System.Single</Type>
@@ -541,6 +545,12 @@
         <IsList>true</IsList>
         <Type>PlatformerStarter.Enemies.IBehavior</Type>
       </Element>
+      <Element name="NumDroppedCrystals">
+        <Type>System.Int32</Type>
+      </Element>
+      <Element name="CrystalTemplate">
+        <Type>GarageGames.Torque.T2D.T2DSceneObject</Type>
+      </Element>
       <Element name="MaxVelocity">
         <Type>Microsoft.Xna.Framework.Vector2</Type>
         <DefaultValue>200 200</DefaultValue>
@@ -619,7 +629,6 @@
       </Element>
       <Element name="MaxHealth">
         <Type>System.Single</Type>
-        <DefaultValue>100</DefaultValue>
       </Element>
       <Element name="Armor">
         <Type>System.Single</Type>
@@ -936,6 +945,19 @@
         <Type>System.Single</Type>
       </Element>
     </Type>
+    <Type name="GoldCrystalCollectible" fullName="PlatformerStarter.Common.Collectibles.GoldCrystalCollectible">
+      <Dependencies>
+        <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
+      </Dependencies>
+      <IsComponent>true</IsComponent>
+      <Element name="Components">
+        <IsList>true</IsList>
+        <Type>GarageGames.Torque.Core.TorqueComponent</Type>
+      </Element>
+      <Element name="Name">
+        <Type>System.String</Type>
+      </Element>
+    </Type>
     <Type name="GruntActorComponent" fullName="PlatformerStarter.Enemies.GruntActorComponent">
       <Dependencies>
         <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
@@ -959,6 +981,12 @@
       <Element name="AIComponent">
         <IsList>true</IsList>
         <Type>PlatformerStarter.Enemies.IBehavior</Type>
+      </Element>
+      <Element name="NumDroppedCrystals">
+        <Type>System.Int32</Type>
+      </Element>
+      <Element name="CrystalTemplate">
+        <Type>GarageGames.Torque.T2D.T2DSceneObject</Type>
       </Element>
       <Element name="MaxVelocity">
         <Type>Microsoft.Xna.Framework.Vector2</Type>
@@ -1038,7 +1066,6 @@
       </Element>
       <Element name="MaxHealth">
         <Type>System.Single</Type>
-        <DefaultValue>100</DefaultValue>
       </Element>
       <Element name="Armor">
         <Type>System.Single</Type>
@@ -1187,6 +1214,12 @@
         <IsList>true</IsList>
         <Type>PlatformerStarter.Enemies.IBehavior</Type>
       </Element>
+      <Element name="NumDroppedCrystals">
+        <Type>System.Int32</Type>
+      </Element>
+      <Element name="CrystalTemplate">
+        <Type>GarageGames.Torque.T2D.T2DSceneObject</Type>
+      </Element>
       <Element name="MaxVelocity">
         <Type>Microsoft.Xna.Framework.Vector2</Type>
         <DefaultValue>200 200</DefaultValue>
@@ -1265,7 +1298,6 @@
       </Element>
       <Element name="MaxHealth">
         <Type>System.Single</Type>
-        <DefaultValue>100</DefaultValue>
       </Element>
       <Element name="Armor">
         <Type>System.Single</Type>
@@ -1390,6 +1422,12 @@
         <IsList>true</IsList>
         <Type>PlatformerStarter.Enemies.IBehavior</Type>
       </Element>
+      <Element name="NumDroppedCrystals">
+        <Type>System.Int32</Type>
+      </Element>
+      <Element name="CrystalTemplate">
+        <Type>GarageGames.Torque.T2D.T2DSceneObject</Type>
+      </Element>
       <Element name="MaxVelocity">
         <Type>Microsoft.Xna.Framework.Vector2</Type>
         <DefaultValue>200 200</DefaultValue>
@@ -1468,7 +1506,6 @@
       </Element>
       <Element name="MaxHealth">
         <Type>System.Single</Type>
-        <DefaultValue>100</DefaultValue>
       </Element>
       <Element name="Armor">
         <Type>System.Single</Type>
@@ -1857,7 +1894,6 @@
       </Element>
       <Element name="MaxHealth">
         <Type>System.Single</Type>
-        <DefaultValue>100</DefaultValue>
       </Element>
       <Element name="Armor">
         <Type>System.Single</Type>
@@ -2148,6 +2184,12 @@
         <IsList>true</IsList>
         <Type>PlatformerStarter.Enemies.IBehavior</Type>
       </Element>
+      <Element name="NumDroppedCrystals">
+        <Type>System.Int32</Type>
+      </Element>
+      <Element name="CrystalTemplate">
+        <Type>GarageGames.Torque.T2D.T2DSceneObject</Type>
+      </Element>
       <Element name="MaxVelocity">
         <Type>Microsoft.Xna.Framework.Vector2</Type>
         <DefaultValue>200 200</DefaultValue>
@@ -2226,7 +2268,6 @@
       </Element>
       <Element name="MaxHealth">
         <Type>System.Single</Type>
-        <DefaultValue>100</DefaultValue>
       </Element>
       <Element name="Armor">
         <Type>System.Single</Type>
@@ -4162,6 +4203,7 @@
         <Type>GarageGames.Torque.T2D.T2DWorldLimitComponent</Type>
         <Type>PlatformerStarter.AttackCollisionComponent</Type>
         <Type>PlatformerStarter.BoundedRotationComponent</Type>
+        <Type>PlatformerStarter.Common.Collectibles.GoldCrystalCollectible</Type>
         <Type>PlatformerStarter.Common.Collectibles.HealthCollectibleComponent</Type>
         <Type>PlatformerStarter.Common.Collectibles.ScarabCollectibleComponent</Type>
         <Type>PlatformerStarter.Common.CutsceneTrigger</Type>

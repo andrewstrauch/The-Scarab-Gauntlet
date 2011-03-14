@@ -117,6 +117,7 @@ namespace PlatformerStarter
             SoundManager.Instance.RegisterSoundGroup("kushling", @"data\sound\kushling.xwb", @"data\sound\kushling.xsb");
             SoundManager.Instance.RegisterSoundGroup("hulk", @"data\sound\hulk.xwb", @"data\sound\hulk.xsb");
             SoundManager.Instance.RegisterSoundGroup("music", @"data\sound\music.xwb", @"data\sound\music.xsb");
+            SoundManager.Instance.RegisterSoundGroup("sounds", @"data\sound\sounds.xwb", @"data\sound\sounds.xsb");
         }
 
         public void TogglePause()

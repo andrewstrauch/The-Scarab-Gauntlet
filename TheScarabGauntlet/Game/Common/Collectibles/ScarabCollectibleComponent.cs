@@ -6,9 +6,12 @@ using Microsoft.Xna.Framework;
 
 using GarageGames.Torque.Core;
 using GarageGames.Torque.T2D;
+using GarageGames.Torque.GameUtil;
 using GarageGames.Torque.PlatformerFramework;
 using GarageGames.Torque.XNA;
+using GarageGames.Torque.GUI;
 using PlatformerStarter.Common.Util;
+using PlatformerStarter.Common.GUI;
 
 namespace PlatformerStarter.Common.Collectibles
 {
@@ -46,16 +49,16 @@ namespace PlatformerStarter.Common.Collectibles
         {
             if(actor is PlayerActorComponent)
             {
-              /*  if(ourObject.TestObjectType(PlatformerData.SpawnedObjectType))
+                if(ourObject.TestObjectType(PlatformerData.SpawnedObjectType))
                 {
                     CheckpointSystemSpawnedObjectComponent spawnedComp = ourObject.Components.FindComponent<CheckpointSystemSpawnedObjectComponent>();
 
                     if(spawnedComp != null)
                         spawnedComp.Recover = false;
-                }*/
+                }
                 
                 // Play sound effect here!
-                //SoundManager.Instance.PlaySound("sound");
+                SoundManager.Instance.PlaySound("sounds", "checkpoint");
                 CheckpointManager.Instance.CheckpointReached();
 
                 // set the new respawn position of the actor
@@ -64,7 +67,9 @@ namespace PlatformerStarter.Common.Collectibles
                 else
                     actor.RespawnPosition = actor.Actor.Position;
 
+                //GUICanvas.Instance.SetContentControl(new Checkpoint_GUI(SceneObject.Position + new Vector2(0, -5)));
                 effect.Spawn(SceneObject.Position);
+                
                 // true = yes, i was picked up. delete me!
                 return true;
             }

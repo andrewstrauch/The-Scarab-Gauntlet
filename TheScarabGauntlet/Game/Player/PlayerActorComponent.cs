@@ -244,8 +244,8 @@ namespace PlatformerStarter
         public void ApplyDamageEffects()
         {
             isInvincible = true;
-            SceneObject.ObjectType -= PlatformerData.ActorObjectType;
-            //SceneObject.CollisionsEnabled = false;  // IT'S A BUG!!!!
+            //SceneObject.ObjectType -= PlatformerData.ActorObjectType;
+            SceneObject.CollisionsEnabled = false;  // IT'S A BUG!!!!
             attackActions.GetAction("invincibility").Timer.Start();
             attackActions.GetAction("invincibility").ReadyToAct = false;
         }
@@ -274,6 +274,12 @@ namespace PlatformerStarter
             else
                 Controller.PossessMover(this);
         }
+
+        public void AddGoldCrystal()
+        {
+            ++healthbar.NumCollectedCrystals;
+        }
+
         #endregion
 
         #region Private Routines
@@ -294,6 +300,8 @@ namespace PlatformerStarter
                 else
                     SceneObject.Visible = true;
             }
+            else
+                SceneObject.CollisionsEnabled = true;
             //else
               //  SceneObject.ObjectType += PlatformerData.ActorObjectType;
                 //SceneObject.CollisionsEnabled = true;
@@ -364,8 +372,6 @@ namespace PlatformerStarter
             CustomConsoleRoutinePool.Instance.RegisterMethod(HealPlayer);
             CustomConsoleRoutinePool.Instance.RegisterMethod(WarpToCheckpoint);
 #endif
-
-            //Console.Write(PunchAnim.Name);
 
             return true;
         }

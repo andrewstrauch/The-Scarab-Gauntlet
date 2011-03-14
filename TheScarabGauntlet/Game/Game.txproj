@@ -15,23 +15,23 @@
                     <class>T2DPhysicsMaterial</class>
                     <superclass></superclass>
                     <DynamicFieldCount>3</DynamicFieldCount>
-                    <DynamicFieldName0>priority</DynamicFieldName0>
-                    <DynamicFieldValue0>0</DynamicFieldValue0>
-                    <DynamicFieldName1>Restitution</DynamicFieldName1>
-                    <DynamicFieldValue1>1</DynamicFieldValue1>
-                    <DynamicFieldName2>Friction</DynamicFieldName2>
-                    <DynamicFieldValue2>0.3</DynamicFieldValue2>
+                    <DynamicFieldName0>Restitution</DynamicFieldName0>
+                    <DynamicFieldValue0>1</DynamicFieldValue0>
+                    <DynamicFieldName1>Friction</DynamicFieldName1>
+                    <DynamicFieldValue1>0.3</DynamicFieldValue1>
+                    <DynamicFieldName2>priority</DynamicFieldName2>
+                    <DynamicFieldValue2>0</DynamicFieldValue2>
                 </ScriptObject>
                 <ScriptObject name="DefaultCollisionMaterial">
                     <class>T2DPhysicsMaterial</class>
                     <superclass></superclass>
                     <DynamicFieldCount>3</DynamicFieldCount>
-                    <DynamicFieldName0>priority</DynamicFieldName0>
-                    <DynamicFieldValue0>0</DynamicFieldValue0>
-                    <DynamicFieldName1>Restitution</DynamicFieldName1>
-                    <DynamicFieldValue1>1</DynamicFieldValue1>
-                    <DynamicFieldName2>Friction</DynamicFieldName2>
-                    <DynamicFieldValue2>0.3</DynamicFieldValue2>
+                    <DynamicFieldName0>Restitution</DynamicFieldName0>
+                    <DynamicFieldValue0>1</DynamicFieldValue0>
+                    <DynamicFieldName1>Friction</DynamicFieldName1>
+                    <DynamicFieldValue1>0.3</DynamicFieldValue1>
+                    <DynamicFieldName2>priority</DynamicFieldName2>
+                    <DynamicFieldValue2>0</DynamicFieldValue2>
                 </ScriptObject>
                 <t2dImageMapDatablock name="vinesMaterial">
                     <imageMode>FULL</imageMode>
@@ -4920,6 +4920,62 @@
                     <startFrame>0</startFrame>
                     <DynamicFieldCount>0</DynamicFieldCount>
                 </t2dAnimationDatablock>
+                <t2dImageMapDatablock name="crystalMaterial">
+                    <imageMode>FULL</imageMode>
+                    <filterPad>false</filterPad>
+                    <preferPerf>true</preferPerf>
+                    <linkImageMaps></linkImageMaps>
+                    <preload>true</preload>
+                    <allowUnload>false</allowUnload>
+                    <DynamicFieldCount>9</DynamicFieldCount>
+                    <DynamicFieldName0>specularPower</DynamicFieldName0>
+                    <DynamicFieldValue0>0.000</DynamicFieldValue0>
+                    <DynamicFieldName1>refractive</DynamicFieldName1>
+                    <DynamicFieldValue1>0</DynamicFieldValue1>
+                    <DynamicFieldName2>specularColor</DynamicFieldName2>
+                    <DynamicFieldValue2>1 1 1 1</DynamicFieldValue2>
+                    <DynamicFieldName3>forceCelled</DynamicFieldName3>
+                    <DynamicFieldValue3>0</DynamicFieldValue3>
+                    <DynamicFieldName4>additive</DynamicFieldName4>
+                    <DynamicFieldValue4>0</DynamicFieldValue4>
+                    <DynamicFieldName5>enableLighting</DynamicFieldName5>
+                    <DynamicFieldValue5>0</DynamicFieldValue5>
+                    <DynamicFieldName6>specularIntensity</DynamicFieldName6>
+                    <DynamicFieldValue6>1.000</DynamicFieldValue6>
+                    <DynamicFieldName7>translucent</DynamicFieldName7>
+                    <DynamicFieldValue7>0</DynamicFieldValue7>
+                    <DynamicFieldName8>refractiveAmount</DynamicFieldName8>
+                    <DynamicFieldValue8>1</DynamicFieldValue8>
+                    <imageName>data/images/crystal.png</imageName>
+                </t2dImageMapDatablock>
+                <t2dImageMapDatablock name="sunburst2Material">
+                    <imageMode>FULL</imageMode>
+                    <filterPad>false</filterPad>
+                    <preferPerf>true</preferPerf>
+                    <linkImageMaps></linkImageMaps>
+                    <preload>true</preload>
+                    <allowUnload>false</allowUnload>
+                    <DynamicFieldCount>9</DynamicFieldCount>
+                    <DynamicFieldName0>specularPower</DynamicFieldName0>
+                    <DynamicFieldValue0>0.000</DynamicFieldValue0>
+                    <DynamicFieldName1>refractive</DynamicFieldName1>
+                    <DynamicFieldValue1>0</DynamicFieldValue1>
+                    <DynamicFieldName2>specularColor</DynamicFieldName2>
+                    <DynamicFieldValue2>1 1 1 1</DynamicFieldValue2>
+                    <DynamicFieldName3>forceCelled</DynamicFieldName3>
+                    <DynamicFieldValue3>0</DynamicFieldValue3>
+                    <DynamicFieldName4>additive</DynamicFieldName4>
+                    <DynamicFieldValue4>0</DynamicFieldValue4>
+                    <DynamicFieldName5>enableLighting</DynamicFieldName5>
+                    <DynamicFieldValue5>0</DynamicFieldValue5>
+                    <DynamicFieldName6>specularIntensity</DynamicFieldName6>
+                    <DynamicFieldValue6>1.000</DynamicFieldValue6>
+                    <DynamicFieldName7>translucent</DynamicFieldName7>
+                    <DynamicFieldValue7>0</DynamicFieldValue7>
+                    <DynamicFieldName8>refractiveAmount</DynamicFieldName8>
+                    <DynamicFieldValue8>1</DynamicFieldValue8>
+                    <imageName>data/images/sunburst2.png</imageName>
+                </t2dImageMapDatablock>
             </SimSet>
         </StaticSprites>
         <Brushes>

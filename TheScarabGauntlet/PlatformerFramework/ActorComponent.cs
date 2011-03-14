@@ -621,7 +621,7 @@ namespace GarageGames.Torque.PlatformerFramework
         /// <summary>
         /// This specifies the maximum amount of health this Actor can have.
         /// </summary>
-        [TorqueXmlSchemaType(DefaultValue = "100")]
+        //[TorqueXmlSchemaType(DefaultValue = "100")]
         public float MaxHealth
         {
             get { return _maxHealth; }
@@ -1417,6 +1417,8 @@ namespace GarageGames.Torque.PlatformerFramework
             // initialize animation manager
             // (this will handle all our animations and transitions)
             _initAnimationManager();
+
+            _health = _maxHealth;
 
             // return true
             return true;
@@ -2238,8 +2240,8 @@ namespace GarageGames.Torque.PlatformerFramework
         protected float _moveDecel;
 
         // health and damage
-        protected float _health = 100.0f;
-        protected float _maxHealth = 100.0f;
+        protected float _health;
+        protected float _maxHealth;
         protected float _armorModifier = 1.0f;
         protected float _damageTimeout = 1f;
         protected bool _alive = true;

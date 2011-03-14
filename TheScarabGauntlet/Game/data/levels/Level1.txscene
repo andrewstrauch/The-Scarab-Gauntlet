@@ -24,7 +24,7 @@
                 <BinCount>256</BinCount>
             </T2DSceneContainer>
         </T2DSceneGraph>
-        <Camera2D name="Camera">
+        <Camera2D name="">
             <CenterPosition>
                 <X>-249.004089</X>
                 <Y>-2.082368</Y>
@@ -920,6 +920,16 @@
                 <CellCountX>4</CellCountX>
                 <CellCountY>4</CellCountY>
             </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="crystalMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/crystal.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
+        <SimpleMaterial name="sunburst2Material" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/sunburst2.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
         </SimpleMaterial>
     </Materials>
     <Objects>
@@ -6537,6 +6547,7 @@
                             <Attacks>true</Attacks>
                         </AIKamikazeeComponent>
                     </AIComponent>
+                    <NumDroppedCrystals>0</NumDroppedCrystals>
                     <MaxVelocity>
                         <X>200</X>
                         <Y>200</Y>
@@ -6559,7 +6570,7 @@
                     <GroundYBuffer>0.15</GroundYBuffer>
                     <LadderAttachXThreshold>1</LadderAttachXThreshold>
                     <MaxGroundNormalY>-0.1</MaxGroundNormalY>
-                    <MaxHealth>100</MaxHealth>
+                    <MaxHealth>10.000</MaxHealth>
                     <Armor>0</Armor>
                     <Lives>10</Lives>
                     <DamageTimeout>0.75</DamageTimeout>
@@ -6833,6 +6844,13 @@
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
             <Components inPlace="true">
+                <WeaponComponent type="PlatformerStarter.WeaponComponent">
+                    <Damage>0</Damage>
+                    <ShotSpeed>20</ShotSpeed>
+                    <ShotAngle>45.0</ShotAngle>
+                    <LinkPointName>PunchLP</LinkPointName>
+                    <ProjectileTemplate nameRef="amanda_projectile" />
+                </WeaponComponent>
                 <CheckpointSystemSpawnedObjectComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnedObjectComponent" />
                 <T2DLinkPointComponent type="GarageGames.Torque.T2D.T2DLinkPointComponent">
                     <LinkPoints>
@@ -38988,6 +39006,8 @@
                             <Attacks>true</Attacks>
                         </AIChaseComponent>
                     </AIComponent>
+                    <NumDroppedCrystals>3</NumDroppedCrystals>
+                    <CrystalTemplate nameRef="gold_crystal" />
                     <MaxVelocity>
                         <X>200</X>
                         <Y>200</Y>
@@ -40782,6 +40802,7 @@
                             <Attacks>false</Attacks>
                         </AIChaseComponent>
                     </AIComponent>
+                    <NumDroppedCrystals>0</NumDroppedCrystals>
                     <MaxVelocity>
                         <X>200</X>
                         <Y>200</Y>
@@ -41570,6 +41591,7 @@
                             <Attacks>true</Attacks>
                         </AIRangedComponent>
                     </AIComponent>
+                    <NumDroppedCrystals>0</NumDroppedCrystals>
                     <MaxVelocity>
                         <X>200</X>
                         <Y>200</Y>
@@ -49229,7 +49251,7 @@
             </Size>
             <Position>
                 <X>-695.000</X>
-                <Y>-263.053</Y>
+                <Y>-258.053</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>
@@ -52977,6 +52999,7 @@
                             <Attacks>true</Attacks>
                         </AIHybridComponent>
                     </AIComponent>
+                    <NumDroppedCrystals>0</NumDroppedCrystals>
                     <MaxVelocity>
                         <X>200</X>
                         <Y>200</Y>
@@ -53479,5 +53502,192 @@
                 <Y>0.000000</Y>
             </SortPoint>
         </T2DSceneObject>
+        <StaticSprite name="gold_crystal">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <CheckpointSystemSpawnedObjectComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnedObjectComponent" />
+                <GoldCrystalCollectible type="PlatformerStarter.Common.Collectibles.GoldCrystalCollectible" />
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.49367</X>
+                                    <Y>-0.36752</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.54430</X>
+                                    <Y>0.50916</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.55063</X>
+                                    <Y>0.50672</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.56962</X>
+                                    <Y>-0.37241</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>5.178</X>
+                <Y>13.407</Y>
+            </Size>
+            <Position>
+                <X>-619.602</X>
+                <Y>-213.297</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="crystalMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite>
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <CheckpointSystemSpawnPointComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnPointComponent">
+                    <Target nameRef="Amanda" />
+                    <MinSpawnDistance>0</MinSpawnDistance>
+                    <MaxSpawnDistance>150</MaxSpawnDistance>
+                    <AutoDespawnObjects>true</AutoDespawnObjects>
+                    <SpawnObject nameRef="gold_crystal" />
+                    <SpawnLimit>1</SpawnLimit>
+                    <SpawnTimeout>1000</SpawnTimeout>
+                </CheckpointSystemSpawnPointComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>9.847</X>
+                <Y>28.407</Y>
+            </Size>
+            <Position>
+                <X>-234.924</X>
+                <Y>-4.203</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="crystalMaterial" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
+        <StaticSprite name="amanda_projectile">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
+                    <Velocity>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Velocity>
+                    <AngularVelocity>0.0</AngularVelocity>
+                    <InverseMass>1.0</InverseMass>
+                    <RotationScale>1.0</RotationScale>
+                    <ProcessCollisionsAtRest>false</ProcessCollisionsAtRest>
+                </T2DPhysicsComponent>
+                <T2DCollisionComponent type="GarageGames.Torque.T2D.T2DCollisionComponent">
+                    <Images>
+                        <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
+                            <CollisionPolyBasis>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>0.28251</X>
+                                    <Y>0.01871</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.06129</X>
+                                    <Y>0.37554</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.43199</X>
+                                    <Y>0.01583</Y>
+                                </Vector2>
+                                <Vector2 type="Microsoft.Xna.Framework.Vector2">
+                                    <X>-0.08221</X>
+                                    <Y>-0.37266</Y>
+                                </Vector2>
+                            </CollisionPolyBasis>
+                            <CollisionPolyScale>
+                                <X>1</X>
+                                <Y>1</Y>
+                            </CollisionPolyScale>
+                        </T2DPolyImage>
+                    </Images>
+                    <RenderCollisionBounds>false</RenderCollisionBounds>
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <SolveOverlap>true</SolveOverlap>
+                    <CollisionMaterial nameRef="DefaultCollisionMaterial" />
+                </T2DCollisionComponent>
+            </Components>
+            <ObjectType>
+                <object objTypeRef="t2dSpriteType" />
+            </ObjectType>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>true</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>28.204</X>
+                <Y>29.298</Y>
+            </Size>
+            <Position>
+                <X>-586.625</X>
+                <Y>-201.566</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+            <Material nameRef="sunburst2Material" />
+            <MaterialRegionIndex>0</MaterialRegionIndex>
+        </StaticSprite>
     </Objects>
 </TorqueSceneData>

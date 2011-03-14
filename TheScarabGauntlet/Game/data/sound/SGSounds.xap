@@ -1220,12 +1220,6 @@ Wave Bank
     Windows Bank Path Edited = 0;
     Seek Tables = 1;
     Compression Preset Name = <none>;
-    Xbox Bank Last Modified Low = 0;
-    Xbox Bank Last Modified High = 0;
-    PC Bank Last Modified Low = 0;
-    PC Bank Last Modified High = 0;
-    Header Last Modified Low = 0;
-    Header Last Modified High = 0;
     Bank Last Revised Low = 2317558049;
     Bank Last Revised High = 30135978;
 
@@ -4034,8 +4028,8 @@ Sound Bank
     Sound
     {
         Name = checkpoint;
-        Volume = -1200;
-        Pitch = 0;
+        Volume = 600;
+        Pitch = 1200;
         Priority = 0;
 
         Category Entry
