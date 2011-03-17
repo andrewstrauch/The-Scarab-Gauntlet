@@ -110,7 +110,6 @@
     <Compile Include="Common\Util\CameraManager.cs" />
     <Compile Include="Common\CustomCollision.cs" />
     <Compile Include="Common\PlatformBehaviors.cs" />
-    <Compile Include="Common\Util\SpawnedParticle.cs" />
     <Compile Include="Common\Util\MountedParticle.cs" />
     <Compile Include="Common\Traps\TikiFlameTrapComponent.cs" />
     <Compile Include="Common\Traps\TrapComponent.cs" />

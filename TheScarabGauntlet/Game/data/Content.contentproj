@@ -816,6 +816,21 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+    <Compile Include="images\gold pickup crystal.png">
+      <Name>gold pickup crystal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\redcrystal.png">
+      <Name>redcrystal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\shadowleavesmask2 %28reworked%29.png">
+      <Name>shadowleavesmask2 %28reworked%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
     <Content Include="levels\Level1.txscene">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>Level1</Name>

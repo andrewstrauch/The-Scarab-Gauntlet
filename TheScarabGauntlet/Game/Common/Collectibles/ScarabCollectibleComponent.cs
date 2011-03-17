@@ -47,6 +47,8 @@ namespace PlatformerStarter.Common.Collectibles
 
         protected override bool _confirmPickup(T2DSceneObject ourObject, T2DSceneObject theirObject, ActorComponent actor)
         {
+            base._confirmPickup(ourObject, theirObject, actor);
+
             if(actor is PlayerActorComponent)
             {
                 if(ourObject.TestObjectType(PlatformerData.SpawnedObjectType))

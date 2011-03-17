@@ -124,6 +124,7 @@
     <Compile Include="Extensions\ConsoleParser.cs" />
     <Compile Include="Extensions\CustomConsoleRoutinePool.cs" />
     <Compile Include="Extensions\GUITextEdit.cs" />
+    <Compile Include="Extensions\SpawnedParticle.cs" />
     <Compile Include="Extensions\TorqueTools.cs" />
     <Compile Include="Extensions\ExtPlatformerData.cs" />
     <Compile Include="Extensions\PathComponent.cs" />

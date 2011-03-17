@@ -3,7 +3,10 @@ using Microsoft.Xna.Framework;
 using GarageGames.Torque.T2D;
 using GarageGames.Torque.Core;
 using GarageGames.Torque.Sim;
+using GarageGames.Torque.GameUtil;
 using GarageGames.Torque.PlatformerFramework;
+
+using PlatformerStarter.Common.Util;
 
 namespace PlatformerStarter.Common.Collectibles
 {
@@ -14,6 +17,8 @@ namespace PlatformerStarter.Common.Collectibles
 
         protected override bool _confirmPickup(T2DSceneObject ourObject, T2DSceneObject theirObject, ActorComponent actor)
         {
+            base._confirmPickup(ourObject, theirObject, actor);
+
             PlayerActorComponent player = actor as PlayerActorComponent;
 
             if (player != null)
@@ -27,6 +32,7 @@ namespace PlatformerStarter.Common.Collectibles
                 }
 
                 player.AddGoldCrystal();
+                SoundManager.Instance.PlaySound("sounds", "gold_crystal");
 
                 return true;
             }

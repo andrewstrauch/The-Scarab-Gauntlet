@@ -536,7 +536,7 @@
         <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
       </Element>
       <Element name="ExplodeEffect">
-        <Type>PlatformerStarter.Common.Util.SpawnedParticle</Type>
+        <Type>GarageGames.Torque.PlatformerFramework.SpawnedParticle</Type>
       </Element>
       <Element name="ExplosionDelay">
         <Type>System.Single</Type>
@@ -819,6 +819,9 @@
         <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
       </Dependencies>
       <IsComponent>true</IsComponent>
+      <Element name="Effect">
+        <Type>GarageGames.Torque.PlatformerFramework.SpawnedParticle</Type>
+      </Element>
       <Element name="Components">
         <IsList>true</IsList>
         <Type>GarageGames.Torque.Core.TorqueComponent</Type>
@@ -950,6 +953,9 @@
         <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
       </Dependencies>
       <IsComponent>true</IsComponent>
+      <Element name="Effect">
+        <Type>GarageGames.Torque.PlatformerFramework.SpawnedParticle</Type>
+      </Element>
       <Element name="Components">
         <IsList>true</IsList>
         <Type>GarageGames.Torque.Core.TorqueComponent</Type>
@@ -1172,6 +1178,9 @@
       <IsComponent>true</IsComponent>
       <Element name="HealingValue">
         <Type>System.Int32</Type>
+      </Element>
+      <Element name="Effect">
+        <Type>GarageGames.Torque.PlatformerFramework.SpawnedParticle</Type>
       </Element>
       <Element name="Components">
         <IsList>true</IsList>
@@ -2080,7 +2089,7 @@
       </Dependencies>
       <IsComponent>true</IsComponent>
       <Element name="Effect">
-        <Type>PlatformerStarter.Common.Util.SpawnedParticle</Type>
+        <Type>GarageGames.Torque.PlatformerFramework.SpawnedParticle</Type>
       </Element>
       <Element name="Components">
         <IsList>true</IsList>
@@ -3609,7 +3618,7 @@
         <Type>System.Single</Type>
       </Element>
     </Type>
-    <Type name="SpawnedParticle" fullName="PlatformerStarter.Common.Util.SpawnedParticle">
+    <Type name="SpawnedParticle" fullName="GarageGames.Torque.PlatformerFramework.SpawnedParticle">
       <Element name="Effect">
         <Type>GarageGames.Torque.T2D.T2DParticleEffect</Type>
       </Element>

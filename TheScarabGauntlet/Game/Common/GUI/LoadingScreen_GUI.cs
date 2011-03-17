@@ -34,17 +34,43 @@ namespace PlatformerStarter.Common.GUI
             textStyle.TextColor[CustomColor.ColorBase] = Color.White;
             textStyle.Alignment = TextAlignment.JustifyCenter;
 
-            // Based on 1024 * 768
-            float positionX = 512;
-            float positionY = 400;
 
-            GUIText pauseText = new GUIText();
+            GUITextStyle controlsStyle = new GUITextStyle();
+            controlsStyle.FontType = "Arial22";
+            textStyle.TextColor[CustomColor.ColorBase] = Color.White;
+            textStyle.Alignment = TextAlignment.JustifyLeft;
+
+            // Based on 1024 * 768
+            float positionX = 500;
+            float positionY = 200;
+
+            GUIText pauseText;
+            string[] controls = 
+            {
+                "Controls:", "A - Move Left", "D - Move Right",
+                "Spacebar - Jump", "U - Punch", "I - Swipe" 
+            };
+
+            for(int i = 0; i < controls.Length; ++i)
+            {
+                pauseText = new GUIText();
+                pauseText.Style = textStyle;
+                pauseText.Text = controls[i];
+                pauseText.Size = new Vector2(pauseText.Size.X, pauseText.Size.Y+15);
+                pauseText.Position = new Vector2(positionX - (pauseText.Size.X / 2), positionY + ((i + 1) * pauseText.Size.Y / 2));
+                pauseText.Visible = true;
+                pauseText.Folder = this;
+            }
+
+            pauseText = new GUIText();
             pauseText.Style = textStyle;
             pauseText.Text = "Loading...";
-            pauseText.Size = new Vector2(150, 100);
-            pauseText.Position = new Vector2(positionX - (pauseText.Size.X / 2), positionY);
+            pauseText.Size = new Vector2(pauseText.Size.X, pauseText.Size.Y + 15);
+            pauseText.Position = new Vector2(positionX - (pauseText.Size.X / 2), positionY + (10 * pauseText.Size.Y / 2));
             pauseText.Visible = true;
             pauseText.Folder = this;
+            
+                
         }
 
         #endregion

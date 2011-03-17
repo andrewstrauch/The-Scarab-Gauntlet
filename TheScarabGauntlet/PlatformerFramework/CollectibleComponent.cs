@@ -12,6 +12,8 @@ using Microsoft.Xna.Framework;
 using GarageGames.Torque.Core;
 using GarageGames.Torque.T2D;
 
+using GarageGames.Torque.PlatformerFramework;
+
 namespace GarageGames.Torque.PlatformerFramework
 {
     /// <summary>
@@ -21,6 +23,36 @@ namespace GarageGames.Torque.PlatformerFramework
     [TorqueXmlSchemaType]
     public class CollectibleComponent : DirectionalTriggerComponent
     {
+        #region Private Members
+
+        private SpawnedParticle effect;
+
+        #endregion
+
+
+        #region Public Properties
+
+        public SpawnedParticle Effect
+        {
+            get { return effect; }
+            set { effect = value; }
+        }
+
+        #endregion
+
+        #region Public Routines
+
+        public override void CopyTo(TorqueComponent obj)
+        {
+            base.CopyTo(obj);
+
+            CollectibleComponent obj2 = obj as CollectibleComponent;
+
+            obj2.Effect = Effect;
+        }
+
+        #endregion
+
         //======================================================
         #region Private, protected, internal methods
 
@@ -58,6 +90,9 @@ namespace GarageGames.Torque.PlatformerFramework
         /// <returns>True if the Actor should be allowed to pick up the collectible.</returns>
         protected virtual bool _confirmPickup(T2DSceneObject ourObject, T2DSceneObject theirObject, ActorComponent actor)
         {
+            if(effect != null) 
+                effect.Spawn(SceneObject.Position);
+
             // this should be overridden by derived classes
             // a return value of false will result in the collectible remaining in the scene
             // a return value of true will result in the collectible being removed from the scene

@@ -451,8 +451,8 @@ namespace PlatformerStarter
 
                 //jukeBox = new JukeBox("music.wav", Game.Instance.Content);
 
-                PlatformerStarter.Common.ParallaxManager.Instance.Target = SceneObject;
-                //ParallaxManager.Instance.ParallaxTarget = camera;
+                //PlatformerStarter.Common.ParallaxManager.Instance.Target = SceneObject;
+                ParallaxManager.Instance.ParallaxTarget = camera;
             }
         }
 
