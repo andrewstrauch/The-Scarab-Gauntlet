@@ -77,6 +77,14 @@
   <ItemGroup>
     <Reference Include="GarageGames.TorqueX.Framework, Version=3.1.5.0, Culture=neutral, processorArchitecture=x86" />
     <Reference Include="GarageGames.TorqueX.Framework2D, Version=3.1.5.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="lua51, Version=0.0.0.0, Culture=neutral, PublicKeyToken=1e1fb15b02227b8a, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Desktop\LuaTest\LuaTest\bin\Debug\lua51.dll</HintPath>
+    </Reference>
+    <Reference Include="LuaInterface, Version=2.0.0.16708, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Desktop\LuaTest\LuaTest\bin\Debug\LuaInterface.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Xna.Framework, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d" />
     <Reference Include="Microsoft.Xna.Framework.Game, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d" />
     <Reference Include="mscorlib">
@@ -107,6 +115,7 @@
     <Compile Include="Common\GUI\LoadingScreen_GUI.cs" />
     <Compile Include="Common\ItemDropComponent.cs" />
     <Compile Include="Common\PitHazardComponent.cs" />
+    <Compile Include="Common\ScriptingEngine.cs" />
     <Compile Include="Common\Util\CameraManager.cs" />
     <Compile Include="Common\CustomCollision.cs" />
     <Compile Include="Common\PlatformBehaviors.cs" />
@@ -146,6 +155,7 @@
     <Compile Include="Enemies\AIComponents\Controllers\AIRangedAttackController.cs" />
     <Compile Include="Enemies\AIComponents\Components\AIRangedComponent.cs" />
     <Compile Include="Enemies\AIComponents\Controllers\BaseAIController.cs" />
+    <Compile Include="Enemies\AIComponents\Controllers\LuaAIController.cs" />
     <Compile Include="Game.cs">
       <Name>Game</Name>
     </Compile>

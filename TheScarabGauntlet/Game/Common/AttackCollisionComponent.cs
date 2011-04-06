@@ -12,6 +12,7 @@ using GarageGames.Torque.SceneGraph;
 using GarageGames.Torque.MathUtil;
 using GarageGames.Torque.PlatformerFramework;
 using PlatformerStarter.Enemies;
+using PlatformerStarter.Enemies.ActorComponents;
 
 namespace PlatformerStarter
 {

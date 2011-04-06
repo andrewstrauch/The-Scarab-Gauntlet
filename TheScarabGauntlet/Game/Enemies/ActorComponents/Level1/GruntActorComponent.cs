@@ -12,7 +12,7 @@ using GarageGames.Torque.GUI;
 using GarageGames.Torque.GameUtil;
 using GarageGames.Torque.PlatformerFramework;
 
-namespace PlatformerStarter.Enemies
+namespace PlatformerStarter.Enemies.ActorComponents
 {
     [TorqueXmlSchemaType]
     public class GruntActorComponent : EnemyActorComponent

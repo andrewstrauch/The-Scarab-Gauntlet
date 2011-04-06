@@ -751,8 +751,6 @@ namespace PlatformerStarter
                     if (actorAnimMgr.actorComponent == null)
                         return null;
 
-                    actorAnimMgr.actorComponent.CheckAttack();
-
                     if (!actorAnimMgr.actorComponent.AnimatedSprite.IsAnimationPlaying)
                         return "idle";
 

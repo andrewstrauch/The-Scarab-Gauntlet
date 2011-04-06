@@ -826,8 +826,38 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="images\shadowleavesmask2 %28reworked%29.png">
-      <Name>shadowleavesmask2 %28reworked%29</Name>
+    <Compile Include="images\shadowleavesmaskrework2.png">
+      <Name>shadowleavesmaskrework2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\darkcolorbackingblock %281%29.png">
+      <Name>darkcolorbackingblock %281%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\darkcolorbackingblock %282%29.png">
+      <Name>darkcolorbackingblock %282%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\darkcolorbackingblock.png">
+      <Name>darkcolorbackingblock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\darkcolorbackingblock2.png">
+      <Name>darkcolorbackingblock2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\textureblurmaskingpiece.png">
+      <Name>textureblurmaskingpiece</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\textureblurmaskingpiece1.png">
+      <Name>textureblurmaskingpiece1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

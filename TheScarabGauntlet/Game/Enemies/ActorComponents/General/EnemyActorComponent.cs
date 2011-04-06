@@ -7,7 +7,7 @@ using GarageGames.Torque.XNA;
 using GarageGames.Torque.T2D;
 using GarageGames.Torque.PlatformerFramework;
 
-namespace PlatformerStarter.Enemies
+namespace PlatformerStarter.Enemies.ActorComponents
 {
     [TorqueXmlSchemaType]
     public abstract class EnemyActorComponent : ActorComponent, IEnemyActor

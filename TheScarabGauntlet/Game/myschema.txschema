@@ -964,7 +964,7 @@
         <Type>System.String</Type>
       </Element>
     </Type>
-    <Type name="GruntActorComponent" fullName="PlatformerStarter.Enemies.GruntActorComponent">
+    <Type name="GruntActorComponent" fullName="PlatformerStarter.Enemies.ActorComponents.GruntActorComponent">
       <Dependencies>
         <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
         <Type>GarageGames.Torque.T2D.T2DPhysicsComponent</Type>
@@ -2146,7 +2146,7 @@
         <Type>System.String</Type>
       </Element>
     </Type>
-    <Type name="SpitterActorComponent" fullName="PlatformerStarter.Enemies.SpitterActorComponent">
+    <Type name="SpitterActorComponent" fullName="PlatformerStarter.Enemies.ActorComponents.SpitterActorComponent">
       <Dependencies>
         <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
         <Type>GarageGames.Torque.T2D.T2DPhysicsComponent</Type>
@@ -2798,28 +2798,16 @@
       </Element>
     </Type>
     <Type name="BairneAnimations" fullName="PlatformerStarter.Enemies.ActorComponents.Level1.BairneAnimations">
-      <Element name="LeftRun">
+      <Element name="KushLaunchAnim">
         <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
       </Element>
-      <Element name="RightRun">
+      <Element name="DeathAnim">
         <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
       </Element>
-      <Element name="LeftLaunch">
+      <Element name="SwipeAnim">
         <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
       </Element>
-      <Element name="RightLaunch">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="LeftDie">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="RightDie">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="LeftSwipe">
-        <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
-      </Element>
-      <Element name="RightSwipe">
+      <Element name="VineLaunchAnim">
         <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
       </Element>
     </Type>
@@ -4224,16 +4212,16 @@
         <Type>PlatformerStarter.Common.Traps.TrapComponent</Type>
         <Type>PlatformerStarter.Common.Triggers.TrapTriggerComponent</Type>
         <Type>PlatformerStarter.Enemies.ActorComponents.BomberActorComponent</Type>
+        <Type>PlatformerStarter.Enemies.ActorComponents.GruntActorComponent</Type>
         <Type>PlatformerStarter.Enemies.ActorComponents.HulkActorComponent</Type>
         <Type>PlatformerStarter.Enemies.ActorComponents.Level1.BairneActorComponent</Type>
         <Type>PlatformerStarter.Enemies.ActorComponents.Level1.KushlingActorComponent</Type>
+        <Type>PlatformerStarter.Enemies.ActorComponents.SpitterActorComponent</Type>
         <Type>PlatformerStarter.Enemies.AIComponents.AIChaseComponent</Type>
         <Type>PlatformerStarter.Enemies.AIComponents.AIKamikazeeComponent</Type>
         <Type>PlatformerStarter.Enemies.AIComponents.AIRangedComponent</Type>
         <Type>PlatformerStarter.Enemies.AIHybridComponent</Type>
         <Type>PlatformerStarter.Enemies.BaseAIComponent</Type>
-        <Type>PlatformerStarter.Enemies.GruntActorComponent</Type>
-        <Type>PlatformerStarter.Enemies.SpitterActorComponent</Type>
         <Type>PlatformerStarter.EnemyAttackCollisionComponent</Type>
         <Type>PlatformerStarter.FallingPlatformBehavior</Type>
         <Type>PlatformerStarter.PitHazardComponent</Type>

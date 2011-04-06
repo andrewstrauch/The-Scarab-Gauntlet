@@ -158,16 +158,14 @@ namespace PlatformerStarter
             inputMap.BindMove(gamepadId, (int)XGamePadDevice.GamePadObjects.X, MoveMapTypes.Button, 1);
             inputMap.BindMove(gamepadId, (int)XGamePadDevice.GamePadObjects.Y, MoveMapTypes.Button, 2);
             inputMap.BindMove(gamepadId, (int)XGamePadDevice.GamePadObjects.LeftTrigger, MoveMapTypes.TriggerDigital, 0);
-            //inputMap.BindMove(gamepadId, (int)XGamePadDevice.GamePadObjects.LeftTriggerButton, MoveMapTypes.Button, 0);
-            //inputMap.BindMove(gamepadId, (int)XGamePadDevice.GamePadObjects.RightTriggerButton, MoveMapTypes.Button, 0);
             inputMap.BindCommand(gamepadId, (int)XGamePadDevice.GamePadObjects.Back, null, Game.Instance.Exit);
             inputMap.BindCommand(gamepadId, (int)XGamePadDevice.GamePadObjects.Start, null, Game.Instance.TogglePause); 
 
+#if !XBOX
             int keyboardId = InputManager.Instance.FindDevice("keyboard0");
-            inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.W, MoveMapTypes.Button, 0);
+            inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.Space, MoveMapTypes.Button, 0);
             inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.D, MoveMapTypes.StickDigitalRight, 0);
             inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.A, MoveMapTypes.StickDigitalLeft, 0);
-           // inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.W, MoveMapTypes.StickDigitalUp, 0);
             inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.S, MoveMapTypes.StickDigitalDown, 0);
             inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.U, MoveMapTypes.Button, 1);
             inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.I, MoveMapTypes.Button, 2);
@@ -175,6 +173,7 @@ namespace PlatformerStarter
             inputMap.BindCommand(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.P, null, Game.Instance.TogglePause);
             inputMap.BindCommand(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.R, null, Game.Instance.Reset);
             inputMap.BindCommand(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.Escape, null, Game.Instance.Exit);
+#endif
 
             InputManager.Instance.PushInputMap(inputMap.CloneInputMap());
         }

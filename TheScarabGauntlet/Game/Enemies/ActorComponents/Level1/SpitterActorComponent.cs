@@ -14,7 +14,7 @@ using GarageGames.Torque.XNA;
 
 using GarageGames.Torque.PlatformerFramework;
 
-namespace PlatformerStarter.Enemies
+namespace PlatformerStarter.Enemies.ActorComponents
 {      
     [TorqueXmlSchemaType]
     public class SpitterActorComponent : EnemyActorComponent

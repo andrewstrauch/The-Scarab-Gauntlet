@@ -96,7 +96,7 @@ namespace PlatformerStarter.Enemies
             this.actor = actor as IEnemyActor;
 
             // make sure all the actors are in the idle state when they spawn
-            CurrentState = FSM.Instance.GetState(this, "idle");
+            //CurrentState = FSM.Instance.GetState(this, "idle");
         }
         
         public override void ActorDied(ActorComponent actor, float damage, T2DSceneObject sourceObject)

@@ -90,8 +90,9 @@ namespace GarageGames.Torque.PlatformerFramework
         /// <returns>True if the Actor should be allowed to pick up the collectible.</returns>
         protected virtual bool _confirmPickup(T2DSceneObject ourObject, T2DSceneObject theirObject, ActorComponent actor)
         {
-            if(effect != null) 
-                effect.Spawn(SceneObject.Position);
+            if(theirObject.TestObjectType(PlatformerData.PlayerObjectType))
+                if(effect != null) 
+                    effect.Spawn(SceneObject.Position);
 
             // this should be overridden by derived classes
             // a return value of false will result in the collectible remaining in the scene
