@@ -116,6 +116,7 @@
     <Compile Include="Common\ItemDropComponent.cs" />
     <Compile Include="Common\PitHazardComponent.cs" />
     <Compile Include="Common\ScriptingEngine.cs" />
+    <Compile Include="Common\Triggers\BairneBoundaryTrigger.cs" />
     <Compile Include="Common\Util\CameraManager.cs" />
     <Compile Include="Common\CustomCollision.cs" />
     <Compile Include="Common\PlatformBehaviors.cs" />
@@ -139,23 +140,24 @@
     <Compile Include="Enemies\ActorComponents\General\IRangedActor.cs" />
     <Compile Include="Enemies\ActorComponents\Level1\BairneActorComponent.cs" />
     <Compile Include="Enemies\ActorComponents\Level1\KushlingActorComponent.cs" />
-    <Compile Include="Enemies\AIComponents\Components\AIHybridComponent.cs" />
+    <Compile Include="Enemies\AI\Components\AIHybridComponent.cs" />
     <Compile Include="Enemies\ActorComponents\Level1\BomberActorComponent.cs" />
     <Compile Include="Enemies\ActorComponents\Level1\HulkActorComponent.cs" />
     <Compile Include="Enemies\ActorComponents\Level1\SpitterActorComponent.cs" />
-    <Compile Include="Enemies\AIComponents\Components\AIChaseComponent.cs" />
-    <Compile Include="Enemies\AIComponents\Components\BaseAIComponent.cs" />
-    <Compile Include="Enemies\AIComponents\Controllers\AIChaseController.cs" />
+    <Compile Include="Enemies\AI\Components\AIChaseComponent.cs" />
+    <Compile Include="Enemies\AI\Components\BaseAIComponent.cs" />
+    <Compile Include="Enemies\AI\Components\LuaAIComponent.cs" />
+    <Compile Include="Enemies\AI\Controllers\AIChaseController.cs" />
     <Compile Include="Enemies\ActorComponents\Level1\GruntActorComponent.cs" />
     <Compile Include="Enemies\ActorComponents\General\IBehavior.cs" />
     <Compile Include="Enemies\ActorComponents\General\IEnemyActor.cs" />
-    <Compile Include="Enemies\AIComponents\Controllers\AIHybridController.cs" />
-    <Compile Include="Enemies\AIComponents\Components\AIKamikazeeComponent.cs" />
-    <Compile Include="Enemies\AIComponents\Controllers\AIKamikazeeController.cs" />
-    <Compile Include="Enemies\AIComponents\Controllers\AIRangedAttackController.cs" />
-    <Compile Include="Enemies\AIComponents\Components\AIRangedComponent.cs" />
-    <Compile Include="Enemies\AIComponents\Controllers\BaseAIController.cs" />
-    <Compile Include="Enemies\AIComponents\Controllers\LuaAIController.cs" />
+    <Compile Include="Enemies\AI\Controllers\AIHybridController.cs" />
+    <Compile Include="Enemies\AI\Components\AIKamikazeeComponent.cs" />
+    <Compile Include="Enemies\AI\Controllers\AIKamikazeeController.cs" />
+    <Compile Include="Enemies\AI\Controllers\AIRangedAttackController.cs" />
+    <Compile Include="Enemies\AI\Components\AIRangedComponent.cs" />
+    <Compile Include="Enemies\AI\Controllers\BaseAIController.cs" />
+    <Compile Include="Enemies\AI\Controllers\LuaAIController.cs" />
     <Compile Include="Game.cs">
       <Name>Game</Name>
     </Compile>

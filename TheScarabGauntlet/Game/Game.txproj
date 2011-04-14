@@ -6,7 +6,7 @@
 <!--Creator: Torque X Builder-->
 <TorqueXProject>
     <ProjectData>
-        <LastLevel>C:/Users/Dustin/Documents/Code/C#/TheScarabGauntlet/TheScarabGauntlet/Game/data/levels/Level1.txscene</LastLevel>
+        <LastLevel>C:/Users/Dustin/Documents/Code/C#/TheScarabGauntlet/TheScarabGauntlet/Game/data/levels/hulk_test.txscene</LastLevel>
         <StaticSprites>
             <SimSet>
                 <canSaveDynamicFields>true</canSaveDynamicFields>
@@ -15,23 +15,23 @@
                     <class>T2DPhysicsMaterial</class>
                     <superclass></superclass>
                     <DynamicFieldCount>3</DynamicFieldCount>
-                    <DynamicFieldName0>Friction</DynamicFieldName0>
-                    <DynamicFieldValue0>0.3</DynamicFieldValue0>
-                    <DynamicFieldName1>priority</DynamicFieldName1>
-                    <DynamicFieldValue1>0</DynamicFieldValue1>
-                    <DynamicFieldName2>Restitution</DynamicFieldName2>
-                    <DynamicFieldValue2>1</DynamicFieldValue2>
+                    <DynamicFieldName0>priority</DynamicFieldName0>
+                    <DynamicFieldValue0>0</DynamicFieldValue0>
+                    <DynamicFieldName1>Restitution</DynamicFieldName1>
+                    <DynamicFieldValue1>1</DynamicFieldValue1>
+                    <DynamicFieldName2>Friction</DynamicFieldName2>
+                    <DynamicFieldValue2>0.3</DynamicFieldValue2>
                 </ScriptObject>
                 <ScriptObject name="DefaultCollisionMaterial">
                     <class>T2DPhysicsMaterial</class>
                     <superclass></superclass>
                     <DynamicFieldCount>3</DynamicFieldCount>
-                    <DynamicFieldName0>Friction</DynamicFieldName0>
-                    <DynamicFieldValue0>0.3</DynamicFieldValue0>
-                    <DynamicFieldName1>priority</DynamicFieldName1>
-                    <DynamicFieldValue1>0</DynamicFieldValue1>
-                    <DynamicFieldName2>Restitution</DynamicFieldName2>
-                    <DynamicFieldValue2>1</DynamicFieldValue2>
+                    <DynamicFieldName0>priority</DynamicFieldName0>
+                    <DynamicFieldValue0>0</DynamicFieldValue0>
+                    <DynamicFieldName1>Restitution</DynamicFieldName1>
+                    <DynamicFieldValue1>1</DynamicFieldValue1>
+                    <DynamicFieldName2>Friction</DynamicFieldName2>
+                    <DynamicFieldValue2>0.3</DynamicFieldValue2>
                 </ScriptObject>
                 <t2dImageMapDatablock name="vinesMaterial">
                     <imageMode>FULL</imageMode>
@@ -5110,6 +5110,140 @@
                     <startFrame>0</startFrame>
                     <DynamicFieldCount>0</DynamicFieldCount>
                 </t2dAnimationDatablock>
+                <t2dImageMapDatablock name="Bairn_Idle_ResizedMaterial">
+                    <imageMode>CELL</imageMode>
+                    <frameCount>-1</frameCount>
+                    <filterMode>SMOOTH</filterMode>
+                    <filterPad>false</filterPad>
+                    <preferPerf>true</preferPerf>
+                    <cellRowOrder>true</cellRowOrder>
+                    <cellOffsetX>0</cellOffsetX>
+                    <cellOffsetY>0</cellOffsetY>
+                    <cellStrideX>0</cellStrideX>
+                    <cellStrideY>0</cellStrideY>
+                    <cellCountX>5</cellCountX>
+                    <cellCountY>4</cellCountY>
+                    <cellWidth>280</cellWidth>
+                    <cellHeight>187</cellHeight>
+                    <linkImageMaps></linkImageMaps>
+                    <preload>true</preload>
+                    <allowUnload>false</allowUnload>
+                    <DynamicFieldCount>9</DynamicFieldCount>
+                    <DynamicFieldName0>translucent</DynamicFieldName0>
+                    <DynamicFieldValue0>0</DynamicFieldValue0>
+                    <DynamicFieldName1>refractiveAmount</DynamicFieldName1>
+                    <DynamicFieldValue1>1</DynamicFieldValue1>
+                    <DynamicFieldName2>specularPower</DynamicFieldName2>
+                    <DynamicFieldValue2>0.000</DynamicFieldValue2>
+                    <DynamicFieldName3>refractive</DynamicFieldName3>
+                    <DynamicFieldValue3>0</DynamicFieldValue3>
+                    <DynamicFieldName4>specularColor</DynamicFieldName4>
+                    <DynamicFieldValue4>1 1 1 1</DynamicFieldValue4>
+                    <DynamicFieldName5>forceCelled</DynamicFieldName5>
+                    <DynamicFieldValue5>0</DynamicFieldValue5>
+                    <DynamicFieldName6>additive</DynamicFieldName6>
+                    <DynamicFieldValue6>0</DynamicFieldValue6>
+                    <DynamicFieldName7>enableLighting</DynamicFieldName7>
+                    <DynamicFieldValue7>0</DynamicFieldValue7>
+                    <DynamicFieldName8>specularIntensity</DynamicFieldName8>
+                    <DynamicFieldValue8>1.000</DynamicFieldValue8>
+                    <imageName>data/images/Bairn_Idle_Resized.png</imageName>
+                </t2dImageMapDatablock>
+                <t2dImageMapDatablock name="Bairn_Run_ResizedMaterial">
+                    <imageMode>CELL</imageMode>
+                    <frameCount>-1</frameCount>
+                    <filterMode>SMOOTH</filterMode>
+                    <filterPad>false</filterPad>
+                    <preferPerf>true</preferPerf>
+                    <cellRowOrder>true</cellRowOrder>
+                    <cellOffsetX>0</cellOffsetX>
+                    <cellOffsetY>0</cellOffsetY>
+                    <cellStrideX>0</cellStrideX>
+                    <cellStrideY>0</cellStrideY>
+                    <cellCountX>5</cellCountX>
+                    <cellCountY>4</cellCountY>
+                    <cellWidth>280</cellWidth>
+                    <cellHeight>187</cellHeight>
+                    <linkImageMaps></linkImageMaps>
+                    <preload>true</preload>
+                    <allowUnload>false</allowUnload>
+                    <DynamicFieldCount>9</DynamicFieldCount>
+                    <DynamicFieldName0>translucent</DynamicFieldName0>
+                    <DynamicFieldValue0>0</DynamicFieldValue0>
+                    <DynamicFieldName1>refractiveAmount</DynamicFieldName1>
+                    <DynamicFieldValue1>1</DynamicFieldValue1>
+                    <DynamicFieldName2>specularPower</DynamicFieldName2>
+                    <DynamicFieldValue2>0.000</DynamicFieldValue2>
+                    <DynamicFieldName3>refractive</DynamicFieldName3>
+                    <DynamicFieldValue3>0</DynamicFieldValue3>
+                    <DynamicFieldName4>specularColor</DynamicFieldName4>
+                    <DynamicFieldValue4>1 1 1 1</DynamicFieldValue4>
+                    <DynamicFieldName5>forceCelled</DynamicFieldName5>
+                    <DynamicFieldValue5>0</DynamicFieldValue5>
+                    <DynamicFieldName6>additive</DynamicFieldName6>
+                    <DynamicFieldValue6>0</DynamicFieldValue6>
+                    <DynamicFieldName7>enableLighting</DynamicFieldName7>
+                    <DynamicFieldValue7>0</DynamicFieldValue7>
+                    <DynamicFieldName8>specularIntensity</DynamicFieldName8>
+                    <DynamicFieldValue8>1.000</DynamicFieldValue8>
+                    <imageName>data/images/Bairn_Run_Resized.png</imageName>
+                </t2dImageMapDatablock>
+                <t2dAnimationDatablock name="Bairn_Idle_ResizedAnimation">
+                    <defaultConfig></defaultConfig>
+                    <imageMap>Bairn_Idle_ResizedMaterial</imageMap>
+                    <animationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17</animationFrames>
+                    <animationTime>0.9</animationTime>
+                    <animationCycle>true</animationCycle>
+                    <randomStart>false</randomStart>
+                    <startFrame>0</startFrame>
+                    <DynamicFieldCount>0</DynamicFieldCount>
+                </t2dAnimationDatablock>
+                <t2dAnimationDatablock name="Bairn_Run_ResizedAnimation">
+                    <defaultConfig></defaultConfig>
+                    <imageMap>Bairn_Run_ResizedMaterial</imageMap>
+                    <animationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18</animationFrames>
+                    <animationTime>0.633333</animationTime>
+                    <animationCycle>true</animationCycle>
+                    <randomStart>false</randomStart>
+                    <startFrame>0</startFrame>
+                    <DynamicFieldCount>0</DynamicFieldCount>
+                </t2dAnimationDatablock>
+                <t2dImageMapDatablock name="shadowleavesMaterial">
+                    <imageMode>FULL</imageMode>
+                    <filterPad>false</filterPad>
+                    <preferPerf>true</preferPerf>
+                    <linkImageMaps></linkImageMaps>
+                    <preload>true</preload>
+                    <allowUnload>false</allowUnload>
+                    <DynamicFieldCount>4</DynamicFieldCount>
+                    <DynamicFieldName0>translucent</DynamicFieldName0>
+                    <DynamicFieldValue0>0</DynamicFieldValue0>
+                    <DynamicFieldName1>refractive</DynamicFieldName1>
+                    <DynamicFieldValue1>0</DynamicFieldValue1>
+                    <DynamicFieldName2>additive</DynamicFieldName2>
+                    <DynamicFieldValue2>0</DynamicFieldValue2>
+                    <DynamicFieldName3>enableLighting</DynamicFieldName3>
+                    <DynamicFieldValue3>0</DynamicFieldValue3>
+                    <imageName>data/images/shadowleaves.png</imageName>
+                </t2dImageMapDatablock>
+                <t2dImageMapDatablock name="shadowleavesmask2Material">
+                    <imageMode>FULL</imageMode>
+                    <filterPad>false</filterPad>
+                    <preferPerf>true</preferPerf>
+                    <linkImageMaps></linkImageMaps>
+                    <preload>true</preload>
+                    <allowUnload>false</allowUnload>
+                    <DynamicFieldCount>4</DynamicFieldCount>
+                    <DynamicFieldName0>translucent</DynamicFieldName0>
+                    <DynamicFieldValue0>0</DynamicFieldValue0>
+                    <DynamicFieldName1>refractive</DynamicFieldName1>
+                    <DynamicFieldValue1>0</DynamicFieldValue1>
+                    <DynamicFieldName2>additive</DynamicFieldName2>
+                    <DynamicFieldValue2>0</DynamicFieldValue2>
+                    <DynamicFieldName3>enableLighting</DynamicFieldName3>
+                    <DynamicFieldValue3>0</DynamicFieldValue3>
+                    <imageName>data/images/shadowleavesmask2.png</imageName>
+                </t2dImageMapDatablock>
             </SimSet>
         </StaticSprites>
         <Brushes>

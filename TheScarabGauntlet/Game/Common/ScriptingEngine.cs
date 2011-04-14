@@ -40,14 +40,14 @@ namespace Scripting
                 Console.WriteLine("Lua VM wasn't created");
                 return;
             }
-
+             
             Type targetType = target.GetType();
 
             foreach (MethodInfo info in targetType.GetMethods())
             {
-                foreach (Attribute attr in Attribute.GetCustomAttributes(info))
+                foreach (Attribute attr in info.GetCustomAttributes(true))// Attribute.GetCustomAttributes(info))
                 {
-                    if (attr.GetType() == typeof(LuaFunction))
+                    if (attr.GetType() == typeof(LuaFuncAttr))
                     {
                         LuaFuncAttr luaAttr = (LuaFuncAttr)attr;
 
@@ -61,6 +61,7 @@ namespace Scripting
         {
             luaVM.RegisterFunction(name, target, target.GetType().GetMethod(name));
         }
+
         /// <summary>
         /// Runs a command through the scripting engine and returns
         /// any data associated with that command.

@@ -951,6 +951,24 @@
                 <CellCountY>4</CellCountY>
             </TextureDivider>
         </SimpleMaterial>
+        <SimpleMaterial name="Bairn_Idle_ResizedMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Bairn_Idle_Resized.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>5</CellCountX>
+                <CellCountY>4</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
+        <SimpleMaterial name="Bairn_Run_ResizedMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/Bairn_Run_Resized.png</TextureFilename>
+            <IsTranslucent>false</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+            <TextureDivider type="GarageGames.Torque.Materials.CellCountDivider">
+                <CellCountX>5</CellCountX>
+                <CellCountY>4</CellCountY>
+            </TextureDivider>
+        </SimpleMaterial>
     </Materials>
     <Objects>
         <T2DCollisionMaterial name="DefaultPhysicsMaterial">
@@ -1262,6 +1280,18 @@
             <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15</AnimationFrames>
             <AnimationDuration>0.533333</AnimationDuration>
             <AnimationCycle>false</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="Bairn_Idle_ResizedAnimation">
+            <Material nameRef="Bairn_Idle_ResizedMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17</AnimationFrames>
+            <AnimationDuration>0.9</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="Bairn_Run_ResizedAnimation">
+            <Material nameRef="Bairn_Run_ResizedMaterial" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18</AnimationFrames>
+            <AnimationDuration>0.633333</AnimationDuration>
+            <AnimationCycle>true</AnimationCycle>
         </AnimationData>
         <TileLayer>
             <CreateWithPhysics>false</CreateWithPhysics>
@@ -38936,7 +38966,7 @@
             <CreateWithCollision>false</CreateWithCollision>
             <Components inPlace="true">
                 <CheckpointSystemSpawnedObjectComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnedObjectComponent" />
-                <GruntActorComponent type="PlatformerStarter.Enemies.GruntActorComponent">
+                <GruntActorComponent type="PlatformerStarter.Enemies.ActorComponents.GruntActorComponent">
                     <AttackAnim nameRef="Grunt_AttackRevAnimation1" />
                     <CoolDown>2000.000</CoolDown>
                     <AttackObjectTemplate nameRef="grunt_swipe" />
@@ -41514,7 +41544,7 @@
             <CreateWithCollision>false</CreateWithCollision>
             <Components inPlace="true">
                 <CheckpointSystemSpawnedObjectComponent type="GarageGames.Torque.PlatformerFramework.CheckpointSystemSpawnedObjectComponent" />
-                <SpitterActorComponent type="PlatformerStarter.Enemies.SpitterActorComponent">
+                <SpitterActorComponent type="PlatformerStarter.Enemies.ActorComponents.SpitterActorComponent">
                     <AttackLeftAnim nameRef="SpitterAttackLeftAnimation" />
                     <AttackRightAnim nameRef="SpitterAttackRightAnimation" />
                     <AlertLeftAnim nameRef="SpitterpopupleftAnimation" />
@@ -52689,16 +52719,6 @@
             </SortPoint>
             <Mounts>
                 <Mount>
-                    <Object nameRef="hulk_swipe_engine" />
-                    <LinkPoint>AnchorLP</LinkPoint>
-                    <OwnedByMount>true</OwnedByMount>
-                    <SnapToMount>true</SnapToMount>
-                    <TrackMountRotation>false</TrackMountRotation>
-                    <MountForce>0</MountForce>
-                    <InheritMountVisibility>false</InheritMountVisibility>
-                    <InheritMountFlip>true</InheritMountFlip>
-                </Mount>
-                <Mount>
                     <Object nameRef="Hulk_weapon" />
                     <LinkPoint>WeaponLP</LinkPoint>
                     <OwnedByMount>false</OwnedByMount>
@@ -52708,6 +52728,16 @@
                     <InheritMountVisibility>false</InheritMountVisibility>
                     <InheritMountFlip>false</InheritMountFlip>
                 </Mount>
+                <Mount>
+                    <Object nameRef="hulk_swipe_engine" />
+                    <LinkPoint>AnchorLP</LinkPoint>
+                    <OwnedByMount>true</OwnedByMount>
+                    <SnapToMount>true</SnapToMount>
+                    <TrackMountRotation>false</TrackMountRotation>
+                    <MountForce>0</MountForce>
+                    <InheritMountVisibility>false</InheritMountVisibility>
+                    <InheritMountFlip>true</InheritMountFlip>
+                </Mount>
             </Mounts>
             <AnimationData nameRef="HulkIdleSpriteBuildAnimation" />
             <StartFrame>0</StartFrame>
@@ -52715,6 +52745,42 @@
             <PlayOnLoad>true</PlayOnLoad>
             <RemoveOnFinished>false</RemoveOnFinished>
         </AnimatedSprite>
+        <T2DSceneObject name="Hulk_weapon">
+            <CreateWithPhysics>false</CreateWithPhysics>
+            <CreateWithCollision>false</CreateWithCollision>
+            <Components inPlace="true">
+                <WeaponComponent type="PlatformerStarter.WeaponComponent">
+                    <Damage>20</Damage>
+                    <ShotSpeed>45.000</ShotSpeed>
+                    <ShotAngle>-85.000</ShotAngle>
+                    <LinkPointName></LinkPointName>
+                    <ProjectileTemplate nameRef="hulk_projectile" />
+                </WeaponComponent>
+            </Components>
+            <Pool>false</Pool>
+            <PoolWithComponents>false</PoolWithComponents>
+            <IsTemplate>false</IsTemplate>
+            <IsPersistent>false</IsPersistent>
+            <Layer>0</Layer>
+            <Size>
+                <X>18.320</X>
+                <Y>15.141</Y>
+            </Size>
+            <Position>
+                <X>7048.947</X>
+                <Y>-46.218</Y>
+            </Position>
+            <Rotation>0</Rotation>
+            <CollisionsEnabled>true</CollisionsEnabled>
+            <Visible>true</Visible>
+            <VisibilityLevel>1</VisibilityLevel>
+            <FlipX>false</FlipX>
+            <FlipY>false</FlipY>
+            <SortPoint>
+                <X>0.000000</X>
+                <Y>0.000000</Y>
+            </SortPoint>
+        </T2DSceneObject>
         <T2DSceneObject name="hulk_swipe_engine">
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
@@ -52756,42 +52822,6 @@
             <Position>
                 <X>7038.858</X>
                 <Y>-35.805</Y>
-            </Position>
-            <Rotation>0</Rotation>
-            <CollisionsEnabled>true</CollisionsEnabled>
-            <Visible>true</Visible>
-            <VisibilityLevel>1</VisibilityLevel>
-            <FlipX>false</FlipX>
-            <FlipY>false</FlipY>
-            <SortPoint>
-                <X>0.000000</X>
-                <Y>0.000000</Y>
-            </SortPoint>
-        </T2DSceneObject>
-        <T2DSceneObject name="Hulk_weapon">
-            <CreateWithPhysics>false</CreateWithPhysics>
-            <CreateWithCollision>false</CreateWithCollision>
-            <Components inPlace="true">
-                <WeaponComponent type="PlatformerStarter.WeaponComponent">
-                    <Damage>20</Damage>
-                    <ShotSpeed>45.000</ShotSpeed>
-                    <ShotAngle>-85.000</ShotAngle>
-                    <LinkPointName></LinkPointName>
-                    <ProjectileTemplate nameRef="hulk_projectile" />
-                </WeaponComponent>
-            </Components>
-            <Pool>false</Pool>
-            <PoolWithComponents>false</PoolWithComponents>
-            <IsTemplate>false</IsTemplate>
-            <IsPersistent>false</IsPersistent>
-            <Layer>0</Layer>
-            <Size>
-                <X>18.320</X>
-                <Y>15.141</Y>
-            </Size>
-            <Position>
-                <X>7048.947</X>
-                <Y>-46.218</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>

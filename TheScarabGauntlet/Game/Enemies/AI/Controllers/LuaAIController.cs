@@ -40,22 +40,12 @@ namespace PlatformerStarter.Enemies
 
         #endregion
 
-        public void Init()
+        public void Init(object registerObj)
         {
+            ScriptingEngine.Instance.RegisterObject(this);
+            ScriptingEngine.Instance.RegisterObject(registerObj);
 
-            //ScriptingEngine.Instance.RegisterObject(this);
-            ScriptingEngine.Instance.RegisterFunction("RegisterState", this);
-            ScriptingEngine.Instance.RegisterFunction("MoveLeft", this);
-            ScriptingEngine.Instance.RegisterFunction("MoveRight", this);
-            ScriptingEngine.Instance.RegisterFunction("PlayerInRange", this);
-            ScriptingEngine.Instance.RegisterFunction("Stop", this);
-            ScriptingEngine.Instance.RegisterFunction("OnLeft", this);
-            //ScriptingEngine.Instance.RunScript("data/scripts/" + initScript + ".lua");
-        }
-
-        protected override void _registerAIStates()
-        {
-
+            ScriptingEngine.Instance.RunScript("data/scripts/" + initScript);
         }
 
         #region Lua Exposed Routines
@@ -74,21 +64,28 @@ namespace PlatformerStarter.Enemies
             this._moveLeft();
         }
 
-        [LuaFuncAttr("MoveRight", "Moves the enemy right, across the screen.")]
-        public void MoveRight()
-        {
-            this._moveRight();
-        }
-
         [LuaFuncAttr("Attack", "Tells the enemy to attack.")]
         public void Attack()
         {
             actor.Attack();
         }
 
+        [LuaFuncAttr("OnLeft", "Checks whether the player is on the left or not.")]
         public bool OnLeft()
         {
             return this.onLeft;
+        }
+         
+        [LuaFuncAttr("Stop", "Stops all horizontal movement.")]
+        public void Stop()
+        {
+            this._horizontalStop();
+        }
+
+        [LuaFuncAttr("MoveRight", "Moves the enemy right, across the screen.")]
+        public void MoveRight()
+        {
+            this._moveRight();
         }
 
         [LuaFuncAttr("PlayerInRange", "Checks whether the player is in range.")]
@@ -97,14 +94,10 @@ namespace PlatformerStarter.Enemies
             return (Math.Abs(_getDistanceToPlayer().X) < dist);
         }
 
-        public void Stop()
-        {
-            this._horizontalStop();
-        }
-
         #endregion
 
-        class LuaAIState : AIState
+
+        private class LuaAIState : AIState
         {
             public override void Update(ActorAIController AI)
             {
@@ -113,7 +106,7 @@ namespace PlatformerStarter.Enemies
                 if (luaAI == null)
                     return;
 
-                ScriptingEngine.Instance.RunScript("data/scripts/" + luaAI.UpdateScript + ".lua");
+                ScriptingEngine.Instance.RunScript("data/scripts/" + luaAI.UpdateScript);
             }
 
             public override string Execute(IFSMObject obj)

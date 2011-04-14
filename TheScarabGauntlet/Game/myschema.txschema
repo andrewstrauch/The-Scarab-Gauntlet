@@ -356,6 +356,18 @@
       <Element name="Animations">
         <Type>PlatformerStarter.Enemies.ActorComponents.Level1.BairneAnimations</Type>
       </Element>
+      <Element name="ActionCoolDown">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="IdleCoolDown">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="KushlingWeapon">
+        <Type>GarageGames.Torque.T2D.T2DSceneObject</Type>
+      </Element>
+      <Element name="VineWeapon">
+        <Type>GarageGames.Torque.T2D.T2DSceneObject</Type>
+      </Element>
       <Element name="AIComponent">
         <IsList>true</IsList>
         <Type>PlatformerStarter.Enemies.IBehavior</Type>
@@ -2811,6 +2823,22 @@
         <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
       </Element>
     </Type>
+    <Type name="BairneBoundaryTrigger" fullName="PlatformerStarter.Common.Triggers.BairneBoundaryTrigger">
+      <Dependencies>
+        <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
+      </Dependencies>
+      <IsComponent>true</IsComponent>
+      <Element name="OnLeft">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="Components">
+        <IsList>true</IsList>
+        <Type>GarageGames.Torque.Core.TorqueComponent</Type>
+      </Element>
+      <Element name="Name">
+        <Type>System.String</Type>
+      </Element>
+    </Type>
     <Type name="BaseAIComponent" fullName="PlatformerStarter.Enemies.BaseAIComponent">
       <IsComponent>true</IsComponent>
       <Element name="AttackDist">
@@ -3266,6 +3294,7 @@
         <Type>PlatformerStarter.Enemies.AIComponents.AIChaseComponent</Type>
         <Type>PlatformerStarter.Enemies.AIComponents.AIKamikazeeComponent</Type>
         <Type>PlatformerStarter.Enemies.AIComponents.AIRangedComponent</Type>
+        <Type>PlatformerStarter.Enemies.AIComponents.Components.LuaAIComponent</Type>
         <Type>PlatformerStarter.Enemies.AIHybridComponent</Type>
       </DerivedTypes>
       <IsInstantiable>false</IsInstantiable>
@@ -3331,6 +3360,31 @@
       <Element name="LinearAttenuation">
         <Type>System.Single</Type>
         <DefaultValue>0</DefaultValue>
+      </Element>
+    </Type>
+    <Type name="LuaAIComponent" fullName="PlatformerStarter.Enemies.AIComponents.Components.LuaAIComponent">
+      <IsComponent>true</IsComponent>
+      <Element name="InitScript">
+        <Type>System.String</Type>
+      </Element>
+      <Element name="UpdateScript">
+        <Type>System.String</Type>
+      </Element>
+      <Element name="AttackDist">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="AlertDist">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="Attacks">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="Components">
+        <IsList>true</IsList>
+        <Type>GarageGames.Torque.Core.TorqueComponent</Type>
+      </Element>
+      <Element name="Name">
+        <Type>System.String</Type>
       </Element>
     </Type>
     <Type name="MasslessForce" fullName="GarageGames.Torque.T2D.T2DForceComponent+MasslessForce">
@@ -4210,6 +4264,7 @@
         <Type>PlatformerStarter.Common.Traps.SwingingTrapComponent</Type>
         <Type>PlatformerStarter.Common.Traps.TikiFlameTrapComponent</Type>
         <Type>PlatformerStarter.Common.Traps.TrapComponent</Type>
+        <Type>PlatformerStarter.Common.Triggers.BairneBoundaryTrigger</Type>
         <Type>PlatformerStarter.Common.Triggers.TrapTriggerComponent</Type>
         <Type>PlatformerStarter.Enemies.ActorComponents.BomberActorComponent</Type>
         <Type>PlatformerStarter.Enemies.ActorComponents.GruntActorComponent</Type>
@@ -4220,6 +4275,7 @@
         <Type>PlatformerStarter.Enemies.AIComponents.AIChaseComponent</Type>
         <Type>PlatformerStarter.Enemies.AIComponents.AIKamikazeeComponent</Type>
         <Type>PlatformerStarter.Enemies.AIComponents.AIRangedComponent</Type>
+        <Type>PlatformerStarter.Enemies.AIComponents.Components.LuaAIComponent</Type>
         <Type>PlatformerStarter.Enemies.AIHybridComponent</Type>
         <Type>PlatformerStarter.Enemies.BaseAIComponent</Type>
         <Type>PlatformerStarter.EnemyAttackCollisionComponent</Type>

@@ -61,6 +61,22 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="scripts\init.lua">
+      <Name>init</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\update.lua">
+      <Name>update</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="levels\bairne_test.txscene">
+      <Name>bairne_test</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <PropertyGroup>
     <PostBuildEvent>"$(TargetPath)" -exportschema "$(ProjectDir)myschema.txschema"</PostBuildEvent>
   </PropertyGroup>
@@ -102,18 +118,6 @@
       <Name>jumpsheet1</Name>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
     </Compile>
-    <Compile Include="images\runsheetfinalFfix.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>runsheetfinalFfix</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\slidesheet.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>slidesheet</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="images\bigtree1.png">
@@ -140,12 +144,6 @@
       <Name>canopy1dark</Name>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
     </Compile>
-    <Compile Include="images\canopy1light.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>canopy1light</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
     <Compile Include="images\canopy2.png">
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -158,12 +156,6 @@
       <Name>canopy2Dark</Name>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
     </Compile>
-    <Compile Include="images\canopy2Light.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>canopy2Light</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
     <Compile Include="images\canopy3.png">
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -174,12 +166,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Name>canopy3dark</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\canopy3Light.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>canopy3Light</Name>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
     </Compile>
     <Compile Include="images\canopycurved1.png">
@@ -224,12 +210,6 @@
       <Name>floatingplatform</Name>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
     </Compile>
-    <Compile Include="images\ForestBG.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>ForestBG</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
     <Compile Include="images\frontGrowth.png">
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -240,12 +220,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Name>frontGrowthDark</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\frontGrowthLight.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>frontGrowthLight</Name>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
     </Compile>
     <Compile Include="images\fungisblueLight.png">
@@ -336,12 +310,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Name>leaves3</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\lightbreaks.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>lightbreaks</Name>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
     </Compile>
     <Compile Include="images\Lv1bottomgroundleft2.png">
@@ -488,12 +456,6 @@
       <Name>moss2</Name>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
     </Compile>
-    <Compile Include="images\mountain1Scroller.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>mountain1Scroller</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
     <Compile Include="images\mountain2.png">
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -516,24 +478,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Name>particle_effect_snow</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\runsheetfinalF.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>runsheetfinalF</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\runsheetfinalR.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>runsheetfinalR</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\runsheetfinalR2.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>runsheetfinalR2</Name>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
     </Compile>
     <Compile Include="images\shadowleaves.png">
@@ -594,78 +538,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Name>Spitterpopupright</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\templebottomcornerup.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>templebottomcornerup</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\templediag.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>templediag</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\templedown.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>templedown</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\templedowndiag.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>templedowndiag</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\templefloor.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>templefloor</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\templeplatcorneright.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>templeplatcorneright</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\templeplatcornerleft.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>templeplatcornerleft</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\templeplatformfloor.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>templeplatformfloor</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\templetopcornerleft.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>templetopcornerleft</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\templetopcornerright.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>templetopcornerright</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\templeup.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>templeup</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\templeupdiag.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>templeupdiag</Name>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
     </Compile>
     <Compile Include="images\treealone1.png">
@@ -861,6 +733,16 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+    <Compile Include="images\Bairn_Idle_Resized.png">
+      <Name>Bairn_Idle_Resized</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\Bairn_Run_Resized.png">
+      <Name>Bairn_Run_Resized</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
     <Content Include="levels\Level1.txscene">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Name>Level1</Name>
@@ -1025,12 +907,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Name>bottomblendgrass2</Name>
-      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
-    </Compile>
-    <Compile Include="images\elevator_bottom.png">
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Name>elevator_bottom</Name>
       <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
     </Compile>
     <Compile Include="images\fern.png">
