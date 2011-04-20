@@ -1816,6 +1816,9 @@
       <Element name="InvincibilityLength">
         <Type>System.Int32</Type>
       </Element>
+      <Element name="MaxJumpForce">
+        <Type>System.Single</Type>
+      </Element>
       <Element name="SpawnAnim">
         <Type>GarageGames.Torque.T2D.T2DAnimationData</Type>
       </Element>

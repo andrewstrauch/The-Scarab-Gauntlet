@@ -24,7 +24,7 @@
                 <BinCount>256</BinCount>
             </T2DSceneContainer>
         </T2DSceneGraph>
-        <Camera2D name="Camera">
+        <Camera2D name="">
             <CenterPosition>
                 <X>20.000000</X>
                 <Y>-10.599720</Y>
@@ -305,11 +305,6 @@
         <SimpleMaterial name="bigtree1Material" type="GarageGames.Torque.Materials.SimpleMaterial">
             <TextureFilename>data/images/bigtree1.png</TextureFilename>
             <IsTranslucent>false</IsTranslucent>
-            <IsAdditive>false</IsAdditive>
-        </SimpleMaterial>
-        <SimpleMaterial name="GGLogoMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
-            <TextureFilename>data/images/GGLogo.png</TextureFilename>
-            <IsTranslucent>true</IsTranslucent>
             <IsAdditive>false</IsAdditive>
         </SimpleMaterial>
         <SimpleMaterial name="frontGrowthMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
@@ -979,6 +974,11 @@
             <IsTranslucent>false</IsTranslucent>
             <IsAdditive>false</IsAdditive>
         </SimpleMaterial>
+        <SimpleMaterial name="GGLogoMaterial" type="GarageGames.Torque.Materials.SimpleMaterial">
+            <TextureFilename>data/images/GGLogo.png</TextureFilename>
+            <IsTranslucent>true</IsTranslucent>
+            <IsAdditive>false</IsAdditive>
+        </SimpleMaterial>
     </Materials>
     <Objects>
         <T2DCollisionMaterial name="DefaultPhysicsMaterial">
@@ -1302,6 +1302,12 @@
             <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18</AnimationFrames>
             <AnimationDuration>0.633333</AnimationDuration>
             <AnimationCycle>true</AnimationCycle>
+        </AnimationData>
+        <AnimationData name="Amanda_DeathSpriteAnimation">
+            <Material nameRef="" />
+            <AnimationFrames>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39</AnimationFrames>
+            <AnimationDuration>1.3333</AnimationDuration>
+            <AnimationCycle>false</AnimationCycle>
         </AnimationData>
         <StaticSprite>
             <CreateWithPhysics>false</CreateWithPhysics>
@@ -1682,6 +1688,7 @@
                     <HeavyAttackCoolDown>5000</HeavyAttackCoolDown>
                     <BaseShotCoolDown>3000</BaseShotCoolDown>
                     <InvincibilityLength>10000</InvincibilityLength>
+                    <MaxJumpForce>135.000</MaxJumpForce>
                     <PunchAnim nameRef="Amanda_MeleeSpriteAnimation" />
                     <JumpPunchAnim nameRef="amanda_jumpmeleexbuildAnimation" />
                     <SwipeAnim nameRef="Amanda_SwipeAnimation" />

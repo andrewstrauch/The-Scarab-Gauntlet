@@ -81,6 +81,8 @@ namespace PlatformerStarter
                                 _jumpDown();
 
                             _jumpButton = true;
+                            //foreach (PlayerActorComponent actor in Movers)
+                              //  _jumpButton = actor.AccumJump();
                         }
                     }
                     else if (_jumpButton)

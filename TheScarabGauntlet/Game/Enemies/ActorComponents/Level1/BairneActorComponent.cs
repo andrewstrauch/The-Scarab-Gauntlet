@@ -33,6 +33,7 @@ namespace PlatformerStarter.Enemies.ActorComponents.Level1
         private T2DSceneObject kushWeapon;
         private T2DSceneObject vineWeapon;
         private Timer coolDownTimer;
+        private Timer idleTimer;
         private string weaponType;
         private float actionCoolDown;
         private float idleCoolDown;
@@ -184,17 +185,17 @@ namespace PlatformerStarter.Enemies.ActorComponents.Level1
         }
 
         [LuaFuncAttr("Idle", "Forces Bairne into an idle state.")]
-        public void Idle()
+        public void Idle(float idleTime)
         {
             if (!Alive)
                 return;
 
-            if (!coolDownTimer.Running)
+            if (!idleTimer.Running)
             {
+                idleTimer.MillisecondsUntilExpire = idleTime;
                 ActionAnim = IdleAnim;
                 FSM.Instance.SetState(_animationManager, "idle");
-                coolDownTimer.MillisecondsUntilExpire = idleCoolDown;
-                coolDownTimer.Start();
+                idleTimer.Start();
             }
 
         }
@@ -239,7 +240,9 @@ namespace PlatformerStarter.Enemies.ActorComponents.Level1
                 return false;
 
             coolDownTimer = new Timer();
+            idleTimer = new Timer();
             coolDownTimer.MillisecondsUntilExpire = actionCoolDown;
+            idleTimer.MillisecondsUntilExpire = 2000;
             launchFrame = 0;
             launched = false;
             onLeft = false;
