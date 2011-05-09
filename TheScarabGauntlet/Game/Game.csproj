@@ -117,6 +117,11 @@
     <Compile Include="Common\PitHazardComponent.cs" />
     <Compile Include="Common\ScriptingEngine.cs" />
     <Compile Include="Common\Triggers\BairneBoundaryTrigger.cs" />
+    <Compile Include="Common\Triggers\Puzzles\DisappearBehavior.cs" />
+    <Compile Include="Common\Triggers\Puzzles\IPuzzleBehavior.cs" />
+    <Compile Include="Common\Triggers\Puzzles\ISwitchBehavior.cs" />
+    <Compile Include="Common\Triggers\Puzzles\PuzzleElementComponent.cs" />
+    <Compile Include="Common\Triggers\Puzzles\SwitchTrigger.cs" />
     <Compile Include="Common\Util\CameraManager.cs" />
     <Compile Include="Common\CustomCollision.cs" />
     <Compile Include="Common\PlatformBehaviors.cs" />

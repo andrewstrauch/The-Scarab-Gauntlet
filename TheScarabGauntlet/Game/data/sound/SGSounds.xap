@@ -621,6 +621,12 @@ Wave Bank
     Windows Bank Path Edited = 0;
     Seek Tables = 1;
     Compression Preset Name = <none>;
+    Xbox Bank Last Modified Low = 0;
+    Xbox Bank Last Modified High = 0;
+    PC Bank Last Modified Low = 0;
+    PC Bank Last Modified High = 0;
+    Header Last Modified Low = 0;
+    Header Last Modified High = 0;
     Bank Last Revised Low = 4096381368;
     Bank Last Revised High = 30138969;
 
@@ -880,14 +886,8 @@ Wave Bank
     Windows Bank Path Edited = 0;
     Seek Tables = 1;
     Compression Preset Name = <none>;
-    Xbox Bank Last Modified Low = 0;
-    Xbox Bank Last Modified High = 0;
-    PC Bank Last Modified Low = 0;
-    PC Bank Last Modified High = 0;
-    Header Last Modified Low = 0;
-    Header Last Modified High = 0;
-    Bank Last Revised Low = 2786150391;
-    Bank Last Revised High = 30134441;
+    Bank Last Revised Low = 2451760887;
+    Bank Last Revised High = 30146504;
 
     Wave
     {
@@ -907,17 +907,17 @@ Wave Bank
             Loop Region Offset = 0;
             Loop Region Length = 0;
             File Type = 1;
-            Last Modified Low = 2471180672;
-            Last Modified High = 30091768;
+            Last Modified Low = 2334615341;
+            Last Modified High = 30130392;
         }
     }
 
     Wave
     {
         Name = warning;
-        File = ..\..\..\..\..\..\..\..\..\..\Dropbox\Andy's Stuff\Sound\bomber_trip.wav;
-        Build Settings Last Modified Low = 1870348010;
-        Build Settings Last Modified High = 30134441;
+        File = bomber_trip.wav;
+        Build Settings Last Modified Low = 2451760887;
+        Build Settings Last Modified High = 30146504;
 
         Cache
         {

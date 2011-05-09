@@ -95,7 +95,7 @@ namespace PlatformerStarter
             GUICanvas.Instance.SetContentControl(openingMenu);
 #else
             // load the test level        
-            SceneLoader.Load(@"data\levels\hulk_test.txscene");
+            SceneLoader.Load(@"data\levels\bairne_test.txscene");
 #endif
             InitializeSound();
 

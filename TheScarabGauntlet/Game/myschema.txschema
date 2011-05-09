@@ -2085,6 +2085,24 @@
         <Type>System.String</Type>
       </Element>
     </Type>
+    <Type name="PuzzleElementComponent" fullName="PlatformerStarter.Common.Triggers.PuzzleElementComponent">
+      <IsComponent>true</IsComponent>
+      <Element name="Switches">
+        <IsList>true</IsList>
+        <Type>System.String</Type>
+      </Element>
+      <Element name="PuzzleBehaviors">
+        <IsList>true</IsList>
+        <Type>PlatformerStarter.Common.Triggers.IPuzzleBehavior</Type>
+      </Element>
+      <Element name="Components">
+        <IsList>true</IsList>
+        <Type>GarageGames.Torque.Core.TorqueComponent</Type>
+      </Element>
+      <Element name="Name">
+        <Type>System.String</Type>
+      </Element>
+    </Type>
     <Type name="ReplacementComponent" fullName="PlatformerStarter.ReplacementComponent">
       <IsComponent>true</IsComponent>
       <Element name="ReplacementTemplate">
@@ -2421,6 +2439,26 @@
       <Element name="SwipeCollision">
         <IsStatic>true</IsStatic>
         <Type>GarageGames.Torque.T2D.T2DOnCollisionDelegate</Type>
+      </Element>
+    </Type>
+    <Type name="SwitchTrigger" fullName="PlatformerStarter.Common.Triggers.SwitchTrigger">
+      <Dependencies>
+        <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
+      </Dependencies>
+      <IsComponent>true</IsComponent>
+      <Element name="IsOn">
+        <Type>System.Boolean</Type>
+      </Element>
+      <Element name="SwitchBehaviors">
+        <IsList>true</IsList>
+        <Type>PlatformerStarter.Common.Triggers.ISwitchBehavior</Type>
+      </Element>
+      <Element name="Components">
+        <IsList>true</IsList>
+        <Type>GarageGames.Torque.Core.TorqueComponent</Type>
+      </Element>
+      <Element name="Name">
+        <Type>System.String</Type>
       </Element>
     </Type>
     <Type name="T2DAnimationComponent" fullName="GarageGames.Torque.T2D.T2DAnimationComponent">
@@ -3052,6 +3090,11 @@
         <Type>System.String</Type>
       </Element>
     </Type>
+    <Type name="DisappearBehavior" fullName="PlatformerStarter.Common.Triggers.Puzzles.DisappearBehavior">
+      <Element name="Active">
+        <Type>System.Boolean</Type>
+      </Element>
+    </Type>
     <Type name="DragForce" fullName="GarageGames.Torque.T2D.T2DForceComponent+DragForce">
       <Element name="ConstantDrag">
         <Type>System.Boolean</Type>
@@ -3314,6 +3357,18 @@
         <IsStatic>true</IsStatic>
         <Type>System.Int32</Type>
       </Element>
+    </Type>
+    <Type name="IPuzzleBehavior" fullName="PlatformerStarter.Common.Triggers.IPuzzleBehavior">
+      <DerivedTypes>
+        <Type>PlatformerStarter.Common.Triggers.Puzzles.DisappearBehavior</Type>
+      </DerivedTypes>
+      <IsInstantiable>false</IsInstantiable>
+      <Element name="Active">
+        <Type>System.Boolean</Type>
+      </Element>
+    </Type>
+    <Type name="ISwitchBehavior" fullName="PlatformerStarter.Common.Triggers.ISwitchBehavior">
+      <IsInstantiable>false</IsInstantiable>
     </Type>
     <Type name="LeverProcessor" fullName="GarageGames.Torque.T2D.T2DProcessComponent+LeverProcessor">
       <Element name="LeverIndex">
@@ -4268,6 +4323,8 @@
         <Type>PlatformerStarter.Common.Traps.TikiFlameTrapComponent</Type>
         <Type>PlatformerStarter.Common.Traps.TrapComponent</Type>
         <Type>PlatformerStarter.Common.Triggers.BairneBoundaryTrigger</Type>
+        <Type>PlatformerStarter.Common.Triggers.PuzzleElementComponent</Type>
+        <Type>PlatformerStarter.Common.Triggers.SwitchTrigger</Type>
         <Type>PlatformerStarter.Common.Triggers.TrapTriggerComponent</Type>
         <Type>PlatformerStarter.Enemies.ActorComponents.BomberActorComponent</Type>
         <Type>PlatformerStarter.Enemies.ActorComponents.GruntActorComponent</Type>
