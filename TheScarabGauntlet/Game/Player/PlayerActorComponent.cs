@@ -27,8 +27,6 @@ namespace PlatformerStarter
         private float heavyAttackCoolDown;
         private float baseShotCoolDown;
         private float invincibilityLength;
-        private float maxJumpForce;
-        private float currJumpForce;
         private T2DAnimationData spawnAnim;
         private T2DAnimationData fallDeathAnim;
         private T2DAnimationData hitDeathAnim;
@@ -66,12 +64,6 @@ namespace PlatformerStarter
         {
             get { return (int)invincibilityLength; }
             set { invincibilityLength = (int)value; }
-        }
-
-        public float MaxJumpForce
-        {
-            get { return maxJumpForce; }
-            set { maxJumpForce = value; }
         }
 
         public bool IsInvincible
@@ -162,24 +154,6 @@ namespace PlatformerStarter
             obj2.JumpSwipeAnim = JumpSwipeAnim;
             obj2.JumpPunchAnim = JumpPunchAnim;
             obj2.FallDeathAnim = FallDeathAnim;
-            obj2.MaxJumpForce = MaxJumpForce;
-        }
-
-        public bool AccumJump()
-        {
-            currJumpForce += 1.0f;
-
-            if (currJumpForce >= maxJumpForce)
-            {
-                currJumpForce = maxJumpForce;
-                JumpForce = currJumpForce;
-                return true;
-            }
-            else
-            {
-                JumpForce = currJumpForce;
-                return false;
-            }
         }
 
         /// <summary>

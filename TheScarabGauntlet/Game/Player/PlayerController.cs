@@ -73,21 +73,11 @@ namespace PlatformerStarter
                     // set jump only on initial button down and button release
                     if (move.Buttons[0].Pushed)
                     {
-                        if (!_jumpButton)
-                        {
                             _jump();
 
                             if (movingDown)
                                 _jumpDown();
 
-                            _jumpButton = true;
-                            //foreach (PlayerActorComponent actor in Movers)
-                              //  _jumpButton = actor.AccumJump();
-                        }
-                    }
-                    else if (_jumpButton)
-                    {
-                        _jumpButton = false;
                     }
 
                     // set attack only on initial button down and button release

@@ -502,6 +502,13 @@ namespace GarageGames.Torque.PlatformerFramework
             set { _ladderAttachXThreshold = value; }
         }
 
+        [TorqueXmlSchemaType(DefaultValue = "0.25")]
+        public float JumpTime
+        {
+            get { return jumpTime; }
+            set { jumpTime = value; }
+        }
+
         /// <summary>
         /// This read-only property specifies whether or not an Actor should currently be able to land on one-way platforms (based on JumpDownTimeout).
         /// </summary>
@@ -1224,6 +1231,7 @@ namespace GarageGames.Torque.PlatformerFramework
             obj2.LadderAttachXThreshold = LadderAttachXThreshold;
             obj2.GroundCheckYThreshold = GroundCheckYThreshold;
             obj2.GroundYBuffer = GroundYBuffer;
+            obj2.JumpTime = JumpTime;
 
             obj2.MaxHealth = MaxHealth;
             obj2.Armor = Armor;
@@ -1253,6 +1261,14 @@ namespace GarageGames.Torque.PlatformerFramework
             obj2.ActionAnim = ActionAnim;
             obj2.DamageAnim = DamageAnim;
             obj2.DieAnim = DieAnim;
+        }
+
+        public bool IsMaxJumpTime()
+        {
+            if (jumpDuration < jumpTime)
+                return false;
+            else
+                return true;
         }
 
         #endregion
@@ -2238,6 +2254,9 @@ namespace GarageGames.Torque.PlatformerFramework
         protected float _ladderDetatchTime;
         protected float _moveAccel;
         protected float _moveDecel;
+        private float jumpDuration = 0.0f;
+        private float jumpTime = 0.25f;
+        private bool isJumping;
 
         // health and damage
         protected float _health;
@@ -2458,6 +2477,9 @@ namespace GarageGames.Torque.PlatformerFramework
         {
             public override void UpdatePhysics(ActorComponent actor, float elapsed)
             {
+                if (actor.PreviousState.Equals("InAir"))
+                    actor._jump = false;
+
                 // update ground force based on the ground surface normal
                 actor._groundForceVector = Vector2.Multiply(new Vector2(-actor._groundSurfaceNormal.Y,
                                                                         actor._groundSurfaceNormal.X), actor._groundSurfaceForce);
@@ -2562,10 +2584,12 @@ namespace GarageGames.Torque.PlatformerFramework
                     // record this as the last time we jumped down
                     actor._lastJumpDownTime = TorqueEngineComponent.Instance.TorqueTime;
                 }
-                else if (actor._Jumping)
+                else if (actor._Jumping && !actor.IsMaxJumpTime())
                 {
+                    actor.jumpDuration += (elapsed / 100);
+
                     // jump up
-                    actor._actor.Physics.VelocityY = actor._groundVelocity.Y - actor._jumpForce;
+                    actor._actor.Physics.VelocityY = actor._groundVelocity.Y - (actor._jumpForce * ((float)Math.Exp(actor.jumpDuration) / 2));
 
                     // set the appropriate animation state for jumping
                     if (Math.Abs(actor._moveSpeed.X) < 0.01f)
@@ -2586,7 +2610,15 @@ namespace GarageGames.Torque.PlatformerFramework
                     // controller sent both events)
                     actor._jump = false;
                     actor._jumpDown = false;
+                    actor.isJumping = true;
                 }
+                else
+                {
+                    actor._jump = false;
+                    actor.isJumping = false;
+                    actor.jumpDuration = 0.0f;
+                }
+
             }
 
             public override string Execute(IFSMObject obj)
@@ -2672,6 +2704,33 @@ namespace GarageGames.Torque.PlatformerFramework
 
                 // apply gravity
                 actor._actor.Physics.VelocityY += actor.Gravity * elapsed;
+
+                // do pressure sensitive jumping
+                if (actor._Jumping && actor.isJumping)
+                {
+                    actor.jumpDuration += (elapsed / 100);
+
+                    if (!actor.IsMaxJumpTime())
+                    {
+                        actor._actor.Physics.VelocityY = actor._groundVelocity.Y - (actor._jumpForce * ((float)Math.Exp(actor.jumpDuration) / 2));
+                        // set the appropriate animation state for jumping
+                        if (Math.Abs(actor._moveSpeed.X) < 0.01f)
+                            FSM.Instance.SetState(actor._animationManager, "jump");
+                        else
+                            FSM.Instance.SetState(actor._animationManager, "runJump");
+
+                        actor._jump = false;
+                        actor._jumpDown = false;
+                        actor._onGround = false;
+                    }
+                }
+                else
+                {
+                    actor._jump = false; // this prevents the little bounce at the end of the jump
+                    actor.isJumping = false;
+                    actor.jumpDuration = 0.0f;
+                }
+
             }
 
             public override void Enter(IFSMObject obj)
