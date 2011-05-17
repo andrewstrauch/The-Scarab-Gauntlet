@@ -65,8 +65,6 @@ namespace PlatformerStarter
                         _moveDown();
                         movingDown = true;
                     }
-                    else if (move.Sticks[0].Y > 0.25)
-                        _moveUp();
                     else
                         _verticalStop();
 
@@ -103,7 +101,8 @@ namespace PlatformerStarter
                         }
                     }
 
-                    else if (move.Triggers[0].Value == 1)
+                    else if (move.Triggers[0].Value == 1 ||
+                        move.Buttons[3].Pushed)
                     {
                         if (!_attackButton)
                         {
@@ -161,7 +160,7 @@ namespace PlatformerStarter
             inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.S, MoveMapTypes.StickDigitalDown, 0);
             inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.U, MoveMapTypes.Button, 1);
             inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.I, MoveMapTypes.Button, 2);
-            inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.LeftShift, MoveMapTypes.Button, 3);
+            inputMap.BindMove(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.O, MoveMapTypes.Button, 3);
             inputMap.BindCommand(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.P, null, Game.Instance.TogglePause);
             inputMap.BindCommand(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.R, null, Game.Instance.Reset);
             inputMap.BindCommand(keyboardId, (int)Microsoft.Xna.Framework.Input.Keys.Escape, null, Game.Instance.Exit);
