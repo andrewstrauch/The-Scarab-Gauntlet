@@ -2477,7 +2477,7 @@ namespace GarageGames.Torque.PlatformerFramework
         {
             public override void UpdatePhysics(ActorComponent actor, float elapsed)
             {
-                if (actor.PreviousState.Equals("InAir"))
+                if (actor.PreviousState.Equals("inAir"))
                     actor._jump = false;
 
                 // update ground force based on the ground surface normal

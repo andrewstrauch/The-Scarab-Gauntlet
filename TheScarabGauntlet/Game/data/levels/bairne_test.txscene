@@ -24,7 +24,7 @@
                 <BinCount>256</BinCount>
             </T2DSceneContainer>
         </T2DSceneGraph>
-        <Camera2D name="Camera">
+        <Camera2D name="">
             <CenterPosition>
                 <X>20.000000</X>
                 <Y>-10.599720</Y>
@@ -1682,7 +1682,6 @@
                     <HeavyAttackCoolDown>5000</HeavyAttackCoolDown>
                     <BaseShotCoolDown>3000</BaseShotCoolDown>
                     <InvincibilityLength>10000</InvincibilityLength>
-                    <MaxJumpForce>135.000</MaxJumpForce>
                     <PunchAnim nameRef="Amanda_MeleeSpriteAnimation" />
                     <JumpPunchAnim nameRef="amanda_jumpmeleexbuildAnimation" />
                     <SwipeAnim nameRef="Amanda_SwipeAnimation" />
@@ -1710,6 +1709,7 @@
                     <GroundCheckYThreshold>0.3</GroundCheckYThreshold>
                     <GroundYBuffer>0.15</GroundYBuffer>
                     <LadderAttachXThreshold>1</LadderAttachXThreshold>
+                    <JumpTime>0.25</JumpTime>
                     <MaxGroundNormalY>-0.1</MaxGroundNormalY>
                     <MaxHealth>100</MaxHealth>
                     <Armor>0</Armor>
@@ -2201,6 +2201,7 @@
                     <GroundCheckYThreshold>0.3</GroundCheckYThreshold>
                     <GroundYBuffer>0.15</GroundYBuffer>
                     <LadderAttachXThreshold>1</LadderAttachXThreshold>
+                    <JumpTime>0.25</JumpTime>
                     <MaxGroundNormalY>-0.1</MaxGroundNormalY>
                     <MaxHealth>0.0</MaxHealth>
                     <Armor>0</Armor>

@@ -1,15 +1,15 @@
 ﻿#region Using Directives
-using System;
-
 using GarageGames.Torque.T2D;
 #endregion
 
 namespace PlatformerStarter.Common.Triggers.Puzzles
 {
-    class DisappearBehavior : IPuzzleBehavior
+    abstract class PuzzleBehavior
     {
         #region Private Members
-        private bool active;
+
+        protected bool active;
+
         #endregion
 
         #region Public Properties
@@ -27,17 +27,14 @@ namespace PlatformerStarter.Common.Triggers.Puzzles
 
         #region Public Routines
 
-        /// <summary>
-        /// Turns the object invisible (if it isn't already) and disables all collision.
-        /// </summary>
-        /// <param name="puzzleObject">The object to make disappear.</param>
-        public void Execute(T2DSceneObject puzzleObject)
-        {
-            puzzleObject.CollisionsEnabled = false;
-            puzzleObject.Visible = false;
-            active = false;
-        }
+        public abstract void Execute(T2DSceneObject puzzleObject);
 
+        public void Run(T2DSceneObject puzzleObject)
+        {
+            if (!active)
+                Execute(puzzleObject);
+        }
         #endregion
+
     }
 }

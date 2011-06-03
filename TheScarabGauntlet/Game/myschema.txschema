@@ -3119,11 +3119,6 @@
         <Type>System.String</Type>
       </Element>
     </Type>
-    <Type name="DisappearBehavior" fullName="PlatformerStarter.Common.Triggers.Puzzles.DisappearBehavior">
-      <Element name="Active">
-        <Type>System.Boolean</Type>
-      </Element>
-    </Type>
     <Type name="DragForce" fullName="GarageGames.Torque.T2D.T2DForceComponent+DragForce">
       <Element name="ConstantDrag">
         <Type>System.Boolean</Type>
@@ -3388,9 +3383,6 @@
       </Element>
     </Type>
     <Type name="IPuzzleBehavior" fullName="PlatformerStarter.Common.Triggers.IPuzzleBehavior">
-      <DerivedTypes>
-        <Type>PlatformerStarter.Common.Triggers.Puzzles.DisappearBehavior</Type>
-      </DerivedTypes>
       <IsInstantiable>false</IsInstantiable>
       <Element name="Active">
         <Type>System.Boolean</Type>
