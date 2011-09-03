@@ -39,6 +39,7 @@ namespace PlatformerStarter
         private T2DSceneObject swipeMeleeTemplate;
         private PlayerActions attackActions;
         private HealthBar_GUI healthbar;
+        private CameraManager camera;
         #endregion
 
         #region Public Properties
@@ -287,6 +288,8 @@ namespace PlatformerStarter
         {
             base._preUpdate(elapsed);
 
+            //camera.Update(elapsed);
+
             // update the melee timer
             TimerManager.Instance.Update(TorqueEngineComponent.Instance.GameTime);
 
@@ -430,12 +433,16 @@ namespace PlatformerStarter
 
 #endif
         #endregion
+
         protected override void _PostRegister()
         {
             base._PostRegister();
 
+            camera = CameraManager.Instance;
+
+            camera.Mount(SceneObject, new Vector2(-1, 0));
             // camera mounting
-            T2DSceneCamera camera = TorqueObjectDatabase.Instance.FindObject<T2DSceneCamera>("Camera");//_sceneObject.SceneGraph.Camera as T2DSceneCamera;
+            /*T2DSceneCamera camera = TorqueObjectDatabase.Instance.FindObject<T2DSceneCamera>("Camera");//_sceneObject.SceneGraph.Camera as T2DSceneCamera;
             if (camera != null)
             {
                 if (camera.IsMounted)
@@ -453,7 +460,7 @@ namespace PlatformerStarter
 
                 //PlatformerStarter.Common.ParallaxManager.Instance.Target = SceneObject;
                 ParallaxManager.Instance.ParallaxTarget = camera;
-            }
+            }*/
         }
 
         protected override void _die(float damage, T2DSceneObject sourceObject)
@@ -540,8 +547,8 @@ namespace PlatformerStarter
             _useAnimationManagerSoundEvents = true;
             _animationManager.SetSoundEvent(PunchAnim, "amanda_melee1");
             _animationManager.SetSoundEvent(SwipeAnim, "amanda_swipe1");
-            _animationManager.SetSoundEvent(JumpAnim, "amanda_jump1");
-            _animationManager.SetSoundEvent(RunJumpAnim, "amanda_jump1");
+            //_animationManager.SetSoundEvent(JumpAnim, "amanda_jump1");
+            //_animationManager.SetSoundEvent(RunJumpAnim, "amanda_jump1");
             _animationManager.SetSoundEvent(JumpPunchAnim, "amanda_melee1");
             _animationManager.SetSoundEvent(JumpSwipeAnim, "amanda_swipe1");
 
@@ -760,6 +767,25 @@ namespace PlatformerStarter
 
             new public class JumpState : ActorAnimationManager.JumpState
             {
+                public override void Enter(IFSMObject obj)
+                {
+                    PlayerActorAnimationManager actorAnimMgr = obj as PlayerActorAnimationManager;
+
+                    if (actorAnimMgr.actorComponent == null)
+                        return;
+
+                    if (!actorAnimMgr.actorComponent.isJumping)
+                    {
+                        actorAnimMgr._transitioningTo = actorAnimMgr.actorComponent.JumpAnim;
+
+                        if (!actorAnimMgr._transitioning)
+                        {
+                            actorAnimMgr._playAnimation(actorAnimMgr._transitioningTo);
+                            SoundManager.Instance.PlaySound("amanda", "amanda_jump1");
+                        }
+                    }
+                }
+
                 public override string Execute(IFSMObject obj)
                 {
                     base.Execute(obj);
@@ -816,6 +842,25 @@ namespace PlatformerStarter
 
             new public class RunJumpState : ActorAnimationManager.RunJumpState
             {
+                public override void Enter(IFSMObject obj)
+                {
+                    PlayerActorAnimationManager actorAnimMgr = obj as PlayerActorAnimationManager;
+
+                    if (actorAnimMgr.actorComponent == null)
+                        return;
+
+                    if (!actorAnimMgr.actorComponent.isJumping)
+                    {
+                        actorAnimMgr._transitioningTo = actorAnimMgr.actorComponent.RunJumpAnim;
+
+                        if (!actorAnimMgr._transitioning)
+                        {
+                            actorAnimMgr._playAnimation(actorAnimMgr._transitioningTo);
+                            SoundManager.Instance.PlaySound("amanda", "amanda_jump1");
+                        }
+                    }
+                }
+
                 public override string Execute(IFSMObject obj)
                 {
                     base.Execute(obj);

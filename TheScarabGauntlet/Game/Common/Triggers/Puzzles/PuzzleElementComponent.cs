@@ -13,7 +13,7 @@ using GarageGames.Torque.SceneGraph;
 using GarageGames.Torque.MathUtil;
 #endregion
 
-namespace PlatformerStarter.Common.Triggers
+namespace PlatformerStarter.Common.Triggers.Puzzles
 {
     [TorqueXmlSchemaType]
     public class PuzzleElementComponent : TorqueComponent, ITickObject
@@ -21,7 +21,7 @@ namespace PlatformerStarter.Common.Triggers
         #region Private Members
         private bool allSwitchesOn;
         private List<SwitchTrigger> switches;
-        private List<IPuzzleBehavior> behaviors;
+        private List<PuzzleBehavior> behaviors;
         #endregion
 
         #region Public Properties
@@ -38,7 +38,7 @@ namespace PlatformerStarter.Common.Triggers
         /// <summary>
         /// A list of behaviors that will execute when a switch is flipped.
         /// </summary>
-        public List<IPuzzleBehavior> PuzzleBehaviors
+        public List<PuzzleBehavior> PuzzleBehaviors
         {
             get { return behaviors; }
             set { behaviors = value; }
@@ -74,9 +74,8 @@ namespace PlatformerStarter.Common.Triggers
 
             if (allSwitchesOn)
             {
-                foreach (IPuzzleBehavior behavior in behaviors)
-                    if(behavior.Active)
-                        behavior.Execute(SceneObject);
+                foreach (PuzzleBehavior behavior in behaviors)
+                    behavior.Run(SceneObject);// behavior.Execute(SceneObject);
             }
         }
 

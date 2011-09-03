@@ -2295,7 +2295,7 @@
             <CreateWithCollision>false</CreateWithCollision>
             <Components inPlace="true">
                 <SwitchTrigger type="PlatformerStarter.Common.Triggers.SwitchTrigger">
-                    <IsOn>false</IsOn>
+                    <IsOn>true</IsOn>
                 </SwitchTrigger>
                 <T2DPhysicsComponent type="GarageGames.Torque.T2D.T2DPhysicsComponent">
                     <Velocity>
@@ -2312,20 +2312,20 @@
                         <T2DPolyImage type="GarageGames.Torque.T2D.T2DPolyImage">
                             <CollisionPolyBasis>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>-1.00000</X>
-                                    <Y>-1.00000</Y>
+                                    <X>0.56748</X>
+                                    <Y>0.04400</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>1.00000</X>
-                                    <Y>-1.00000</Y>
+                                    <X>-0.02764</X>
+                                    <Y>0.58400</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>1.00000</X>
-                                    <Y>1.00000</Y>
+                                    <X>-0.58374</X>
+                                    <Y>0.08800</Y>
                                 </Vector2>
                                 <Vector2 type="Microsoft.Xna.Framework.Vector2">
-                                    <X>-1.00000</X>
-                                    <Y>1.00000</Y>
+                                    <X>0.00163</X>
+                                    <Y>-0.59600</Y>
                                 </Vector2>
                             </CollisionPolyBasis>
                             <CollisionPolyScale>
@@ -2335,7 +2335,7 @@
                         </T2DPolyImage>
                     </Images>
                     <RenderCollisionBounds>false</RenderCollisionBounds>
-                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.BounceCollision" />
+                    <ResolveCollision valueOf="GarageGames.Torque.T2D.T2DPhysicsComponent.ClampCollision" />
                     <SolveOverlap>true</SolveOverlap>
                     <CollisionMaterial nameRef="DefaultCollisionMaterial" />
                 </T2DCollisionComponent>
@@ -2354,7 +2354,7 @@
             </Size>
             <Position>
                 <X>6.094</X>
-                <Y>23.556</Y>
+                <Y>22.671</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>
@@ -2373,7 +2373,7 @@
             <CreateWithPhysics>false</CreateWithPhysics>
             <CreateWithCollision>false</CreateWithCollision>
             <Components inPlace="true">
-                <PuzzleElementComponent type="PlatformerStarter.Common.Triggers.PuzzleElementComponent">
+                <PuzzleElementComponent type="PlatformerStarter.Common.Triggers.Puzzles.PuzzleElementComponent">
                     <Switches>
                         <String>switch1</String>
                     </Switches>
@@ -2442,8 +2442,8 @@
                 <Y>62.374</Y>
             </Size>
             <Position>
-                <X>40.675</X>
-                <Y>-3.813</Y>
+                <X>33.019</X>
+                <Y>6.187</Y>
             </Position>
             <Rotation>0</Rotation>
             <CollisionsEnabled>true</CollisionsEnabled>

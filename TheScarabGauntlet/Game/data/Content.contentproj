@@ -77,6 +77,13 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="effects\Effect1.fx">
+      <Name>Effect1</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
   <PropertyGroup>
     <PostBuildEvent>"$(TargetPath)" -exportschema "$(ProjectDir)myschema.txschema"</PostBuildEvent>
   </PropertyGroup>
@@ -835,6 +842,431 @@
     </Compile>
     <Compile Include="images\large statue.png">
       <Name>large statue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\backgroundtree1.png">
+      <Name>backgroundtree1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\backgroundtree2.png">
+      <Name>backgroundtree2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\backgroundtree3.png">
+      <Name>backgroundtree3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\backgroundtree4.png">
+      <Name>backgroundtree4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\backgroundtree5.png">
+      <Name>backgroundtree5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\bg platform roots 1.png">
+      <Name>bg platform roots 1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\bg platform roots 2.png">
+      <Name>bg platform roots 2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\fallentemple%28working%29.png">
+      <Name>fallentemple%28working%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\fallentemple%28working_resize%29.png">
+      <Name>fallentemple%28working_resize%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\fallentemple.png">
+      <Name>fallentemple</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\firecrystal.png">
+      <Name>firecrystal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\firecrystalflame.png">
+      <Name>firecrystalflame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\fog%28dark%29.png">
+      <Name>fog%28dark%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\fog%28light%29.png">
+      <Name>fog%28light%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\giantplatformtree%28blueandgreen%29.png">
+      <Name>giantplatformtree%28blueandgreen%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\giantplatformtree%28brownandgreen%29.png">
+      <Name>giantplatformtree%28brownandgreen%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\groundpiece.png">
+      <Name>groundpiece</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\groundpiece2.png">
+      <Name>groundpiece2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\groundtile%28cliff%29.png">
+      <Name>groundtile%28cliff%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\groundtile%28flat%29.png">
+      <Name>groundtile%28flat%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\groundtile%28slope%29.png">
+      <Name>groundtile%28slope%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\hornetnest%28whole%29.png">
+      <Name>hornetnest%28whole%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\hornetnest1.png">
+      <Name>hornetnest1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\hornetnest2.png">
+      <Name>hornetnest2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\hornetnest3.png">
+      <Name>hornetnest3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\innertreebg.png">
+      <Name>innertreebg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\innertreeplatformfg%28whole%29.png">
+      <Name>innertreeplatformfg%28whole%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\innertreeplatformfg1.png">
+      <Name>innertreeplatformfg1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\innertreeplatformfg2.png">
+      <Name>innertreeplatformfg2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\innertreeplatformfg3.png">
+      <Name>innertreeplatformfg3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\land%28dip%29.png">
+      <Name>land%28dip%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\land%28flat%29.png">
+      <Name>land%28flat%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\land%28flat2%29.png">
+      <Name>land%28flat2%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\land%28leftslope%29.png">
+      <Name>land%28leftslope%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\land%28rightslope%29.png">
+      <Name>land%28rightslope%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\landgrass%28dip%29.png">
+      <Name>landgrass%28dip%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\landgrass%28flat%29.png">
+      <Name>landgrass%28flat%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\landgrass%28leftbottom%29.png">
+      <Name>landgrass%28leftbottom%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\landgrass%28leftcliff%29.png">
+      <Name>landgrass%28leftcliff%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\landgrass%28leftslope%29.png">
+      <Name>landgrass%28leftslope%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\landgrass%28leftslope2%29.png">
+      <Name>landgrass%28leftslope2%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\landgrass%28rightbottom%29.png">
+      <Name>landgrass%28rightbottom%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\landgrass%28rightcliff%29.png">
+      <Name>landgrass%28rightcliff%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\landgrass%28rightslope%29.png">
+      <Name>landgrass%28rightslope%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\maskinggrass %28blue%29.png">
+      <Name>maskinggrass %28blue%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\moss purple.png">
+      <Name>moss purple</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\moss1%28darkgreen%29.png">
+      <Name>moss1%28darkgreen%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\moss1%28lightgreen%29.png">
+      <Name>moss1%28lightgreen%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\pittoppiece%28whole%29.png">
+      <Name>pittoppiece%28whole%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\pittoppiece1.png">
+      <Name>pittoppiece1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\pittoppiece2.png">
+      <Name>pittoppiece2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\pittoppiece3.png">
+      <Name>pittoppiece3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\pittoppiece4%28sign%29.png">
+      <Name>pittoppiece4%28sign%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\plant1.png">
+      <Name>plant1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\plant2.png">
+      <Name>plant2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\plant3%28green%29.png">
+      <Name>plant3%28green%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\plant3%28purple%29.png">
+      <Name>plant3%28purple%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\platformlimb1.png">
+      <Name>platformlimb1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\platformlimb2.png">
+      <Name>platformlimb2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\platformlimb3.png">
+      <Name>platformlimb3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\platformlimb4.png">
+      <Name>platformlimb4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\platformrock.png">
+      <Name>platformrock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\platformroots%28experiment%29.png">
+      <Name>platformroots%28experiment%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\platformroots%28whole1%29.png">
+      <Name>platformroots%28whole1%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\platformroots%28whole2%29.png">
+      <Name>platformroots%28whole2%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\platformroots%28whole3%29.png">
+      <Name>platformroots%28whole3%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\poisonplant.png">
+      <Name>poisonplant</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\poisonplantsporecloud.png">
+      <Name>poisonplantsporecloud</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\puzzlepad.png">
+      <Name>puzzlepad</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\quicksand.png">
+      <Name>quicksand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\rock1.png">
+      <Name>rock1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\rock2.png">
+      <Name>rock2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\shademagicexplosion.png">
+      <Name>shademagicexplosion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\shademagicwall.png">
+      <Name>shademagicwall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\stump.png">
+      <Name>stump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\tree1%28browntrunkgreenleaves%29.png">
+      <Name>tree1%28browntrunkgreenleaves%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\tree1%28greentrunkpurpleleaves%29.png">
+      <Name>tree1%28greentrunkpurpleleaves%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\tree1%28purpletrunkgreenleaves%29.png">
+      <Name>tree1%28purpletrunkgreenleaves%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\tree2%28bluetrunkblackleaves%29.png">
+      <Name>tree2%28bluetrunkblackleaves%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\tree3%28greentrunkpinkleaves%29.png">
+      <Name>tree3%28greentrunkpinkleaves%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\tree4%28darkgreen%29.png">
+      <Name>tree4%28darkgreen%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\tree4%28lightgreen%29.png">
+      <Name>tree4%28lightgreen%29</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\tree5.png">
+      <Name>tree5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\water.png">
+      <Name>water</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="images\waterentrymask.png">
+      <Name>waterentrymask</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

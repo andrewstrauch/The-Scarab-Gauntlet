@@ -4,7 +4,7 @@ using GarageGames.Torque.T2D;
 
 namespace PlatformerStarter.Common.Triggers.Puzzles
 {
-    abstract class PuzzleBehavior
+    public abstract class PuzzleBehavior
     {
         #region Private Members
 

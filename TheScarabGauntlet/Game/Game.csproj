@@ -110,6 +110,7 @@
     <Compile Include="Common\Collectibles\HealthCollectibleComponent.cs" />
     <Compile Include="Common\Collectibles\IMovement.cs" />
     <Compile Include="Common\Collectibles\ScarabCollectibleComponent.cs" />
+    <Compile Include="Common\Graphics\ExtendedMaterial.cs" />
     <Compile Include="Common\GUI\Checkpoint_GUI.cs" />
     <Compile Include="Common\GUI\GameOverGUI.cs" />
     <Compile Include="Common\GUI\LoadingScreen_GUI.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="Common\Util\CameraManager.cs" />
     <Compile Include="Common\CustomCollision.cs" />
     <Compile Include="Common\PlatformBehaviors.cs" />
+    <Compile Include="Common\Util\CameraTarget.cs" />
     <Compile Include="Common\Util\MountedParticle.cs" />
     <Compile Include="Common\Traps\TikiFlameTrapComponent.cs" />
     <Compile Include="Common\Traps\TrapComponent.cs" />

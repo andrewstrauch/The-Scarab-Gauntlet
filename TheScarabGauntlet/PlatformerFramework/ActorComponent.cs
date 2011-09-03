@@ -2256,7 +2256,7 @@ namespace GarageGames.Torque.PlatformerFramework
         protected float _moveDecel;
         private float jumpDuration = 0.0f;
         private float jumpTime = 0.25f;
-        private bool isJumping;
+        protected bool isJumping;
 
         // health and damage
         protected float _health;

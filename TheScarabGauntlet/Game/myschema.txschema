@@ -2110,7 +2110,7 @@
         <Type>System.String</Type>
       </Element>
     </Type>
-    <Type name="PuzzleElementComponent" fullName="PlatformerStarter.Common.Triggers.PuzzleElementComponent">
+    <Type name="PuzzleElementComponent" fullName="PlatformerStarter.Common.Triggers.Puzzles.PuzzleElementComponent">
       <IsComponent>true</IsComponent>
       <Element name="Switches">
         <IsList>true</IsList>
@@ -2118,7 +2118,7 @@
       </Element>
       <Element name="PuzzleBehaviors">
         <IsList>true</IsList>
-        <Type>PlatformerStarter.Common.Triggers.IPuzzleBehavior</Type>
+        <Type>PlatformerStarter.Common.Triggers.Puzzles.PuzzleBehavior</Type>
       </Element>
       <Element name="Components">
         <IsList>true</IsList>
@@ -3106,6 +3106,609 @@
         <Type>GarageGames.Torque.T2D.T2DProcessComponent+Processor+ProcessMode</Type>
       </Element>
     </Type>
+    <Type name="Byte" fullName="System.Byte">
+      <Element name="MaxValue">
+        <IsStatic>true</IsStatic>
+        <Type>System.Byte</Type>
+      </Element>
+      <Element name="MinValue">
+        <IsStatic>true</IsStatic>
+        <Type>System.Byte</Type>
+      </Element>
+    </Type>
+    <Type name="Color" fullName="Microsoft.Xna.Framework.Graphics.Color">
+      <Element name="R">
+        <Type>System.Byte</Type>
+      </Element>
+      <Element name="G">
+        <Type>System.Byte</Type>
+      </Element>
+      <Element name="B">
+        <Type>System.Byte</Type>
+      </Element>
+      <Element name="A">
+        <Type>System.Byte</Type>
+      </Element>
+      <Element name="PackedValue">
+        <Type>System.UInt32</Type>
+      </Element>
+      <Element name="TransparentBlack">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="TransparentWhite">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="AliceBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="AntiqueWhite">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Aqua">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Aquamarine">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Azure">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Beige">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Bisque">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Black">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="BlanchedAlmond">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Blue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="BlueViolet">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Brown">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="BurlyWood">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="CadetBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Chartreuse">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Chocolate">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Coral">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="CornflowerBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Cornsilk">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Crimson">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Cyan">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkCyan">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkGoldenrod">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkGray">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkKhaki">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkMagenta">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkOliveGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkOrange">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkOrchid">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkRed">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkSalmon">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkSeaGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkSlateBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkSlateGray">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkTurquoise">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DarkViolet">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DeepPink">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DeepSkyBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DimGray">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="DodgerBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Firebrick">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="FloralWhite">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="ForestGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Fuchsia">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Gainsboro">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="GhostWhite">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Gold">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Goldenrod">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Gray">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Green">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="GreenYellow">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Honeydew">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="HotPink">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="IndianRed">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Indigo">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Ivory">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Khaki">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Lavender">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LavenderBlush">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LawnGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LemonChiffon">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LightBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LightCoral">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LightCyan">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LightGoldenrodYellow">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LightGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LightGray">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LightPink">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LightSalmon">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LightSeaGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LightSkyBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LightSlateGray">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LightSteelBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LightYellow">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Lime">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="LimeGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Linen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Magenta">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Maroon">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="MediumAquamarine">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="MediumBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="MediumOrchid">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="MediumPurple">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="MediumSeaGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="MediumSlateBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="MediumSpringGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="MediumTurquoise">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="MediumVioletRed">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="MidnightBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="MintCream">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="MistyRose">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Moccasin">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="NavajoWhite">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Navy">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="OldLace">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Olive">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="OliveDrab">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Orange">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="OrangeRed">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Orchid">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="PaleGoldenrod">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="PaleGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="PaleTurquoise">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="PaleVioletRed">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="PapayaWhip">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="PeachPuff">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Peru">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Pink">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Plum">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="PowderBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Purple">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Red">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="RosyBrown">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="RoyalBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="SaddleBrown">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Salmon">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="SandyBrown">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="SeaGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="SeaShell">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Sienna">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Silver">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="SkyBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="SlateBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="SlateGray">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Snow">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="SpringGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="SteelBlue">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Tan">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Teal">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Thistle">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Tomato">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Turquoise">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Violet">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Wheat">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="White">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="WhiteSmoke">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Yellow">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="YellowGreen">
+        <IsStatic>true</IsStatic>
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+    </Type>
+    <Type name="ColorChangeBehavior" fullName="PlatformerStarter.Common.Triggers.Puzzles.ColorChangeBehavior">
+      <Element name="NewColor">
+        <Type>Microsoft.Xna.Framework.Graphics.Color</Type>
+      </Element>
+      <Element name="Active">
+        <Type>System.Boolean</Type>
+      </Element>
+    </Type>
     <Type name="DirectionalTriggerComponent" fullName="GarageGames.Torque.PlatformerFramework.DirectionalTriggerComponent">
       <Dependencies>
         <Type>GarageGames.Torque.T2D.T2DCollisionComponent</Type>
@@ -3117,6 +3720,11 @@
       </Element>
       <Element name="Name">
         <Type>System.String</Type>
+      </Element>
+    </Type>
+    <Type name="DisappearBehavior" fullName="PlatformerStarter.Common.Triggers.Puzzles.DisappearBehavior">
+      <Element name="Active">
+        <Type>System.Boolean</Type>
       </Element>
     </Type>
     <Type name="DragForce" fullName="GarageGames.Torque.T2D.T2DForceComponent+DragForce">
@@ -3382,12 +3990,6 @@
         <Type>System.Int32</Type>
       </Element>
     </Type>
-    <Type name="IPuzzleBehavior" fullName="PlatformerStarter.Common.Triggers.IPuzzleBehavior">
-      <IsInstantiable>false</IsInstantiable>
-      <Element name="Active">
-        <Type>System.Boolean</Type>
-      </Element>
-    </Type>
     <Type name="ISwitchBehavior" fullName="PlatformerStarter.Common.Triggers.ISwitchBehavior">
       <IsInstantiable>false</IsInstantiable>
     </Type>
@@ -3496,6 +4098,23 @@
       </Element>
       <Element name="ConstantDirection">
         <Type>System.Single</Type>
+      </Element>
+    </Type>
+    <Type name="MovementBehavior" fullName="PlatformerStarter.Common.Triggers.Puzzles.Behaviors.MovementBehavior">
+      <Element name="XDistance">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="YDistance">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="XSpeed">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="YSpeed">
+        <Type>System.Single</Type>
+      </Element>
+      <Element name="Active">
+        <Type>System.Boolean</Type>
       </Element>
     </Type>
     <Type name="OnRegisteredDelegate" fullName="GarageGames.Torque.Core.OnRegisteredDelegate">
@@ -3642,6 +4261,19 @@
         <Type>GarageGames.Torque.T2D.T2DProcessComponent+Processor+ProcessMode</Type>
       </Element>
     </Type>
+    <Type name="PuzzleBehavior" fullName="PlatformerStarter.Common.Triggers.Puzzles.PuzzleBehavior">
+      <DerivedTypes>
+        <Type>PlatformerStarter.Common.Triggers.Puzzles.Behaviors.MovementBehavior</Type>
+        <Type>PlatformerStarter.Common.Triggers.Puzzles.Behaviors.ShakeBehavior</Type>
+        <Type>PlatformerStarter.Common.Triggers.Puzzles.ColorChangeBehavior</Type>
+        <Type>PlatformerStarter.Common.Triggers.Puzzles.DisappearBehavior</Type>
+        <Type>PlatformerStarter.Common.Triggers.Puzzles.SoundFxBehavior</Type>
+      </DerivedTypes>
+      <IsInstantiable>false</IsInstantiable>
+      <Element name="Active">
+        <Type>System.Boolean</Type>
+      </Element>
+    </Type>
     <Type name="RenderMaterial" fullName="GarageGames.Torque.Materials.RenderMaterial">
       <IsInstantiable>false</IsInstantiable>
       <Element name="NameMapping">
@@ -3713,6 +4345,19 @@
         <Type>System.UInt32</Type>
       </Element>
     </Type>
+    <Type name="ShakeBehavior" fullName="PlatformerStarter.Common.Triggers.Puzzles.Behaviors.ShakeBehavior">
+      <Element name="XMagnitude">
+        <Type>System.Single</Type>
+        <DefaultValue>0</DefaultValue>
+      </Element>
+      <Element name="YMagnitude">
+        <Type>System.Single</Type>
+        <DefaultValue>0</DefaultValue>
+      </Element>
+      <Element name="Active">
+        <Type>System.Boolean</Type>
+      </Element>
+    </Type>
     <Type name="Single" fullName="System.Single">
       <Element name="MinValue">
         <IsStatic>true</IsStatic>
@@ -3737,6 +4382,14 @@
       <Element name="NaN">
         <IsStatic>true</IsStatic>
         <Type>System.Single</Type>
+      </Element>
+    </Type>
+    <Type name="SoundFxBehavior" fullName="PlatformerStarter.Common.Triggers.Puzzles.SoundFxBehavior">
+      <Element name="SFXName">
+        <Type>System.String</Type>
+      </Element>
+      <Element name="Active">
+        <Type>System.Boolean</Type>
       </Element>
     </Type>
     <Type name="SpawnedParticle" fullName="GarageGames.Torque.PlatformerFramework.SpawnedParticle">
@@ -4344,7 +4997,7 @@
         <Type>PlatformerStarter.Common.Traps.TikiFlameTrapComponent</Type>
         <Type>PlatformerStarter.Common.Traps.TrapComponent</Type>
         <Type>PlatformerStarter.Common.Triggers.BairneBoundaryTrigger</Type>
-        <Type>PlatformerStarter.Common.Triggers.PuzzleElementComponent</Type>
+        <Type>PlatformerStarter.Common.Triggers.Puzzles.PuzzleElementComponent</Type>
         <Type>PlatformerStarter.Common.Triggers.SwitchTrigger</Type>
         <Type>PlatformerStarter.Common.Triggers.TrapTriggerComponent</Type>
         <Type>PlatformerStarter.Enemies.ActorComponents.BomberActorComponent</Type>

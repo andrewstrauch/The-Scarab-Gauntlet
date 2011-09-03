@@ -76,7 +76,7 @@ namespace PlatformerStarter.Common
 
             transitionFinished = false;
 
-            camera = new CameraManager(TorqueObjectDatabase.Instance.FindObject<T2DSceneCamera>("Camera"));
+            //camera = CameraManager.Instance;
 
             return true;
         }
